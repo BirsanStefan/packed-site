@@ -669,6 +669,13 @@ section.convinced .convincedContent {
 #header-socialmedia-icons {
   display: none; }
 
+.benefits .sectionTitle {
+  padding-top: 40px;
+  margin-bottom: 0; }
+
+.benefits .benefitsItems {
+  padding-top: 50px; }
+
 .sectionTitle {
   font-size: 38px;
   line-height: 1.5;
@@ -1488,9 +1495,6 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 
 .skiWeekendsImage {
   width: 100%; }
-
-.topRegionsResorts {
-  margin-top: 140px; }
 
 .regionsGridItemWrap {
   min-height: 540px; }
@@ -3931,9 +3935,6 @@ div.stepRight a {
   color: #6be2d1;
   text-decoration: underline; }
 
-.topRegionsResorts {
-  margin-top: 100px; }
-
 .regionsGridList {
   min-height: 200px; }
 
@@ -4592,9 +4593,6 @@ div.whyMySwftBox {
   font-size: 16px;
   color: #464860;
   text-align: center; }
-
-.topRegionsResorts {
-  margin-top: 40px; }
 
 .buttons-content {
   margin-top: 0; }
@@ -6182,7 +6180,7 @@ Start How it works Page .topArea {
 
 .topRegionsResorts {
   height: auto;
-  margin: 140px auto 40px; }
+  margin: 40px auto 40px; }
 
 .topRegionsResortsTitle {
   color: #464860;
