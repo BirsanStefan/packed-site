@@ -1,0 +1,105 @@
+.advantagesWrap{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1140px;
+    height: 183px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 54px rgba(142,142,142,0.22);
+    background-color: #ffffff;
+    margin-top: -40px;
+    position: relative;
+    z-index: 9;
+}
+.advantageItem {
+    min-width: 190px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 183px;
+}
+.advImage{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.advImage img{
+    width: 55px;
+}
+.advText{
+    height: 63px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #464860;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1400px){
+    
+}
+
+@media only screen and (max-width: 1280px){
+    .advantagesWrap {
+        height: auto;
+        flex-wrap: wrap;
+        max-width: calc(90% - 60px);
+    }
+    .advantageItem {
+        width: 33%;
+        min-width: initial;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    
+}
+
+@media only screen and (max-width: 991px){
+    .advantagesWrap {
+        width: calc(100% - 30px);
+        max-width: 664px;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .advantagesWrap {
+        width: calc(100% - 140px);
+    }
+    .advantageItem {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 667px){
+    .advantagesWrap {
+        width: calc(100% - 60px);
+    }
+    .advantageItem {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .advImage {
+        width: 40px;
+        height: 50px;
+    }
+    .advText {
+        width: calc(100% - 60px);
+        text-align: left;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        line-height: 1.2;
+        padding-left: 10px;
+    }
+    .advImage img {
+        width: 25px;
+    }
+}

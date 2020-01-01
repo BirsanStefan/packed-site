@@ -1,0 +1,45 @@
+.notCompletelyConvincedDescrBox{
+    .notCompletelyConvincedDescElementx3{
+        width: 32%;
+        text-align: center;
+        .notCompletelyConvincedDescItem{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            color: #464860;
+            padding-bottom: 30px;
+            line-height: 1.4;
+            position: relative;
+            padding-top: 10px;
+            &::after{
+                position: absolute;
+                content: "";
+                display: block;
+                width: 95%;
+                border-bottom: 1px solid #adaeba50;
+                margin-left: auto;
+                margin-right: auto;
+                bottom: 20px;
+            }
+            .notCompletelyConvincedInfo{
+                margin-top: 30px;
+            }
+        }
+        .notCompletelyConvincedInfo h4{
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            color: #464860;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 25px;
+        }
+    }
+}

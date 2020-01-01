@@ -1,0 +1,102 @@
+.textContent.careersText{
+    text-align: center;
+}
+.careersTopText{
+    width: 57%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    .careersImg{
+        padding-top: 30px;
+        img{
+            width: 200px; 
+            height: 68px;
+        }
+    }
+}
+.careersBoxWrap{
+    padding-bottom: 50px;
+    @media only screen and (max-width: 1023px) {
+        padding-bottom: 0;
+    }
+    h1{
+        text-align: center;
+        font-size:20px;
+        color: rgb(79, 45, 135);
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.careersBox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .careersElem{
+        width: 48%;
+        padding-bottom: 20px;
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+        }
+        h2{
+            span{color:#6be2d1;}
+            color: #4f2d87;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            @media only screen and (max-width: 1023px) {
+                font-size: 25px;
+            }
+        }
+        .careersElemDescr{
+            color: #696969;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.5;
+        }
+    }
+}
+
+.careersTextMid{
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    @media only screen and (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h2{
+        color: #4f2d87;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .careersTextMidItem{
+        color: rgb(105, 105, 105);
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5;
+        padding-bottom: 20px;
+    }
+    .careersTextMidImg{
+        padding-bottom: 30px;
+    }
+}
+
+.bannerMid{
+    @media only screen and (max-width: 1023px) {
+        background-size: 100%;
+    }
+}

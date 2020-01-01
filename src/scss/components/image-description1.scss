@@ -1,0 +1,100 @@
+.imageDescr {
+    margin-top: 50px;
+}
+.stepTitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: #464860;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+div.stepBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 1200px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+div.stepLeft {
+    width: 45%;
+    position: relative;
+    left: -40px;
+    text-align: center;
+}
+.stepImage {
+    width: 100%;
+}
+div.stepRight {
+    width: 55%;
+    padding: 0 30px 0 50px;
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #464860;
+    }
+    a {
+        color: #6be2d1;
+        text-decoration: underline;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    div.stepLeft {
+        left: 0;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    div.stepLeft {
+        width: 44%;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    div.stepRight {
+        width: 53%;
+        padding: 0 30px 0 50px;
+    }
+}
+@media only screen and (max-width: 870px) {
+    .stepTitle {
+        margin-bottom: 30px;
+    }
+    div.stepBox {
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    div.stepLeft {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .stepImage {
+        width: 90%;
+    }
+    div.stepRight {
+        width: 100%;
+        padding: 5px;
+        .textContent{
+            text-align: center;
+        }
+    }
+    .stepDescr {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .stepTitle {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    div.stepLeft {
+        width: 100%;
+    }
+}

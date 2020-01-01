@@ -1,0 +1,110 @@
+section.callingMountains {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 3px 15px 5px #8e8e8e31;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    @media only screen and (max-width: 400px) {
+        margin-top: 50px;
+    }
+    .callingMountainsImage {
+        width: 45%;
+        z-index: 1;
+        font-size: 0;
+        @media only screen and (max-width: 1023px) {
+            width: 50%;
+        }
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+        }
+        @media only screen and (max-width: 991px) {
+            display: none;
+        }
+        .callingMountainsImgItem{
+            min-height: 580px;
+            margin-left: -62px;
+            width: 100%;
+        }
+    }
+    .callingMountainsDescription {
+        width: 55%;
+        padding-right: 40px;
+        background: #fff;
+        z-index: 100;
+        margin-bottom: auto;
+        margin-top: auto;
+        @media only screen and (max-width: 1023px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 25px;
+            width: 50%;
+        }
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        @media only screen and (max-width: 420px) {
+            padding-top: 30px;
+            padding-bottom: 0;
+        }
+        .callingMountainsTitle {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #464860;
+            font-size: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 10px;
+        }
+        .callingMountainsText {
+            font-family: 'Montserrat', sans-serif;
+            color: #464860;
+            font-size: 16px;
+            padding-left: 5px;
+            padding-right: 0px;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            @media only screen and (max-width: 1046px){
+                margin-bottom: 15px;
+            }
+            @media only screen and (max-width: 1001px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .callingMountainsImageTablet {
+        display: none;
+        @media only screen and (max-width: 991px) {
+            display: block;
+        }
+        .callingMountainsImageItem {
+            min-height: 580px;
+            margin-left: -71px;
+            width: 100%;
+            @media only screen and (max-width: 1075px){
+                min-height: 720px;
+            }
+            @media only screen and (max-width: 1023px) {
+                min-height: 780px;
+                margin-left: -61px;
+            }
+            @media only screen and (max-width: 991px) {
+                display: flex;
+                min-height: 285px;
+                width: 991px;
+                max-width: 100%;
+                margin-left: 0;
+            }
+            @media only screen and (max-width: 768px) {
+               min-height: initial;
+            }
+            @media only screen and (max-width: 400px) {
+                min-height: 85px;
+            }
+        }
+    }
+}

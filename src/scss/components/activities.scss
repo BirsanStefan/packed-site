@@ -1,0 +1,307 @@
+.activitiestopRegionsResorts {
+    height: auto;
+    margin-top: 140px;
+}
+.noMargin{
+    margin-top: 0 !important;
+}
+/* Title */
+.activitiestopRegionsResortsTitle {
+    color: #464860;
+    font-family: 'Rubik', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+}
+/* Buttons */
+.activitiesbuttons-content {
+    border-radius: 50px;
+    box-shadow: 0px 5px 50px 14px #b2b2b222;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    height: 50px; 
+}
+
+.activitiesbuttons-wrap{
+    background: #fff;
+    border-radius: 50px;
+    height: 50px; 
+    padding-inline-start: 0;
+    width: 375px;
+    padding: 3px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.activitiesbutton-item {
+    display: inline-block;
+    margin-left: 0;
+    border-radius: 50px;
+    text-align: center;
+    width: 50%;
+}
+.activitiesleft-button {
+    width: 50%;
+}
+.activitiesright-button {
+    width: 50%;
+}
+
+.activitiesbutton-item.active .activitiesbutton-name {
+    color: #fff;
+}
+.activitiesbutton-item.active .activitiesbutton-wrap {
+    background: #40d8c2;
+    border-radius: 50px;
+    color: #fff;
+}
+.activitiesbutton-link {
+    text-decoration: none;
+    text-align: center
+}
+.activitiesbutton-wrap {
+   
+}
+.activitiesbutton-wrap svg{
+    fill: #adadaf;
+    width: 18px;
+    margin-right: 6px;
+}
+.activitiesbutton-item.active .activitiesbutton-wrap svg{
+    fill: #fff;
+}
+.activitiesbutton-wrap{
+    font-size: 14px;
+    line-height: 24px;
+    color: #aeaeaf;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    background: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activitiesbutton-wrap:hover{
+    color: #aeaeaf;
+}
+.activitiesbutton-item.active .activitiesbutton-wrap:hover{
+    color: #fff;
+}
+.activitiesbutton-name {
+    color: #aeaeaf;
+    margin-bottom: 0 !important;
+    float: left;
+    margin-left: 10px;
+}
+.activitiesbtn-image {
+    float: left;
+    margin-right: 10px;
+}
+
+/* Items Grid - Regions & Resorts */
+.activitiesregionsGridList {
+    margin-top: 62px;
+    z-index: 1;
+    position: relative;
+    min-height: 300px;
+}
+.activitiesregionsGridItemWrap {
+    box-shadow: 0px 5px 50px 14px #b2b2b222;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    width: 46%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: space-between;
+    min-height: 350px;
+}
+.activitiesresortsGridItemWrap {
+    box-shadow: 0px 5px 50px 14px #b2b2b222;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    width: 31%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    justify-content: space-between;
+    min-height: 400px;
+}
+.activitiesresortsGridItemWrap .activitiesaltSkiing,
+.activitiesresortsGridItemWrap .transfertime{
+    float: none;
+    width: 100%;
+}
+
+.activitiesregionsGridImg {
+    border-radius: 7px 7px 0 0;
+}
+.activitiesregionsGridDescription {
+    padding: 30px;
+}
+.activitiesregionsGridTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #464860;
+}
+.activitiesregionsGridData {
+    margin-top: 30px;
+    min-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: #464860;
+    border-bottom: 1px solid #f1f1f1;
+}
+.activitiesaltSkiing {
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+.activitiestransfertimeWrap {
+    min-height: 50px;
+}
+.activitiestransfertime {
+    width: 60%;
+    float: right;
+}
+.activitiesregionsGridDescriptionParagraph {
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #464860;
+    line-height: 1.4;
+}
+
+
+/* Style Vanilla JS Tabs */
+.activitiestopRegionsResorts .tab-content > .activitiestabPaneResorts {
+    display: none;
+}
+.activitiestopRegionsResorts .tab-content > .activitiestabPaneResorts.active {
+    display: block;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+}
+.activitiestopRegionsResorts .tab-content > .active {
+    display: block;
+}
+.container--tabs .nav-tabs > li.active > a, .container--tabs .nav-tabs > li.active > a:hover, .container--tabs .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+@media only screen and (max-width: 991px) {
+    .activitiesregionsGridDescription {
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .activitiesregionsGridDescription {
+        padding: 15px;
+    }
+    .activitiesresortsGridItemWrap{
+        width: 46%;
+        min-height: 480px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media only screen and (max-width: 667px) {
+    .activitiesregionsGridDescription {
+        padding: 15px;
+    }
+    .activitiesresortsGridItemWrap{
+        width: 100%;
+        min-height: initial;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .activitiesregionsGridItemWrap {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        min-height: initial;
+    }
+    .activitiestopRegionsResorts .tab-content > .activitiestabPaneResorts{
+        max-width: 575px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .activitiestabPaneResorts img{
+        width: 100%;
+    }
+    .activitiesgridTop, .activitiesgridBottom {
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .activitiesbuttons-content, .activitiesbuttons-wrap {
+        width: 285px;
+    }
+}
+/*4 tabs*/
+
+.activitiesbuttons-content.tabs4 .activitiesbutton-item{
+    width: 25%;
+}
+
+.activitiesbuttons-content.tabs4{
+    width: 750px;
+}
+.activitiesbuttons-content.tabs4 .activitiesbuttons-wrap{
+    width: 750px;
+}
+
+@media only screen and (max-width: 800px) {
+    .tabs4 .activitiesbutton-wrap{
+        font-size: 12px;
+        
+    }
+    .activitiesbuttons-content.tabs4{
+        width: 600px;
+    }
+    .activitiesbuttons-content.tabs4 .activitiesbuttons-wrap{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .activitiesbuttons-content.tabs4{
+        width: auto;
+        background: transparent;
+        height: auto;
+        box-shadow: none;
+    }
+    .activitiesbuttons-content.tabs4 .activitiesbuttons-wrap{
+        width: auto;
+        flex-wrap: wrap;
+        background: transparent;
+        height: auto;
+    }
+    .activitiesbuttons-content.tabs4 .activitiesbutton-item{
+        width: 48%;
+        box-shadow: 0px 5px 50px 14px #b2b2b222;
+        margin: 5px 1%;
+    }
+    .tabs4 .activitiesbutton-wrap{
+        font-size: 11px;
+        font-weight: 500;
+    }
+}

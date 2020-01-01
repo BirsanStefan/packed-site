@@ -1,0 +1,772 @@
+/* Section - Ski */
+.ski {
+    height: auto;
+    margin-top: 50px;
+}
+/* Title */
+.skiTitleItem, .bestTitleItem, .resortTitleItem {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #464860;
+}
+/* Description Box */
+.skiDescriptionBox {
+    display: -o-flex;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.topAndorra {
+	height: 740px;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: initial;
+}
+/* Left Image */
+.skiLeftImageWrap {
+    width: 50%;
+    text-align: center;
+}
+.skiLeftImageItem {
+    margin-left: -50px;
+    max-width: 100%;
+    height: auto;
+}
+/* Right Text */
+.skiRightDescriptionWrap {
+    width: 50%;
+}
+.skiRightDescriptionItem {
+    color: #464860;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 1023px) {
+    .skiLeftImageItem {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .skiDescriptionBox {
+        display: block;
+        align-items: center;
+    }
+    /* Left Image */
+    .skiLeftImageWrap {
+        width: 100%;
+        text-align: center;
+    }
+    .skiLeftImageItem {
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    /* Right Text */
+    .skiRightDescriptionWrap {
+        width: 100%;
+        text-align: center;
+    }
+    .skiRightDescriptionItem {
+        margin-top: 0;
+    }
+}
+
+.theBestOf{
+    width: 1140px;
+    margin: auto;
+    max-width: 100%;
+}
+.containerTabsTheBest .navTabsTop {
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.containerTabsTheBest .navTabsTop > li {
+    margin-bottom: -1px;
+    width: 50%;
+    text-align: center;
+}
+.containerTabsTheBest .navTabsTop > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #464860;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+}
+.containerTabsTheBest .navTabsTop > li > a:hover{
+    background-color: transparent;
+}
+.containerTabsTheBest .navTabsTop > li.active > a, .containerTabsTheBest .navTabsTop > li.active > a:hover, .containerTabsTheBest .navTabsTop > li.active > a:focus {
+    color: #40d8c2;
+    cursor: default;
+    background-color: #fff;
+    border-bottom: 3px solid #40d8c2;
+    margin-bottom: -1px;
+}
+.containerTabsTheBest .navTabsTop > li.active > a{
+    color: #40d8c2;
+    font-weight: 700;
+}
+.containerTabsTheBest .navTabsTheBestContent {
+    width: 100%;
+    min-height: 510px;
+    position: relative;
+}
+.containerTabsTheBest .navTabsTheBestContent > .navTabsTheBestPane {
+    display: none;
+}
+.containerTabsTheBest .navTabsTheBestContent > .navTabsTheBestPane.active {
+    display: block;
+    padding: 2.5% 0 0;
+    position: relative;
+}
+.containerTabsTheBest .navTabsTheBestContent > .active {
+    display: block;
+}
+.navTabsTheBest:after,
+.navTabsTheBest:before{
+    display: none !important;
+}
+.tabsContentElement{
+    display: flex;
+    border-radius: 6px;
+    box-shadow: 0px 5px 54px rgba(142,142,142,0.22);
+}
+
+.tabsContentTheBestContent{
+    width: 50%;
+    padding: 35px 45px;
+}
+.tabsContentTheBestIcon{
+    width: 48px;
+    margin-bottom: 20px;
+}
+.tabsContentTheBestText{
+    height: 360px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #464860;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.tabsArrowItem{
+    width: 54px;
+    height: 54px;
+    background-color: #40d8c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.tabsArrowItem:hover{
+    background-color: #26a291;
+}
+.tabsArrows{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.tabsArrowItem svg{
+    fill: #fff;width: 18px;height: 18px;
+}
+.navTabsBottom{
+    bottom: 20px;
+    position: absolute;
+    display: flex;
+    left: calc(50% + 40px);
+}
+.navTabsBottom:after{
+    display: none;
+}
+.navTabsBottom li{
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.navTabsBottom li a{
+    width: 43px;
+    height: 3px;
+    background-color: #ebebeb;
+    padding: 0;
+    border-top: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    box-sizing: content-box;
+}
+.navTabsBottom li.active a{
+    background-color: #40d8c2;
+
+}
+
+@media only screen and (min-width: 1281px) {
+    /* width */
+    .tabsContentTheBestContent ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    /* Track */
+    .tabsContentTheBestContent ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+
+    /* Handle */
+    .tabsContentTheBestContent ::-webkit-scrollbar-thumb {
+      background: #888; 
+    }
+
+    /* Handle on hover */
+    .tabsContentTheBestContent ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+    .tabsContentTheBestText{
+        padding-right: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .containerTabsTheBest .navTabsTop > li > a{
+        font-size: 13px;
+    }
+    .tabsContentTheBestText{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .containerTabsTheBest .navTabsTop{
+        border-bottom: none;
+    }
+    .containerTabsTheBest .navTabsTop > li{
+        display: none;
+    }
+    .containerTabsTheBest .navTabsTop > li.active{
+        display: block;
+        width: calc(100% - 100px);
+        margin: auto;
+    }
+    .containerTabsTheBest .navTabsTop > li.active a{
+        border-bottom: none;
+        color: #464860;
+    }
+    .containerTabsTheBest .navTabsTop > li > a{
+        font-size: 14px;
+    }
+    .tabsContentTheBestText{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .tabsArrows{
+        bottom: auto;
+        top: -44px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .tabsArrowItem{
+        border: 1px solid #40d8c2;
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .tabsArrowItem:hover{
+        background: #fff;
+    }
+    .tabsArrowItem svg{
+        fill: #40d8c2;
+        width: 13px;
+        height: 13px;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    .tabsContentElement{
+        flex-wrap: wrap;
+    }
+    .tabsContentTheBestImage{
+        width: 100%;
+        height: 300px;
+    }
+    .tabsContentTheBestContent{
+        width: 100%;
+        text-align: center;
+    }
+    .tabsContentTheBestIcon{
+        margin: 50px auto 40px;
+    }
+    .navTabsBottom{
+        left: 0;
+        bottom: auto;
+        top: 350px;
+        width: 100%;
+        justify-content: center;
+    }
+    .tabsContentTheBestContent{
+        padding: 35px 15px;
+    }
+}
+
+	
+    
+    /* Section - Resort */
+	.resort {
+	    margin-top: 50px;
+	    font-family: 'Montserrat', sans-serif;
+	    font-size: 14px;
+	    color: #464860;
+	    position: relative;
+	}
+	/* Title */
+	.resortTitleItem {
+	    justify-items: center;
+	    max-width: 100%;
+	}
+
+	/* Resorts */
+	.resortDescriptionWrap {
+	    height: auto;
+	}
+
+	.resortDescriptionLeftImage {
+	    border-left: 1px solid #ebebeb;
+	    display: flex;
+	    width: 10%;
+	}
+	.resortDescriptionRight {
+	    padding-left: 25px;
+	    padding-right: 60px;
+	    margin-bottom: 30px;
+	    border-left: 1px solid #ebebeb;
+	    width: 90%;
+	}
+	.resortDescriptionRightTitle.bold {
+	    font-weight: bold;
+	}
+	.resortDescriptionRightTitle{
+		@media only screen and (max-width: 667px) {
+			text-align: center;
+		}
+	}
+	/* Dots */
+	.resortDots {
+	    position: absolute;
+	    height: 970px;
+	}
+	.resortTable {
+	    display: table;
+	    height: 970px;
+	}
+	.resortMiddle {
+	    display: table;
+	    vertical-align: middle;
+	}
+	.resortImg {
+	    max-width: 100px;
+	    height: auto;
+	}
+	@media only screen and (max-width: 1600px) {
+		.resortDescriptionRight {
+		    padding-right: 30px;
+		}
+	}
+	@media only screen and (max-width: 1023px) {
+		.resortDescriptionRight {
+		    padding-right: 0px;
+		} 
+	}
+	@media only screen and (max-width: 667px) {
+		.resortDots{
+		    display: none;
+		}
+		
+		/* Resorts */
+		.resortDescriptionLeftImage {
+		    display: block;
+		    width: 100%;
+		    padding-bottom: 15px;
+		    border-left: none;
+		}
+		.resortDescriptionRight {
+		    width: 100%;
+		    padding-left: 0;
+		    display: block;
+		    border-left: none;
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		.topRegionsResorts {
+		    height: auto;
+		    max-width: 400px;
+		    display: block;
+		    margin-top: 80px;
+		}
+		.regionsGridList {
+		    height: auto;
+		}
+		.backtothetop {
+		    width: 400px;
+		}
+		.resortsGridItemWrap {
+		    width: 100%;
+		    float: none;
+		    height: auto;
+		    margin-left: 0;
+		    margin-right: 0;
+		}
+	}
+
+    /* Section - Ski Weekends */
+	.skiWeekends {
+	    display: -o-flex;
+	    flex-wrap: wrap;
+	    display: flex;
+	    align-items: center;
+	    .skiWeekendsRight{
+	    	text-align: left;
+	    }
+	}
+	.skiWeekendsLeft.skiAndorraBg{
+		background-image: url("../images/webp/weekend-ski-breaks.webp");
+		height: 470px;
+		background-size: cover;
+		border-radius: 10px;
+		position: relative;
+		@media only screen and (max-width: 420px) {
+			height: 350px;
+		}
+	}
+	.skiWeekendsRight {
+	    padding-left: 20px;
+	    width: 50%;
+	    text-align: left;
+	}
+	.skiWeekendsRightTitle {
+	    font-size: 38px;
+	    font-weight: bold;
+	    color: #464860;
+	    font-family: 'Montserrat', sans-serif;
+	}
+	.skiWeekendsRightText, 
+	.skiWeekendsRightText p{
+	    font-family: 'Montserrat', sans-serif;
+	    font-size: 14px;
+	    color: #464860;
+	}
+
+	.skiWeekendsImage {
+	    width: 100%;
+	}
+
+	@media only screen and (max-width: 1600px) {
+		.skiWeekends {
+		    display: flex;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		/* Section - Ski Weekends */
+		.skiWeekendsLeft {
+		    width: 100%;
+		}
+		.skiWeekendsRight {
+		    padding-left: 20px;
+		    width: 100%;
+		    margin-top: 60px;
+		    padding-right: 20px;
+		    text-align: center;
+		}
+		.skiWeekendsRightTitle {
+		    text-align: center;
+		    margin-bottom: 40px;
+		}
+		.skiWeekendsRightText {
+		    text-align: center;
+		}
+}
+    
+    /* Section - top regions & resorts */
+	.topRegionsResorts {
+		height: auto;
+		margin-top: 140px;
+	}
+	/* Title */
+	.topRegionsResortsTitle {
+		color: #464860;
+		font-family: 'Rubik', sans-serif;
+		font-size: 38px;
+		font-weight: 500;
+		text-align: center;
+	}
+	/* Buttons */
+	.buttons-content {
+		border-radius: 50px;
+		box-shadow: 0px 5px 50px 14px #b2b2b222;
+		width: 375px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		height: 50px; 
+	}
+	.buttons-wrap{
+		background: #fff;
+		border-radius: 50px;
+		height: 50px; 
+		padding-inline-start: 0;
+		width: 375px;
+		padding: 3px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.button-item {
+		display: inline-block;
+		margin-left: 0;
+		border-radius: 50px;
+		text-align: center;
+	}
+	.left-button {
+		width: 50%;
+	}
+	.right-button {
+		width: 50%;
+	}
+
+	.button-item.active .button-name {
+		color: #fff;
+	}
+	.button-item.active .button-wrap {
+		background: #40d8c2;
+		border-radius: 50px;
+		color: #fff;
+	}
+	.button-link {
+		text-decoration: none;
+		text-align: center
+	}
+	.button-wrap {
+	   
+	}
+	.button-wrap svg{
+		fill: #adadaf;
+		width: 18px;
+		margin-right: 6px;
+	}
+	.button-item.active .button-wrap svg{
+		fill: #fff;
+	}
+	.button-wrap{
+		font-size: 14px;
+		line-height: 24px;
+		color: #aeaeaf;
+		font-family: "Montserrat";
+		font-weight: 600;
+		text-align: center;
+		border: none;
+		background: none;
+		height: 44px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.button-wrap:hover{
+		color: #aeaeaf;
+	}
+	.button-item.active .button-wrap:hover{
+		color: #fff;
+	}
+	.button-name {
+		color: #aeaeaf;
+		margin-bottom: 0 !important;
+		float: left;
+		margin-left: 10px;
+	}
+	.btn-image {
+		float: left;
+		margin-right: 10px;
+	}
+
+	/* Items Grid - Regions & Resorts */
+	.regionsGridList {
+		margin-top: 62px;
+		z-index: 1;
+		position: relative;
+		min-height: 440px;
+	}
+	.regionsGridItemWrap {
+		box-shadow: 0px 5px 50px 14px #b2b2b222;
+		border-radius: 7px;
+		margin-bottom: 30px;
+		width: 46%;
+		float: left;
+		margin-left: 2%;
+		margin-right: 2%;
+		justify-content: space-between;
+		min-height: 540px;
+	}
+	.resortsGridItemWrap {
+		box-shadow: 0px 5px 50px 14px #b2b2b222;
+		border-radius: 7px;
+		margin-bottom: 30px;
+		width: 31%;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		justify-content: space-between;
+		min-height: 533px;
+	}
+	.resortsGridItemWrap .altSkiing,
+	.resortsGridItemWrap .transfertime{
+		float: none;
+		width: 100%;
+	}
+
+	.regionsGridImg {
+		border-radius: 7px 7px 0 0;
+		background-size: cover;
+		position:relative;
+		height:250px;
+	}
+	.resortGridImg {
+		border-radius: 7px 7px 0 0;
+		background-size: cover;
+		position:relative;
+		height:170px;
+	}
+	.regionsGridDescription {
+		padding: 30px;
+	}
+	.regionsGridTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+		color: #464860;
+	}
+	.regionsGridData {
+		margin-top: 30px;
+		min-height: 50px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 10px;
+		color: #464860;
+		border-bottom: 1px solid #f1f1f1;
+	}
+	.altSkiing {
+		float: left;
+		width: 40%;
+		text-align: left;
+	}
+	.transfertimeWrap {
+		min-height: 50px;
+	}
+	.transfertime {
+		width: 60%;
+		float: right;
+	}
+	.regionsGridDescriptionParagraph {
+		padding-top: 20px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 12px;
+		color: #464860;
+		p {
+			font-size:12px;
+			line-height: 1.42;
+		}
+	}
+	
+
+
+	/* Style Vanilla JS Tabs */
+	.topRegionsResorts .tab-content > .tabPaneResorts {
+		display: none;
+	}
+	.topRegionsResorts .tab-content > .tabPaneResorts.active {
+		display: block;
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.topRegionsResorts .tab-content > .active {
+		display: block;
+	}
+	.container--tabs .nav-tabs > li.active > a, .container--tabs .nav-tabs > li.active > a:hover, .container--tabs .nav-tabs > li.active > a:focus {
+		color: #555;
+		cursor: default;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-bottom-color: transparent;
+	}
+
+	@media only screen and (max-width: 991px) {
+		.regionsGridDescription {
+			padding: 15px;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		.regionsGridDescription {
+			padding: 15px;
+		}
+		.resortsGridItemWrap{
+			width: 46%;
+			min-height: 480px;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+	}
+	@media only screen and (max-width: 667px) {
+		.regionsGridDescription {
+			padding: 15px;
+		}
+		.resortsGridItemWrap{
+			width: 100%;
+			min-height: initial;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.regionsGridItemWrap {
+			width: 100%;
+			float: none;
+			margin-left: 0;
+			margin-right: 0;
+			min-height: initial;
+		}
+		.topRegionsResorts .tab-content > .tabPaneResorts{
+			max-width: 575px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.tabPaneResorts img{
+			width: 100%;
+		}
+		.gridTop, .gridBottom {
+			height: auto;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		.buttons-content, .buttons-wrap {
+		    width: 285px;
+		}
+  }
+    

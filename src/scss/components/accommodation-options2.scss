@@ -1,0 +1,51 @@
+/*4 tabs*/
+
+.buttons-content.tabs3 .button-item{
+    width: 33%;
+}
+
+.buttons-content.tabs3{
+    width: 750px;
+}
+.buttons-content.tabs3 .buttons-wrap{
+    width: 750px;
+}
+
+@media only screen and (max-width: 800px) {
+    .tabs3 .button-wrap{
+        font-size: 12px;
+
+    }
+    .buttons-content.tabs3{
+        width: 600px;
+    }
+    .buttons-content.tabs3 .buttons-wrap{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .buttons-content.tabs3{
+        width: auto;
+        background: transparent;
+        height: auto;
+        box-shadow: none;
+    }
+    .buttons-content.tabs3 .buttons-wrap{
+        width: auto;
+        flex-wrap: wrap;
+        background: transparent;
+        height: auto;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    .buttons-content.tabs3 .button-item{
+        width: 48%;
+        box-shadow: 0px 5px 50px 14px #b2b2b222;
+        margin: 5px 1%;
+    }
+    .tabs3 .button-wrap{
+        font-size: 11px;
+        font-weight: 500;
+    }
+}

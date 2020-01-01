@@ -1,0 +1,554 @@
+.appPage{
+  .appPageTop .topAreaBg {
+      background-image: linear-gradient(131deg, #4f2d87 0%, #7542c9 100%);
+      min-height: 740px;
+      width: 100%;
+      max-width: calc(100% - 30px);
+      margin: auto;
+      @media only screen and (max-width: 991px){
+        min-height: initial;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: -150px;
+      }
+
+  }
+  .topArea {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 150px;
+      position: relative;
+      display: flex;
+      -ms-align-items: center;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 0;
+  }
+  .feefo {
+      position: absolute;
+      top: 30px;
+      right: 80px;
+      z-index: 99;
+  }
+  .topArea .topContent {
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fff;
+    @media only screen and (min-width: 1024px){
+        max-width: calc(100% - 140px);
+    }
+  }
+
+  .mswButton{
+    margin-left: 0;
+    @media only screen and (max-width: 991px){
+      margin: auto;
+    }
+  }
+
+  .appPageTopContainer{
+    overflow: hidden;
+    padding-bottom: 120px;
+    @media only screen and (max-width: 991px){
+      padding-bottom: 0;
+    }
+  }
+
+  .appPageTop{
+    overflow: visible;
+    height: auto;
+    .sContainer {
+      @media only screen and (max-width: 991px){
+        max-width: 90%;
+        text-align: center;
+        position: relative;
+        margin-top: 50px;
+        z-index: 99;
+      }
+    }
+  }
+
+  
+
+  .countDown{
+    margin-top: 0;
+  }
+
+  .topAppImage .topAppPhoneImg img {
+      margin-top: 350px;
+      @media only screen and (max-width: 991px){
+        margin-top: 0;
+      }
+  }
+  .topAppImage {
+      position: absolute;
+      background: url(../images/png/app-top-bg.png);
+      width: 780px;
+      right: 5%;
+      text-align: center;
+      background-position: center;
+  }
+  .topAppCountDownForm{
+    margin-top: 30px;
+  }
+  /*Top Banner END*/
+
+  .midCountDownApp{
+    .bgDotsBlue.left{
+        position: absolute;
+        bottom: -85px;
+        left: -10px;
+        width: 216px;
+        height: 196px;
+    }
+    .bgDotsBlue.right{
+        position: absolute;
+        right: 100px;
+        top: -85px;
+    }
+
+    .topAppCountDownForm {
+        width: 720px;
+        max-width: 90%;
+        margin: auto;
+        height: 353px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: url(/assets/images/png/bg-decoration.png);
+        background-position: center;
+        background-size: 100%;
+    }
+  }
+
+  .appPageTop .topTitle {
+      font-size: 44px;
+      line-height: 1.2;
+      max-width: 50%;
+      padding-top: 2em;
+      text-align: left;
+      @media only screen and (max-width: 991px){
+        text-align: center;
+        padding-top: 1em;
+      }
+  }
+
+  .ctaButtonsWrap{
+     text-align: left;
+     margin-top: 30px;
+  }
+  .ctaButtonsWrap a{
+     display: inline-block;
+  }
+  .whatsAppPlugin .icon svg{
+     width: 20px;
+     height: 20px;
+  }
+
+  .whatsAppPlugin #phone{
+     color: #000;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     box-shadow: none;
+     width: 300px;
+     max-width: 100%;
+     height: 36px;
+     padding-left: 90px !important;
+  }
+  .whatsAppPlugin .iti__flag-container{
+     color: #000;
+     outline: none;
+     
+     border-top-left-radius: 8px;
+  }
+  .whatsAppPlugin .iti__selected-flag{
+     outline: none;
+     border-top-left-radius: 8px;
+  }
+  .whatsAppPlugin .cyanBg{
+     border: none;
+     height: 50px;
+     line-height: 50px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     cursor: pointer;
+     font-weight: 700;
+  }
+  .appPageTop{
+      .cyanBg{
+          width: 210px;
+          font-weight: 500;
+      }
+      @media only screen and (max-width: 1400px){
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      @media only screen and (max-width: 991px){
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        overflow: visible;
+        margin-bottom: 150px;
+      }
+  }
+  .ctaButtonsWrap{
+     margin-top: 20px;
+  }
+  .ctaButtonsWrap img{
+     width: 140px;
+  }
+  #sendbee-checkbox .sb-checkbox-container{
+     color: #fff;
+     font-size: 14px;
+     margin-top: 0;
+     /*padding-left: 0;*/
+  }
+  .whatsAppPlugin .sb-checkbox-container .sb-checkmark{
+     top: 4px;
+     border: none;
+     /*display: none;*/
+  }
+  .whatsAppPlugin .sb-checkbox-container .sb-checkmark:after{
+     left: 5px;
+     top: 1px;
+     width: 4px;
+     height: 9px;
+     border-width: 0 1px 1px 0;
+  }
+  #checkboxFeedBackMessage{
+    color: #40d8c2;
+    font-size: 20px;
+  }
+  #checkboxErrorMessage{
+    color: #ff3e30;
+    font-size: 20px;
+  }
+  .tipAdvice{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  .appPage{
+      .articleTitle a{
+          color: $purple;
+      }
+  }
+
+
+
+  @media only screen and (max-width: 991px) {
+      .whatsAppPlugin{
+          text-align: center;
+      }
+      #sendbee-checkbox .sb-checkbox-container{
+          display: inline-block;
+      }
+      .ctaButtonsWrap{
+          text-align: center;
+      }
+      .whatsAppPlugin #phone{
+          width: 250px;
+      }
+      .whatsAppPlugin label{
+          margin-bottom: 10px;
+      }
+  }
+
+  @media only screen and (max-width: 1600px) {
+      .topAppImage{
+        right: 0;
+      }
+    }
+
+    @media only screen and (max-width: 1400px) {
+      .topArea{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .topAppImage{
+        right: -5%;
+      }
+      .topTitle{
+        max-width: 50%;
+      }
+      .appPageTop .topText{
+        max-width: 50%;
+      }
+      .topAppCountDownForm{
+        max-width: 50%;
+      }
+      .sContainer{
+        max-width: 90%;
+      }
+      .socialIconsContainer{
+        margin-left: 15px;
+      }
+    }
+    @media only screen and (max-width: 1280px) {
+      .topAppImage{
+        right: -10%;
+      }
+      .android-app{
+        left: 10px;
+      }
+      .app-iphone{
+        left: 200px;
+      }
+      .dots1_2, .dots1_1{
+        display: none;
+      }
+
+    }
+    @media only screen and (max-width: 1023px) {
+      .topAppImage{
+        right: -15%;
+      }
+
+    }
+    @media only screen and (max-width: 991px) {
+      .articleSymbol,
+      .articleDecoration{
+        display: none;
+      }
+
+      .midCountDownApp .topAppCountDownForm{
+        padding-bottom: 30px;
+      }
+      .socialIconsContainer{
+        display: none;
+      }
+      .appPageTop{
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        overflow: visible;
+        margin-bottom: 150px;
+      }
+      .cms-module{
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .appPageTop .topText,
+      .appPageTop .topTitle{
+        max-width: 100%;
+      }
+      .appPageTop .sContainer{
+        max-width: 90%;
+        text-align: center;
+        position: relative;
+        margin-top: 50px;
+        z-index: 99;
+      }
+      .topAppCountDownForm{
+        margin-top: 30px;
+      }
+      .topAppImage{
+        width: 650px;
+        max-width: 100%;
+        position: relative;
+        right: auto;
+        margin: 25px auto;
+        background-size: 650px;
+        background-repeat: no-repeat;
+      }
+      .appPageTop .topAreaBg{
+        min-height: initial;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: -150px;
+      }
+      .feefo{
+        display: none;
+      }
+      .appPageTop .topText{
+        text-align: center;
+        width: 550px;
+        max-width: 100%;
+        margin: 20px auto;
+      }
+      .topAppCountDownForm{
+        width: 550px;
+        max-width: 100%;
+        margin: 55px auto;
+      }
+      .topAppImage img{
+        margin-top: 0;
+        margin-bottom: -150px;
+      }
+      .android-app{
+        left: -30%;
+      }
+      .app-iphone{
+        left: 14%;
+      }
+      .howItWorksGraphic{
+        width: calc(100% - 400px);
+      }
+      .howItWorksContent{
+        width: 400px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .listItemNo{
+        width: 80px;
+      }
+      .listItemContent{
+        width: calc(100% - 80px);
+      }
+      .video-dots-2{
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 667px) {
+      .bgDotsBlue,
+      .bgDotsPurple{
+        display: none;
+      }
+      .howItWorksAppPageBox .app-lines{
+        display: none
+      }
+      .appPage .topTitle{
+        font-size: 36px;
+        line-height: 44px;
+      }
+      .topText{
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .topAppImage{
+        width: 500px;
+        background-size: 100%;
+      }
+      .topAppForm{
+        background: transparent;
+        height: auto;
+        flex-wrap: wrap;
+      }
+      .topAppFormInputContainer, .topAppFormSubmitContainer{
+        width: 100%;
+      }
+      .topAppFormInput{
+        
+      }
+      .topAppFormInput{
+        border-radius: 6px;
+        height: 58px;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        background: #fff;
+      }
+      .topAppFormSubmit{
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 0;
+      }
+      .midCountDownApp .topAppCountDownFormText{
+        margin-bottom: 10px;
+      }
+      .articleTitle h4{
+        font-size: 12px;
+        line-height: 19px;
+      }
+      .articleSymbol img{
+        max-width: 40px;
+        max-height: 48px;
+      }
+      .articleSymbol{
+        
+        left: -10px;
+        bottom: -15px;
+      }
+      .articleItem:nth-child(even) .articleSymbol{
+
+      }
+      .howItWorksGraphic .app-dots-1,
+      .howItWorksGraphic .app-dots-2{
+        display: none;
+      }
+      .howItWorksAppPageBox{
+        flex-wrap: wrap;
+        height: auto;
+        width: auto;
+      }
+      .howItWorksGraphic{
+        order: 2;
+        width: 100%;
+        height: auto;
+        padding-bottom: 35px;
+        text-align: center;
+      }
+      .howItWorksList li{
+        flex-wrap: wrap;
+      }
+      .listItemNo{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-top: 30px;
+      }
+      .listItemContent{
+        width: 100%;
+      }
+      .android-app{
+        left: auto;
+        position: static;
+        margin-right: -10%;
+      }
+      .app-iphone{
+        left: auto;
+        position: static;
+        margin-left: -10%;
+      }
+      .howItWorksGraphic img{
+        max-width: 165px;
+      }
+      .videoContainer{
+    margin-top: 150px;
+    max-width: calc(100% - 30px);
+  }
+
+    }
+    @media only screen and (max-width: 400px) {
+      .android-app{
+        margin-right: -15%;
+      }
+      .app-iphone{
+        margin-left: -15%;
+      }
+      .bottomArticles{
+        margin-top: 100px;
+      }
+      .articleItem:nth-child(even){
+        margin-top: 50px;
+      }
+    }
+    @media only screen and (max-width: 360px) {
+      .android-app{
+        max-width: 150px;
+      }
+      .app-iphone{
+        max-width: 150px;
+      }
+      .countDown, .countDown span{
+        font-size: 40px;
+
+      }
+    }
+}

@@ -1,0 +1,62 @@
+.buildImageBnr{
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.bIBtitle{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.8);
+    font-size: 36px;
+}
+.biBsubtitle{
+    color: #fff;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.biBbutton{
+    max-width: 150px;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.biBbutton:hover{
+    opacity: .9;
+}
+.biBContainer{
+    text-align: center;
+    max-width: 95%;
+    position: relative;
+    z-index: 1;
+}
+
+.buildImageBnr:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.10);
+    z-index: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .bIBtitle{
+        font-size: 24px;
+    }
+    .biBsubtitle{
+        font-size: 14px;
+    }
+}

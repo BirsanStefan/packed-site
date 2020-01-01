@@ -1,0 +1,123 @@
+.groupHolidayBg {
+    background-image: linear-gradient(rgb(253, 251, 250), rgb(243, 243, 255));
+    height: auto;
+    z-index: 1;
+    position: relative;
+    .feefo {
+        float: right;
+        margin: 30px;
+        @media only screen and (max-width: 768px){
+            display: none;
+        }
+    }
+    .groupHolidayContent {
+        padding-top: 90px;
+        @media only screen and (max-width: 768px){
+            padding-top: 50px;
+        }
+        h1{
+            font-family: 'Rubik', sans-serif;
+            font-weight: bold;
+            font-size: 56px;
+            color: #464860;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 0;
+            @media only screen and (max-width: 768px) {
+                font-size: 54px;
+            }
+            @media only screen and (max-width: 420px){
+                font-size: 36px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-bottom: 20px;
+            }
+        }
+        h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: #464860;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 0;
+            @media only screen and (max-width: 420px){
+                font-size: 16px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+    .buttonsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .buttonsContainer.center {
+        justify-content: center;
+        .mswButton {
+            min-width: 210px;
+            height: 58px;
+            line-height: 58px;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            margin-right: 20px;
+            border-radius: 10px;
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: box-shadow .25s linear;
+            @media only screen and (max-width: 400px){
+                margin-bottom: 15px;
+            }
+            svg {
+                width: 25px;
+                height: 25px;
+                fill: #fff;
+                margin-right: 8px;
+            }
+        }
+        .purpleBg {
+            background: #4f2d87;
+            width: 210px;
+            height: 58px;
+            border-radius: 10px;
+        }
+        .cyanBg {
+            background: #40d8c2;
+        }
+        a, .btn-link {
+            color: #fff;
+        }
+    }
+
+    .feefoTablet {
+        display: none;
+        @media only screen and (max-width: 768px) {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+        } 
+    }
+
+    .teamImage {
+        text-align: center;
+        margin-top: 50px;
+        img.teamImgItemDesktop {
+            max-width: 850px;
+            width: 100%;
+            margin-bottom: -5px;
+        }
+        img.teamImgItemTablet {
+            display: none;
+        }
+    }
+}
+
+
+
+
+    

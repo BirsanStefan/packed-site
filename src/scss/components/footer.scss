@@ -1,0 +1,165 @@
+.siteFooter{
+	padding-top: 100px;
+}
+.footerNavs{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	@media only screen and (max-width: 991px){
+		flex-wrap: wrap;
+		max-width: 700px;
+		margin: auto;
+		.footerNav1{
+			width: 100%;
+			margin-bottom: 20px;
+			text-align: center;
+			.footerLogo{
+				max-width: 210px;
+			}
+			.mswButton{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	@media only screen and (max-width: 567px){
+		.footerNav2,
+		.footerNav3,
+		.footerNav4{
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.footerNav1{
+	width: 210px;
+	.footerLogo{
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	.mswButton{
+		margin-bottom: 20px;
+		width: 210px;
+		height: 50px;
+		font-size: 14px;
+		.buttonIcon{
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.footerNavTitle{
+		margin-top: 30px;
+	}
+}
+
+.footerNavTitle{
+	font-family: "Montserrat";
+	font-weight: 600;
+	color: $dark;
+	font-size: 16px;
+}
+.footerNavList{
+	padding-left: 0;
+	list-style-type: none;
+}
+.footerNavLink{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: $dark;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	transition: all .25s linear;
+	&:hover{
+		color: $cyan;
+	}
+}
+.footerBottom{
+	border-top: 1px solid $purple;
+	margin-top: 25px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.androidAppButton{
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+	.iosAppButton{
+		vertical-align: middle;
+		margin-left: 20px;
+	}
+	.socialIcon{
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+	@media only screen and (max-width: 991px){
+		flex-wrap: wrap;
+		padding-top: 20px;
+		padding-bottom: 40px;
+		.fSocial,
+		.fdownloadApp,
+		.fatolProtected{
+			width: 100%;
+			margin-top: 25px;
+		}
+	}
+	.fdownloadApp{
+		flex-wrap: wrap;
+		padding-left: 50px;
+		.footerNavTitle{
+			width: 100%;
+			display: inline-block;
+		}
+		@media only screen and (max-width: 991px){
+			padding-left: 0;
+		}
+	} 
+	.androidAppButton, 
+	.iosAppButton{
+		display: inline-block;
+		margin-left: 0;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+}
+.fSocial{
+	display: flex;
+	align-items: center;
+}
+.fatolProtected{
+	picture{
+		img{
+			height: 50px;
+			vertical-align: middle;
+			margin-left: 15px;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.siteFooter{
+		text-align: center;
+	}
+	.footerNavs .footerNav1 .mswButton{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fSocial{
+		justify-content: center;
+	}
+}
+
+.rebranded{
+	text-align: center;
+	font-family: "Montserrat";
+  font-weight: 600;
+  color: #464860;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}

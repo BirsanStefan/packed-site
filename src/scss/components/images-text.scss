@@ -1,0 +1,33 @@
+.resortDescriptionItem {
+    display: -o-flex;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.resortDescriptionLeftImage {
+    border-left: 1px solid #ebebeb;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    align-items: center;
+}
+.resortDescriptionRight {
+    padding-left: 25px;
+    padding-right: 60px;
+    border-left: 1px solid #ebebeb;
+    width: 90%;
+    margin-bottom: 20px;
+    h3{
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #464860;
+        margin-bottom: 10px;
+    }
+    p{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+}

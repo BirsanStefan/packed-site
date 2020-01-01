@@ -1,0 +1,59 @@
+section.whyMySwft {
+    margin-top: 100px;
+}
+div.whyMySwftBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.whyMySwftLeft {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #464860;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+}
+.whyMySwftTitle.sectionTitle {
+    text-align: left!important;
+}
+.whyMySwftTitleMobile {
+    display: none;
+}
+.whyMySwftRight {
+    width: 48%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .whyMySwftLeft {
+        width: 100%;
+        order: 1;
+    }
+    .whyMySwftRight {
+        width: auto;
+        margin: auto;
+        order: 0;
+    }
+    .whyMySwftTitle {
+        display: none;
+    }
+    .whyMySwftTitleMobile {
+        display: block;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 38px;
+        color: #464860;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .whyMySwftDescr {
+        text-align: center;
+    }
+}

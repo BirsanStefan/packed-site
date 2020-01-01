@@ -1,0 +1,117 @@
+
+.messageBg {
+	background: #f8f8ff;
+	min-height: 280px;
+	padding-top: 5px;
+	width: 100%;
+	margin-bottom: 40px;
+	margin-left: 0;
+	@media only screen and (max-width: 991px) {
+		margin-bottom: 0;
+	}
+	@media only screen and (max-width: 768px) {
+		height: auto;
+	}
+	@media only screen and (max-width: 667px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.messageTable {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 280px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		@media only screen and (max-width: 667px) {
+			max-width: 100%;
+		}
+		@media only screen and (max-width: 360px) {
+			width: auto;
+		}
+		.messageMiddle {
+			text-align: center;
+			display: block;
+			max-width: 100%;
+			@media only screen and (max-width: 667px) {
+				max-width: 100%;
+			}
+			@media only screen and (max-width: 768px) {
+				text-align: center;
+				display: block;
+				max-width: 100%;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			@media only screen and (max-width: 360px) {
+				width: auto;
+			}
+			.messageTitleItem {
+				width: 800px;
+				max-width: 100%;
+				@media only screen and (max-width: 768px) {
+					width: 700px;
+					max-width: 100%;
+				}
+				@media only screen and (max-width: 360px) {
+					width: auto;
+				}
+				.messageTitle {
+					font-family: 'Rubik', sans-serif;
+					font-weight: 500;
+					color: #464860;
+					font-size: 26px;
+                    text-align: center;
+                    margin-bottom: 10px;
+					@media only screen and (max-width: 768px) {
+						font-size: 20px;
+					}
+					@media only screen and (max-width: 667px) {
+						font-size: 18px;
+					}
+				}
+			}
+			.messageButtons {
+				margin-top: 30px;
+				margin-bottom: 30px;
+				@media only screen and (max-width: 768px) {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+.messageTableCTAs{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+.messageMiddle{
+	text-align: center;
+	display: block;
+	max-width: 100%;
+}
+
+
+
+.messageButtons .buttonsContainer {
+	justify-content: center;
+}
+
+@media only screen and (max-width: 667px) {
+	.message-bottom-dots {
+		display: none;
+	}
+}
+.messageBgSimple .messageTable{
+	padding-top: 0;
+	.messageMiddle .messageButtons{
+		margin-top: 0;
+	}
+} 

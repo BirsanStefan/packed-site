@@ -1,0 +1,82 @@
+.skiWeekends {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+.skiWeekendsRight {
+    width: 45%;
+    padding-right: 20px;
+    text-align: center;
+}
+.skiWeekendsLeft {
+    padding-left: 20px;
+    width: 55%;
+}
+.girlsPageStartPlanning .skiWeekendsLeftTitle {
+    margin-bottom: 15px;
+}
+.skiWeekendsLeftText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #464860;
+}
+
+.skiWeekendsImage {
+    max-height: 70%;
+    padding-left: 20px;
+}
+.skiTitleItem {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #ffffff;
+}
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.learnMoreBtn{
+    justify-content: center;
+}
+
+.girlsPageStartPlanning .buttonContainer{ 
+    justify-content: center;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1600px) {
+    .skiWeekends {
+        display: flex;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Section - Ski Weekends */
+    .skiWeekendsRight {
+        width: 100%;
+    }
+    .skiWeekendsLeft {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .skiWeekendsLeftTitle {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .skiWeekendsLeftText {
+        text-align: center;
+    }
+}

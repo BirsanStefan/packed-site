@@ -1,0 +1,22 @@
+.girlsPageConvinced{
+    margin-top: 100px;
+}
+.girlsPageStartPlanning .skiWeekends {
+    margin-bottom: 0;
+    @media only screen and (max-width: 767px) {
+			margin-top: 20px;
+			.skiWeekendsLeftTitle{
+				font-size: 28px;
+			}
+    }
+}
+
+.girlsPageStartPlanning{
+	.skiWeekendsRight{
+		img{
+			@media only screen and (max-width: 767px) {
+				padding-left: 0;
+			}
+		}
+	}
+}

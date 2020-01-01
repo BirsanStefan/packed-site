@@ -1,0 +1,397 @@
+.siteHeader{
+	position: relative;
+	z-index: 999;
+	box-shadow: 0px 5px 54px rgba(142, 142, 142, 0.22);
+	.headerContainer{
+		height: 110px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		@media only screen and (max-width: 1280px){
+			max-width: calc(100% - 130px);
+		}
+		@media only screen and (max-width: 1023px){
+			max-width: calc(100% - 70px);
+			height: 60px;
+		}
+
+		@media only screen and (max-width: 667px){
+			max-width: calc(100% - 60px);
+		}
+	}
+	@media only screen and (max-width: 1023px){
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+	}
+}
+
+body{
+	@media only screen and (max-width: 1023px){
+		padding-top: 60px;
+	}
+}
+
+
+.logo{
+	width: 250px;
+	@media only screen and (max-width: 1023px){
+		width: 125px;
+	}
+}
+
+.mainNav{
+	font-family: "Montserrat";
+	width: calc(100% - 250px);
+	max-width: 700px;
+	height: 100%;
+	@media only screen and (max-width: 1023px){
+		display: none;
+	}
+}
+
+.mainMenu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 100%;
+}
+
+.mainMenuItem{
+	list-style-type: none;
+	height: 100%;
+}
+
+.mainMenuLink{
+	font-weight: 500;
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-decoration: none;
+	color: $dark;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	transition: all .25s linear;
+	&.active{
+		color: $cyan;
+	}
+	&:hover{
+		color: $cyan;
+	}
+}
+
+.subMenuContainer{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	width: 460px;
+	background-color: #fff;
+	right: 0;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 3px 30px 20px rgba(142, 142, 142, 0.22);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .25s linear;
+	font-size: 14px;
+}
+
+.blogItemMenu{
+	position: relative;
+}
+
+.blogSubmenu{
+	width: 200px;
+	right: auto;
+	left: -20px;
+}
+
+.subMenuActive .subMenuContainer{
+	visibility: visible;
+	opacity: 1;
+}
+
+.subMenuListWrap{
+	margin-left: 15px;
+	margin-right: 15px;
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		height: 175px;
+		width: 1px;
+		background: #dedede;
+		top: 25px;
+		right: -60px;
+	}
+	&:last-child:after{
+		display: none;
+	}
+}
+
+.subMenuTitle{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-weight: 600;
+	color: #606176;
+	padding: 15px 0;
+}
+
+.submenuList{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.subMenuLink{
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #606176;
+	transition: all .25s linear;
+	&:hover{
+		color: #40d8c2;
+	}
+}
+
+.appLinkMobile{
+	display: none;
+}
+
+.subMenuListWrap3{
+	font-size: 0;
+	img{
+		position: relative;
+		left: -10px;
+	}
+}
+
+
+.mobileButton{
+	display: none;
+	@media only screen and (max-width: 1023px){
+		display: block;
+	}
+}
+
+.mobileButton {
+	width: 36px;
+	height: 32px;
+	border-radius: 2px;
+	color: #b61c1c;
+	text-align: center;
+	font-size: 17px;
+	padding-top: 2px;
+	position: relative;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	z-index: 1000;
+	top: -3px;
+}
+.mobileButton span{
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 80%;
+	background: #4f2d87;
+	border-radius: 4px;
+	opacity: 1;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.mobileButton span:nth-child(1) {
+	top: 9px;
+
+}
+
+.mobileButton span:nth-child(2),.mobileButton span:nth-child(3) {
+	top: 18px;
+	width: 60%;
+	margin-left: 10%;
+}
+
+.mobileButton span:nth-child(4) {
+	top: 27px;
+}
+
+.mobileMenuActive{
+	.mobileButton span:nth-child(1) {
+		top: 16px;
+		width: 0%;
+		left: 50%;
+	}
+	.mobileButton span:nth-child(2) {
+		transform: rotate(45deg);
+		width: 80%;
+	}
+	.mobileButton span:nth-child(3) {
+		transform: rotate(-45deg);
+		width: 80%;
+	}
+	.mobileButton span:nth-child(4) {
+		width: 80%;
+		top: 16px;
+		width: 0%;
+		left: 50%;
+	}
+
+	.logo{
+		z-index: 99;
+	}
+
+	@media only screen and (max-width: 1023px){
+
+
+		.siteHeader .headerContainer{
+			// max-width: calc(100% - 60px);
+			position: static;
+		}
+
+		.mainNav{
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			height: calc(100vh - 60px);
+			position: absolute;
+			left: 0;
+			background: #fff;
+			top: 60px;
+			overflow-y: auto;
+		}
+
+		.mainMenu{
+			padding-left: 0;
+			display: flex;
+			flex-wrap: wrap;
+			height: auto;
+			border-top: 1px solid $purple;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.mainMenuItem{
+			width: 100%;
+			height: auto;
+			&:last-child{
+				.mainMenuLink{
+					border-bottom: none;
+				}
+			}
+		}
+
+		.mainMenuLink{
+			height: 50px;
+			width: 100%;
+			font-weight: 700;
+			border-bottom: 1px solid $purple;
+			padding-left: 35px;
+			&:hover{
+				background-color: $purple;
+				color: #fff;
+			}
+		}
+
+		.subMenuContainer{
+			width: 100%;
+			flex-wrap: wrap;
+			padding-left: 0;
+			padding-right: 0;
+			position: static;
+			display: none;
+			visibility: visible;
+			opacity: 1;
+			box-shadow: none;
+		}
+
+		.subMenuListWrap{
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+			&:after{
+				display: none;
+			}
+		}
+
+		.hasSubmenu .mainMenuLink{
+			position: relative;
+			&:after{
+				content: "";
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				border: solid $purple;
+				border-width: 0 2px 2px 0;
+				padding: 3px;
+				transform: rotate(45deg);
+				transition: all .25s linear;
+				position: absolute;
+				top: 20px;
+				right: 45px;
+			}
+			&:hover{
+				&:after{
+					border-color: #fff;
+				}
+			}
+		}
+
+		.subMenuActive{
+			.mainMenuLink{
+				&:after{
+					transform: rotate(-135deg);
+					top: 23px;
+				}
+			}
+			.subMenuContainer{
+				display: block;
+			}
+		}
+
+		.subMenuTitle{
+			padding-left: 50px;
+			margin-top: 0;
+			margin-bottom: 0;
+			height: 50px;
+			border-bottom: 1px solid rgba(80, 45, 135, 0.3);
+		}
+
+		.subMenuLink{
+			height: 50px;
+			display: flex;
+			align-items: center;
+			padding-left: 50px;
+			border-bottom: 1px solid rgba(80, 45, 135, 0.3);
+		}
+
+		.appLinkMobile{
+			display: flex;
+			align-items: center;
+			height: 60px;
+			font-size: 16px;
+			padding-left: 50px;
+			color: #606176;
+			border-bottom: 1px solid $purple;
+		}
+		
+		.imageApp{
+			display: none;
+		}
+
+	}
+} 
+
+

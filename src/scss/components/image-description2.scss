@@ -1,0 +1,152 @@
+section.seriously {
+    margin-top: 100px;
+}
+h3.seriouslyTitle {
+    text-align: center;
+    font-size: 38px;
+    color: #464860;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+div.seriouslyBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .seriouslyRight .sectionTitle{
+        padding-left: 0;
+        @media only screen and (max-width: 420px) {
+            text-align: center;
+        }
+    }
+}
+.seriouslyLeft {
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -50px;
+}
+.seriouslyLeftImgTablet {
+    display: none;
+}
+.seriouslyRight {
+    width: 50%;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 0px 5px 54px rgba(142,142,142,0.22);
+    padding: 20px 30px;
+    margin-left: -30px;
+    border-radius: 7px;
+}
+.seriouslyBottomDescrItemTablet {
+    display: none;
+}
+.seriouslyBottomDescr {
+    margin-top: 50px;
+    padding: 20px 30px;
+}
+.seriouslyBottomDescrItem {
+    text-align: center;
+}
+.seriouslyLink {
+    color: #6be2d1;
+    text-decoration: underline;
+}
+div.seriouslyListImages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.seriouslyElement {
+    text-align: center;
+    max-height: 100px;
+}
+.seriouslyImg {
+    max-height: 60px;
+    margin-bottom: 20px;
+}
+    
+/* Responsive */
+@media only screen and (max-width: 1155px){
+    div.seriouslyListImages{
+        justify-content: center;
+    }
+    .seriouslyElement{
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .seriouslyLeft {
+        width: 100%;
+    }
+    .seriouslyLeftImg {
+        display: none;
+    }
+    .seriouslyLeftImgTablet {
+        display: block;
+        width: 100%;
+    }
+    .seriouslyRight {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .seriouslyRightDescr {
+        text-align: center;
+    }
+    .seriouslyBottomDescrItemTablet {
+        display: block;
+        color: #464860;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    .seriouslyBottomDescr {
+        display: none;
+    }
+    .seriouslyBottomDescrItem {
+        display: none;
+    }
+    div.seriouslyListImages {
+        margin-top: 40px;
+    }
+    .seriouslyElement {
+        width: 32%;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .seriouslyLeft {
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .seriouslyRight {
+        width: 100%;
+        padding: 20px 15px;
+        .textContent{
+            text-align: center;
+        }
+    }
+    .seriouslyListImages {
+        display: block;
+    }
+    .seriouslyElement {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 10px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .seriouslyImg {
+        width: 20px;
+        margin-right: 10px;
+    }
+}

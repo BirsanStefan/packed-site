@@ -1,0 +1,260 @@
+.theBestOf{
+    width: 1140px;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 50px;
+}
+.containerTabsTheBest .navTabsTop {
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.containerTabsTheBest .navTabsTop > li {
+    margin-bottom: -1px;
+    width: 50%;
+    text-align: center;
+}
+.containerTabsTheBest .navTabsTop > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464860;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+}
+.containerTabsTheBest .navTabsTop > li > a:hover{
+    background-color: transparent;
+}
+.containerTabsTheBest .navTabsTop > li.active > a, .containerTabsTheBest .navTabsTop > li.active > a:hover, .containerTabsTheBest .navTabsTop > li.active > a:focus {
+    color: #40d8c2;
+    cursor: default;
+    background-color: #fff;
+    border-bottom: 3px solid #40d8c2;
+    margin-bottom: -1px;
+}
+.containerTabsTheBest .navTabsTop > li.active > a{
+    color: #40d8c2;
+    font-weight: 700;
+}
+.containerTabsTheBest .navTabsTheBestContent {
+    width: 100%;
+    min-height: 510px;
+    position: relative;
+}
+.containerTabsTheBest .navTabsTheBestContent > .navTabsTheBestPane {
+    display: none;
+}
+.containerTabsTheBest .navTabsTheBestContent > .navTabsTheBestPane.active {
+    display: block;
+    padding: 2.5% 0 0;
+    position: relative;
+}
+.containerTabsTheBest .navTabsTheBestContent > .active {
+    display: block;
+}
+.navTabsTheBest:after,
+.navTabsTheBest:before{
+    display: none !important;
+}
+.tabsContentElement{
+    display: flex;
+    border-radius: 6px;
+    box-shadow: 0px 5px 54px rgba(142,142,142,0.22);
+}
+.tabsContentTheBestImage{
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    height: 510px;
+}
+.tabsContentTheBestContent{
+    width: 50%;
+    padding: 35px 45px;
+}
+.tabsContentTheBestIcon{
+    width: 48px;
+    margin-bottom: 20px;
+}
+.tabsContentTheBestText{
+    height: 360px;
+    overflow-y: auto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464860;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.tabsArrowItem{
+    width: 54px;
+    height: 54px;
+    background-color: #40d8c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.tabsArrowItem:hover{
+    background-color: #26a291;
+}
+.tabsArrows{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.tabsArrowItem svg{
+    fill: #fff;width: 18px;height: 18px;
+}
+.navTabsBottom{
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    left: calc(50% + 40px);
+    padding-inline-start: 0;
+}
+.navTabsBottom:after{
+    display: none;
+}
+.navTabsBottom li{
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.navTabsBottom li a{
+    width: 43px;
+    height: 3px;
+    background-color: #ebebeb;
+    padding: 0;
+    border-top: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    box-sizing: content-box;
+}
+.navTabsBottom li.active a{
+    background-color: #40d8c2;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+}
+
+@media only screen and (min-width: 1281px) {
+    /* width */
+    .tabsContentTheBestContent ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    /* Track */
+    .tabsContentTheBestContent ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+
+    /* Handle */
+    .tabsContentTheBestContent ::-webkit-scrollbar-thumb {
+      background: #888; 
+    }
+
+    /* Handle on hover */
+    .tabsContentTheBestContent ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+    .tabsContentTheBestText{
+        padding-right: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .containerTabsTheBest .navTabsTop > li > a{
+        font-size: 13px;
+    }
+    .tabsContentTheBestText{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .containerTabsTheBest .navTabsTop{
+        border-bottom: none;
+    }
+    .containerTabsTheBest .navTabsTop > li{
+        display: none;
+    }
+    .containerTabsTheBest .navTabsTop > li.active{
+        display: block;
+        width: calc(100% - 100px);
+        margin: auto;
+    }
+    .containerTabsTheBest .navTabsTop > li.active a{
+        border-bottom: none;
+        color: #464860;
+    }
+    .containerTabsTheBest .navTabsTop > li > a{
+        font-size: 16px;
+    }
+    .tabsContentTheBestText{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .tabsArrows{
+        bottom: auto;
+        top: -44px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .tabsArrowItem{
+        border: 1px solid #40d8c2;
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .tabsArrowItem:hover{
+        background: #fff;
+    }
+    .tabsArrowItem svg{
+        fill: #40d8c2;
+        width: 13px;
+        height: 13px;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    .tabsContentElement{
+        flex-wrap: wrap;
+    }
+    .tabsContentTheBestImage{
+        width: 100%;
+        height: 300px;
+    }
+    .tabsContentTheBestContent{
+        width: 100%;
+        text-align: center;
+    }
+    .tabsContentTheBestIcon{
+        margin: 50px auto 40px;
+    }
+    .navTabsBottom{
+        left: 0;
+        bottom: auto;
+        top: 350px;
+        width: 100%;
+        justify-content: center;
+    }
+    .tabsContentTheBestContent{
+        padding: 35px 15px;
+    }
+    .containerTabsTheBest .navTabsTop{
+        padding-left: 0;
+    }
+}

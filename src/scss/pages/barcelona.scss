@@ -1,0 +1,152 @@
+.resort {
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #464860;
+    position: relative;
+}
+/* Title */
+.resortTitleItem {
+    justify-items: center;
+    max-width: 100%;
+}
+/* Resorts */
+.resortDescriptionWrap {
+    height: auto;
+}
+
+.resortDescriptionRightTitle.bold {
+    font-weight: bold;
+}
+
+.resortImg.bgDotsBlue {
+    position: absolute;
+    left: -50px;
+}
+
+
+section.whypacked {
+    margin-top: 100px;
+}
+div.whypackedBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+.whypackedLeft {
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.whypackedTitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: #464860;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.whypackedTitleMobile {
+    display: none;
+}
+.whypackedLeft p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #464860;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+.whypackedRight {
+    width: 48%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .whypackedLeft {
+        width: 100%;
+        order: 1;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .whypackedRight {
+        width: auto;
+        margin: auto;
+        order: 0;
+    }
+    .whypackedTitle {
+        display: none;
+    }
+    .whypackedTitleMobile {
+        display: block;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 38px;
+        color: #464860;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .whypackedDescr {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .resortDescriptionRight {
+        padding-right: 30px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .resortDescriptionRight {
+        padding-right: 0px;
+    } 
+}
+@media only screen and (max-width: 667px) {
+    .resortDots{
+        display: none;
+    }
+    
+    /* Resorts */
+    .resortDescriptionItem .resortDescriptionLeftImage {
+        display: block;
+        width: 100%;
+        padding-bottom: 15px;
+        border-left: none;
+        text-align: center;
+    }
+    .resortDescriptionItem .resortDescriptionRight {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+        border-left: none;
+    }
+    .resortDescriptionItem .resortDescriptionRight p{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .topRegionsResorts {
+        height: auto;
+        max-width: 400px;
+        display: block;
+        margin-top: 80px;
+    }
+    .regionsGridList {
+        height: auto;
+    }
+    .backtothetop {
+        width: 400px;
+    }
+    .resortsGridItemWrap {
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

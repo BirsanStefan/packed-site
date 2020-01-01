@@ -1,0 +1,239 @@
+/*Banner START*/
+/* .topArea{
+    margin:auto;
+    width: calc(100% - 130px);
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 150px;
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    height: 740px;
+    @media only screen and (max-width: 1400px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+} */
+.topAreaWithImage{ 
+    padding-bottom: 0;
+    @media only screen and (max-width: 667px){
+        width: calc(100% - 30px);
+        width: 100%;
+    }
+    .topAreaImage{
+        height: 740px;
+        width: 100%;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-position: center;
+    }
+    .topContent{
+        position: absolute;
+        left: 0;
+        right: 0;
+        color: #fff;
+        font-family: "Rubik";
+        @media only screen and (max-width: 1023px){
+            top: 50px;
+        }
+        .topTitle{
+            font-size: 56px;
+            line-height: 62px;
+            max-width: 660px;
+            margin-top: 0;
+            font-family: "Rubik";
+            text-shadow: 2px 2px 8px #000000;
+            @media only screen and (max-width: 1400px){
+                max-width: 80%;
+            }
+            @media only screen and (max-width: 1023px){
+                max-width: 100%;
+                text-align: center;
+            }
+            @media only screen and (max-width: 667px){
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+        .topText{
+            font-size: 25px;
+            font-weight: 400;
+            margin-top: 25px;
+            line-height: 1.5;
+            font-family: "Rubik";
+            text-shadow: 1px 1px 5px #000000;
+            @media only screen and (max-width: 1023px){
+                text-align: center;
+                font-size: 20px;
+            }
+            @media only screen and (max-width: 667px){
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .buttonsContainer{
+        margin-top: 0;
+    }
+    .feefo{
+        position: absolute;
+        top: -90px;
+        right: 0px;
+        @media only screen and (max-width: 1023px){
+            position: static;
+            margin: 40px auto;
+            text-align: center;
+        }
+        @media only screen and (max-width: 1023px){
+            position: static;
+            margin: 40px auto;
+            text-align: center;
+        }
+        @media only screen and (max-width: 991px){
+            display: block;
+        }
+    }
+}
+
+/*Banner END*/
+
+
+
+
+
+/*Press START*/
+
+.partners{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .press {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+        a{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        img {
+            filter: grayscale(1) opacity(0.2);
+            max-height: 60px;
+            padding-left: 15px;
+            padding-right: 15px;
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+    h3{
+        margin-bottom: 0;
+    }
+    @media only screen and (max-width: 1280px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .partners .sContainer{
+        flex-wrap: wrap;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+        a{
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-bottom: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .appPageTop .sContainer{
+        max-width: 90%;
+        text-align: center;
+        position: static;
+        margin-top: 100px;
+    }
+}
+/*Press END*/
+
+
+/*Click for Messenger&Whatsapp START*/
+.cityMessBg .messageButtons{
+    margin-top: 0 !important;
+}
+/*Click for Messenger&Whatsapp END*/
+
+
+/*Other products START*/
+div.photoGridTwo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    div.photoGridTwoElement {
+        width: 32%;
+        height: 330px;
+        position: relative;
+        box-shadow: 0px 0px 20px 15px #8e8e8e22;
+        border-radius: 7px;
+        margin-bottom: 25px;
+        transition: margin .15s linear;
+        overflow: hidden;
+        &:hover {
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 48%;
+        }
+        @media only screen and (max-width: 400px) {
+            width: 100%;
+        }
+        .photoGridTwoPicture {
+            height: 255px;
+            display: block;
+            background-size: cover;
+            background-position: center;
+            border-radius: 7px 7px 0 0;
+        }
+        .photoGridTwoDescr {
+            padding: 30px;
+            .photoGridTwoTitle {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                margin: 0;
+                color: #464860;
+                &:hover {
+                    color: #00f6ff;
+                    cursor: pointer;
+                }
+                a {
+                    text-decoration: none;
+                    color: #502d87;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1200px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+/*Other products END*/
+
+.benefitTwoCol {
+    width: 50%;
+    padding-right: 40px;
+    box-sizing: border-box;
+    @media only screen and (max-width: 991px) {
+        width: 100%;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,191 @@
+/* Photo Grid Top */
+section.photoGridOne {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    @media only screen and (max-width: 1200px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+section.photoGridOne:after,
+section.photoGridOne:before{
+    display: none;
+}
+.photoGridOneElement {
+    width: 32%;
+    position: relative;
+    font-size: 0;
+    a{
+        display: block;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.photoGridOnePicture {
+    width: 100%;
+    height: auto;
+}
+.photoGridOneText {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.photoGridOneElement:hover {
+    box-shadow: 1px 3px 15px 5px #8e8e8e31;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Photo Grid - Top */
+    .photoGridOneElement{
+        width: 48%;
+    }
+    .photoGridOneElement:nth-child(3){
+        width: 100%;
+        margin-top: 25px;
+        height: 300px;
+    }
+    .photoGridOneElement:nth-child(3) .photoGridOnePicture{
+        width: 100%;
+        height: 100%!important;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* Photo Grid Top */
+    .photoGridOne {
+        display: block;
+    }
+    .photoGridOneElement {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .photoGridOnePicture {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .photoGridOneElement:nth-child(3) {
+        margin-top: 0;
+    }
+}
+
+/*Italy-Switzerland-Bulgaria START*/
+section.states {
+    margin-bottom: 50px;
+}
+div.statesList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    @media only screen and (max-width: 1200px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+div.statesList::before,
+div.statesList::after {
+    display: none;
+}
+.statesElement {
+    position: relative;
+
+    @media only screen and (max-width: 420px) {
+        border-radius: 5px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.statesElement:nth-child(4), .statesElement:nth-child(5) {
+    width: 48%;
+    margin-top: 25px;
+    height: 250px;
+}
+.statesElement:nth-child(4) .statesImage, .statesElement:nth-child(5) .statesImage {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+.statesElement:nth-child(1), .statesElement:nth-child(2), .statesElement:nth-child(3), .statesElement:nth-child(6), .statesElement:nth-child(7), .statesElement:nth-child(8) {
+    width: 32%;
+    margin-top: 25px;
+    height: 250px;
+}
+.statesElement:nth-child(1) .statesImage, .statesElement:nth-child(2) .statesImage, .statesElement:nth-child(3) .statesImage, .statesElement:nth-child(6) .statesImage, .statesElement:nth-child(7) .statesImage, .statesElement:nth-child(8) .statesImage {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+.statesImage {
+    max-width: 100%;
+    border-radius: 7px;
+}
+.statesTitle {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.photoGridOneElement:hover {
+    box-shadow: 1px 3px 15px 5px #8e8e8e31;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1600px) {
+    
+}
+@media only screen and (max-width: 1023px) {}
+@media only screen and (max-width: 991px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    .statesElement:nth-child(1), 
+    .statesElement:nth-child(2), 
+    .statesElement:nth-child(3),
+    .statesElement:nth-child(4), 
+    .statesElement:nth-child(5),
+    .statesElement:nth-child(6), 
+    .statesElement:nth-child(7), 
+    .statesElement:nth-child(8) {
+        width: 48%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    /* States - Photo Grid - Bottom */
+    .statesElement:nth-child(1), 
+    .statesElement:nth-child(2), 
+    .statesElement:nth-child(3),
+    .statesElement:nth-child(4), 
+    .statesElement:nth-child(5),
+    .statesElement:nth-child(6), 
+    .statesElement:nth-child(7), 
+    .statesElement:nth-child(8) {
+        width: 100%;
+    }
+}
+/*Italy-Switzerland-Bulgaria END*/

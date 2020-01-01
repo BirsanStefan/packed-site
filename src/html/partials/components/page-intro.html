@@ -1,0 +1,20 @@
+<section class="imageDescr container_12">
+    <h3 class="sectionTitle" data-aos="fade-right" data-aos-once="true">
+        @@title
+    </h3>
+
+    <div class="stepBox container_12">
+        <div class="stepLeft">
+            <picture class="regionsGridImg">
+              <source srcset="/assets/images/webp/@@image.webp" type="image/webp">
+              <source srcset="/assets/images/@@term/@@image.@@term" type="image/@@term">
+              <img data-aos="fade-right" data-aos-once="true" src="/assets/images/@@term/@@image.@@term" alt="@@title">
+            </picture>
+        </div>
+        <div class="stepRight textContent" data-aos="fade-up" data-aos-once="true">
+            @@for(var i = 0; i < text.length; i++) {
+              <p>`+text[i].paragraph+`</p>
+            }
+        </div>
+    </div>
+</section>

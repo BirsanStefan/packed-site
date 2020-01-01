@@ -1,0 +1,78 @@
+section.notCompletelyConvinced {
+    margin-top: 50px;
+    h3.sectionTitle{
+        margin-bottom: 10px;
+    }
+    .notCompletelyConvincedDescrBox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media only screen and (max-width: 768px) {
+            display: block;
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: 400px) {
+            display: block;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .notCompletelyConvincedDescElement {
+            width: 48%;
+            padding-top: 10px;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            @media only screen and (max-width: 400px) {
+                width: 100%;
+            }
+            .notCompletelyConvincedDescItem {
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                font-style: italic;
+                color: #464860;
+                padding-bottom: 10px;
+                line-height: 1.4;
+                @media only screen and (max-width: 768px) {
+                    font-size: 16px;
+                }
+                @media only screen and (max-width: 400px) {
+                    font-size: 16px;
+                }
+            }
+            .notCompletelyConvincedInfo {
+                border-top: 1px solid #adaeba50;
+                padding-top: 20px;
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                .notCompletelyConvincedAuthor {
+                    font-size: 14px;
+                    font-family: 'Montserrat', sans-serif;
+                    color: #464860;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+    .notCompletelyConvincedGF {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        @media only screen and (max-width: 768px) {
+            margin-top: 50px;
+        }
+        @media only screen and (max-width: 400px) {
+            margin-top: 50px;
+            display: block;
+            text-align: center;
+        }
+    }
+}
