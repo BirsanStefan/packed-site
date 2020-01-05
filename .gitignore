@@ -29,7 +29,7 @@ node_modules/
 /build/
 /assets/
 /production/
-/blog/
+#/blog/
 .sass-cache
 node_modules
 *.map
