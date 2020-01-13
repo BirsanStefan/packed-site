@@ -22,7 +22,6 @@
  */
 
 
- @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Rubik:400,500,700&display=swap");
 .clearfix:after {
 	content: "";
 	display: block;
@@ -2462,6 +2461,7 @@ div.whypackedBox {
 }
 
 .logo {
+	font-size: 0;
 	width: 250px
 }
 
@@ -2489,6 +2489,7 @@ div.whypackedBox {
 .mainMenuLink {
 	font-weight: 500;
 	font-size: 16px;
+	line-height: 1;
 	padding-left: 15px;
 	padding-right: 15px;
 	text-decoration: none;
@@ -2532,10 +2533,20 @@ div.whypackedBox {
 	left: -20px
 }
 
-.subMenuActive .subMenuContainer {
-	visibility: visible;
-	opacity: 1
+@media (hover: hover) {
+	.hasSubmenu:hover .subMenuContainer{
+		visibility: visible;
+		opacity: 1;
+	}
 }
+
+@media (hover: none) {
+	.subMenuActive .subMenuContainer {
+		visibility: visible;
+		opacity: 1
+	}
+}
+
 
 .subMenuListWrap {
 	margin-left: 15px;
@@ -8101,6 +8112,9 @@ Start How it works Page .topArea {
 	.someClass {
 		padding-left: 0;
 		padding-right: 0
+	}
+	.siteHeader .headerContainer {
+    max-width: calc(100% - 85px);
 	}
 }
 
