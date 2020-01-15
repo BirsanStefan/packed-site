@@ -91,7 +91,7 @@
                         <picture class="leftImg">
                             <source srcset="/assets/images/webp/our-story.webp" type="image/webp">
                             <source srcset="/assets/images/png/our-story.png" type="image/png">
-                            <img src="/assets/images/png/our-story.png" alt="Overwhelmed with options?" />
+                            <img src="/assets/images/png/our-story.png" alt="a group of " />
                         </picture>
                     </div>
                 </div>
@@ -118,8 +118,8 @@
 
                             <picture class="founderStoryDescrBImg">
                                 <source srcset="/assets/images/webp/calm.webp" type="image/webp">
-                                <source srcset="/assets/images/png/calm.png" type="image/png">
-                                <img src="/assets/images/png/calm.png" alt="Overwhelmed with options?" />
+                                <source srcset="/assets/images/jpg/calm.jpg" type="image/jpg">
+                                <img src="/assets/images/jpg/calm.jpg" alt="Overwhelmed with options?" />
                             </picture>
 
                             <picture class="founderStoryDescrBImgTablet">
@@ -160,12 +160,23 @@
                         padding: 35px 
                     }
 
+                    @media only screen and (min-width:769px) {
+
                     .founderStory .founderStoryBox .founderStoryDescrBottom .founderStoryDescrBLeft {
                         width: 30%;
                     }
 
                     .founderStory .founderStoryBox .founderStoryDescrBottom .founderStoryDescrBRight {
                         width: 70%;
+                    }
+                    }
+                    
+                    @media only screen and (max-width:768px) {
+                    .founderStory .founderStoryBox .founderStoryDescrBottom .founderStoryDescrBLeft {
+                        width: 100%;
+                    }
+                    .founderStory .founderStoryBox .founderStoryDescrBottom .founderStoryDescrBRight {
+                        width: 100%;
                     }
                 }</style>
 
