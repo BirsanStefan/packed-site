@@ -56,9 +56,45 @@
     	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
     	<!-- End Google Tag Manager -->
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-105860454-4”></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag(‘js’, new Date());
+          gtag(‘config’, ‘UA-105860454-4’);
+        </script>
+
     </head>
 
     <body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="552218538312369"
+        theme_color="#4f2d87"
+        logged_in_greeting="Planning a stag? Let’s get the ball rolling..."
+        logged_out_greeting="Planning a stag? Let’s get the ball rolling...">
+      </div>
 
         <div id="wrapper">
 
@@ -122,7 +158,47 @@
                 </div>
             </section>
 
+            <section class="convinced">
+                <div class="sContainer convincedContent container_12">
 
+                    <div class="bigPhoneImages" data-aos="fade-up" data-aos-once="true">
+
+                        <div class="bgDotsPurple"></div>
+
+                        <picture class="bigPhone">
+                          <source srcset="/assets/images/webp/chat-banner-stag.webp" type="image/webp">
+                          <source srcset="/assets/images/png/chat-banner-stag.png" type="image/png">
+                          <img data-aos="fade-up" data-aos-once="true" src="/assets/images/png/chat-banner-stag.png" alt="Step up your stag weekend game">
+                        </picture>
+
+                    </div>
+
+
+                    <div class="contact">
+
+                        <h3 class="sectionTitle leftTitle" data-aos="fade-left" data-aos-once="true">
+                            Step up your stag weekend game
+                        </h3>
+
+                        <div class="subtitle" data-aos="fade-left" data-aos-once="true">
+                            Chat now to get that stag sorted
+                        </div>
+
+                        <div class="buttonsContainer">
+                            <a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
+                                <span class="buttonIcon whiteMessengerIcon"></span>
+                                Click for Messenger
+                            </a>
+
+                            <a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
+                                <span class="buttonIcon whiteWhatsappIcon"></span>
+                                Click for WhatsApp
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
             <section class="benefits benefitsMain">
             	<h3 class="sectionTitle" data-aos="fade-right" data-aos-once="true">
@@ -976,54 +1052,6 @@
 
              </div>
          </section>
-
-
-
-            <div class="girlsPageConvinced">
-                <section class="convinced">
-                    <div class="sContainer convincedContent container_12">
-
-                        <div class="bigPhoneImages" data-aos="fade-up" data-aos-once="true">
-
-                            <div class="bgDotsPurple"></div>
-
-                            <picture class="bigPhone">
-                                <source srcset="/assets/images/webp/chat-banner-stag.webp" type="image/webp">
-                                <source srcset="/assets/images/png/chat-banner-stag.png" type="image/png">
-                                <img src="/assets/images/png/chat-banner-stag.png" alt="">
-                            </picture>
-
-                        </div>
-
-
-                        <div class="contact">
-
-                            <h3 class="sectionTitle leftTitle" data-aos="fade-left" data-aos-once="true">
-                                Step up your stag weekend game
-                            </h3>
-
-                            <div class="subtitle" data-aos="fade-left" data-aos-once="true">
-                                Chat now to get that stag sorted
-                            </div>
-
-                            <div class="buttonsContainer">
-                                <a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
-                                    <span class="buttonIcon	whiteMessengerIcon"></span>
-                                    Click for Messenger
-                                </a>
-
-                                <a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
-                                    <span class="buttonIcon	whiteWhatsappIcon"></span>
-                                    Click for WhatsApp
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-
 
             <section class="whypacked container_12">
             	<div class="whypackedBox">

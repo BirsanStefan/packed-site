@@ -56,9 +56,45 @@
     	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
     	<!-- End Google Tag Manager -->
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-105860454-4”></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag(‘js’, new Date());
+          gtag(‘config’, ‘UA-105860454-4’);
+        </script>
+        
     </head>
 
     <body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="552218538312369"
+        theme_color="#4f2d87"
+        logged_in_greeting="Planning a ski trip? Let’s get the ball rolling..."
+        logged_out_greeting="Planning a ski trip? Let’s get the ball rolling...">
+      </div>
 
         <div id="wrapper">
 
@@ -272,22 +308,22 @@
             					</div>
 
             				</li>
-            				<!-- <li class="mainMenuItem hasSubmenu blogItemMenu">
+            				<li class="mainMenuItem hasSubmenu blogItemMenu">
             					<a href="javascript:void(0);" class="mainMenuLink">Blog</a>
             					<div class="subMenuContainer blogSubmenu">
 				
             						<div class="subMenuListWrap ">
             							<ul class="submenuList">
-            								<li class="subMenuItem"><a href="https://packed.co/blog" class="subMenuLink">MySwft</a></li>
-            								<li class="subMenuItem"><a href="https://packed.co/tag/snow/" class="subMenuLink">Snow</a></li>
-            								<li class="subMenuItem"><a href="https://packed.co/tag/stag-weekends/" class="subMenuLink">Stag</a></li>
-            								<li class="subMenuItem"><a href="https://packed.co/tag/hen-weekends/" class="subMenuLink">Hen</a></li>
-            								<li class="subMenuItem"><a href="https://packed.co/tag/team-building/" class="subMenuLink">Team building</a></li>
+            								<li class="subMenuItem"><a href="https://packed.co/blog/" class="subMenuLink">Blog home</a></li>
+            								<li class="subMenuItem"><a href="https://packed.co/blog/tag/snow/" class="subMenuLink">Snow</a></li>
+            								<li class="subMenuItem"><a href="https://packed.co/blog/tag/stag-weekends/" class="subMenuLink">Stag</a></li>
+            								<li class="subMenuItem"><a href="https://packed.co/blog/tag/hen-weekends/" class="subMenuLink">Hen</a></li>
+            								<li class="subMenuItem"><a href="https://packed.co/blog/tag/team-building/" class="subMenuLink">Team building</a></li>
             							</ul>
             						</div>
 				
             					</div>
-            				</li> -->
+            				</li>
             				<li class="mainMenuItem"><a href="/app" class="mainMenuLink @@appActive">App</a></li>
             				<li class="mainMenuItem"><a target="_blank" href="https://get.packed.co/members/default.aspx" class="mainMenuLink">My Account</a></li>
             			</ul>
@@ -978,7 +1014,7 @@
 
                         <a href="/hen-do" class="photoGridTwoPicture" style="background-image: url(/assets/images/jpg/hen-to-handle.jpg);"></a>
 
-                        <div class="photoGridTwoDescr">
+                        <div class="photoGridTwoDescr"> 
 
                             <h4 class="photoGridTwoTitle">
                                 <a href="/hen-do">Hen to handle?</a>
@@ -990,7 +1026,7 @@
 
                     <div class="photoGridTwoElement" data-aos="flip-right" data-aos-once="true">
 
-                        <a href="/stag-do" class="photoGridTwoPicture" style="background-image: url(/assets/images/jpg/stag-to-sort.jpg);"></a>
+                        <a href="/stag-do" class="photoGridTwoPicture" style="background-image: url(/assets/images/jpg/sun.jpg);"></a>
 
                         <div class="photoGridTwoDescr">
 
@@ -1011,7 +1047,7 @@
                         <div class="photoGridTwoDescr">
 
                             <h4 class="photoGridTwoTitle">
-                                Friends holiday to finalise?
+                                Going on holiday with your mates?
                             </h4>
 
                         </div>
@@ -1020,12 +1056,12 @@
 
                     <div class="photoGridTwoElement" data-aos="flip-right" data-aos-once="true">
 
-                        <a href="/girls-holidays" class="photoGridTwoPicture" style="background-image: url(/assets/images/jpg/girls-getaway-to-go-on.jpg);"></a>
+                        <a href="/girls-holidays" class="photoGridTwoPicture" style="background-image: url(/assets/images/jpg/hen-ski-trip.jpg);"></a>
 
                         <div class="photoGridTwoDescr">
 
                             <h4 class="photoGridTwoTitle">
-                                <a href="/girls-holidays">Girls getaway to go on?</a>
+                                <a href="/girls-holidays">Fancy a girls' getaway?</a>
                             </h4>
 
                         </div>
@@ -1039,7 +1075,7 @@
                         <div class="photoGridTwoDescr">
 
                             <h4 class="photoGridTwoTitle">
-                                <a href="/lads-holidays">Lads holiday to lift off?</a>
+                                <a href="/lads-holidays">Want to escape with the lads?</a>
                             </h4>
 
                         </div>
@@ -1054,7 +1090,7 @@
 
                         <div class="photoGridTwoDescr">
                             <h4 class="photoGridTwoTitle">
-                                Family holiday to fix?
+                                Taking your family on holiday?
                             </h4>
 
                         </div>
@@ -1114,8 +1150,9 @@
                 						<li class="footerNavItem"><a class="footerNavLink" href="/our-story">Our story</a></li>
                 						<li class="footerNavItem"><a class="footerNavLink" href="/how-it-works">How it works</a></li>
                 						<li class="footerNavItem"><a class="footerNavLink" href="/app">The app</a></li>
-                						<!-- <li class="footerNavItem"><a class="footerNavLink" href="/blog">Blog</a></li> -->
-            								<li class="footerNavItem"><a class="footerNavLink" href="/info/faq">FAQs</a></li>
+                						<li class="footerNavItem"><a class="footerNavLink" href="/blog">Blog</a></li>
+                                        <li class="footerNavItem"><a class="footerNavLink" href="/thecalmzone">CALM</a></li>
+            							<li class="footerNavItem"><a class="footerNavLink" href="/info/faq">FAQs</a></li>
                 					</ul>
                 				</nav>
                 			</div>
@@ -1139,7 +1176,7 @@
                 				<span class="footerNavTitle">Download our app</span>
                 				<a class="iosAppButton" href="https://click.google-analytics.com/redirect?tid=UA-105860454-1&amp;url=https%3A%2F%2Fitunes.apple.com%2Fgb%2Fapp%2Fpacked-group-trip-planner%2Fid1464657333&amp;aid=com.packed.packed&amp;idfa={idfa}&amp;cs=packed&amp;cm=website&amp;ck=homepage&amp;anid=admob&amp;hash=md5" target="_blank"></a>
 
-                				<a class="androidAppButton" href="https://play.google.com/store/apps/details?id=com.packed.packed&amp;referrer=utm_source%3Dpacked%26utm_medium%3Dwebsite%26utm_term%3Dhomepage%26anid%3Dadmob" target="_blank"></a>
+                				<a class="androidAppButton" href="https://play.google.com/store/apps/details?id=com.myswft.myswft&amp;referrer=utm_source%3Dpacked%26utm_medium%3Dwebsite%26utm_term%3Dhomepage%26anid%3Dadmob" target="_blank"></a>
                 			</div>
                 			<div class="fSocial">
                 				<span class="footerNavTitle">Follow us</span>

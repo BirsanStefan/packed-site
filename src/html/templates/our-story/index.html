@@ -3,7 +3,7 @@
 
     <head>
     	<meta charset="UTF-8">
-    	<title> packed | About Us - Group Holiday Travel Planner </title>
+    	<title> packed | Our story - Group holidays handled </title>
 
     	<!-- Enter a brief description of your page -->
     		<meta name="description" content="packed (previously MySwft) makes group holidays happen. We take the pressure off and the pain away from planning and paying for group travel. Travel planner available on WhatsApp and Facebook Messenger">
@@ -16,7 +16,7 @@
     		<meta name="robots" content="index, follow">
 
     	<!--facebook-->
-    		<meta property="og:title" content="packed | About Us - Group Holiday Travel Planner"/>
+    		<meta property="og:title" content="packed | Our story - Group holidays handled"/>
     		<meta property="og:type" content="website"/>
     		<meta property="og:image" content="https://packed.co/assets/images/jpg/packed-OG-image.jpg"/>
     		<meta property="og:image" content="https://packed.co/assets/images/jpg/packed-OG-image2.jpg"/>
@@ -27,7 +27,7 @@
     	<!--twitter-->
     		<meta name="twitter:card" content="summary">
     		<meta name="twitter:url" content="https://packed.co/our-story">
-    		<meta name="twitter:title" content="packed | About Us - Group Holiday Travel Planner">
+    		<meta name="twitter:title" content="packed | Our story - Group holidays handled">
     		<meta name="twitter:description" content="packed makes group holidays happen. We take the pressure off and the pain away from planning and paying for group travel. Travel planner available on WhatsApp and Facebook Messenger">
     		<meta name="twitter:image" content="https://packed.co/assets/images/jpg/packed-twitter-image.jpg">
     	<!--end twitter-->
@@ -56,10 +56,46 @@
     	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
     	<!-- End Google Tag Manager -->
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-105860454-4”></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag(‘js’, new Date());
+          gtag(‘config’, ‘UA-105860454-4’);
+        </script>
+
     </head>
 
 
     <body>
+
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="552218538312369"
+        theme_color="#4f2d87"
+        logged_in_greeting="Planning a trip? Let’s get the ball rolling..."
+        logged_out_greeting="Planning a trip? Let’s get the ball rolling...">
+      </div>
 
         <div id="wrapper">
 

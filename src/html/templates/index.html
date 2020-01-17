@@ -56,10 +56,47 @@
 	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
 	<!-- End Google Tag Manager -->
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105860454-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag(‘js’, new Date());
+      gtag(‘config’, ‘UA-105860454-4’);
+    </script>
+
 </head>
 
 
 <body class="homepage">
+
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="552218538312369"
+        theme_color="#4f2d87"
+        logged_in_greeting="Planning a trip? Let’s get the ball rolling..."
+        logged_out_greeting="Planning a trip? Let’s get the ball rolling...">
+      </div>
+
     <div id="wrapper">
 
       @@include('../partials/globals/googleTagBelowBody.html')
@@ -98,6 +135,7 @@
     </div>
 
 	@@include('../partials/components/benefits.html')
+
 
     <section class="benefits benefitsMain">
     	<div class="benefitsItems sContainer">
@@ -223,15 +261,25 @@
     			</div>
     		</div>
     		<div class="holidayItem">
-    			<a href="/friends-holidays" class="holidayImage holidayImage2"></a>
+    			<a href="/city-breaks" class="holidayImage holidayImage5"></a>
     			<div class="holidayLinkContent">
-    				<h4 class="linkContentTitle"><a href="/friends-holidays">Friends holidays</a></h4>
+    				<h4 class="linkContentTitle"><a href="/city-breaks">City breaks</a></h4>
     				<div class="linkContentText">
-    					Ski trips, sports tours, birthdays and reunions &ndash; just grab your passport. Any excuse is a good one to go on a break with your besties.
+    					Each city has it&#39;s own flavour whether you want to rave all weekend, explore museums and galleries, or indulge in the finest food and drink. Get it in the diary!
     				</div>
-    				<a class="readMore" href="/friends-holidays">Read more</a>
+    				<a class="readMore" href="/city-breaks">Read more</a>
     			</div>
     		</div>
+            <div class="holidayItem">
+                <a href="/sun-holidays" class="holidayImage holidayImage2"></a>
+                <div class="holidayLinkContent">
+                    <h4 class="linkContentTitle"><a href="/sun-holidays">Summer holidays</a></h4>
+                    <div class="linkContentText">
+                        Lying by the pool with a book, grabbing a surfboard or exploring an island. However you want to catch some rays, are you beach ready?
+                    </div>
+                    <a class="readMore" href="/sun-holidays">Read more</a>
+                </div>
+            </div>
     		<div class="holidayItem">
     			<a href="/stag-do" class="holidayImage holidayImage3"></a>
     			<div class="holidayLinkContent">
@@ -252,17 +300,6 @@
     				</div>
 
     				<a class="readMore" href="/hen-do">Read more</a>
-    			</div>
-    		</div>
-    		<div class="holidayItem">
-    			<a href="/family-holidays" class="holidayImage holidayImage5"></a>
-    			<div class="holidayLinkContent">
-    				<h4 class="linkContentTitle"><a href="/family-holidays">Family holidays</a></h4>
-    				<div class="linkContentText">
-    					Activity-packed locations with a range of accommodation types. Get the lowdown on breaks catering for the young, the old and those in-between.
-    				</div>
-
-    				<a class="readMore" href="/family-holidays">Read more</a>
     			</div>
     		</div>
     		<div class="holidayItem">
@@ -431,11 +468,11 @@
     		<div class="bigPhoneImages">
     			<!-- <img class="phoneDots" src="/assets/images/dotsTest2.png" />  -->
     			<div class="phoneDots bgDotsPurple"></div>
-    			<!-- <img alt="big phone" class="bigPhone" src="/assets/images/Messenger-travel-company.png" /> -->
+    			<!-- <img alt="big phone" class="bigPhone" src="/assets/images/messenger-travel-company.png" /> -->
     			<picture class="bigPhone">
     			    <source srcset="/assets/images/webp/messenger-travel-company.webp" type="image/webp">
-    			    <source srcset="/assets/images/png/Messenger-travel-company.png" type="image/png">
-    			    <img src="/assets/images/png/Messenger-travel-company.png" alt="" />
+    			    <source srcset="/assets/images/png/messenger-travel-company.png" type="image/png">
+    			    <img src="/assets/images/png/messenger-travel-company.png" alt="" />
     			</picture>
     		</div>
     		<div class="contact">
