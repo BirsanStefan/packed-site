@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+<script>
+  var feefoCarousel = tns({
+    container: '#feefoCarousel',
+    items: 1,
+    gutter: 40,
+    slideBy: 'page',
+    mouseDrag: true,
+    autoplayButtonOutput: false,
+    controls: false,
+    nav: false,
+    loop: true,
+    autoplayTimeout: 5000,
+    autoplay: true,
+    responsive: {
+      320: {
+        gutter: 0,
+        items: 1
+      },
+      567: {
+        gutter: 40,
+        items: 2
+      },
+      850: {
+        items: 3
+      },
+      1100: {
+        items: 4
+      }
+    }
+  });
+
+  document.querySelector('#feefoCarousel-next').onclick = function () { feefoCarousel.goTo('next'); }; 
+  document.querySelector('#feefoCarousel-prev').onclick = function () { feefoCarousel.goTo('prev'); };
+</script>
