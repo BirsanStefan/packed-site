@@ -5,6 +5,7 @@
 
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
+const htmlmin = require('gulp-htmlmin');
 
 module.exports = function (options) {
 
@@ -15,6 +16,7 @@ module.exports = function (options) {
         basepath: `./${options.templates}`,
         indent: true
       }))
+      .pipe(htmlmin({ collapseWhitespace: true, caseSensitive: true, minifyCSS: true, minifyJS: true }))
       .pipe(gulp.dest(options.dest));
   };
 };

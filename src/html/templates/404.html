@@ -53,14 +53,7 @@
     	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
     	<!-- End Google Tag Manager -->
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105860454-4"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag(‘js’, new Date());
-          gtag(‘config’, ‘UA-105860454-4’);
-        </script>
+        @@include('../partials/globals/orgSchema.html')
 
     </head>
 
@@ -101,7 +94,7 @@
         @@include('../partials/globals/header.html')
         @@include('../partials/globals/socialBtns.html')
 
-
+        <div class="errorPage">
             <section class="groupTripBookedBg">
                 <div class="groupTripBookedContent container_12">
                     <div class="groupTripBookedLeft">
@@ -122,7 +115,7 @@
 
                     <div class="groupTripBookedRight">
                         <picture class="leftImg">
-                            <img src="/assets/images/gif/404 gif.gif" alt="" />
+                            <img src="/assets/images/gif/404-transparent.gif" alt="" />
                         </picture>
                     </div>
                 </div>
@@ -169,12 +162,12 @@
 
                         <div class="buttonsContainer">
                             <a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
-                                <span class="buttonIcon	whiteMessengerIcon"></span>
+                                <span class="buttonIcon whiteMessengerIcon"></span>
                                 Click for Messenger
                             </a>
 
                             <a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
-                                <span class="buttonIcon	whiteWhatsappIcon"></span>
+                                <span class="buttonIcon whiteWhatsappIcon"></span>
                                 Click for WhatsApp
                             </a>
                         </div>
@@ -182,9 +175,11 @@
                     </div>
                 </div>
             </section>
+        </div>
+            
 
 
-    @@include('../partials/globals/footer.html')
+        @@include('../partials/globals/footer.html')
 
 
 
@@ -490,7 +485,7 @@
         		}
         	});
         </script>
-        <script type="text/javascript" src="https://api.feefo.com/api/javascript/my-swft" async></script>
+        <script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script>
         <!--mySwft.html END-->
 
 

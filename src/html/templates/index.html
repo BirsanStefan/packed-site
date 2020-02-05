@@ -56,14 +56,7 @@
 	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
 	<!-- End Google Tag Manager -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105860454-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag(‘js’, new Date());
-      gtag(‘config’, ‘UA-105860454-4’);
-    </script>
+    @@include('../partials/globals/orgSchema.html')
 
 </head>
 
@@ -129,7 +122,7 @@
 
 
     		<div class="feefo">
-				<a href="https://www.feefo.com/reviews/packed" target="_blank"><img alt="Feefo logo" border="0" src="https://api.feefo.com/api/logo?merchantidentifier=packed" title="See what our customers say about us" /></a>
+				<a href="https://www.feefo.com/reviews/packed" target="_blank"><img alt="Feefo logo" border="0" src="/assets/images/png/feefo-logo.png" title="See what our customers say about us" /></a>
 			</div>
     	</div>
     </div>
@@ -155,7 +148,7 @@
     			<picture>
     			    <source srcset="/assets/images/webp/handle.webp" type="image/webp">
     			    <source srcset="/assets/images/png/handle.png" type="image/png">
-    			    <img src="/assets/images/png/handle.png" alt="" />
+    			    <img src="/assets/images/png/handle.png" alt="hassle free travel booking icon" />
     			</picture>
     			<h6 class="benefitTitle">Too much to handle?</h6>
     			<p class="benefitContent">
@@ -165,7 +158,7 @@
     			<picture>
 				    <source srcset="/assets/images/webp/commited.webp" type="image/webp">
 				    <source srcset="/assets/images/png/commited.png" type="image/png">
-				    <img src="/assets/images/png/commited.png" alt="" />
+				    <img src="/assets/images/png/commited.png" alt="pain free travel payments icon" />
 				</picture>
     			<h6 class="benefitTitle"> Chasing for commitment? </h6>
     			<p class="benefitContent">
@@ -235,18 +228,20 @@
 
 
     <section class="customersOpinion sContainer">
-    	<p class="sectionTitle">
-    		What our customers say</p>
-    	<div class="apiDate">
-    		<div class="apiAverage">
-    			<div class="feefo-review-carousel-widget-service" id="feefo-service-review-carousel-widgetId"></div>
-    		</div>
-    		<div class="apiReviews"></div>
-    	</div>
+    	<p class="sectionTitle"> What our customers say</p>
+
+        @@include('../partials/components/feefoCarousel.html')
+        
+    	<!-- <div class="apiDate">
+            <div class="apiAverage">
+                <div class="feefo-review-carousel-widget-service" id="feefo-service-review-carousel-widgetId"></div>
+            </div>
+            <div class="apiReviews"></div>
+        </div> -->
     </section>
 
 
-    <section class="groupHoliday sContainer">
+    <section class="groupHoliday groupHolidayHome sContainer">
     	<h3 class="sectionTitle"> Our group holidays </h3>
     	<div class="holidayContent">
     		<div class="holidayItem">
@@ -399,35 +394,28 @@
                 <picture>
                     <source srcset="/assets/images/webp/conde-nast-traveller.webp" type="image/webp">
                     <source srcset="/assets/images/png/Conde-Nast-Traveller.png" type="image/png">
-                    <img src="/assets/images/png/Conde-Nast-Traveller.png" alt="" />
-                </picture>
-            </a>
-            <a href="/info/press" target="_blank">
-                <picture>
-                    <source srcset="/assets/images/webp/bq.webp" type="image/webp">
-                    <source srcset="/assets/images/png/bq.png" type="image/png">
-                    <img src="/assets/images/png/bq.png" alt="" />
+                    <img src="/assets/images/png/Conde-Nast-Traveller.png" alt="the Conde Naste Traveller logo" />
                 </picture>
             </a>
             <a href="/info/press" target="_blank">
                 <picture>
                     <source srcset="/assets/images/webp/evening.webp" type="image/webp">
                     <source srcset="/assets/images/png/evening.png" type="image/png">
-                    <img src="/assets/images/png/evening.png" alt="" />
+                    <img src="/assets/images/png/evening.png" alt="The Evening Standard newspaper logo" />
                 </picture>
             </a>
             <a href="/info/press" target="_blank">
                 <picture>
                     <source srcset="/assets/images/webp/metro.webp" type="image/webp">
                     <source srcset="/assets/images/png/metro.png" type="image/png">
-                    <img src="/assets/images/png/metro.png" alt="" />
+                    <img src="/assets/images/png/metro.png" alt="The Metro newspaper logo" />
                 </picture>
             </a>
             <a href="/info/press" target="_blank">
                 <picture>
                     <source srcset="/assets/images/webp/times.webp" type="image/webp">
                     <source srcset="/assets/images/png/times.png" type="image/png">
-                    <img src="/assets/images/png/times.png" alt="" />
+                    <img src="/assets/images/png/times.png" alt="The Times newspaper logo" />
                 </picture>
             </a>
         </div>
@@ -805,7 +793,7 @@
 			}
 		});
 	</script>
-	<script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script>
+	<!-- <script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script> -->
 	<!--mySwft.html END-->
 
 
@@ -865,7 +853,9 @@
 		    }
 		});
 	</script>
-	<script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script>
+
+    @@include('../partials/scripts/carousel.html')
+	<!-- <script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script> -->
 
 </body>
 
