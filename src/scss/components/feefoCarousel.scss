@@ -52,7 +52,18 @@
 	}
 }
 
+.seeAllReviews{
+	color: #40d8c2;
+	font-weight: 500;
+	@media only screen and (max-width: 667px){
+		display: block;
+		margin-top: 5px;
+	}
+}
+
+
 .carouselItem{
+	display: block;
 	.ratingStars{
 		width: 90px;
 		height: 18px;
