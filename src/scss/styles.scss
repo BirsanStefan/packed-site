@@ -22,6 +22,8 @@
  */
 
 
+
+
 .clearfix:after {
 	content: "";
 	display: block;
@@ -2500,6 +2502,19 @@ div.whypackedBox {
 	transition: all .25s linear
 }
 
+.subMenuLinkBlogHome{
+	display: none;
+	@media (hover: none) {
+		display: block;
+	}
+}
+
+.mainMenuLinkBlog{
+	@media (hover: none) {
+		pointer-events: none;
+	}
+}
+
 .mainMenuLink.active,
 .mainMenuLink:hover {
 	color: #40d8c2
@@ -2557,7 +2572,7 @@ div.whypackedBox {
 .subMenuListWrap:after {
 	content: "";
 	position: absolute;
-	height: 175px;
+	height: 150px;
 	width: 1px;
 	background: #dedede;
 	top: 25px;
@@ -2570,7 +2585,7 @@ div.whypackedBox {
 
 .subMenuTitle {
 	font-size: 16px;
-	margin-top: 10px;
+	margin-top: -10px;
 	margin-bottom: 5px;
 	font-weight: 600;
 	color: #606176;
@@ -7439,8 +7454,8 @@ img.teamImgItemTablet {
 .benefitsMain {
 	height: auto;
 	background-color: #f8f8ff;
-	margin-left: -15px;
-	margin-right: -15px;
+	// margin-left: -15px;
+	// margin-right: -15px;
 	margin-bottom: 50px
 }
 
@@ -8857,6 +8872,9 @@ Start How it works Page .topArea {
 	}
 	.holidayContent {
 		display: block!important
+	}
+	.groupHolidayHome .holidayContent{
+		display: flex !important;
 	}
 	.holidayContent .holidayItemx3 {
 		display: block;
@@ -10484,3 +10502,19 @@ Start How it works Page .topArea {
 		background-image: url(/assets/userfiles/flags2x.png)
 	}
 }
+
+
+.errorPage{
+	background: #eeeeee;
+	.groupTripBookedBg{
+		background: #eeeeee;
+	}
+	.groupTripBookedRight{
+		text-align: center;
+	}
+}
+
+
+ @import 'components/rating';
+ @import 'components/feefoCarousel';
+

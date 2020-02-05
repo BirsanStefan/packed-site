@@ -228,18 +228,20 @@
 
 
     <section class="customersOpinion sContainer">
-    	<p class="sectionTitle">
-    		What our customers say</p>
-    	<div class="apiDate">
-    		<div class="apiAverage">
-    			<div class="feefo-review-carousel-widget-service" id="feefo-service-review-carousel-widgetId"></div>
-    		</div>
-    		<div class="apiReviews"></div>
-    	</div>
+    	<p class="sectionTitle"> What our customers say</p>
+
+        @@include('../partials/components/feefoCarousel.html')
+        
+    	<!-- <div class="apiDate">
+            <div class="apiAverage">
+                <div class="feefo-review-carousel-widget-service" id="feefo-service-review-carousel-widgetId"></div>
+            </div>
+            <div class="apiReviews"></div>
+        </div> -->
     </section>
 
 
-    <section class="groupHoliday sContainer">
+    <section class="groupHoliday groupHolidayHome sContainer">
     	<h3 class="sectionTitle"> Our group holidays </h3>
     	<div class="holidayContent">
     		<div class="holidayItem">
@@ -791,7 +793,7 @@
 			}
 		});
 	</script>
-	<script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script>
+	<!-- <script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script> -->
 	<!--mySwft.html END-->
 
 
@@ -851,7 +853,9 @@
 		    }
 		});
 	</script>
-	<script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script>
+
+    @@include('../partials/scripts/carousel.html')
+	<!-- <script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script> -->
 
 </body>
 
