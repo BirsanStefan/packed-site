@@ -7281,6 +7281,10 @@ img.teamImgItemTablet {
 	font-weight: 400
 }
 
+.instagram {
+	align-items: center	
+}
+
 .holiday-handled {
 	align-items: center
 }
@@ -9481,6 +9485,9 @@ Start How it works Page .topArea {
 		min-height: 480px;
 		margin-left: 2%;
 		margin-right: 2%
+	}
+	.instagram {
+		display: none;
 	}
 }
 
