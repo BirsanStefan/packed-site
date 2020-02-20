@@ -76,6 +76,26 @@
 			@@include('../partials/globals/header.html')
 			@@include('../partials/globals/socialBtns.html')
 
+			@@include('../partials/components/breadcrumbs.html', {
+			  "items": [
+			      { 
+			        "name": "Home",
+			        "link": "/",
+			        "position": "1"
+			      },
+			      { 
+			        "name": "Ski Holidays",
+			        "link": "/ski-holidays", 
+			        "position": "2"
+			      },
+			      { 
+			        "name": "Bulgaria",
+			        "link": "" ,
+			        "position": "3"
+			      }
+			   ]
+			})
+
 			<div class="topArea topAreaWithImage">
 			    <div class="topAreaImage" style="background-image: url(/assets/images/jpg/group-ski-holidays-in-bulgaria.jpg);">&nbsp;</div>
 
@@ -516,10 +536,7 @@
 		        </div>
 		    </div>
 		</section>
-
-
-
-
+		
 		<!--Section Message-->
 		<section class="messageBg">
 			<div class="container_12">

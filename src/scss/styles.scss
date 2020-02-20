@@ -2456,7 +2456,7 @@ div.whypackedBox {
 .siteHeader {
 	position: relative;
 	z-index: 999;
-	box-shadow: 0 5px 54px hsla(0, 0%, 56%, .22)
+	// box-shadow: 0 5px 54px hsla(0, 0%, 56%, .22);
 }
 
 .siteHeader .headerContainer {
@@ -10530,3 +10530,434 @@ Start How it works Page .topArea {
  @import 'components/rating';
  @import 'components/feefoCarousel';
 
+/*Reccomended START*/
+ .recommended{
+	 margin-top: 70px;
+	 margin-bottom: 95px;
+	 @media only screen and (max-width:667px){
+		margin-bottom: 70px;
+	}
+	.photoGridOne{
+		margin-top: 60px;
+		margin-bottom: 40px;
+		
+		.photoGridOneElement {
+			@media only screen and (max-width: 768px){
+				width: 100%;
+				max-width: 450px;
+				margin: 15px auto;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+		}
+	}
+	.didntFindBox{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		@media only screen and (max-width:1200px){
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+		@media only screen and (max-width:1075px){
+			display: block;
+			text-align: center;
+		}
+		@media only screen and (max-width:768px){
+			margin-top: 70px;
+		}
+		@media only screen and (max-width:667px){
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		&__left{
+			width: 65%;
+			@media only screen and (max-width:1075px){
+				width: 100%;
+			}
+			h4{
+				font-size: 20px;
+				line-height: 24px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 16px;
+				line-height: 24px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 400;
+			}
+		}
+		&__right{
+			.checkMoreSkiBtn{
+				font-size: 16px;
+				line-height: 15px;
+				color: #40d8c2;
+				font-family: "Rubik", sans-serif;
+				font-weight: 500;
+				text-align: center;
+				width: 291px;
+				height: 58px;
+				border-radius: 10px;
+				border: 1px solid #40d8c2;
+				transition: all .25s linear;
+				&:hover{
+					background-color: #40d8c2;
+					color: #fff;
+					box-shadow: 5px 10px 15px rgba(64, 216, 194, 0.4);
+				}
+				@media only screen and (max-width:1075px){
+					margin: auto;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	.photoGridOneElement:nth-child(3) {
+		@media only screen and (max-width:520px){
+			height: auto;
+		}
+		
+	}
+ }
+ /*Recommended END*/
+
+ /*Breadcrumbs START*/
+ 	.breadcrumbs{
+ 		background: #fff;
+ 	}
+	.schema{
+		height: 100%;
+		.navSchema-breadcrumbs {
+			font-size: 14px;
+			color: #464860;
+			font-family: "Montserrat", sans-serif;
+			padding: 25px 0;
+			margin-bottom: 0;
+			list-style-type: none;
+			display: flex;
+			border-top: 1px solid #ebebeb;
+			@media only screen and (max-width:1023px){
+				padding: 15px 0;
+			}
+		}
+		&__item{
+			a{
+				text-decoration: none;
+				position: relative;
+				padding-right: 36px;
+				color: #464860;
+				&:hover{
+					color: #40d8c2;
+				} 
+				&:after{
+					content: '';
+					position: absolute;
+					top: 4px;
+					right: 14px;
+					border-left: 5px solid #464860;
+					border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+				}
+			}
+			&:last-child{
+				span{
+					font-weight: 700;
+				}
+				a{
+					pointer-events: none;
+					&:after{
+						display: none;
+
+					}
+				}
+			}
+		} 
+	}
+ /*Breadcrumbs END*/
+
+ /*two sections START*/
+ .benefits.twoSections{
+	 margin-bottom: 0;
+ }
+ .twoSections-Content{
+	 margin-top: 130px;
+	 margin-bottom: 190px;
+	 @media only screen and (max-width:520px){
+		margin-bottom: 0;
+	 }
+ }
+ .twoSections-howItWorks{
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: space-between;
+	 align-items: center;
+	 position: relative;
+	 @media only screen and (max-width:1116px){
+		display: block;
+	}
+	 &__elem{
+		 width: 49%;
+		 background-color: #fff;
+		 border-radius: 6px;
+		 filter: drop-shadow(-3.657px -3.41px 27px rgba(142,142,142,0.14));
+		 position: relative;
+		 display: flex;
+		 flex-wrap: wrap;
+		 justify-content: space-between;
+		 align-items: flex-end;
+		 transition: all .25s linear;
+		 &:hover{
+			 background-color: #f8f8ff;
+		 }
+		 @media only screen and (max-width:1116px){
+			width: 80%;
+			margin-bottom: 35px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media only screen and (max-width:768px){
+		   width: 100%;
+		}
+		@media only screen and (max-width:571px){
+		   width: calc(100% + 40px);
+		   margin-left: -20px;
+		}
+		@media only screen and (max-width:520px){
+		   display: inline-grid;
+		   text-align: center;
+		}
+		 &__lL{
+			 width: 50%;
+			 font-size: 0;
+			 overflow: hidden;
+			 @media only screen and (max-width:1116px){
+				width: 40%;
+			}
+			@media only screen and (max-width:667px){
+			   width: 50%;
+			}
+			@media only screen and (max-width:520px){
+			   order: 1;
+			   width: 100%;
+			}
+			 img{
+				 height: 340px;
+				 transition: transform .25s linear;
+				 display: block;
+				 &:hover{
+					 -ms-transform: scale(1.05); /* IE 9 */
+					 -webkit-transform: scale(1.05); /* Safari 3-8 */
+					 transform: scale(1.05); 
+ 
+				 }
+				 @media only screen and (max-width:1116px){
+					margin-left: auto;
+					margin-right: auto;
+				}
+			 }
+		 }
+		 &__lR{
+			width: 50%;
+			padding: 30px 30px 30px 10px;
+			@media only screen and (max-width:1116px){
+			   width: 60%;
+		    }
+			@media only screen and (max-width:667px){
+			   width: 50%;
+			}
+			@media only screen and (max-width:520px){
+			   order: 0;
+			   width: 100%;
+			   padding: 30px;
+			}
+			h3{
+				font-size: 20px;
+				line-height: 28px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 700;
+			}
+			p{
+				font-size: 16px;
+				line-height: 24px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 400;
+			}
+			.mswButton.checkOutOurApp{
+				font-size: 16px;
+				line-height: 15px;
+				color: #464860;
+				font-family: "Rubik";
+				font-weight: 500;
+				width: 210px;
+				height: 58px;
+				border-radius: 10px;
+				background-color: #fff;
+				border: 1px solid #464860;
+				margin-top: 70px;
+				transition: all .25s linear;
+				&:hover{
+					color: #fff;
+					background-color: #464860;
+					box-shadow: 5px 10px 15px rgba(113, 100, 155, 0.4);
+				}
+				@media only screen and (max-width:480px){
+				   margin-top: 30px;
+				}
+				@media only screen and (max-width:520px){
+				   margin-left: auto;
+				   margin-right: auto;
+				   margin-top: 25px;
+				}
+			}
+		 }
+		 &__rL{
+			width: 50%;
+			font-size: 0;
+			overflow: hidden;
+			@media only screen and (max-width:1116px){
+				width: 40%;
+		    }
+			@media only screen and (max-width:667px){
+			   width: 50%;
+			}
+			@media only screen and (max-width:520px){
+			   width: 100%;
+			   order: 1;
+			}
+			img{
+				height: 340px;
+				transition: transform .25s linear;
+				display: block;
+				@media only screen and (max-width:1116px){
+					margin-left: auto;
+					margin-right: auto;
+			   }
+				&:hover{
+					-ms-transform: scale(1.05); /* IE 9 */
+					-webkit-transform: scale(1.05); /* Safari 3-8 */
+					transform: scale(1.05); 
+				}
+			}
+		 }
+		 &__rR{
+		   width: 50%;
+		   padding: 30px 30px 30px 10px;
+		   @media only screen and (max-width:1116px){
+			   width: 60%;
+		   }
+		   @media only screen and (max-width:667px){
+			  width: 50%;
+		   }
+		   @media only screen and (max-width:520px){
+			  width: 100%;
+			  order: 0;
+			  padding: 30px;
+		   }
+		   h3{
+			font-size: 20px;
+			line-height: 28px;
+			color: #464860;
+			font-family: "Montserrat", sans-serif;
+			font-weight: 700;
+		   }
+		   p{
+			   font-size: 16px;
+				line-height: 24px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 400;
+		   }
+		   .buttonsContainer{
+			   margin-top: 20px;
+			   @media only screen and (max-width:1116px){
+				   margin-top: 95px;
+			   }
+			   @media only screen and (max-width:1111px){
+				  margin-top: 30px;
+			   }
+			   @media only screen and (max-width:667px){
+				  margin-top: 10px;
+			   }
+			   .mswButton{
+				@media only screen and (max-width:1023px){
+					margin-left: 0;
+					margin-right: auto;
+				}
+				@media only screen and (max-width:520px){
+				   margin: 10px;
+				}
+			   }
+			   .cyanBg{
+				   margin-top: 17px;
+				   @media only screen and (max-width:1116px){
+					   margin-top: 0;
+				   }
+				   @media only screen and (max-width:1116px){
+					   margin-top: 17px;
+				   }
+			   }
+		   }
+	    }
+	 }
+	 
+	 .twoSectionsDots.bgDotsPurple{
+		margin-left: 0;
+		top: -30px;
+		right: -20px;
+		position: absolute;
+		z-index: -1;
+		@media only screen and (max-width:1116px){
+			top: -30px;
+			right: 65px;
+	    }
+		@media only screen and (max-width:768px){
+		   right: -30px;
+		}
+		@media only screen and (max-width:520px){
+		   display: none;
+		}
+	 }
+	 
+	 .twoSectionsDots.bgDotsBlue{
+		margin-left: 0;
+		bottom: -30px;
+		left: -65px;
+		position: absolute;
+		z-index: -1;
+		@media only screen and (max-width:1116px){
+			bottom: -30px;
+			left: 65px;
+	   }
+	   @media only screen and (max-width:768px){
+		 left: -30px;
+	   }
+	   @media only screen and (max-width:520px){
+		  display: none;
+	   }
+	}
+	.app-lines.twoSectionsLines {
+		position: absolute;
+		bottom: -35px;
+		right: -35px;
+		z-index: -1;
+		@media only screen and (max-width:1116px){
+			bottom: -45px;
+			right: 65px;
+	    }
+		@media only screen and (max-width:768px){
+		   right: -30px;
+		}
+		@media only screen and (max-width:520px){
+		   display: none;
+		}
+	}
+ }
+ 
+ /*TWO sections END*/
