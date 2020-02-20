@@ -77,6 +77,26 @@
             @@include('../partials/globals/loader.html')
             @@include('../partials/globals/header.html')
 
+            @@include('../partials/components/breadcrumbs.html', {
+              "items": [
+                  { 
+                    "name": "Home",
+                    "link": "/",
+                    "position": "1"
+                  },
+                  { 
+                    "name": "Community trips",
+                    "link": "/community-trips", 
+                    "position": "2"
+                  },
+                  { 
+                    "name": "Rugby clubs",
+                    "link": "" ,
+                    "position": "3"
+                  }
+               ]
+            })
+
 
         <div class="topArea topAreaWithImage">
                 <div class="topAreaImage" style="background-image: url(/assets/images/jpg/rugby-tours.jpg);">&nbsp;</div>

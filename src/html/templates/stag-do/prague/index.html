@@ -76,6 +76,26 @@
       @@include('../partials/globals/header.html')
       @@include('../partials/globals/socialBtns.html')
 
+      @@include('../partials/components/breadcrumbs.html', {
+              "items": [
+                  { 
+                    "name": "Home",
+                    "link": "/",
+                    "position": "1"
+                  },
+                  { 
+                    "name": "Stag weekends",
+                    "link": "/stag-do", 
+                    "position": "2"
+                  },
+                  { 
+                    "name": "Prague",
+                    "link": "" ,
+                    "position": "3"
+                  }
+               ]
+            })
+
 			<div class="topArea topAreaWithImage">
 			    <div class="topAreaImage" style="background-image: url(/assets/images/jpg/prague-stag-weekends.jpg);">&nbsp;</div>
 
