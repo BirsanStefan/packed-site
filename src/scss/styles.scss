@@ -764,6 +764,11 @@ a {
 	text-decoration: none
 }
 
+.bodylist li{
+	margin-top: 6px;
+	list-style-position: outside;
+}
+
 .bigPhoneImages {
 	z-index: 9
 }
@@ -1666,8 +1671,8 @@ section.convinced .contact .subtitle {
 }
 
 .partners {
-	padding-top: 100px;
-	padding-bottom: 100px
+	padding-top: 80px;
+	padding-bottom: 80px
 }
 
 .partners .press {
@@ -4879,7 +4884,7 @@ div.stepRight p {
 }
 
 div.stepRight a {
-	color: #6be2d1;
+	color: #4f2d87;
 	text-decoration: underline
 }
 
