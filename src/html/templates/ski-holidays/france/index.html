@@ -1503,32 +1503,42 @@
 
 	</script>
 
-<script>
-	window.addEventListener("load", function() {
-		// store tabs variable
-	  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
-	  function myTabClicks(tabClickEvent) {
-			for (var i = 0; i < myTabs.length; i++) {
-				myTabs[i].classList.remove("active");
-			}
-			var clickedTab = tabClickEvent.currentTarget;
-			clickedTab.classList.add("active");
-			tabClickEvent.preventDefault();
-			var myContentPanes = document.querySelectorAll(".tabPaneResorts");
-			for (i = 0; i < myContentPanes.length; i++) {
-				myContentPanes[i].classList.remove("active");
-			}
-			var anchorReference = tabClickEvent.target;
-			var activePaneId = anchorReference.getAttribute("href");
-			console.log(activePaneId);
-			var activePane = document.querySelector(activePaneId);
-			activePane.classList.add("active");
-		}
-		for (i = 0; i < myTabs.length; i++) {
-			myTabs[i].addEventListener("click", myTabClicks)
-		}
-	});
+  <script>
+  	window.addEventListener("load", function() {
+  		// store tabs variable
+  	  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
+  	  function myTabClicks(tabClickEvent) {
+  			for (var i = 0; i < myTabs.length; i++) {
+  				myTabs[i].classList.remove("active");
+  			}
+  			var clickedTab = tabClickEvent.currentTarget;
+  			clickedTab.classList.add("active");
+  			tabClickEvent.preventDefault();
+  			var myContentPanes = document.querySelectorAll(".tabPaneResorts");
+  			for (i = 0; i < myContentPanes.length; i++) {
+  				myContentPanes[i].classList.remove("active");
+  			}
+  			var anchorReference = tabClickEvent.target;
+  			var activePaneId = anchorReference.getAttribute("href");
+  			console.log(activePaneId);
+  			var activePane = document.querySelector(activePaneId);
+  			activePane.classList.add("active");
+  		}
+  		for (i = 0; i < myTabs.length; i++) {
+  			myTabs[i].addEventListener("click", myTabClicks)
+  		}
+  	});
 
-</script>
+  </script>
+
+    <script type="text/javascript">
+        (function(e,a){
+        var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+        t=e.createElement("script");t.type="text/javascript";
+        t.charset="utf-8";t.async=!0;t.defer=!0;
+        t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+         })(document,"99395");
+    </script>
+
   </body>
 </html>
