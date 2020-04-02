@@ -113,7 +113,7 @@
             </div>
 
 
-			@@include('../partials/components/benefits.html')
+			@@include('../partials/components/benefits-hen.html')
 
 
             <section class="imageDescr container_12">
@@ -132,6 +132,14 @@
                     </div>
                 </div>
             </section>
+
+            <section class="customersOpinion sContainer">
+                <p class="sectionTitle"> What our customers say</p>
+
+                @@include('../partials/components/feefo-hen.html')
+                
+            </section>    
+
 
             <a name="hen-destinations"></a>
             <section class="topRegionsResorts container_12">
@@ -308,6 +316,41 @@
                 </div>
             </section>
 
+
+            <div class="cityMessBg stagMessBg">
+                <section class="messageBg">
+                    <div class="container_12">
+                        <div class="messageTable">
+                            <div class="messageMiddle">
+                                <div class="messageTitleItem">
+                                    <div class="messageTitle" data-aos="zoom-in" data-aos-once="true">
+                                        Somewhere else in mind?
+                                    </div>
+                                </div>
+
+                                <div class="messageButtons">
+                                    <div class="buttonsContainer">
+                                        <a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
+                                            <span class="buttonIcon whiteMessengerIcon"></span>
+                                            Start in Messenger
+                                        </a>
+
+                                        <a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
+                                            <span class="buttonIcon whiteWhatsappIcon"></span>
+                                            Start in WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            @@include('../partials/components/pressIcons.html')
+
             <div class="checkOutOurBlog">
                 <section class="checkout container_12">
 
@@ -423,7 +466,7 @@
                 </section>
             </div>
 
-            @@include('../partials/components/pressIcons.html')
+
 
             <section class="convinced">
                 <div class="sContainer convincedContent container_12">
@@ -520,98 +563,6 @@
                     <!--de adaugat bgDots-->
             	</div>
             </section>
-
-
-
-            <section class="stagGroupHoliday groupHoliday sContainer">
-
-                <h3 class="sectionTitle"> So where is it to be? </h3>
-
-                <div class="holidayContent">
-                    <div class="holidayItemx3">
-
-                        <a href="/ski-holidays" class="holidayImage holidayImage10"></a>
-
-                        <div class="holidayLinkContent">
-                            <h4 class="linkContentTitle">Snow</h4>
-
-                            <div class="linkContentText">
-                                Celebrate in style on the slopes - or with champers in the chalet! Ski packages to suit any size group, budget or ability. Be a bride-to-be on skis.
-                            </div>
-
-                            <a class="readMore" href="/ski-holidays">Read more</a>
-                        </div>
-
-                    </div>
-
-
-                    <div class="holidayItemx3">
-
-                        <a href="/city-breaks" class="holidayImage holidayImage11"></a>
-
-                        <div class="holidayLinkContent">
-
-                            <h4 class="linkContentTitle">City</h4>
-
-                            <div class="linkContentText">
-                                The buzz and beaches of Barcelona or the budget‐friendly beers of Budapest? There is a city for every stag...
-                            </div>
-
-                            <a class="readMore" href="/city-breaks">Read more</a>
-                        </div>
-                    </div>
-
-
-                    <div class="holidayItemx3">
-
-                        <a href="/sun-holidays" class="holidayImage holidayImage12"></a>
-
-                        <div class="holidayLinkContent">
-
-                            <h4 class="linkContentTitle">Sun</h4>
-                            <div class="linkContentText">
-                                Marbs, Magaluf, Mexico? They’ll be bonding and beers organised by bedtime. No blood, sweat and tears but ours!
-                            </div>
-
-                            <a class="readMore" href="/sun-holidays">Read more</a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-            <div class="cityMessBg stagMessBg">
-                <section class="messageBg">
-                    <div class="container_12">
-                        <div class="messageTable">
-                            <div class="messageMiddle">
-                                <div class="messageTitleItem">
-                                    <div class="messageTitle" data-aos="zoom-in" data-aos-once="true">
-
-                                    </div>
-                                </div>
-
-                                <div class="messageButtons">
-                                    <div class="buttonsContainer">
-                                        <a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
-                                            <span class="buttonIcon	whiteMessengerIcon"></span>
-                                            Start in Messenger
-                                        </a>
-
-                                        <a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
-                                            <span class="buttonIcon	whiteWhatsappIcon"></span>
-                                            Start in WhatsApp
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
 
 
             @@include('../partials/globals/footer.html')
@@ -953,6 +904,8 @@
 
         </script>
         <!--resorts-grid END-->
+
+        @@include('../partials/scripts/carousel.html')
 
         <script type="text/javascript">
             (function(e,a){

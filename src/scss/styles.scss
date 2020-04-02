@@ -1671,8 +1671,8 @@ section.convinced .contact .subtitle {
 }
 
 .partners {
-	padding-top: 80px;
-	padding-bottom: 80px
+	padding-top: 60px;
+	padding-bottom: 40px
 }
 
 .partners .press {
@@ -1947,7 +1947,7 @@ section.photoGridOne {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 130px;
+	margin-top: 50px;
 	margin-bottom: 50px
 }
 
@@ -2059,7 +2059,8 @@ div.statesList:before {
 	color: #fff;
 	font-family: Montserrat, sans-serif;
 	font-weight: 700;
-	font-size: 18px
+	font-size: 18px;
+	text-shadow: 1px 1px 3px #3e403f;
 }
 
 .photoGridOneElement:hover {
@@ -2068,7 +2069,7 @@ div.statesList:before {
 }
 
 .stagMessBg {
-	padding-top: 100px
+	padding-top: 70px
 }
 
 .checkOutOurBlog {
@@ -2453,7 +2454,7 @@ div.whypackedBox {
 
 .cheapSkiHolidaysTopSection {
 	padding-top: 70px;
-	padding-bottom: 50px
+	padding-bottom: 0px
 }
 
 .siteHeader {
@@ -4745,7 +4746,8 @@ section.callingMountains .callingMountainsImageTablet .callingMountainsImageItem
 }
 
 section.notCompletelyConvinced {
-	margin-top: 50px
+	margin-top: 80px;
+	margin-bottom: 50px;
 }
 
 section.notCompletelyConvinced h3.sectionTitle {
@@ -5123,7 +5125,7 @@ div.notConvincedBox {
 }
 
 .checkout {
-	margin-top: 100px
+	margin-top: 60px
 }
 
 body div .checkout {
@@ -5655,7 +5657,8 @@ div.whyMySwftBox {
 
 .stagAccomodation .sectionTitle {
 	margin-top: 50px;
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	margin-top: 80px
 }
 
 .stagAccomodation .stagAccomodationText p {
@@ -6478,7 +6481,8 @@ img.teamImgItemTablet {
 	line-height: 28px;
 	color: #464860;
 	font-family: Montserrat;
-	font-weight: 400
+	font-weight: 400;
+	margin: 0 5px 0 5px;
 }
 
 .appPageTop .topAreaBg {
