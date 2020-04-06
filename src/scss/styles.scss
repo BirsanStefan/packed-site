@@ -9917,7 +9917,7 @@ Start How it works Page .topArea {
 		margin: 5px 1%
 	}
 	.tabs4 .activitiesbutton-wrap {
-		font-size: 11px;
+		font-size: 12px;
 		font-weight: 500
 	}
 	.partying {
@@ -10998,6 +10998,8 @@ Start How it works Page .topArea {
 
 
 
+
+
 /*On page nav bar section*/
 
 @media (max-device-width: 376px) {
@@ -11011,7 +11013,7 @@ Start How it works Page .topArea {
 @media screen and (min-width: 768px) {
   .onPageNav {
     z-index: 95;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 30px;
 }
 }
@@ -11063,7 +11065,65 @@ Start How it works Page .topArea {
   font-size: 12px
 }
 
-@media screen and (min-width: 480px) {
+
+@media screen and (max-width: 991px) {
+
+.guide-link-bar {
+	width: auto;
+    background: transparent;
+    height: auto;
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+    display: block;
+    }
+
+.guide-link-bar ul {
+	width: auto;
+    flex-wrap: wrap;
+    background: transparent;
+    height: auto;
+	padding: 3px;
+	display: flex;
+	border-radius: 30px;
+	list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	}
+
+.guide-link-bar li {
+	width: 48%;
+    box-shadow: 0px 3px 8px 0px rgba(77, 77, 77, 0.4);
+    margin: 5px 1%;
+	display: inline-block;
+	border-radius: 50px;
+    text-align: center;
+    padding: 0px;
+    }
+
+.guide-link-bar a {
+    background: #40d8c2;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: Montserrat;
+    text-align: center;
+    border: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
 
 .guide-link-bar {
   background-color: #4f2d87;
@@ -11118,7 +11178,13 @@ Start How it works Page .topArea {
   height: 127px
 }
 
-@media screen and (min-width: 768px) {
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
 .guide-link-bar--thin {
   height: 90px
 }
