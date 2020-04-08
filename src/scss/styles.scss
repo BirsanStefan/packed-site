@@ -259,6 +259,25 @@ input[type=submit] {
 	background-image: url(../images/png/book3.png)
 }
 
+.no-webp .bookPhotoContainer4 {
+	background-image: url(../images/jpg/tignes-apres-ski.jpg)
+}
+
+.no-webp .bookPhotoContainer5 {
+	background-image: url(../images/jpg/tignes-best-restaurants.jpg)
+}
+
+.no-webp .bookPhotoContainer6 {
+	background-image: url(../images/jpg/tignes-best-bars.jpg)
+}
+
+.no-webp .bookPhotoContainer7 {
+	background-image: url(../images/jopg/tignes-mountain-restaurants.jpg)
+}
+
+
+
+
 .no-webp .holidayImage1 {
 	background-image: url(../images/jpg/group-ski-trips.jpg)
 }
@@ -486,6 +505,31 @@ input[type=submit] {
 .webp .bookPhotoContainer3 {
 	background-image: url(../images/webp/book3.webp)
 }
+
+.webp .bookPhotoContainer4 {
+	background-image: url(../images/webp/tignes-apes-ski.webp)
+}
+
+.webp .bookPhotoContainer5 {
+	background-image: url(../images/webp/tignes-best-restaurants.webp)
+}
+
+.webp .bookPhotoContainer6 {
+	background-image: url(../images/webp/tignes-best-bars.webp)
+}
+
+.webp .bookPhotoContainer7 {
+	background-image: url(../images/webp/tignes-mountain-restaurants.webp)
+}
+
+
+
+
+
+
+
+
+
 
 .webp .holidayImage1 {
 	background-image: url(../images/webp/group-ski-trips.webp)
@@ -1014,6 +1058,10 @@ section.convinced .convincedContent {
 	width: 33.33%
 }
 
+.navBooking .skiResort{
+	width: 25%
+}
+
 .contentBooking.active {
 	-ms-align-items: center
 }
@@ -1158,7 +1206,8 @@ section.convinced .contact .subtitle {
 
 .ourStory .ourStoryBox .ourStoryLeft {
 	width: 50%;
-	padding-left: 40px
+	padding-left: 40px;
+	padding-right: 15px;
 }
 
 .ourStory .ourStoryBox .ourStoryLeft .ourStoryDescr {
@@ -1881,6 +1930,15 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 	position: relative
 }
 
+.noneSkiersLeft {
+	background-image: url(../images/webp/weekend-ski-breaks.webp);
+	height: 470px;
+	background-size: cover;
+	border-radius: 10px;
+	position: relative
+}
+
+
 .skiWeekendsRight {
 	padding-left: 20px;
 	width: 50%;
@@ -1913,6 +1971,21 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 	min-height: 533px
 }
 
+.resortsGridItemWrap.link:hover {
+box-shadow: 0 20px 15px -10px rgba(79, 45, 135, .2);
+transition: box-shadow .25s linear
+}
+
+.resortsGridItemWrapItem.link:hover {
+box-shadow: 0 20px 15px -10px rgba(79, 45, 135, .2);
+transition: box-shadow .25s linear
+}
+
+.statesElement.link:hover {
+box-shadow: 0 20px 15px -10px rgba(79, 45, 135, .2);
+transition: box-shadow .25s linear
+}
+
 .regionsGridImg {
 	height: 250px
 }
@@ -1932,6 +2005,11 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 	font-size: 12px;
 	line-height: 1.42
 }
+
+
+
+
+
 
 .topAustria {
 	height: 740px;
@@ -4909,6 +4987,33 @@ div.stepRight a {
 	padding: 10px 10px 10px 25px
 }
 
+
+.topRegionsResorts .tab-content>.tabPaneResorts.active.skiAccommodation {
+	justify-content: flex-start;
+}
+
+.regionsGridDescription .skiAccommodationName {
+	margin-bottom: 3px 
+}
+
+.regionsGridDescription .skiAccommodationLocation {
+	padding-top: 0px
+}
+
+.regionsGridData .skiAccommodationDesc {
+	font-size: 12px;
+}
+
+.regionsGridDescription .skiAccommodationDesc {
+	border-bottom: none;
+	margin-top: 20px;
+}
+
+.skiAccommodationStars {
+    max-width: 80px;
+    margin-top: 6px;
+}
+
 .regionsGridDescription h4 a {
 	font-family: Montserrat, sans-serif;
 	font-size: 20px;
@@ -5667,6 +5772,10 @@ div.whyMySwftBox {
 	font-size: 16px;
 	color: #464860;
 	line-height: 1.4
+}
+
+.stagAccomodationText .centreAllign {
+	text-align: center;
 }
 
 .accommodationOpt {
@@ -7229,6 +7338,12 @@ img.teamImgItemTablet {
 	z-index: -1
 }
 
+
+.skiResort {
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
 .customersOpinion {
 	margin-top: 100px;
 	margin-bottom: 100px
@@ -7763,7 +7878,7 @@ Start How it works Page .topArea {
 	display: block;
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	height: auto
 }
