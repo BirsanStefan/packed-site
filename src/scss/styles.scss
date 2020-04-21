@@ -1768,7 +1768,7 @@ section.convinced .contact .subtitle {
 .topAreaWithImage .topContent .topTitle {
 	font-size: 56px;
 	line-height: 62px;
-	max-width: 660px;
+	max-width: 800px;
 	margin-top: 0;
 	font-family: Rubik;
 	text-shadow: 2px 2px 8px #000
@@ -2044,6 +2044,11 @@ transition: box-shadow .25s linear
 }
 
 .resortsGridItemWrapItem.link:hover {
+box-shadow: 0 20px 15px -10px rgba(79, 45, 135, .2);
+transition: box-shadow .25s linear
+}
+
+.regionsGridItemWrap.link:hover {
 box-shadow: 0 20px 15px -10px rgba(79, 45, 135, .2);
 transition: box-shadow .25s linear
 }
@@ -5834,13 +5839,13 @@ div.whyMySwftBox {
 	margin-top: 80px
 }
 
-.stagAccomodation .stagAccomodationText p {
+.stagAccomodationText p {
 	font-family: Montserrat, sans-serif;
 	font-size: 16px;
 	color: #464860;
 	line-height: 1.4
 }
-
+ 
 .stagAccomodationText .centreAllign {
 	text-align: center;
 }
@@ -5891,6 +5896,15 @@ div.whyMySwftBox {
 .topRegionsResorts .tab-content>.tabPaneResorts.active {
 	justify-content: space-between
 }
+
+.regionsGridDescription .homeGroupTypeParagraph {
+	font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #464860;
+    line-height: 1.4;
+    padding-top: 10px
+}
+
 
 .accommOpt {
 	font-family: Montserrat, sans-serif;
@@ -6600,9 +6614,9 @@ img.teamImgItemTablet {
 .topTitle {
 	font-size: 56px;
 	line-height: 62px;
-	max-width: 660px;
+	max-width: 800px;
 	margin-top: 0;
-	font-family: Rubik
+	font-family: Rubik;
 }
 
 .topText {
@@ -6610,7 +6624,8 @@ img.teamImgItemTablet {
 	font-weight: 400;
 	margin-top: 25px;
 	line-height: 1.5;
-	font-family: Rubik
+	font-family: Rubik;
+	max-width: 800px;
 }
 
 .advantagesWrap {
@@ -8114,6 +8129,16 @@ Start How it works Page .topArea {
 	}
 }
 
+@media screen and (min-width:1100px) and (max-width:1400px) {
+	.topTitle {
+		max-width: 800px;
+	}
+
+	.topText {
+		max-width: 800px;
+	}
+}
+
 @media only screen and (max-width:1400px) {
 	.sContainer {
 		max-width: calc(100% - 30px)
@@ -8143,9 +8168,6 @@ Start How it works Page .topArea {
 	}
 	.appPage .socialIconsContainer {
 		margin-left: 15px
-	}
-	.topAreaWithImage .topContent .topTitle {
-		max-width: 80%
 	}
 	.topArea {
 		padding-left: 20px;
@@ -10718,6 +10740,16 @@ Start How it works Page .topArea {
 	}
 }
 
+@media only screen and (min-width:768px) {
+.errorPage .groupTripBookedBg .groupTripBookedContent .groupTripBookedLeft {
+	padding-left: 80px;
+	padding-top: 40px;
+}
+}
+
+.errorPage .groupTripBookedBg .groupTripBookedContent .groupTripBookedLeft h2 {
+	margin-bottom: 0px;
+}
 
  @import 'components/rating';
  @import 'components/feefoCarousel';
