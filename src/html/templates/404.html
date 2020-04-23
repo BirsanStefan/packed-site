@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    	<meta charset="UTF-8">
+    	<title> packed | Group Holidays Handled Via WhatsApp & Facebook Messenger </title>
+
+    	<!-- Enter a brief description of your page -->
+    		<meta name="description" content="packed is a group travel planner at your fingertips. Receive recommendations personalised to you via WhatsApp or Facebook Messenger, then everyone pays separately. Get a handle on your group holiday">
+    		<meta name="keywords" content="travel planner, group holidays">
+
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="author" content="packed" />
+    		<meta name="robots" content="noindex, follow">
+
+    	<!--facebook-->
+    		<meta property="og:title" content="packed | Group Holidays Handled Via WhatsApp & Facebook Messenger"/>
+    		<meta property="og:type" content="website"/>
+    		<meta property="og:image" content="https://packed.co/assets/images/jpg/packed-OG-image.jpg"/>
+    		<meta property="og:image" content="https://packed.co/assets/images/jpg/packed-OG-image2.jpg"/>
+    		<meta property="og:url" content="https://packed.co/"/>
+    		<meta property="og:description" content="Discover the simple process behind how packed makes group holidays happen. No more excuses, here’s a travel planner to make going pains a thing of the past"/>
+    	<!--end facebook-->
+
+    	<!--twitter-->
+    		<meta name="twitter:card" content="summary">
+    		<meta name="twitter:url" content="https://packed.co/">
+    		<meta name="twitter:title" content="packed | Group Holidays Handled Via WhatsApp & Facebook Messenger">
+    		<meta name="twitter:description" content="A group travel planner at your fingertips. Receive recommendations personalised to you via WhatsApp or Facebook Messenger, then everyone pays separately. Get a handle on your group holiday">
+    		<meta name="twitter:image" content="https://packed.co/assets/images/jpg/packed-twitter-image.jpg">
+    	<!--end twitter-->
+
+
+    	<!-- FONTS -->
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700|Rubik:400,500,700&display=swap" rel="stylesheet">
+
+
+    	<!-- CSS -->
+    	<!-- <link media="all" rel="stylesheet" href="/assets/css/vendor.min.css"> -->
+    	<link media="all" rel="stylesheet" href="/assets/css/styles.min.css">
+
+    	<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    	<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+
+        <link rel="prefetch" href="https://q.quora.com">
+        <link rel="prefetch" href="https://www.googleadservices.com">
+        <link rel="prefetch" href="https://www.googletagmanager.com">
+        <link rel="prefetch" href="https://scontent.cdninstagram.com">
+        <link rel="prefetch" href="https://connect.facebook.net">
+        <link rel="prefetch" href="https://www.facebook.com">
+        <link rel="prefetch" href="https://bat.bing.com">
+
+    	<!-- Google Tag Manager -->
+    	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
+    	<!-- End Google Tag Manager -->
+
+        @@include('../partials/globals/orgSchema.html')
+
+    </head>
+
+    <body class="howItWorksPage">
+        
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="552218538312369"
+        theme_color="#4f2d87"
+        logged_in_greeting="Planning a trip? Let’s get the ball rolling..."
+        logged_out_greeting="Planning a trip? Let’s get the ball rolling...">
+      </div>
+
+        <div id="wrapper">
+
+
+        @@include('../partials/globals/googleTagBelowBody.html')
+        @@include('../partials/globals/loader.html')
+        @@include('../partials/globals/header.html')
+        @@include('../partials/globals/socialBtns.html')
+
+        <div class="errorPage">
+            <section class="groupTripBookedBg">
+                <div class="groupTripBookedContent container_12">
+                    <div class="groupTripBookedLeft">
+
+                        <div class="mainTitle">
+                            <h1 data-aos="fade-down" data-aos-once="true">
+                                Oops!<br/>This doesn&#39;t feel right...
+                            </h1>
+                        </div>
+
+                        <div class="subTitle">
+                            <h2 data-aos="fade-left" data-aos-once="true">
+                                Try another link or chat to the team below. They&#39;re useful.
+                            </h2>
+                        </div>
+                    </div>
+
+
+                    <div class="groupTripBookedRight">
+                        <picture class="leftImg">
+                            <img src="/assets/images/gif/404-transparent.gif" alt="" />
+                        </picture>
+                    </div>
+                </div>
+                
+                <style type="text/css"> 
+                    .groupTripBookedBg {
+                        min-height: 350px;
+                        background-color: #fffff;
+                        background-image: linear-gradient(#fffff, #fffff);
+                        background-color: rgb(255, 255, 255);
+                        background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+                    }
+                </style>
+
+            </section>
+
+
+
+            <section class="convinced">
+                <div class="sContainer convincedContent container_12">
+
+                    <div class="bigPhoneImages" data-aos="fade-up" data-aos-once="true">
+
+                        <div class="bgDotsPurple"></div>
+
+                        <picture class="bigPhone">
+                            <source srcset="/assets/images/webp/messenger-travel-company.webp" type="image/webp">
+                            <source srcset="/assets/images/png/messenger-travel-company.png" type="image/png">
+                            <img src="/assets/images/png/messenger-travel-company.png" alt="">
+                        </picture>
+
+                    </div>
+
+
+                    <div class="contact">
+
+                        <h3 class="sectionTitle leftTitle" data-aos="fade-left" data-aos-once="true">
+                            In a hurry?
+                        </h3>
+
+                        <div class="subtitle" data-aos="fade-left" data-aos-once="true">
+                            Chat to us in WhatsApp or Messenger and never worry about website navigation again
+                        </div>
+
+                        <div class="buttonsContainer">
+                            <a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
+                                <span class="buttonIcon whiteMessengerIcon"></span>
+                                Start in Messenger
+                            </a>
+
+                            <a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
+                                <span class="buttonIcon whiteWhatsappIcon"></span>
+                                Start in WhatsApp
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+            
+        <section class="pacmanSection">
+            <h3 class="sectionTitle">Not in such a hurry? Here's Pacman...</h3>
+                <div class="game" style="text-align: center;">
+                    <iframe src="https://funhtml5games.com?embed=pacman" style="width:342px;height:490px;border:none;" frameborder="0" scrolling="no"></iframe>
+                </div>
+        </section>
+
+
+
+        @@include('../partials/globals/footer.html')
+
+
+
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+             document.getElementById("pageLoader").classList.add("loaded");
+          }, false);
+        </script>
+
+        <!-- <script src="assets/js/vendor.min.js" defer></script> -->
+        <!-- <script src="assets/js/app.js" defer></script> -->
+
+        <script>
+        	function mobileMenu() {
+        		var element = document.body;
+
+        		if (element.classList) {
+        			element.classList.toggle("mobileMenuActive");
+        		} else {
+        			var classes = element.className.split(" ");
+        			var i = classes.indexOf("mobileMenuActive");
+
+        			if (i >= 0)
+        				classes.splice(i, 1);
+        			else
+        				classes.push("mobileMenuActive");
+        				element.className = classes.join(" ");
+        		}
+        	}
+        </script>
+
+        <script>
+        	  var hasSubmenu = document.querySelectorAll(".hasSubmenu");
+
+        		for (i = 0; i < hasSubmenu.length; i++) {
+        			hasSubmenu[i].addEventListener("click", function() {
+        				this.classList.toggle("subMenuActive");
+        			})
+        		}
+        </script>
+
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                disable: 'mobile'
+            });
+        </script><!-- for countdown -->
+
+
+        <!-- webP detection -->
+        <script>
+        	!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+        </script>
+
+        <!--grid-3-col-img.html START-->
+        <script>
+        	window.addEventListener("load", function() {
+        		// store tabs variable
+        	  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
+        	  function myTabClicks(tabClickEvent) {
+        			for (var i = 0; i < myTabs.length; i++) {
+        				myTabs[i].classList.remove("active");
+        			}
+        			var clickedTab = tabClickEvent.currentTarget;
+        			clickedTab.classList.add("active");
+        			tabClickEvent.preventDefault();
+        			var myContentPanes = document.querySelectorAll(".tabPaneResorts");
+        			for (i = 0; i < myContentPanes.length; i++) {
+        				myContentPanes[i].classList.remove("active");
+        			}
+        			var anchorReference = tabClickEvent.target;
+        			var activePaneId = anchorReference.getAttribute("href");
+        			console.log(activePaneId);
+        			var activePane = document.querySelector(activePaneId);
+        			activePane.classList.add("active");
+        		}
+        		for (i = 0; i < myTabs.length; i++) {
+        			myTabs[i].addEventListener("click", myTabClicks)
+        		}
+        	});
+
+        </script>
+        <!--grid-3-col-img.html END-->
+
+        <!--the-best-of.html START-->
+        <script>
+        	window.addEventListener("load", function() {
+
+        		// store tabs variable
+        		var tabsArrowItem = document.querySelectorAll(".tabsArrowItem");
+        		var myTabs = document.querySelectorAll("ul.navTabsTheBest > li");
+        		var navTabsTop = document.querySelectorAll("ul.navTabsTop > li");
+        		var navTabsBottom = document.querySelectorAll("ul.navTabsBottom > li");
+        		var myContentPanes = document.querySelectorAll(".navTabsTheBestPane");
+
+        		function myTabClicks(tabClickEvent) {
+        			for (var i = 0; i < myTabs.length; i++) {
+        				myTabs[i].classList.remove("active");
+        			}
+        			var clickedTab = tabClickEvent.currentTarget;
+        			var indexOfElement = getElementIndex(clickedTab);
+
+        			navTabsTop[indexOfElement].classList.add("active");
+        			navTabsBottom[indexOfElement].classList.add("active");
+        			tabClickEvent.preventDefault();
+
+        			for (i = 0; i < myContentPanes.length; i++) {
+        				myContentPanes[i].classList.remove("active");
+        			}
+        			var anchorReference = tabClickEvent.target;
+        			var activePaneId = anchorReference.getAttribute("href");
+        			var activePane = document.querySelector(activePaneId);
+        			activePane.classList.add("active");
+        		}
+
+        		for (i = 0; i < myTabs.length; i++) {
+        			myTabs[i].addEventListener("click", myTabClicks)
+        		}
+
+        		function navToNextTab (){
+        			indexActive = getActiveTabIndex();
+
+        			if ((navTabsTop.length - indexActive) > 1 ) {
+        				nextIndex = indexActive+1;
+        			}
+        			else if ((navTabsTop.length - indexActive) == 1){
+        			 	nextIndex = 0;
+        			}
+
+        			changeTabs(nextIndex);
+        		}
+
+        		function navToPrevTab (){
+        			indexActive = getActiveTabIndex();
+
+        			if (indexActive > 0) {
+        				nextIndex = indexActive-1;
+        			}
+        			else if (indexActive == 0){
+        			 	nextIndex = navTabsTop.length-1;
+        			}
+
+
+        			changeTabs(nextIndex);
+        		}
+
+        		document.getElementById("tabsLeft").addEventListener("click", navToPrevTab);
+        		document.getElementById("tabsRight").addEventListener("click", navToNextTab);
+
+        		function getActiveTabIndex(){
+        			for (var i = 0; i < navTabsTop.length; i++) {
+        				if(navTabsTop[i].classList.contains("active")){
+        					var indexActive = getElementIndex(navTabsTop[i]);
+        				}
+        			}
+        			return indexActive;
+        		}
+
+        		function changeTabs(nextIndex){
+        			for (var i = 0; i < navTabsTop.length; i++) {
+        				navTabsTop[i].classList.remove("active");
+        				navTabsBottom[i].classList.remove("active");
+        				myContentPanes[i].classList.remove("active");
+        			}
+
+        			navTabsTop[nextIndex].classList.add("active");
+        			navTabsBottom[nextIndex].classList.add("active");
+        			myContentPanes[nextIndex].classList.add("active");
+        		}
+
+        		function getElementIndex (element) {
+        			return Array.from(element.parentNode.children).indexOf(element);
+        		}
+
+        	});
+
+        </script>
+        <!--the-best-of.html END-->
+
+
+        <!--accommodation-options.html START-->
+        <script>
+        	window.addEventListener("load", function() {
+        		// store tabs variable
+        	  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
+        	  function myTabClicks(tabClickEvent) {
+        			for (var i = 0; i < myTabs.length; i++) {
+        				myTabs[i].classList.remove("active");
+        			}
+        			var clickedTab = tabClickEvent.currentTarget;
+        			clickedTab.classList.add("active");
+        			tabClickEvent.preventDefault();
+        			var myContentPanes = document.querySelectorAll(".tabPaneResorts");
+        			for (i = 0; i < myContentPanes.length; i++) {
+        				myContentPanes[i].classList.remove("active");
+        			}
+        			var anchorReference = tabClickEvent.target;
+        			var activePaneId = anchorReference.getAttribute("href");
+        			console.log(activePaneId);
+        			var activePane = document.querySelector(activePaneId);
+        			activePane.classList.add("active");
+        		}
+        		for (i = 0; i < myTabs.length; i++) {
+        			myTabs[i].addEventListener("click", myTabClicks)
+        		}
+        	});
+
+        </script>
+        <!--accommodation-options.html END-->
+
+
+        <!--activities.html START-->
+        <script>
+        	window.addEventListener("load", function() {
+        		// store tabs variable
+        	  var myTabs = document.querySelectorAll("ul.navTabsResorts2 > li");
+        	  function myTabClicks(tabClickEvent) {
+        			for (var i = 0; i < myTabs.length; i++) {
+        				myTabs[i].classList.remove("active");
+        			}
+        			var clickedTab = tabClickEvent.currentTarget;
+        			clickedTab.classList.add("active");
+        			tabClickEvent.preventDefault();
+        			var myContentPanes = document.querySelectorAll(".activitiestabPaneResorts");
+        			for (i = 0; i < myContentPanes.length; i++) {
+        				myContentPanes[i].classList.remove("active");
+        			}
+        			var anchorReference = tabClickEvent.target;
+        			var activePaneId = anchorReference.getAttribute("href");
+        			console.log(activePaneId);
+        			var activePane = document.querySelector(activePaneId);
+        			activePane.classList.add("active");
+        		}
+        		for (i = 0; i < myTabs.length; i++) {
+        			myTabs[i].addEventListener("click", myTabClicks)
+        		}
+        	});
+
+        </script>
+        <!--activities.html END-->
+
+
+        <!--accommodation-options2.html START-->
+        <script>
+        	window.addEventListener("load", function() {
+        		// store tabs variable
+        	  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
+        	  function myTabClicks(tabClickEvent) {
+        			for (var i = 0; i < myTabs.length; i++) {
+        				myTabs[i].classList.remove("active");
+        			}
+        			var clickedTab = tabClickEvent.currentTarget;
+        			clickedTab.classList.add("active");
+        			tabClickEvent.preventDefault();
+        			var myContentPanes = document.querySelectorAll(".tabPaneResorts");
+        			for (i = 0; i < myContentPanes.length; i++) {
+        				myContentPanes[i].classList.remove("active");
+        			}
+        			var anchorReference = tabClickEvent.target;
+        			var activePaneId = anchorReference.getAttribute("href");
+        			console.log(activePaneId);
+        			var activePane = document.querySelector(activePaneId);
+        			activePane.classList.add("active");
+        		}
+        		for (i = 0; i < myTabs.length; i++) {
+        			myTabs[i].addEventListener("click", myTabClicks)
+        		}
+        	});
+
+        </script>
+        <!--accommodation-options2.html END-->
+
+
+        <!--mySwft.html START-->
+        <script>
+        	window.addEventListener("load", function() {
+        		// store tabs variable
+        		var myTabs = document.querySelectorAll(".navBooking .navBookingItem");
+        		function myTabClicks(tabClickEvent) {
+        			for (var i = 0; i < myTabs.length; i++) {
+        				myTabs[i].classList.remove("active");
+        			}
+        			var clickedTab = tabClickEvent.currentTarget;
+        			clickedTab.classList.add("active");
+        			tabClickEvent.preventDefault();
+        			var myContentPanes = document.querySelectorAll(".contentBooking");
+        			for (i = 0; i < myContentPanes.length; i++) {
+        				myContentPanes[i].classList.remove("active");
+        			}
+        			var anchorReference = tabClickEvent.target;
+        			var activePaneId = anchorReference.getAttribute("href");
+        			var activePane = document.querySelector(activePaneId);
+
+        			activePane.classList.add("active");
+        		}
+        		for (i = 0; i < myTabs.length; i++) {
+        			myTabs[i].addEventListener("click", myTabClicks)
+        		}
+        	});
+        </script>
+        <!--<script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script>-->
+        <!--mySwft.html END-->
+
+
+        <!--resorts-grid START-->
+        <script>
+        	window.addEventListener("load", function() {
+        		// store tabs variable
+        	  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
+        	  function myTabClicks(tabClickEvent) {
+        			for (var i = 0; i < myTabs.length; i++) {
+        				myTabs[i].classList.remove("active");
+        			}
+        			var clickedTab = tabClickEvent.currentTarget;
+        			clickedTab.classList.add("active");
+        			tabClickEvent.preventDefault();
+        			var myContentPanes = document.querySelectorAll(".tabPaneResorts");
+        			for (i = 0; i < myContentPanes.length; i++) {
+        				myContentPanes[i].classList.remove("active");
+        			}
+        			var anchorReference = tabClickEvent.target;
+        			var activePaneId = anchorReference.getAttribute("href");
+        			console.log(activePaneId);
+        			var activePane = document.querySelector(activePaneId);
+        			activePane.classList.add("active");
+        		}
+        		for (i = 0; i < myTabs.length; i++) {
+        			myTabs[i].addEventListener("click", myTabClicks)
+        		}
+        	});
+
+        </script>
+        <!--resorts-grid END-->
+
+    </body>
+</html>
