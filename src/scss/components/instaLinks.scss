@@ -1,0 +1,311 @@
+/* Instagram link tree section starts*/
+
+
+.instaLinks {
+	overflow-x: hidden;
+}
+
+.instaLinksContainer {
+	width: 100%;
+    background-color: #fbf9fb;
+    margin: 1.875rem 0 3.5rem 0;
+}
+
+.instaLinks_header {
+	padding: 1.25rem;
+    background-color: #fff;
+    box-shadow: 0 1.25rem 1.25rem rgba(213,221,236,.4);
+}
+
+.profile_bio {
+	display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile_bio_image {
+	max-width: 3.75rem;
+    box-shadow: 0 1.25rem 1.25rem rgba(213,221,236,.4);
+	background-color: #fff;
+    min-width: 3.75rem;
+    min-height: 3.75rem;
+    border-radius: 31.25rem;
+    margin-right: 1.25rem;
+}
+
+.profile_bio_title {
+	display: flex;
+    align-items: center;
+    color: #464860;
+    font-family: Rubik, sans-serif;
+}
+
+.profile_bio_title_text {
+	margin: 0 0 0.32rem 0
+}
+
+.profile_bio_subtitle_text {
+	color: #464860;
+    font-size: 1rem;
+    font-family: Montserrat, sans-serif;
+    margin: 0	
+}
+
+.instaLinks_links {
+	 margin-top: 1.25rem;
+	 display: block;
+}
+
+.instaLinks_links_list_container {
+	margin-top: 1.25rem;
+	display: block;
+}
+
+.instaLinks_featured_link {
+	width: 100%;
+}
+
+.instaLinks_featured_item:hover {
+	transform: scale(1.02);
+	box-shadow: 0 20px 15px -10px rgba(79,45,135,.2);
+}
+
+.instaLinks_featured_item {
+	width: 100%;
+    border-radius: 1.875rem;
+    height: 12.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.938rem 7.5rem 3.125rem 0 0.938rem;
+    grid-template-areas:
+        "."
+        "."
+        "tile__item__title"
+        "tile__item__subtitle"
+        ".";
+    transition: .3s ease-in-out;
+    margin: 1.25rem 0;
+    box-shadow: 0 1.25rem 1.25rem rgba(213,221,236,.3);
+}
+
+.instaLinks_featured_item::after {
+	content: "";
+    border-radius: 1.25rem;
+    grid-area: 1/1/-1/-1;
+    background: linear-gradient(0deg, rgba(79,45,135,1) 0%, rgba(113,73,159,0.5396533613445378) 32%, rgba(133,79,175,0.2539390756302521) 46%, rgba(152,76,193,0) 54%);
+    width: 100%;
+    height: 12.5rem;
+}
+
+.instaLinks_featured_item_text {
+	z-index: 1;
+    font-size: 1.5rem;
+    color: #fff;
+    color: var(--biolinky-white);
+    text-align: center;
+    grid-area: tile__item__title;
+    padding: 0 0.625rem;
+    font-family: Montserrat, sans-serif;
+    Margin: 0;
+    Padding: 1rem 0;
+    font-weight: 650;
+}
+
+.instaLinks_links_list_container .instaLinks_featured_link .instaLinks_featured_item .instaLinks_featured_item_text {
+	color: #fff;
+	text-shadow: 1px 1px 3px #4A2A7F;
+}
+
+.instaLinks_featured_item_subtext {
+	font-size: 0.875rem;
+    grid-area: tile__item__subtitle;
+    text-transform: none;
+    padding: 0 0.625rem;
+    text-shadow: 0 0 1.25rem rgba(0,0,0,.5);
+    font-family: Montserrat, sans-serif;
+}
+
+.instaLinks_featured_item_image {
+	border-radius: 1.25rem;
+    grid-area: 1/1/-1/-1;
+    width: 100%;
+    height: 12.5rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.instaLinks_standard_link a {
+	color: #2e2c34;
+}
+
+.instaLinks_standard_link_item {
+	background-color: #fff;
+    background-color: var(--biolinky-white);
+    box-shadow: 0 1.25rem 1.25rem rgba(213,221,236,.4);
+    border-radius: 0.938rem;
+    width: 100%;
+    position: relative;
+    padding: 0.625rem;
+    min-height: 4.375rem;
+    cursor: pointer;
+    margin-bottom: 1.25rem;
+    transition: .3s ease-in-out;
+}
+
+.instaLinks_standard_item {
+	background-color: #fff;
+    box-shadow: 0 1.25rem 1.25rem rgba(213,221,236,.4);
+    border-radius: 0.938rem;
+    width: 100%;
+    position: relative;
+    padding: 0.625rem;
+    min-height: 4.375rem;
+    cursor: pointer;
+    margin-bottom: 1.25rem;
+    transition: .3s ease-in-out;
+}
+
+.instaLinks_standard_item:hover {
+	transform: scale(1.02);
+	box-shadow: 0 20px 15px -10px rgba(79,45,135,.2);
+}
+
+.nextXclose {
+	display: flex;
+	align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.instaLinks_standard_item_image {
+	width: 4.375rem;
+    height: 4.375rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.625rem;
+}
+
+
+.instaLinks_standard_item_text {
+	font-size: 1rem;
+    margin: 0 0.625rem;
+    line-height: 1.4;
+    width: inherit;
+    text-align: center;
+    color: #464860;
+    font-family: Montserrat, sans-serif;
+}
+
+.instaLinks_social{
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.instaLinks_social_item {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 1.875rem 1.875rem 1.25rem 1.875rem;
+}
+
+.instaLinks_social_item:hover {
+	transform: scale(1.06);
+	box-shadow: 0 5px 10px -1px rgba(79,45,135,.4);
+}
+
+@media screen and (min-width: 900px) {
+	.instaLinksContainer {
+		max-width: 37.5rem;
+    	margin: 1.875rem 0 3.5rem 0;
+	}
+	.instaLinks_links_list_container {
+		max-width: 55rem;
+	}
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+
+	.instaLinksContainer {
+		max-width: 31.25rem;
+	    margin: 1.875rem 0 3.5rem 0;
+	}	
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.instaLinks {
+		display: flex;
+    	justify-content: center;
+	}
+
+	.instaLinksContainer {
+	    padding: 1.875rem;
+	    border-radius: 1.875rem;
+	    margin: 1.875rem 0 3.5rem 0;
+	}	
+
+	.instaLinks_header {
+		border-radius: 1.25rem;
+	}
+
+	.instaLinks_links {
+	 	padding-bottom: 1.875rem;
+	}
+
+	.instaLinks_links_list_container {
+		max-width: 45rem;
+	}
+
+
+}
+
+
+@media screen and (min-width: 576px) {
+	.instaLinks_links_list_container {
+		margin: 0 auto;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+
+}
+
+
+
+
+@media screen and (min-width: 350px) {
+	.profile_bio_title {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (min-width: 0) and (max-width: 767px){
+	.instaLinksContainer {
+		margin: 0;
+	}
+	
+	.instaLinks_links_list_container{
+		width: 100%;
+	    min-height: 100%;
+	    max-width: 33.75rem;
+	    padding: 0 1.25rem;
+	}
+}
+
+@media screen and (min-width: 0) {
+	.profile_bio_title {
+		font-size: 1.125rem;
+	}
+	.instaLinks_links {
+	 	padding-bottom: 12.5rem;
+	}
+
+}
+
+
+/* Instagram link tree section ends*/
