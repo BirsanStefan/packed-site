@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+Sitemap: https://packed.co/sitemap.xml

@@ -1,0 +1,80 @@
+
+
+.header2mswBtns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mswButton.header2MessBtn{
+    border: 1px solid #4f2d87;
+    color: #4f2d87;
+    transition: all .25s linear;
+    margin-right: 30px;
+    &:hover{
+        color: #4f2d87;
+        box-shadow: 5px 10px 15px rgba(113, 100, 155, .4)
+    }
+    @media only screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+.purpleMessIcon, .blueWhatsIcon{
+    display: none;
+    @media only screen and (max-width: 1023px) {
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+.mswButton.header2WhatsBtn{
+    border: 1px solid #40D8C2;
+    color: #40D8C2;
+    transition: all .25s linear;
+    &:hover{
+        color: #40D8C2;
+        box-shadow: 5px 10px 15px rgba(64, 216, 194, .4)
+    }
+    @media only screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+.purpleMessIcon{
+    position: relative; 
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; 
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url("../images/svg/icon-q1_messenger.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 25px;
+        height: 25px;
+    }
+}
+.blueWhatsIcon{
+    position: relative; 
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; 
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url("../images/svg/icon-q1_whatsapp.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 25px;
+        height: 25px;
+    }
+}
+.header2MessBtn .purpleMessIcon {
+    display: block;
+}
+.header2WhatsBtn .blueWhatsIcon {
+    display: block;
+}

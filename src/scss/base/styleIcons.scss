@@ -1,0 +1,3019 @@
+@import "iconsVariables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?47a4s0');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?47a4s0#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?47a4s0') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?47a4s0') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?47a4s0##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-q1_messenger {
+  &:before {
+    content: $icon-icon-q1_messenger;     
+    color: #4f2d87;
+  }
+}
+.icon-icon-q1_whatsapp {
+  &:before {
+    content: $icon-icon-q1_whatsapp;     
+    color: #40d8c2;
+  }
+}
+.icon-icon-q2_1 .path1 {
+  &:before {
+    content: $icon-icon-q2_1-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path2 {
+  &:before {
+    content: $icon-icon-q2_1-path2;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path3 {
+  &:before {
+    content: $icon-icon-q2_1-path3;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path4 {
+  &:before {
+    content: $icon-icon-q2_1-path4;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path5 {
+  &:before {
+    content: $icon-icon-q2_1-path5;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path6 {
+  &:before {
+    content: $icon-icon-q2_1-path6;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path7 {
+  &:before {
+    content: $icon-icon-q2_1-path7;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path8 {
+  &:before {
+    content: $icon-icon-q2_1-path8;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path9 {
+  &:before {
+    content: $icon-icon-q2_1-path9;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path10 {
+  &:before {
+    content: $icon-icon-q2_1-path10;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path11 {
+  &:before {
+    content: $icon-icon-q2_1-path11;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path12 {
+  &:before {
+    content: $icon-icon-q2_1-path12;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path13 {
+  &:before {
+    content: $icon-icon-q2_1-path13;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path14 {
+  &:before {
+    content: $icon-icon-q2_1-path14;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path15 {
+  &:before {
+    content: $icon-icon-q2_1-path15;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path16 {
+  &:before {
+    content: $icon-icon-q2_1-path16;  
+    margin-left: -0.880859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_1 .path17 {
+  &:before {
+    content: $icon-icon-q2_1-path17;  
+    margin-left: -0.880859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_1 .path18 {
+  &:before {
+    content: $icon-icon-q2_1-path18;  
+    margin-left: -0.880859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_1 .path19 {
+  &:before {
+    content: $icon-icon-q2_1-path19;  
+    margin-left: -0.880859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_1 .path20 {
+  &:before {
+    content: $icon-icon-q2_1-path20;  
+    margin-left: -0.880859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_1 .path21 {
+  &:before {
+    content: $icon-icon-q2_1-path21;  
+    margin-left: -0.880859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_1 .path22 {
+  &:before {
+    content: $icon-icon-q2_1-path22;  
+    margin-left: -0.880859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_1 .path23 {
+  &:before {
+    content: $icon-icon-q2_1-path23;  
+    margin-left: -0.880859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_1 .path24 {
+  &:before {
+    content: $icon-icon-q2_1-path24;  
+    margin-left: -0.880859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_1 .path25 {
+  &:before {
+    content: $icon-icon-q2_1-path25;  
+    margin-left: -0.880859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_1 .path26 {
+  &:before {
+    content: $icon-icon-q2_1-path26;  
+    margin-left: -0.880859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_1 .path27 {
+  &:before {
+    content: $icon-icon-q2_1-path27;  
+    margin-left: -0.880859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_1 .path28 {
+  &:before {
+    content: $icon-icon-q2_1-path28;  
+    margin-left: -0.880859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_1 .path29 {
+  &:before {
+    content: $icon-icon-q2_1-path29;  
+    margin-left: -0.880859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_1 .path30 {
+  &:before {
+    content: $icon-icon-q2_1-path30;  
+    margin-left: -0.880859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_1 .path31 {
+  &:before {
+    content: $icon-icon-q2_1-path31;  
+    margin-left: -0.880859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_1 .path32 {
+  &:before {
+    content: $icon-icon-q2_1-path32;  
+    margin-left: -0.880859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_2 .path1 {
+  &:before {
+    content: $icon-icon-q2_2-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_2 .path2 {
+  &:before {
+    content: $icon-icon-q2_2-path2;  
+    margin-left: -0.8974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_2 .path3 {
+  &:before {
+    content: $icon-icon-q2_2-path3;  
+    margin-left: -0.8974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_2 .path4 {
+  &:before {
+    content: $icon-icon-q2_2-path4;  
+    margin-left: -0.8974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_2 .path5 {
+  &:before {
+    content: $icon-icon-q2_2-path5;  
+    margin-left: -0.8974609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_2 .path6 {
+  &:before {
+    content: $icon-icon-q2_2-path6;  
+    margin-left: -0.8974609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_2 .path7 {
+  &:before {
+    content: $icon-icon-q2_2-path7;  
+    margin-left: -0.8974609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_2 .path8 {
+  &:before {
+    content: $icon-icon-q2_2-path8;  
+    margin-left: -0.8974609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_2 .path9 {
+  &:before {
+    content: $icon-icon-q2_2-path9;  
+    margin-left: -0.8974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_3 .path1 {
+  &:before {
+    content: $icon-icon-q2_3-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_3 .path2 {
+  &:before {
+    content: $icon-icon-q2_3-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_3 .path3 {
+  &:before {
+    content: $icon-icon-q2_3-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_3 .path4 {
+  &:before {
+    content: $icon-icon-q2_3-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_3 .path5 {
+  &:before {
+    content: $icon-icon-q2_3-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_3 .path6 {
+  &:before {
+    content: $icon-icon-q2_3-path6;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_3 .path7 {
+  &:before {
+    content: $icon-icon-q2_3-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_3 .path8 {
+  &:before {
+    content: $icon-icon-q2_3-path8;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_3 .path9 {
+  &:before {
+    content: $icon-icon-q2_3-path9;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_3 .path10 {
+  &:before {
+    content: $icon-icon-q2_3-path10;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_3 .path11 {
+  &:before {
+    content: $icon-icon-q2_3-path11;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_3 .path12 {
+  &:before {
+    content: $icon-icon-q2_3-path12;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_4 .path1 {
+  &:before {
+    content: $icon-icon-q2_4-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_4 .path2 {
+  &:before {
+    content: $icon-icon-q2_4-path2;  
+    margin-left: -1.1337890625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_4 .path3 {
+  &:before {
+    content: $icon-icon-q2_4-path3;  
+    margin-left: -1.1337890625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_4 .path4 {
+  &:before {
+    content: $icon-icon-q2_4-path4;  
+    margin-left: -1.1337890625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_4 .path5 {
+  &:before {
+    content: $icon-icon-q2_4-path5;  
+    margin-left: -1.1337890625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q2_5 .path1 {
+  &:before {
+    content: $icon-icon-q2_5-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_5 .path2 {
+  &:before {
+    content: $icon-icon-q2_5-path2;  
+    margin-left: -0.61328125em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q2_5 .path3 {
+  &:before {
+    content: $icon-icon-q2_5-path3;  
+    margin-left: -0.61328125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_5 .path4 {
+  &:before {
+    content: $icon-icon-q2_5-path4;  
+    margin-left: -0.61328125em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q2_5 .path5 {
+  &:before {
+    content: $icon-icon-q2_5-path5;  
+    margin-left: -0.61328125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_5 .path6 {
+  &:before {
+    content: $icon-icon-q2_5-path6;  
+    margin-left: -0.61328125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_5 .path7 {
+  &:before {
+    content: $icon-icon-q2_5-path7;  
+    margin-left: -0.61328125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_5 .path8 {
+  &:before {
+    content: $icon-icon-q2_5-path8;  
+    margin-left: -0.61328125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q2_5 .path9 {
+  &:before {
+    content: $icon-icon-q2_5-path9;  
+    margin-left: -0.61328125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_1 .path1 {
+  &:before {
+    content: $icon-icon-q4_1-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_1 .path2 {
+  &:before {
+    content: $icon-icon-q4_1-path2;  
+    margin-left: -1.087890625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_1 .path3 {
+  &:before {
+    content: $icon-icon-q4_1-path3;  
+    margin-left: -1.087890625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_1 .path4 {
+  &:before {
+    content: $icon-icon-q4_1-path4;  
+    margin-left: -1.087890625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_1 .path5 {
+  &:before {
+    content: $icon-icon-q4_1-path5;  
+    margin-left: -1.087890625em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q4_1 .path6 {
+  &:before {
+    content: $icon-icon-q4_1-path6;  
+    margin-left: -1.087890625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q4_1 .path7 {
+  &:before {
+    content: $icon-icon-q4_1-path7;  
+    margin-left: -1.087890625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q4_1 .path8 {
+  &:before {
+    content: $icon-icon-q4_1-path8;  
+    margin-left: -1.087890625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_1 .path9 {
+  &:before {
+    content: $icon-icon-q4_1-path9;  
+    margin-left: -1.087890625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_1 .path10 {
+  &:before {
+    content: $icon-icon-q4_1-path10;  
+    margin-left: -1.087890625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q4_1 .path11 {
+  &:before {
+    content: $icon-icon-q4_1-path11;  
+    margin-left: -1.087890625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_2 .path1 {
+  &:before {
+    content: $icon-icon-q4_2-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_2 .path2 {
+  &:before {
+    content: $icon-icon-q4_2-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_2 .path3 {
+  &:before {
+    content: $icon-icon-q4_2-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_2 .path4 {
+  &:before {
+    content: $icon-icon-q4_2-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_2 .path5 {
+  &:before {
+    content: $icon-icon-q4_2-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_2 .path6 {
+  &:before {
+    content: $icon-icon-q4_2-path6;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q4_2 .path7 {
+  &:before {
+    content: $icon-icon-q4_2-path7;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q4_2 .path8 {
+  &:before {
+    content: $icon-icon-q4_2-path8;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q4_2 .path9 {
+  &:before {
+    content: $icon-icon-q4_2-path9;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q4_2 .path10 {
+  &:before {
+    content: $icon-icon-q4_2-path10;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q4_2 .path11 {
+  &:before {
+    content: $icon-icon-q4_2-path11;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_2 .path12 {
+  &:before {
+    content: $icon-icon-q4_2-path12;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_2 .path13 {
+  &:before {
+    content: $icon-icon-q4_2-path13;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_2 .path14 {
+  &:before {
+    content: $icon-icon-q4_2-path14;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_2 .path15 {
+  &:before {
+    content: $icon-icon-q4_2-path15;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_3 .path1 {
+  &:before {
+    content: $icon-icon-q4_3-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_3 .path2 {
+  &:before {
+    content: $icon-icon-q4_3-path2;  
+    margin-left: -1.345703125em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q4_3 .path3 {
+  &:before {
+    content: $icon-icon-q4_3-path3;  
+    margin-left: -1.345703125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_3 .path4 {
+  &:before {
+    content: $icon-icon-q4_3-path4;  
+    margin-left: -1.345703125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_3 .path5 {
+  &:before {
+    content: $icon-icon-q4_3-path5;  
+    margin-left: -1.345703125em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q4_3 .path6 {
+  &:before {
+    content: $icon-icon-q4_3-path6;  
+    margin-left: -1.345703125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_3 .path7 {
+  &:before {
+    content: $icon-icon-q4_3-path7;  
+    margin-left: -1.345703125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q4_3 .path8 {
+  &:before {
+    content: $icon-icon-q4_3-path8;  
+    margin-left: -1.345703125em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q4_3 .path9 {
+  &:before {
+    content: $icon-icon-q4_3-path9;  
+    margin-left: -1.345703125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_3 .path10 {
+  &:before {
+    content: $icon-icon-q4_3-path10;  
+    margin-left: -1.345703125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_3 .path11 {
+  &:before {
+    content: $icon-icon-q4_3-path11;  
+    margin-left: -1.345703125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_3 .path12 {
+  &:before {
+    content: $icon-icon-q4_3-path12;  
+    margin-left: -1.345703125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q4_3 .path13 {
+  &:before {
+    content: $icon-icon-q4_3-path13;  
+    margin-left: -1.345703125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_1 .path1 {
+  &:before {
+    content: $icon-icon-q5_1-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_1 .path2 {
+  &:before {
+    content: $icon-icon-q5_1-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_1 .path3 {
+  &:before {
+    content: $icon-icon-q5_1-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_1 .path4 {
+  &:before {
+    content: $icon-icon-q5_1-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_1 .path5 {
+  &:before {
+    content: $icon-icon-q5_1-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_1 .path6 {
+  &:before {
+    content: $icon-icon-q5_1-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_1 .path7 {
+  &:before {
+    content: $icon-icon-q5_1-path7;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_1 .path8 {
+  &:before {
+    content: $icon-icon-q5_1-path8;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_1 .path9 {
+  &:before {
+    content: $icon-icon-q5_1-path9;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_1 .path10 {
+  &:before {
+    content: $icon-icon-q5_1-path10;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_1 .path11 {
+  &:before {
+    content: $icon-icon-q5_1-path11;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_1 .path12 {
+  &:before {
+    content: $icon-icon-q5_1-path12;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_1 .path13 {
+  &:before {
+    content: $icon-icon-q5_1-path13;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_1 .path14 {
+  &:before {
+    content: $icon-icon-q5_1-path14;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q5_1 .path15 {
+  &:before {
+    content: $icon-icon-q5_1-path15;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_1 .path16 {
+  &:before {
+    content: $icon-icon-q5_1-path16;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_2 .path1 {
+  &:before {
+    content: $icon-icon-q5_2-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_2 .path2 {
+  &:before {
+    content: $icon-icon-q5_2-path2;  
+    margin-left: -0.978515625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_2 .path3 {
+  &:before {
+    content: $icon-icon-q5_2-path3;  
+    margin-left: -0.978515625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_2 .path4 {
+  &:before {
+    content: $icon-icon-q5_2-path4;  
+    margin-left: -0.978515625em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q5_2 .path5 {
+  &:before {
+    content: $icon-icon-q5_2-path5;  
+    margin-left: -0.978515625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_2 .path6 {
+  &:before {
+    content: $icon-icon-q5_2-path6;  
+    margin-left: -0.978515625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_2 .path7 {
+  &:before {
+    content: $icon-icon-q5_2-path7;  
+    margin-left: -0.978515625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_3 .path1 {
+  &:before {
+    content: $icon-icon-q5_3-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_3 .path2 {
+  &:before {
+    content: $icon-icon-q5_3-path2;  
+    margin-left: -0.978515625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_3 .path3 {
+  &:before {
+    content: $icon-icon-q5_3-path3;  
+    margin-left: -0.978515625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_3 .path4 {
+  &:before {
+    content: $icon-icon-q5_3-path4;  
+    margin-left: -0.978515625em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q5_3 .path5 {
+  &:before {
+    content: $icon-icon-q5_3-path5;  
+    margin-left: -0.978515625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_3 .path6 {
+  &:before {
+    content: $icon-icon-q5_3-path6;  
+    margin-left: -0.978515625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_3 .path7 {
+  &:before {
+    content: $icon-icon-q5_3-path7;  
+    margin-left: -0.978515625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_3 .path8 {
+  &:before {
+    content: $icon-icon-q5_3-path8;  
+    margin-left: -0.978515625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path1 {
+  &:before {
+    content: $icon-icon-q5_4-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_4 .path2 {
+  &:before {
+    content: $icon-icon-q5_4-path2;  
+    margin-left: -0.7255859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_4 .path3 {
+  &:before {
+    content: $icon-icon-q5_4-path3;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path4 {
+  &:before {
+    content: $icon-icon-q5_4-path4;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path5 {
+  &:before {
+    content: $icon-icon-q5_4-path5;  
+    margin-left: -0.7255859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q5_4 .path6 {
+  &:before {
+    content: $icon-icon-q5_4-path6;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path7 {
+  &:before {
+    content: $icon-icon-q5_4-path7;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path8 {
+  &:before {
+    content: $icon-icon-q5_4-path8;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path9 {
+  &:before {
+    content: $icon-icon-q5_4-path9;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path10 {
+  &:before {
+    content: $icon-icon-q5_4-path10;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path11 {
+  &:before {
+    content: $icon-icon-q5_4-path11;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path12 {
+  &:before {
+    content: $icon-icon-q5_4-path12;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path13 {
+  &:before {
+    content: $icon-icon-q5_4-path13;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path14 {
+  &:before {
+    content: $icon-icon-q5_4-path14;  
+    margin-left: -0.7255859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_4 .path15 {
+  &:before {
+    content: $icon-icon-q5_4-path15;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path16 {
+  &:before {
+    content: $icon-icon-q5_4-path16;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path17 {
+  &:before {
+    content: $icon-icon-q5_4-path17;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path18 {
+  &:before {
+    content: $icon-icon-q5_4-path18;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path19 {
+  &:before {
+    content: $icon-icon-q5_4-path19;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path20 {
+  &:before {
+    content: $icon-icon-q5_4-path20;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path21 {
+  &:before {
+    content: $icon-icon-q5_4-path21;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_4 .path22 {
+  &:before {
+    content: $icon-icon-q5_4-path22;  
+    margin-left: -0.7255859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_5 .path1 {
+  &:before {
+    content: $icon-icon-q5_5-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_5 .path2 {
+  &:before {
+    content: $icon-icon-q5_5-path2;  
+    margin-left: -0.875em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_5 .path3 {
+  &:before {
+    content: $icon-icon-q5_5-path3;  
+    margin-left: -0.875em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_5 .path4 {
+  &:before {
+    content: $icon-icon-q5_5-path4;  
+    margin-left: -0.875em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q5_5 .path5 {
+  &:before {
+    content: $icon-icon-q5_5-path5;  
+    margin-left: -0.875em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_5 .path6 {
+  &:before {
+    content: $icon-icon-q5_5-path6;  
+    margin-left: -0.875em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_5 .path7 {
+  &:before {
+    content: $icon-icon-q5_5-path7;  
+    margin-left: -0.875em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_5 .path8 {
+  &:before {
+    content: $icon-icon-q5_5-path8;  
+    margin-left: -0.875em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q5_5 .path9 {
+  &:before {
+    content: $icon-icon-q5_5-path9;  
+    margin-left: -0.875em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q5_5 .path10 {
+  &:before {
+    content: $icon-icon-q5_5-path10;  
+    margin-left: -0.875em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q5_5 .path11 {
+  &:before {
+    content: $icon-icon-q5_5-path11;  
+    margin-left: -0.875em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q5_5 .path12 {
+  &:before {
+    content: $icon-icon-q5_5-path12;  
+    margin-left: -0.875em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q5_5 .path13 {
+  &:before {
+    content: $icon-icon-q5_5-path13;  
+    margin-left: -0.875em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q5_6 {
+  &:before {
+    content: $icon-icon-q5_6;     
+    color: #464860;
+  }
+}
+.icon-icon-q5_right-arrow {
+  &:before {
+    content: $icon-icon-q5_right-arrow; 
+  }
+}
+.icon-location .path1 {
+  &:before {
+    content: $icon-location-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-location .path2 {
+  &:before {
+    content: $icon-location-path2;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-location .path3 {
+  &:before {
+    content: $icon-location-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-location .path4 {
+  &:before {
+    content: $icon-location-path4;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-location .path5 {
+  &:before {
+    content: $icon-location-path5;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-bed .path1 {
+  &:before {
+    content: $icon-bed-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-bed .path2 {
+  &:before {
+    content: $icon-bed-path2;  
+    margin-left: -1.2646484375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-bed .path3 {
+  &:before {
+    content: $icon-bed-path3;  
+    margin-left: -1.2646484375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-bed .path4 {
+  &:before {
+    content: $icon-bed-path4;  
+    margin-left: -1.2646484375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-bed .path5 {
+  &:before {
+    content: $icon-bed-path5;  
+    margin-left: -1.2646484375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path1 {
+  &:before {
+    content: $icon-grapes-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-grapes .path2 {
+  &:before {
+    content: $icon-grapes-path2;  
+    margin-left: -0.9677734375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-grapes .path3 {
+  &:before {
+    content: $icon-grapes-path3;  
+    margin-left: -0.9677734375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-grapes .path4 {
+  &:before {
+    content: $icon-grapes-path4;  
+    margin-left: -0.9677734375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-grapes .path5 {
+  &:before {
+    content: $icon-grapes-path5;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path6 {
+  &:before {
+    content: $icon-grapes-path6;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path7 {
+  &:before {
+    content: $icon-grapes-path7;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path8 {
+  &:before {
+    content: $icon-grapes-path8;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path9 {
+  &:before {
+    content: $icon-grapes-path9;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path10 {
+  &:before {
+    content: $icon-grapes-path10;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path11 {
+  &:before {
+    content: $icon-grapes-path11;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path12 {
+  &:before {
+    content: $icon-grapes-path12;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path13 {
+  &:before {
+    content: $icon-grapes-path13;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path14 {
+  &:before {
+    content: $icon-grapes-path14;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-grapes .path15 {
+  &:before {
+    content: $icon-grapes-path15;  
+    margin-left: -0.9677734375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_1 .path1 {
+  &:before {
+    content: $icon-icon-q1_1-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_1 .path2 {
+  &:before {
+    content: $icon-icon-q1_1-path2;  
+    margin-left: -1.1767578125em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_1 .path3 {
+  &:before {
+    content: $icon-icon-q1_1-path3;  
+    margin-left: -1.1767578125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_1 .path4 {
+  &:before {
+    content: $icon-icon-q1_1-path4;  
+    margin-left: -1.1767578125em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_1 .path5 {
+  &:before {
+    content: $icon-icon-q1_1-path5;  
+    margin-left: -1.1767578125em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_1 .path6 {
+  &:before {
+    content: $icon-icon-q1_1-path6;  
+    margin-left: -1.1767578125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path1 {
+  &:before {
+    content: $icon-icon-q1_2-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path2 {
+  &:before {
+    content: $icon-icon-q1_2-path2;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_2 .path3 {
+  &:before {
+    content: $icon-icon-q1_2-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path4 {
+  &:before {
+    content: $icon-icon-q1_2-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path5 {
+  &:before {
+    content: $icon-icon-q1_2-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path6 {
+  &:before {
+    content: $icon-icon-q1_2-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path7 {
+  &:before {
+    content: $icon-icon-q1_2-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path8 {
+  &:before {
+    content: $icon-icon-q1_2-path8;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_2 .path9 {
+  &:before {
+    content: $icon-icon-q1_2-path9;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path10 {
+  &:before {
+    content: $icon-icon-q1_2-path10;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path11 {
+  &:before {
+    content: $icon-icon-q1_2-path11;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path12 {
+  &:before {
+    content: $icon-icon-q1_2-path12;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path13 {
+  &:before {
+    content: $icon-icon-q1_2-path13;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path14 {
+  &:before {
+    content: $icon-icon-q1_2-path14;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path15 {
+  &:before {
+    content: $icon-icon-q1_2-path15;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path16 {
+  &:before {
+    content: $icon-icon-q1_2-path16;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path17 {
+  &:before {
+    content: $icon-icon-q1_2-path17;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path18 {
+  &:before {
+    content: $icon-icon-q1_2-path18;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path19 {
+  &:before {
+    content: $icon-icon-q1_2-path19;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path20 {
+  &:before {
+    content: $icon-icon-q1_2-path20;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_2 .path21 {
+  &:before {
+    content: $icon-icon-q1_2-path21;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path22 {
+  &:before {
+    content: $icon-icon-q1_2-path22;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path23 {
+  &:before {
+    content: $icon-icon-q1_2-path23;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path24 {
+  &:before {
+    content: $icon-icon-q1_2-path24;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path25 {
+  &:before {
+    content: $icon-icon-q1_2-path25;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_2 .path26 {
+  &:before {
+    content: $icon-icon-q1_2-path26;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_2 .path27 {
+  &:before {
+    content: $icon-icon-q1_2-path27;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path28 {
+  &:before {
+    content: $icon-icon-q1_2-path28;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path29 {
+  &:before {
+    content: $icon-icon-q1_2-path29;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path30 {
+  &:before {
+    content: $icon-icon-q1_2-path30;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path31 {
+  &:before {
+    content: $icon-icon-q1_2-path31;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path32 {
+  &:before {
+    content: $icon-icon-q1_2-path32;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path33 {
+  &:before {
+    content: $icon-icon-q1_2-path33;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path34 {
+  &:before {
+    content: $icon-icon-q1_2-path34;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path35 {
+  &:before {
+    content: $icon-icon-q1_2-path35;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_2 .path36 {
+  &:before {
+    content: $icon-icon-q1_2-path36;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path1 {
+  &:before {
+    content: $icon-icon-q1_3-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path2 {
+  &:before {
+    content: $icon-icon-q1_3-path2;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path3 {
+  &:before {
+    content: $icon-icon-q1_3-path3;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path4 {
+  &:before {
+    content: $icon-icon-q1_3-path4;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path5 {
+  &:before {
+    content: $icon-icon-q1_3-path5;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path6 {
+  &:before {
+    content: $icon-icon-q1_3-path6;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path7 {
+  &:before {
+    content: $icon-icon-q1_3-path7;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path8 {
+  &:before {
+    content: $icon-icon-q1_3-path8;  
+    margin-left: -1.1025390625em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_3 .path9 {
+  &:before {
+    content: $icon-icon-q1_3-path9;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path10 {
+  &:before {
+    content: $icon-icon-q1_3-path10;  
+    margin-left: -1.1025390625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_3 .path11 {
+  &:before {
+    content: $icon-icon-q1_3-path11;  
+    margin-left: -1.1025390625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_3 .path12 {
+  &:before {
+    content: $icon-icon-q1_3-path12;  
+    margin-left: -1.1025390625em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_3 .path13 {
+  &:before {
+    content: $icon-icon-q1_3-path13;  
+    margin-left: -1.1025390625em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_3 .path14 {
+  &:before {
+    content: $icon-icon-q1_3-path14;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path15 {
+  &:before {
+    content: $icon-icon-q1_3-path15;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path16 {
+  &:before {
+    content: $icon-icon-q1_3-path16;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path17 {
+  &:before {
+    content: $icon-icon-q1_3-path17;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path18 {
+  &:before {
+    content: $icon-icon-q1_3-path18;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path19 {
+  &:before {
+    content: $icon-icon-q1_3-path19;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path20 {
+  &:before {
+    content: $icon-icon-q1_3-path20;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path21 {
+  &:before {
+    content: $icon-icon-q1_3-path21;  
+    margin-left: -1.1025390625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_3 .path22 {
+  &:before {
+    content: $icon-icon-q1_3-path22;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path23 {
+  &:before {
+    content: $icon-icon-q1_3-path23;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path24 {
+  &:before {
+    content: $icon-icon-q1_3-path24;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path25 {
+  &:before {
+    content: $icon-icon-q1_3-path25;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path26 {
+  &:before {
+    content: $icon-icon-q1_3-path26;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path27 {
+  &:before {
+    content: $icon-icon-q1_3-path27;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path28 {
+  &:before {
+    content: $icon-icon-q1_3-path28;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path29 {
+  &:before {
+    content: $icon-icon-q1_3-path29;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path30 {
+  &:before {
+    content: $icon-icon-q1_3-path30;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path31 {
+  &:before {
+    content: $icon-icon-q1_3-path31;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path32 {
+  &:before {
+    content: $icon-icon-q1_3-path32;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path33 {
+  &:before {
+    content: $icon-icon-q1_3-path33;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path34 {
+  &:before {
+    content: $icon-icon-q1_3-path34;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path35 {
+  &:before {
+    content: $icon-icon-q1_3-path35;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path36 {
+  &:before {
+    content: $icon-icon-q1_3-path36;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path37 {
+  &:before {
+    content: $icon-icon-q1_3-path37;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path38 {
+  &:before {
+    content: $icon-icon-q1_3-path38;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path39 {
+  &:before {
+    content: $icon-icon-q1_3-path39;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path40 {
+  &:before {
+    content: $icon-icon-q1_3-path40;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path41 {
+  &:before {
+    content: $icon-icon-q1_3-path41;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path42 {
+  &:before {
+    content: $icon-icon-q1_3-path42;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path43 {
+  &:before {
+    content: $icon-icon-q1_3-path43;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path44 {
+  &:before {
+    content: $icon-icon-q1_3-path44;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path45 {
+  &:before {
+    content: $icon-icon-q1_3-path45;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path46 {
+  &:before {
+    content: $icon-icon-q1_3-path46;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path47 {
+  &:before {
+    content: $icon-icon-q1_3-path47;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path48 {
+  &:before {
+    content: $icon-icon-q1_3-path48;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path49 {
+  &:before {
+    content: $icon-icon-q1_3-path49;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path50 {
+  &:before {
+    content: $icon-icon-q1_3-path50;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path51 {
+  &:before {
+    content: $icon-icon-q1_3-path51;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path52 {
+  &:before {
+    content: $icon-icon-q1_3-path52;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path53 {
+  &:before {
+    content: $icon-icon-q1_3-path53;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path54 {
+  &:before {
+    content: $icon-icon-q1_3-path54;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path55 {
+  &:before {
+    content: $icon-icon-q1_3-path55;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path56 {
+  &:before {
+    content: $icon-icon-q1_3-path56;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path57 {
+  &:before {
+    content: $icon-icon-q1_3-path57;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path58 {
+  &:before {
+    content: $icon-icon-q1_3-path58;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path59 {
+  &:before {
+    content: $icon-icon-q1_3-path59;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path60 {
+  &:before {
+    content: $icon-icon-q1_3-path60;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path61 {
+  &:before {
+    content: $icon-icon-q1_3-path61;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path62 {
+  &:before {
+    content: $icon-icon-q1_3-path62;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path63 {
+  &:before {
+    content: $icon-icon-q1_3-path63;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path64 {
+  &:before {
+    content: $icon-icon-q1_3-path64;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path65 {
+  &:before {
+    content: $icon-icon-q1_3-path65;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path66 {
+  &:before {
+    content: $icon-icon-q1_3-path66;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path67 {
+  &:before {
+    content: $icon-icon-q1_3-path67;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path68 {
+  &:before {
+    content: $icon-icon-q1_3-path68;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path69 {
+  &:before {
+    content: $icon-icon-q1_3-path69;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path70 {
+  &:before {
+    content: $icon-icon-q1_3-path70;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path71 {
+  &:before {
+    content: $icon-icon-q1_3-path71;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path72 {
+  &:before {
+    content: $icon-icon-q1_3-path72;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path73 {
+  &:before {
+    content: $icon-icon-q1_3-path73;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path74 {
+  &:before {
+    content: $icon-icon-q1_3-path74;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_3 .path75 {
+  &:before {
+    content: $icon-icon-q1_3-path75;  
+    margin-left: -1.1025390625em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_4 .path1 {
+  &:before {
+    content: $icon-icon-q1_4-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path2 {
+  &:before {
+    content: $icon-icon-q1_4-path2;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path3 {
+  &:before {
+    content: $icon-icon-q1_4-path3;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path4 {
+  &:before {
+    content: $icon-icon-q1_4-path4;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path5 {
+  &:before {
+    content: $icon-icon-q1_4-path5;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path6 {
+  &:before {
+    content: $icon-icon-q1_4-path6;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path7 {
+  &:before {
+    content: $icon-icon-q1_4-path7;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path8 {
+  &:before {
+    content: $icon-icon-q1_4-path8;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path9 {
+  &:before {
+    content: $icon-icon-q1_4-path9;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path10 {
+  &:before {
+    content: $icon-icon-q1_4-path10;  
+    margin-left: -1.1474609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_4 .path11 {
+  &:before {
+    content: $icon-icon-q1_4-path11;  
+    margin-left: -1.1474609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_4 .path12 {
+  &:before {
+    content: $icon-icon-q1_4-path12;  
+    margin-left: -1.1474609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_4 .path13 {
+  &:before {
+    content: $icon-icon-q1_4-path13;  
+    margin-left: -1.1474609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_4 .path14 {
+  &:before {
+    content: $icon-icon-q1_4-path14;  
+    margin-left: -1.1474609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_4 .path15 {
+  &:before {
+    content: $icon-icon-q1_4-path15;  
+    margin-left: -1.1474609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_4 .path16 {
+  &:before {
+    content: $icon-icon-q1_4-path16;  
+    margin-left: -1.1474609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_4 .path17 {
+  &:before {
+    content: $icon-icon-q1_4-path17;  
+    margin-left: -1.1474609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_4 .path18 {
+  &:before {
+    content: $icon-icon-q1_4-path18;  
+    margin-left: -1.1474609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_5 .path1 {
+  &:before {
+    content: $icon-icon-q1_5-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path2 {
+  &:before {
+    content: $icon-icon-q1_5-path2;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path3 {
+  &:before {
+    content: $icon-icon-q1_5-path3;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path4 {
+  &:before {
+    content: $icon-icon-q1_5-path4;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path5 {
+  &:before {
+    content: $icon-icon-q1_5-path5;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path6 {
+  &:before {
+    content: $icon-icon-q1_5-path6;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path7 {
+  &:before {
+    content: $icon-icon-q1_5-path7;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path8 {
+  &:before {
+    content: $icon-icon-q1_5-path8;  
+    margin-left: -0.755859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_5 .path9 {
+  &:before {
+    content: $icon-icon-q1_5-path9;  
+    margin-left: -0.755859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_5 .path10 {
+  &:before {
+    content: $icon-icon-q1_5-path10;  
+    margin-left: -0.755859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_5 .path11 {
+  &:before {
+    content: $icon-icon-q1_5-path11;  
+    margin-left: -0.755859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_5 .path12 {
+  &:before {
+    content: $icon-icon-q1_5-path12;  
+    margin-left: -0.755859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_5 .path13 {
+  &:before {
+    content: $icon-icon-q1_5-path13;  
+    margin-left: -0.755859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_5 .path14 {
+  &:before {
+    content: $icon-icon-q1_5-path14;  
+    margin-left: -0.755859375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_5 .path15 {
+  &:before {
+    content: $icon-icon-q1_5-path15;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path16 {
+  &:before {
+    content: $icon-icon-q1_5-path16;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path17 {
+  &:before {
+    content: $icon-icon-q1_5-path17;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path18 {
+  &:before {
+    content: $icon-icon-q1_5-path18;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path19 {
+  &:before {
+    content: $icon-icon-q1_5-path19;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path20 {
+  &:before {
+    content: $icon-icon-q1_5-path20;  
+    margin-left: -0.755859375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_5 .path21 {
+  &:before {
+    content: $icon-icon-q1_5-path21;  
+    margin-left: -0.755859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_5 .path22 {
+  &:before {
+    content: $icon-icon-q1_5-path22;  
+    margin-left: -0.755859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_5 .path23 {
+  &:before {
+    content: $icon-icon-q1_5-path23;  
+    margin-left: -0.755859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_5 .path24 {
+  &:before {
+    content: $icon-icon-q1_5-path24;  
+    margin-left: -0.755859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_5 .path25 {
+  &:before {
+    content: $icon-icon-q1_5-path25;  
+    margin-left: -0.755859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_5 .path26 {
+  &:before {
+    content: $icon-icon-q1_5-path26;  
+    margin-left: -0.755859375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_5 .path27 {
+  &:before {
+    content: $icon-icon-q1_5-path27;  
+    margin-left: -0.755859375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_6 .path1 {
+  &:before {
+    content: $icon-icon-q1_6-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_6 .path2 {
+  &:before {
+    content: $icon-icon-q1_6-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_6 .path3 {
+  &:before {
+    content: $icon-icon-q1_6-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_6 .path4 {
+  &:before {
+    content: $icon-icon-q1_6-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_6 .path5 {
+  &:before {
+    content: $icon-icon-q1_6-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_6 .path6 {
+  &:before {
+    content: $icon-icon-q1_6-path6;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_6 .path7 {
+  &:before {
+    content: $icon-icon-q1_6-path7;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_6 .path8 {
+  &:before {
+    content: $icon-icon-q1_6-path8;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_6 .path9 {
+  &:before {
+    content: $icon-icon-q1_6-path9;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_6 .path10 {
+  &:before {
+    content: $icon-icon-q1_6-path10;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_6 .path11 {
+  &:before {
+    content: $icon-icon-q1_6-path11;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path1 {
+  &:before {
+    content: $icon-icon-q1_7-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path2 {
+  &:before {
+    content: $icon-icon-q1_7-path2;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path3 {
+  &:before {
+    content: $icon-icon-q1_7-path3;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path4 {
+  &:before {
+    content: $icon-icon-q1_7-path4;  
+    margin-left: -0.974609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_7 .path5 {
+  &:before {
+    content: $icon-icon-q1_7-path5;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path6 {
+  &:before {
+    content: $icon-icon-q1_7-path6;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path7 {
+  &:before {
+    content: $icon-icon-q1_7-path7;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path8 {
+  &:before {
+    content: $icon-icon-q1_7-path8;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path9 {
+  &:before {
+    content: $icon-icon-q1_7-path9;  
+    margin-left: -0.974609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_7 .path10 {
+  &:before {
+    content: $icon-icon-q1_7-path10;  
+    margin-left: -0.974609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_7 .path11 {
+  &:before {
+    content: $icon-icon-q1_7-path11;  
+    margin-left: -0.974609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_7 .path12 {
+  &:before {
+    content: $icon-icon-q1_7-path12;  
+    margin-left: -0.974609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_7 .path13 {
+  &:before {
+    content: $icon-icon-q1_7-path13;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path14 {
+  &:before {
+    content: $icon-icon-q1_7-path14;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path15 {
+  &:before {
+    content: $icon-icon-q1_7-path15;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path16 {
+  &:before {
+    content: $icon-icon-q1_7-path16;  
+    margin-left: -0.974609375em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_7 .path17 {
+  &:before {
+    content: $icon-icon-q1_7-path17;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path18 {
+  &:before {
+    content: $icon-icon-q1_7-path18;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path19 {
+  &:before {
+    content: $icon-icon-q1_7-path19;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path20 {
+  &:before {
+    content: $icon-icon-q1_7-path20;  
+    margin-left: -0.974609375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_7 .path21 {
+  &:before {
+    content: $icon-icon-q1_7-path21;  
+    margin-left: -0.974609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_7 .path22 {
+  &:before {
+    content: $icon-icon-q1_7-path22;  
+    margin-left: -0.974609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_7 .path23 {
+  &:before {
+    content: $icon-icon-q1_7-path23;  
+    margin-left: -0.974609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_7 .path24 {
+  &:before {
+    content: $icon-icon-q1_7-path24;  
+    margin-left: -0.974609375em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_7 .path25 {
+  &:before {
+    content: $icon-icon-q1_7-path25;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path26 {
+  &:before {
+    content: $icon-icon-q1_7-path26;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path27 {
+  &:before {
+    content: $icon-icon-q1_7-path27;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path28 {
+  &:before {
+    content: $icon-icon-q1_7-path28;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path29 {
+  &:before {
+    content: $icon-icon-q1_7-path29;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path30 {
+  &:before {
+    content: $icon-icon-q1_7-path30;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path31 {
+  &:before {
+    content: $icon-icon-q1_7-path31;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path32 {
+  &:before {
+    content: $icon-icon-q1_7-path32;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path33 {
+  &:before {
+    content: $icon-icon-q1_7-path33;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path34 {
+  &:before {
+    content: $icon-icon-q1_7-path34;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path35 {
+  &:before {
+    content: $icon-icon-q1_7-path35;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path36 {
+  &:before {
+    content: $icon-icon-q1_7-path36;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_7 .path37 {
+  &:before {
+    content: $icon-icon-q1_7-path37;  
+    margin-left: -0.974609375em;  
+    color: rgb(70, 72, 96);
+  }
+}
+.icon-icon-q1_8 .path1 {
+  &:before {
+    content: $icon-icon-q1_8-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path2 {
+  &:before {
+    content: $icon-icon-q1_8-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path3 {
+  &:before {
+    content: $icon-icon-q1_8-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path4 {
+  &:before {
+    content: $icon-icon-q1_8-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path5 {
+  &:before {
+    content: $icon-icon-q1_8-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path6 {
+  &:before {
+    content: $icon-icon-q1_8-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path7 {
+  &:before {
+    content: $icon-icon-q1_8-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path8 {
+  &:before {
+    content: $icon-icon-q1_8-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path9 {
+  &:before {
+    content: $icon-icon-q1_8-path9;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path10 {
+  &:before {
+    content: $icon-icon-q1_8-path10;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path11 {
+  &:before {
+    content: $icon-icon-q1_8-path11;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path12 {
+  &:before {
+    content: $icon-icon-q1_8-path12;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path13 {
+  &:before {
+    content: $icon-icon-q1_8-path13;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-icon-q1_8 .path14 {
+  &:before {
+    content: $icon-icon-q1_8-path14;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_8 .path15 {
+  &:before {
+    content: $icon-icon-q1_8-path15;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_8 .path16 {
+  &:before {
+    content: $icon-icon-q1_8-path16;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_8 .path17 {
+  &:before {
+    content: $icon-icon-q1_8-path17;  
+    margin-left: -1em;  
+    color: rgb(204, 184, 244);
+  }
+}
+.icon-icon-q1_8 .path18 {
+  &:before {
+    content: $icon-icon-q1_8-path18;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_8 .path19 {
+  &:before {
+    content: $icon-icon-q1_8-path19;  
+    margin-left: -1em;  
+    color: rgb(163, 239, 224);
+  }
+}
+.icon-icon-q1_8 .path20 {
+  &:before {
+    content: $icon-icon-q1_8-path20;  
+    margin-left: -1em;  
+    color: rgb(70, 72, 96);
+  }
+}
+
+

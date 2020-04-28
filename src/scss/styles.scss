@@ -21,8 +21,11 @@
 @import 'components/main';
  */
 
+@import 'pages/problems';
+@import 'components/problems/header2.scss';
+@import 'components/problems/footer2.scss';
 
- @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Rubik:400,500,700&display=swap");
+
 .clearfix:after {
 	content: "";
 	display: block;
@@ -57,7 +60,8 @@
 }
 
 html {
-	box-sizing: border-box
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -257,12 +261,31 @@ input[type=submit] {
 	background-image: url(../images/png/book3.png)
 }
 
+.no-webp .bookPhotoContainer4 {
+	background-image: url(../images/jpg/tignes-apres-ski.jpg)
+}
+
+.no-webp .bookPhotoContainer5 {
+	background-image: url(../images/jpg/tignes-best-restaurants.jpg)
+}
+
+.no-webp .bookPhotoContainer6 {
+	background-image: url(../images/jpg/tignes-best-bars.jpg)
+}
+
+.no-webp .bookPhotoContainer7 {
+	background-image: url(../images/jopg/tignes-mountain-restaurants.jpg)
+}
+
+
+
+
 .no-webp .holidayImage1 {
 	background-image: url(../images/jpg/group-ski-trips.jpg)
 }
 
 .no-webp .holidayImage2 {
-	background-image: url(../images/jpg/holidays-for-friends.jpg)
+	background-image: url(../images/jpg/group-summer-holidays.jpg)
 }
 
 .no-webp .holidayImage3 {
@@ -274,7 +297,7 @@ input[type=submit] {
 }
 
 .no-webp .holidayImage5 {
-	background-image: url(../images/jpg/family-holiday.jpg)
+	background-image: url(../images/jpg/group-city-breaks.jpg)
 }
 
 .no-webp .holidayImage6 {
@@ -393,6 +416,82 @@ input[type=submit] {
 	background-image: url(../images/jpg/group-ski-holidays-in-Andorra.jpg)
 }
 
+.no-webp .holidayImage7 {
+	background-image: url(../images/jpg/snow.jpg)
+}
+
+.no-webp .holidayImage8 {
+	background-image: url(../images/jpg/city.jpg)
+}
+
+.no-webp .holidayImage9 {
+	background-image: url(../images/jpg/sun.jpg)
+}
+
+.no-webp .holidayImage10 {
+	background-image: url(../images/jpg/hen-ski-trip.jpg)
+}
+
+.no-webp .holidayImage11 {
+	background-image: url(../images/jpg/city-hen-party.jpg)
+}
+
+.no-webp .holidayImage12 {
+	background-image: url(../images/jpg/sunny-her-party.jpg)
+}
+
+.no-webp .holidayImage13 {
+	background-image: url(../images/jpg/corporate-ski-trip.jpg)
+}
+
+.no-webp .holidayImage14 {
+	background-image: url(../images/jpg/corporate-city-break.jpg)
+}
+
+.no-webp .holidayImage15 {
+	background-image: url(../images/jpg/corporate-beach-break.jpg)
+}
+
+.no-webp .holidayImage16 {
+	background-image: url(../images/jpg/girls_city.jpg)
+}
+
+.no-webp .holidayImage17 {
+	background-image: url(../images/jpg/girls_sun.jpg)
+}
+
+.no-webp .checkoutImg1 {
+	background-image: url(../images/jpg/check-out-our-blog.jpg)
+}
+
+.no-webp .checkoutImg2 {
+	background-image: url(../images/jpg/check-out-our-blog-1.jpg)
+}
+
+.no-webp .checkoutImg3 {
+	background-image: url(../images/jpg/check-out-our-blog-2.jpg)
+}
+
+.no-webp .checkoutImg4 {
+	background-image: url(../images/jpg/hen-weekends-blog-stress-free-hen-party.jpg)
+}
+
+.no-webp .checkoutImg5 {
+	background-image: url(../images/jpg/hen-weekends-blog-creative-hen-do-destinations.jpg)
+}
+
+.no-webp .checkoutImg6 {
+	background-image: url(../images/jpg/hen-weekends-blog-best-activities.jpg)
+}
+
+
+
+
+.webp .skiAndorraBkg {
+	background-image: url(../images/jpg/group-ski-trips-to-andorra.jpg)
+}
+
+
 .webp .topAreaImageHome {
 	background-image: url(../images/webp/group-holiday.webp)
 }
@@ -409,12 +508,37 @@ input[type=submit] {
 	background-image: url(../images/webp/book3.webp)
 }
 
+.webp .bookPhotoContainer4 {
+	background-image: url(../images/webp/tignes-apes-ski.webp)
+}
+
+.webp .bookPhotoContainer5 {
+	background-image: url(../images/webp/tignes-best-restaurants.webp)
+}
+
+.webp .bookPhotoContainer6 {
+	background-image: url(../images/webp/tignes-best-bars.webp)
+}
+
+.webp .bookPhotoContainer7 {
+	background-image: url(../images/webp/tignes-mountain-restaurants.webp)
+}
+
+
+
+
+
+
+
+
+
+
 .webp .holidayImage1 {
 	background-image: url(../images/webp/group-ski-trips.webp)
 }
 
 .webp .holidayImage2 {
-	background-image: url(../images/webp/holidays-for-friends.webp)
+	background-image: url(../images/webp/group-summer-holidays.webp)
 }
 
 .webp .holidayImage3 {
@@ -426,7 +550,7 @@ input[type=submit] {
 }
 
 .webp .holidayImage5 {
-	background-image: url(../images/webp/family-holiday.webp)
+	background-image: url(../images/webp/group-city-breaks.webp)
 }
 
 .webp .holidayImage6 {
@@ -687,6 +811,11 @@ a {
 	text-decoration: none
 }
 
+.bodylist li{
+	margin-top: 6px;
+	list-style-position: outside;
+}
+
 .bigPhoneImages {
 	z-index: 9
 }
@@ -931,6 +1060,10 @@ section.convinced .convincedContent {
 	width: 33.33%
 }
 
+.navBooking .skiResort{
+	width: 25%
+}
+
 .contentBooking.active {
 	-ms-align-items: center
 }
@@ -1075,7 +1208,8 @@ section.convinced .contact .subtitle {
 
 .ourStory .ourStoryBox .ourStoryLeft {
 	width: 50%;
-	padding-left: 40px
+	padding-left: 40px;
+	padding-right: 15px;
 }
 
 .ourStory .ourStoryBox .ourStoryLeft .ourStoryDescr {
@@ -1157,7 +1291,7 @@ section.convinced .contact .subtitle {
 	min-height: 550px;
 	z-index: 10;
 	position: relative;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 30px
 }
 
@@ -1589,8 +1723,8 @@ section.convinced .contact .subtitle {
 }
 
 .partners {
-	padding-top: 100px;
-	padding-bottom: 100px
+	padding-top: 60px;
+	padding-bottom: 40px
 }
 
 .partners .press {
@@ -1607,7 +1741,7 @@ section.convinced .contact .subtitle {
 }
 
 .partners .press img {
-	filter: grayscale(1) opacity(.2);
+	filter: grayscale(1) opacity(.5);
 	max-height: 60px
 }
 
@@ -1798,6 +1932,15 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 	position: relative
 }
 
+.noneSkiersLeft {
+	background-image: url(../images/webp/weekend-ski-breaks.webp);
+	height: 470px;
+	background-size: cover;
+	border-radius: 10px;
+	position: relative
+}
+
+
 .skiWeekendsRight {
 	padding-left: 20px;
 	width: 50%;
@@ -1814,7 +1957,7 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 .skiWeekendsRightText,
 .skiWeekendsRightText p {
 	font-family: Montserrat, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #464860
 }
 
@@ -1828,6 +1971,21 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 
 .resortsGridItemWrap {
 	min-height: 533px
+}
+
+.resortsGridItemWrap.link:hover {
+box-shadow: 0 20px 15px -10px rgba(79, 45, 135, .2);
+transition: box-shadow .25s linear
+}
+
+.resortsGridItemWrapItem.link:hover {
+box-shadow: 0 20px 15px -10px rgba(79, 45, 135, .2);
+transition: box-shadow .25s linear
+}
+
+.statesElement.link:hover {
+box-shadow: 0 20px 15px -10px rgba(79, 45, 135, .2);
+transition: box-shadow .25s linear
 }
 
 .regionsGridImg {
@@ -1850,6 +2008,11 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 	line-height: 1.42
 }
 
+
+
+
+
+
 .topAustria {
 	height: 740px;
 	width: 100%;
@@ -1865,7 +2028,7 @@ section.photoGridOne {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 130px;
+	margin-top: 50px;
 	margin-bottom: 50px
 }
 
@@ -1888,7 +2051,8 @@ section.photoGridOne:before {
 .photoGridOneElement a img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover
+	object-fit: cover;
+	border-radius: 5px
 }
 
 .photoGridOnePicture {
@@ -1903,7 +2067,8 @@ section.photoGridOne:before {
 	color: #fff;
 	font-family: Montserrat, sans-serif;
 	font-weight: 700;
-	font-size: 18px
+	font-size: 18px;
+	text-shadow: 1px 1px 3px #3e403f
 }
 
 section.states {
@@ -1975,7 +2140,8 @@ div.statesList:before {
 	color: #fff;
 	font-family: Montserrat, sans-serif;
 	font-weight: 700;
-	font-size: 18px
+	font-size: 18px;
+	text-shadow: 1px 1px 3px #3e403f;
 }
 
 .photoGridOneElement:hover {
@@ -1984,7 +2150,7 @@ div.statesList:before {
 }
 
 .stagMessBg {
-	padding-top: 100px
+	padding-top: 70px
 }
 
 .checkOutOurBlog {
@@ -2081,7 +2247,8 @@ div.whypackedBox {
 	font-size: 38px;
 	color: #464860;
 	margin-bottom: 30px;
-	text-align: left
+	text-align: left;
+	padding-left: 0px
 }
 
 .whypackedTitleMobile {
@@ -2368,13 +2535,13 @@ div.whypackedBox {
 
 .cheapSkiHolidaysTopSection {
 	padding-top: 70px;
-	padding-bottom: 50px
+	padding-bottom: 0px
 }
 
 .siteHeader {
 	position: relative;
 	z-index: 999;
-	box-shadow: 0 5px 54px hsla(0, 0%, 56%, .22)
+	// box-shadow: 0 5px 54px hsla(0, 0%, 56%, .22);
 }
 
 .siteHeader .headerContainer {
@@ -2386,6 +2553,7 @@ div.whypackedBox {
 }
 
 .logo {
+	font-size: 0;
 	width: 250px
 }
 
@@ -2413,6 +2581,7 @@ div.whypackedBox {
 .mainMenuLink {
 	font-weight: 500;
 	font-size: 16px;
+	line-height: 1;
 	padding-left: 15px;
 	padding-right: 15px;
 	text-decoration: none;
@@ -2421,6 +2590,19 @@ div.whypackedBox {
 	display: flex;
 	align-items: center;
 	transition: all .25s linear
+}
+
+.subMenuLinkBlogHome{
+	display: none;
+	@media (hover: none) {
+		display: block;
+	}
+}
+
+.mainMenuLinkBlog{
+	@media (hover: none) {
+		pointer-events: none;
+	}
 }
 
 .mainMenuLink.active,
@@ -2456,10 +2638,20 @@ div.whypackedBox {
 	left: -20px
 }
 
-.subMenuActive .subMenuContainer {
-	visibility: visible;
-	opacity: 1
+@media (hover: hover) {
+	.hasSubmenu:hover .subMenuContainer{
+		visibility: visible;
+		opacity: 1;
+	}
 }
+
+@media (hover: none) {
+	.subMenuActive .subMenuContainer {
+		visibility: visible;
+		opacity: 1
+	}
+}
+
 
 .subMenuListWrap {
 	margin-left: 15px;
@@ -2470,7 +2662,7 @@ div.whypackedBox {
 .subMenuListWrap:after {
 	content: "";
 	position: absolute;
-	height: 175px;
+	height: 150px;
 	width: 1px;
 	background: #dedede;
 	top: 25px;
@@ -2483,7 +2675,7 @@ div.whypackedBox {
 
 .subMenuTitle {
 	font-size: 16px;
-	margin-top: 10px;
+	margin-top: -10px;
 	margin-bottom: 5px;
 	font-weight: 600;
 	color: #606176;
@@ -4598,7 +4790,7 @@ section.callingMountains .callingMountainsImageTablet .callingMountainsImageItem
 	color: #464860;
 	font-size: 26px;
 	text-align: center;
-	margin-bottom: 10px
+	margin-bottom: 30px
 }
 
 .messageBg .messageTable .messageMiddle .messageButtons {
@@ -4635,7 +4827,8 @@ section.callingMountains .callingMountainsImageTablet .callingMountainsImageItem
 }
 
 section.notCompletelyConvinced {
-	margin-top: 50px
+	margin-top: 80px;
+	margin-bottom: 50px;
 }
 
 section.notCompletelyConvinced h3.sectionTitle {
@@ -4777,7 +4970,7 @@ div.stepRight p {
 }
 
 div.stepRight a {
-	color: #6be2d1;
+	color: #4f2d87;
 	text-decoration: underline
 }
 
@@ -4796,6 +4989,33 @@ div.stepRight a {
 	padding: 10px 10px 10px 25px
 }
 
+
+.topRegionsResorts .tab-content>.tabPaneResorts.active.skiAccommodation {
+	justify-content: flex-start;
+}
+
+.regionsGridDescription .skiAccommodationName {
+	margin-bottom: 3px 
+}
+
+.regionsGridDescription .skiAccommodationLocation {
+	padding-top: 0px
+}
+
+.regionsGridData .skiAccommodationDesc {
+	font-size: 12px;
+}
+
+.regionsGridDescription .skiAccommodationDesc {
+	border-bottom: none;
+	margin-top: 20px;
+}
+
+.skiAccommodationStars {
+    max-width: 80px;
+    margin-top: 6px;
+}
+
 .regionsGridDescription h4 a {
 	font-family: Montserrat, sans-serif;
 	font-size: 20px;
@@ -4809,7 +5029,8 @@ div.stepRight a {
 }
 
 section.seriously {
-	margin-top: 100px
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 h3.seriouslyTitle {
@@ -5012,7 +5233,7 @@ div.notConvincedBox {
 }
 
 .checkout {
-	margin-top: 100px
+	margin-top: 60px
 }
 
 body div .checkout {
@@ -5247,7 +5468,7 @@ a.typeform-share.button {
 
 .skiWeekendsLeftText {
 	font-family: Montserrat, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #464860
 }
 
@@ -5290,7 +5511,8 @@ a.typeform-share.button {
 	width: 1140px;
 	margin: auto;
 	max-width: 100%;
-	margin-top: 50px
+	margin-top: 50px;
+	margin-bottom: 90px
 }
 
 .containerTabsTheBest .navTabsTop {
@@ -5543,7 +5765,8 @@ div.whyMySwftBox {
 
 .stagAccomodation .sectionTitle {
 	margin-top: 50px;
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	margin-top: 80px
 }
 
 .stagAccomodation .stagAccomodationText p {
@@ -5551,6 +5774,10 @@ div.whyMySwftBox {
 	font-size: 16px;
 	color: #464860;
 	line-height: 1.4
+}
+
+.stagAccomodationText .centreAllign {
+	text-align: center;
 }
 
 .accommodationOpt {
@@ -6366,7 +6593,8 @@ img.teamImgItemTablet {
 	line-height: 28px;
 	color: #464860;
 	font-family: Montserrat;
-	font-weight: 400
+	font-weight: 400;
+	margin: 0 5px 0 5px;
 }
 
 .appPageTop .topAreaBg {
@@ -6888,7 +7116,7 @@ img.teamImgItemTablet {
 	position: relative;
 	overflow: hidden;
 	padding-top: 90px;
-	padding-bottom: 250px
+	padding-bottom: 200px
 }
 
 .dotsPurple {
@@ -7112,8 +7340,14 @@ img.teamImgItemTablet {
 	z-index: -1
 }
 
+
+.skiResort {
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
 .customersOpinion {
-	margin-top: 0;
+	margin-top: 100px;
 	margin-bottom: 100px
 }
 
@@ -7176,6 +7410,10 @@ img.teamImgItemTablet {
 .solvedText {
 	font-size: 16px;
 	font-weight: 400
+}
+
+.instagram {
+	align-items: center	
 }
 
 .holiday-handled {
@@ -7351,8 +7589,8 @@ img.teamImgItemTablet {
 .benefitsMain {
 	height: auto;
 	background-color: #f8f8ff;
-	margin-left: -15px;
-	margin-right: -15px;
+	// margin-left: -15px;
+	// margin-right: -15px;
 	margin-bottom: 50px
 }
 
@@ -7642,7 +7880,7 @@ Start How it works Page .topArea {
 	display: block;
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	height: auto
 }
@@ -8025,6 +8263,9 @@ Start How it works Page .topArea {
 	.someClass {
 		padding-left: 0;
 		padding-right: 0
+	}
+	.siteHeader .headerContainer {
+    max-width: calc(100% - 85px);
 	}
 }
 
@@ -8767,6 +9008,9 @@ Start How it works Page .topArea {
 	.holidayContent {
 		display: block!important
 	}
+	.groupHolidayHome .holidayContent{
+		display: flex !important;
+	}
 	.holidayContent .holidayItemx3 {
 		display: block;
 		width: 100%;
@@ -9373,6 +9617,9 @@ Start How it works Page .topArea {
 		margin-left: 2%;
 		margin-right: 2%
 	}
+	.instagram {
+		display: none;
+	}
 }
 
 @media only screen and (max-width:767px) {
@@ -9787,7 +10034,7 @@ Start How it works Page .topArea {
 		margin: 5px 1%
 	}
 	.tabs4 .activitiesbutton-wrap {
-		font-size: 11px;
+		font-size: 12px;
 		font-weight: 500
 	}
 	.partying {
@@ -9953,7 +10200,8 @@ Start How it works Page .topArea {
 		display: inline
 	}
 	.moreImage {
-		text-align: center
+		text-align: center;
+		margin-bottom: 50px;
 	}
 	.features {
 		padding-bottom: 40px
@@ -10393,3 +10641,691 @@ Start How it works Page .topArea {
 		background-image: url(/assets/userfiles/flags2x.png)
 	}
 }
+
+
+.errorPage{
+	background: #eeeeee;
+	.groupTripBookedBg{
+		background: #eeeeee;
+	}
+	.groupTripBookedRight{
+		text-align: center;
+	}
+}
+
+
+ @import 'components/rating';
+ @import 'components/feefoCarousel';
+
+/*Reccomended START*/
+ .recommended{
+	 margin-top: 100px;
+	 margin-bottom: 95px;
+	 @media only screen and (max-width:667px){
+		margin-bottom: 70px;
+	}
+	.photoGridOne{
+		margin-top: 60px;
+		margin-bottom: 40px;
+		
+		.photoGridOneElement {
+			@media only screen and (max-width: 768px){
+				width: 100%;
+				max-width: 450px;
+				margin: 15px auto;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+		}
+	}
+	.didntFindBox{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		@media only screen and (max-width:1200px){
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+		@media only screen and (max-width:1075px){
+			display: block;
+			text-align: center;
+		}
+		@media only screen and (max-width:768px){
+			margin-top: 70px;
+		}
+		@media only screen and (max-width:667px){
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		&__left{
+			width: 65%;
+			@media only screen and (max-width:1075px){
+				width: 100%;
+			}
+			h4{
+				font-size: 20px;
+				line-height: 24px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 16px;
+				line-height: 24px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 400;
+			}
+		}
+		&__right{
+			.checkMoreSkiBtn{
+				font-size: 16px;
+				line-height: 15px;
+				color: #40d8c2;
+				font-family: "Rubik", sans-serif;
+				font-weight: 500;
+				text-align: center;
+				width: 291px;
+				height: 58px;
+				border-radius: 10px;
+				border: 1px solid #40d8c2;
+				transition: all .25s linear;
+				&:hover{
+					background-color: #40d8c2;
+					color: #fff;
+					box-shadow: 5px 10px 15px rgba(64, 216, 194, 0.4);
+				}
+				@media only screen and (max-width:1075px){
+					margin: auto;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	.photoGridOneElement:nth-child(3) {
+		@media only screen and (max-width:520px){
+			height: auto;
+		}
+		
+	}
+
+	.recommendedLeftTitle{
+		font-size: 38px;
+	    line-height: 1.5;
+	    color: #464860;
+	    font-weight: 500;
+	    text-align: left;
+	    margin-bottom: 0px;
+	    font-family: Rubik, sans-serif;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+
+ }
+ /*Recommended END*/
+
+ /*Breadcrumbs START*/
+ 	.breadcrumbs{
+ 		background: #fff;
+ 	}
+	.schema{
+		height: 100%;
+		.navSchema-breadcrumbs {
+			font-size: 14px;
+			color: #464860;
+			font-family: "Montserrat", sans-serif;
+			padding: 25px 0;
+			margin-bottom: 0;
+			list-style-type: none;
+			display: flex;
+			border-top: 1px solid #ebebeb;
+			@media only screen and (max-width:1023px){
+				padding: 15px 0;
+			}
+		}
+		&__item{
+			a{
+				text-decoration: none;
+				position: relative;
+				padding-right: 36px;
+				color: #464860;
+				&:hover{
+					color: #40d8c2;
+				} 
+				&:after{
+					content: '';
+					position: absolute;
+					top: 4px;
+					right: 14px;
+					border-left: 5px solid #464860;
+					border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+				}
+			}
+			&:last-child{
+				span{
+					font-weight: 700;
+				}
+				a{
+					pointer-events: none;
+					&:after{
+						display: none;
+
+					}
+				}
+			}
+		} 
+	}
+ /*Breadcrumbs END*/
+
+ /*two sections START*/
+ .benefits.twoSections{
+	 margin-bottom: 0;
+ }
+ .twoSections-Content{
+	 margin-top: 100px;
+	 margin-bottom: 130px;
+	 @media only screen and (max-width:520px){
+		margin-bottom: 0;
+	 }
+ }
+ .twoSections-howItWorks{
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: space-between;
+	 align-items: center;
+	 position: relative;
+	 @media only screen and (max-width:1116px){
+		display: block;
+	}
+	 &__elem{
+		 width: 49%;
+		 background-color: #fff;
+		 border-radius: 6px;
+		 filter: drop-shadow(-3.657px -3.41px 27px rgba(142,142,142,0.14));
+		 position: relative;
+		 display: flex;
+		 flex-wrap: wrap;
+		 justify-content: space-between;
+		 align-items: flex-end;
+		 transition: all .25s linear;
+		 &:hover{
+			 background-color: #f8f8ff;
+		 }
+		 @media only screen and (max-width:1116px){
+			width: 80%;
+			margin-bottom: 35px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media only screen and (max-width:768px){
+		   width: 100%;
+		}
+		@media only screen and (max-width:571px){
+		   width: calc(100% + 40px);
+		   margin-left: -20px;
+		}
+		@media only screen and (max-width:520px){
+		   display: inline-grid;
+		   text-align: center;
+		}
+		 &__lL{
+			 width: 50%;
+			 font-size: 0;
+			 overflow: hidden;
+			 @media only screen and (max-width:1116px){
+				width: 40%;
+			}
+			@media only screen and (max-width:667px){
+			   width: 50%;
+			}
+			@media only screen and (max-width:520px){
+			   order: 1;
+			   width: 100%;
+			}
+			 img{
+				 height: 340px;
+				 transition: transform .25s linear;
+				 display: block;
+				 &:hover{
+					 -ms-transform: scale(1.05); /* IE 9 */
+					 -webkit-transform: scale(1.05); /* Safari 3-8 */
+					 transform: scale(1.05); 
+ 
+				 }
+				 @media only screen and (max-width:1116px){
+					margin-left: auto;
+					margin-right: auto;
+				}
+			 }
+		 }
+		 &__lR{
+			width: 50%;
+			padding: 30px 30px 30px 10px;
+			@media only screen and (max-width:1116px){
+			   width: 60%;
+		    }
+			@media only screen and (max-width:667px){
+			   width: 50%;
+			}
+			@media only screen and (max-width:520px){
+			   order: 0;
+			   width: 100%;
+			   padding: 30px;
+			}
+			h3{
+				font-size: 20px;
+				line-height: 28px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 700;
+			}
+			p{
+				font-size: 16px;
+				line-height: 24px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 400;
+			}
+			.mswButton.checkOutOurApp{
+				font-size: 16px;
+				line-height: 15px;
+				color: #464860;
+				font-family: "Rubik";
+				font-weight: 500;
+				width: 210px;
+				height: 58px;
+				border-radius: 10px;
+				background-color: #fff;
+				border: 1px solid #464860;
+				margin-top: 70px;
+				transition: all .25s linear;
+				&:hover{
+					color: #fff;
+					background-color: #464860;
+					box-shadow: 5px 10px 15px rgba(113, 100, 155, 0.4);
+				}
+				@media only screen and (max-width:480px){
+				   margin-top: 30px;
+				}
+				@media only screen and (max-width:520px){
+				   margin-left: auto;
+				   margin-right: auto;
+				   margin-top: 25px;
+				}
+			}
+		 }
+		 &__rL{
+			width: 50%;
+			font-size: 0;
+			overflow: hidden;
+			@media only screen and (max-width:1116px){
+				width: 40%;
+		    }
+			@media only screen and (max-width:667px){
+			   width: 50%;
+			}
+			@media only screen and (max-width:520px){
+			   width: 100%;
+			   order: 1;
+			}
+			img{
+				height: 340px;
+				transition: transform .25s linear;
+				display: block;
+				@media only screen and (max-width:1116px){
+					margin-left: auto;
+					margin-right: auto;
+			   }
+				&:hover{
+					-ms-transform: scale(1.05); /* IE 9 */
+					-webkit-transform: scale(1.05); /* Safari 3-8 */
+					transform: scale(1.05); 
+				}
+			}
+		 }
+		 &__rR{
+		   width: 50%;
+		   padding: 30px 30px 30px 10px;
+		   @media only screen and (max-width:1116px){
+			   width: 60%;
+		   }
+		   @media only screen and (max-width:667px){
+			  width: 50%;
+		   }
+		   @media only screen and (max-width:520px){
+			  width: 100%;
+			  order: 0;
+			  padding: 30px;
+		   }
+		   h3{
+			font-size: 20px;
+			line-height: 28px;
+			color: #464860;
+			font-family: "Montserrat", sans-serif;
+			font-weight: 700;
+		   }
+		   p{
+			   font-size: 16px;
+				line-height: 24px;
+				color: #464860;
+				font-family: "Montserrat", sans-serif;
+				font-weight: 400;
+		   }
+		   .buttonsContainer{
+			   margin-top: 20px;
+			   @media only screen and (max-width:1116px){
+				   margin-top: 95px;
+			   }
+			   @media only screen and (max-width:1111px){
+				  margin-top: 30px;
+			   }
+			   @media only screen and (max-width:667px){
+				  margin-top: 10px;
+			   }
+			   .mswButton{
+				@media only screen and (max-width:1023px){
+					margin-left: 0;
+					margin-right: auto;
+				}
+				@media only screen and (max-width:520px){
+				   margin: 10px;
+				}
+			   }
+			   .cyanBg{
+				   margin-top: 17px;
+				   @media only screen and (max-width:1116px){
+					   margin-top: 0;
+				   }
+				   @media only screen and (max-width:1116px){
+					   margin-top: 17px;
+				   }
+			   }
+		   }
+	    }
+	 }
+	 
+	 .twoSectionsDots.bgDotsPurple{
+		margin-left: 0;
+		top: -30px;
+		right: -20px;
+		position: absolute;
+		z-index: -1;
+		@media only screen and (max-width:1116px){
+			top: -30px;
+			right: 65px;
+	    }
+		@media only screen and (max-width:768px){
+		   right: -30px;
+		}
+		@media only screen and (max-width:520px){
+		   display: none;
+		}
+	 }
+	 
+	 .twoSectionsDots.bgDotsBlue{
+		margin-left: 0;
+		bottom: -30px;
+		left: -65px;
+		position: absolute;
+		z-index: -1;
+		@media only screen and (max-width:1116px){
+			bottom: -30px;
+			left: 65px;
+	   }
+	   @media only screen and (max-width:768px){
+		 left: -30px;
+	   }
+	   @media only screen and (max-width:520px){
+		  display: none;
+	   }
+	}
+	.app-lines.twoSectionsLines {
+		position: absolute;
+		bottom: -35px;
+		right: -35px;
+		z-index: -1;
+		@media only screen and (max-width:1116px){
+			bottom: -45px;
+			right: 65px;
+	    }
+		@media only screen and (max-width:768px){
+		   right: -30px;
+		}
+		@media only screen and (max-width:520px){
+		   display: none;
+		}
+	}
+ }
+ 
+ /*TWO sections END*/
+
+
+
+/* Pacman section*/
+
+.pacmanSection .game {
+	text-align: center;
+}
+
+/*Pacman section ends*/
+
+
+
+
+
+
+/*On page nav bar section*/
+
+@media (max-device-width: 376px) {
+  .onPageNav {
+    z-index: 95;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 768px) {
+  .onPageNav {
+    z-index: 95;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+}
+
+@media screen and (min-width: 992px) {
+  .onPageNav {
+    z-index: 95;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    position: -webkit-sticky;
+ 	position: sticky;
+  	top: 0;
+  }
+}
+
+.nav-link-holder {
+	position:relative;
+}
+
+.nav-link-holder a {
+	position: absolute; 
+	top: -200px;
+}
+
+.guide-link-bar ul {
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+  margin-left: -10px;
+  margin-right: -10px
+}
+
+.guide-link-bar li {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.25;
+  float: left;
+  margin: 0
+}
+
+.guide-link-bar a {
+  background-color: #4f2d87;
+  border: 1px 
+  solid #4f2d87;
+  display: block;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  font-size: 12px
+}
+
+
+@media screen and (max-width: 991px) {
+
+.guide-link-bar {
+	width: auto;
+    background: transparent;
+    height: auto;
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+    display: block;
+    }
+
+.guide-link-bar ul {
+	width: auto;
+    flex-wrap: wrap;
+    background: transparent;
+    height: auto;
+	padding: 3px;
+	display: flex;
+	border-radius: 30px;
+	list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	}
+
+.guide-link-bar li {
+	width: 48%;
+    box-shadow: 0px 3px 8px 0px rgba(77, 77, 77, 0.4);
+    margin: 5px 1%;
+	display: inline-block;
+	border-radius: 50px;
+    text-align: center;
+    padding: 0px;
+    }
+
+.guide-link-bar a {
+    background: #40d8c2;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: Montserrat;
+    text-align: center;
+    border: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+.guide-link-bar {
+  background-color: #4f2d87;
+  padding: 10px 20px;
+  width:100vw;
+  left: calc(-50vw + 50%);
+  position: relative
+}
+
+.guide-link-bar a {
+  background: none;
+  display: inline;
+  font-size: 16px
+}
+
+.guide-link-bar ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0
+}
+
+.guide-link-bar li {
+  background-color: initial;
+  border: none;
+  border-left: solid 1px #fff;
+  width: auto;
+  width: initial;
+  line-height: inherit;
+  display: inline-block;
+  padding: 0 20px;
+  float: none; 
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.guide-link-bar li:first-child {
+  border-left: none
+}
+
+.guide-link-bar li a {
+  border: none;
+  white-space: nowrap
+  }
+
+.guide-link-bar li.link-separator {
+  display: initial
+}
+}
+
+.guide-link-bar--thin {
+  height: 127px
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+.guide-link-bar--thin {
+  height: 90px
+}
+}
+
+.link-separator:before {
+  content: "|";
+  color: white
+}
+
+.col-md-24 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+@media (min-width: 992px) {
+  .col-md-24 {
+    float: left
+  }
+  .col-md-24 {
+    width: 100%
+  }
+}
+
+/*On page nav bar section ends*/

@@ -1,0 +1,12 @@
+<div class="breadcrumbs">
+  <div class="sContainer schema">
+      <ul class="navSchema-breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+          @@for(var i = 0; i < items.length; i++) {
+            <li class="schema__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a itemprop="item" href="`+items[i].link+`"> <span itemprop="name">`+items[i].name+`</span> </a>
+              <meta itemprop="position" content="`+items[i].position+`" /> 
+            </li>
+          }
+      </ul> 
+  </div>
+</div>

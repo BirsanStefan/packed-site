@@ -20,21 +20,24 @@
      		<meta property="og:type" content="website"/>
      		<meta property="og:image" content="https://packed.co/assets/images/jpg/packed-OG-image.jpg"/>
      		<meta property="og:image" content="https://packed.co/assets/images/jpg/packed-OG-image2.jpg"/>
-     		<meta property="og:url" content="https://packed.co/feedback"/>
+     		<meta property="og:url" content="https://packed.co/feedback/"/>
      		<meta property="og:description" content="packed feedback"/>
      	<!--end facebook-->
 
      	<!--twitter-->
      		<meta name="twitter:card" content="summary">
-     		<meta name="twitter:url" content="https://packed.co/feedback">
+     		<meta name="twitter:url" content="https://packed.co/feedback/">
      		<meta name="twitter:title" content="packed feedback">
      		<meta name="twitter:description" content="packed feedback">
      		<meta name="twitter:image" content="https://packed.co/assets/images/jpg/packed-twitter-image.jpg">
      	<!--end twitter-->
 
 
-     	<!-- FONTS -->
-     	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700|Rubik:400,500,700&display=swap" rel="stylesheet">
+		 <!-- FONTS -->
+		 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700&display=swap" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+
+     	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700|Rubik:400,500,700&display=swap" rel="stylesheet"> --> 
 
 
      	<!-- CSS -->
@@ -45,8 +48,15 @@
      	<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 
 
-     	<link rel="canonical" href="https://packed.co/feedback" />
+     	<link rel="canonical" href="https://packed.co/feedback/" />
 
+        <link rel="prefetch" href="https://q.quora.com">
+        <link rel="prefetch" href="https://www.googleadservices.com">
+        <link rel="prefetch" href="https://www.googletagmanager.com">
+        <link rel="prefetch" href="https://scontent.cdninstagram.com">
+        <link rel="prefetch" href="https://connect.facebook.net">
+        <link rel="prefetch" href="https://www.facebook.com">
+        <link rel="prefetch" href="https://bat.bing.com">
 
      	<!-- Google Tag Manager -->
      	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -56,254 +66,18 @@
      	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
      	<!-- End Google Tag Manager -->
 
+        @@include('../partials/globals/orgSchema.html')
+        
      </head>
 
     <body>
 
         <div id="wrapper">
 
-            <!-- Google Tag Manager (noscript) -->
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVXPGSD"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            <!-- End Google Tag Manager (noscript) -->
-            <div id="pageLoader">
-            	<div id="loader">
-            		<div id="plane">
-            			<svg aria-hidden="true" class="svg-inline--fa fa-plane fa-w-18" data-icon="plane" data-prefix="fas" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z" fill="currentColor"></path></svg></div>
-            		<p>
-            			<span>Planning</span> your amazing trip</p>
-            		<div class="lds-ellipsis">
-            			<div>
-            				&nbsp;</div>
-            			<div>
-            				&nbsp;</div>
-            			<div>
-            				&nbsp;</div>
-            			<div>
-            				&nbsp;</div>
-            		</div>
-            	</div>
-            </div>
-            <style type="text/css">
-            #pageLoader{
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                z-index: 999;
-                background: white;
-                top: 0;
-                left: 0;
-              }
-              @-webkit-keyframes fly {
-                to {
-                  transform: rotate(180deg);
-                }
-              }
-              @-webkit-keyframes shadow {
-                from {
-                  text-shadow: 0 4px 0 rgba(0, 0, 0, .2);
-                }
-                to {
-                  text-shadow: 4px 0 0 rgba(0, 0, 0, .2);
-                }
-              }
-              #loader {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 400px;
-                height: 220px;
-                margin: -110px 0 0 -200px;
-                /*background-image: linear-gradient(131deg, #4f2d87 0%, #7542c9 100%);*/
-                border-radius: 8px;
-                text-align: center;
-                color: white;
-                overflow: hidden;
-                /*box-shadow: 0px 5px 54px rgba(142,142,142,0.22);*/
-              }
-              #loader:before {
-                content: '';
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                bottom: -180px;
-                left: 20px;
-                border-radius: 50%;
-                border: 1.8px dashed #4f2d87;
-              }
-              #plane {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                height: 40px;
-                width: 40px;
-                line-height: 40px;
-                text-align: center;
-                font-size: 44px;
-                transform-origin: 200px 20px;
-                -webkit-animation: fly 2s infinite linear;
-              }
-              #plane svg {
-                margin: 4px 0 0 2px;
-                transform: rotate(-85deg);
-                -webkit-animation: shadow 2s infinite linear;
-              }
-              #plane svg path{
-                fill: #4f2d87;
-              }
-              #loader p {
-                margin-top: 110px;
-                line-height: 32px;
-                font-family: Montserrat;
-                font-size: 22px;
-                text-shadow: 0 1px 0 rgba(0, 0, 0, .2);
-                color: #4f2d87;
-                font-weight: 700;
-              }
-              #loader p span {
-                font-size: 50px;
-                display: block;
-                margin-bottom: 10px;
-              }
+            @@include('../partials/globals/googleTagBelowBody.html')
+            @@include('../partials/globals/loader.html')
+            @@include('../partials/globals/header.html')
 
-              /*Ellipsis*/
-
-              .lds-ellipsis {
-                display: inline-block;
-                position: relative;
-                width: 64px;
-                height: 64px;
-                margin-top: -20px;
-              }
-              .lds-ellipsis div {
-                position: absolute;
-                top: 27px;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                background: #4f2d87;
-                animation-timing-function: cubic-bezier(0, 1, 1, 0);
-              }
-              .lds-ellipsis div:nth-child(1) {
-                left: 6px;
-                animation: lds-ellipsis1 0.6s infinite;
-              }
-              .lds-ellipsis div:nth-child(2) {
-                left: 6px;
-                animation: lds-ellipsis2 0.6s infinite;
-              }
-              .lds-ellipsis div:nth-child(3) {
-                left: 26px;
-                animation: lds-ellipsis2 0.6s infinite;
-              }
-              .lds-ellipsis div:nth-child(4) {
-                left: 45px;
-                animation: lds-ellipsis3 0.6s infinite;
-              }
-              @keyframes lds-ellipsis1 {
-                0% {
-                  transform: scale(0);
-                }
-                100% {
-                  transform: scale(1);
-                }
-              }
-              @keyframes lds-ellipsis3 {
-                0% {
-                  transform: scale(1);
-                }
-                100% {
-                  transform: scale(0);
-                }
-              }
-              @keyframes lds-ellipsis2 {
-                0% {
-                  transform: translate(0, 0);
-                }
-                100% {
-                  transform: translate(19px, 0);
-                }
-              }
-
-              #pageLoader.loaded{
-                opacity: 0;
-                z-index: -1;
-                transition: all .3s linear;
-              }
-            </style>
-
-
-            <header class="siteHeader">
-            	<div class="sContainer headerContainer">
-            		<a href="/" class="logo">
-            			<img src="/assets/images/png/logo.png" alt="" />
-            		</a>
-
-            		<nav class="mainNav">
-            			<ul class="mainMenu">
-            				<li class="mainMenuItem"><a href="/our-story" class="mainMenuLink @@ourStoryActive">Our story</a></li>
-            				<li class="mainMenuItem"><a href="/how-it-works" class="mainMenuLink @@howItWorksActive">How it works</a></li>
-            				<li class="mainMenuItem hasSubmenu">
-            					<a href="javascript:void(0);" class="mainMenuLink @@ourHolidaysActive">Our holidays</a>
-            					<div class="subMenuContainer">
-
-            						<div class="subMenuListWrap">
-            							<h3 class="subMenuTitle">Holidays by type</h3>
-            							<ul class="submenuList">
-            								<li class="subMenuItem"><a href="/ski-holidays" class="subMenuLink">Ski holidays</a></li>
-            								<li class="subMenuItem"><a href="/city-breaks" class="subMenuLink">City breaks</a></li>
-            								<li class="subMenuItem"><a href="/sun-holidays" class="subMenuLink">Summer holidays</a></li>
-            								<li class="subMenuItem"><a href="/stag-do" class="subMenuLink">Stag weekends</a></li>
-            								<li class="subMenuItem"><a href="/hen-do" class="subMenuLink">Hen weekends</a></li>
-            							</ul>
-            						</div>
-
-            						<div class="subMenuListWrap">
-            							<h3 class="subMenuTitle">Holidays by group</h3>
-            							<ul class="submenuList">
-            								<li class="subMenuItem"><a href="/lads-holidays" class="subMenuLink">Lads holidays</a></li>
-            								<li class="subMenuItem"><a href="/girls-holidays" class="subMenuLink">Girls holidays</a></li>
-        										<li class="subMenuItem"><a href="/team-building-trips" class="subMenuLink">Company trips</a></li>
-            								<!-- <li class="subMenuItem"><a href="/friends-holidays" class="subMenuLink">Trips with friends</a></li>
-            								<li class="subMenuItem"><a href="/family-holidays" class="subMenuLink">Family holidays</a></li>
-            								<li class="subMenuItem"><a href="/community-trips" class="subMenuLink">Community trips</a></li> -->
-            							</ul>
-            						</div>
-
-            					</div>
-
-            				</li>
-            				<!-- <li class="mainMenuItem hasSubmenu blogItemMenu">
-            					<a href="javascript:void(0);" class="mainMenuLink">Blog</a>
-            					<div class="subMenuContainer blogSubmenu">
-
-            						<div class="subMenuListWrap ">
-            							<ul class="submenuList">
-            								<li class="subMenuItem"><a href="https://packed.co/blog" class="subMenuLink">MySwft</a></li>
-            								<li class="subMenuItem"><a href="https://packed.co/tag/snow/" class="subMenuLink">Snow</a></li>
-            								<li class="subMenuItem"><a href="https://packed.co/tag/stag-weekends/" class="subMenuLink">Stag</a></li>
-            								<li class="subMenuItem"><a href="https://packed.co/tag/hen-weekends/" class="subMenuLink">Hen</a></li>
-            								<li class="subMenuItem"><a href="https://packed.co/tag/team-building/" class="subMenuLink">Team building</a></li>
-            							</ul>
-            						</div>
-
-            					</div>
-            				</li> -->
-            				<li class="mainMenuItem"><a href="/app" class="mainMenuLink @@appActive">App</a></li>
-            				<li class="mainMenuItem"><a target="_blank" href="https://get.packed.co/members/default.aspx" class="mainMenuLink">My Account</a></li>
-            			</ul>
-
-            		</nav>
-
-            		<div id="mobileButton" class="mobileButton" onclick="mobileMenu();">
-            			<span></span>
-            			<span></span>
-            			<span></span>
-            			<span></span>
-            		</div>
-
-            	</div>
-            </header>
 
 
             <div class="typeform-widget" data-url="https://myswft.typeform.com/to/p2V1I5" style="width: 100%; height: 800px;">&nbsp;</div>
@@ -315,91 +89,8 @@
             </div>
 
 
-            <footer class="siteFooter">
-            	<div class="sContainer footerContainer">
-            		<div class="footerNavs">
-            			<div class="footerNav1">
-            				<a class="footerLogo" href="/">
-            					<img src="/assets/images/png/logo.png" alt="">
-            				</a>
-            				<a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
-                				<span class="buttonIcon	whiteMessengerIcon"></span>
-                				Click for Messenger
-                			</a>
-                			<a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
-                				<span class="buttonIcon	whiteWhatsappIcon"></span>
-                				Click for WhatsApp
-                			</a>
-            			</div>
-            			<div class="footerNav2">
-            				<nav class="footerNavMenu">
-            					<h6 class="footerNavTitle">Holidays by type</h6>
-            					<ul class="footerNavList">
-            						<li class="footerNavItem"><a class="footerNavLink" href="/ski-holidays">Ski holidays</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/city-breaks">City breaks</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/sun-holidays">Summer holidays</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/stag-do">Stag weekends</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/hen-do">Hen weekends</a></li>
-            					</ul>
-            				</nav>
-            			</div>
-            			<div class="footerNav3">
-            				<nav class="footerNavMenu">
-            					<h6 class="footerNavTitle">Holidays by group</h6>
-            					<ul class="footerNavList">
-            						<li class="footerNavItem"><a class="footerNavLink" href="/lads-holidays">Lads holidays</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/girls-holidays">Girls holidays</a></li>
-        								<li class="footerNavItem"><a class="footerNavLink" href="/team-building-trips">Company trips</a></li>
-            						<!-- <li class="footerNavItem"><a class="footerNavLink" href="/friends-holidays">Trips with friends</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/family-holidays">Family holidays</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/community-trips">Community trips</a></li> -->
-            					</ul>
-            				</nav>
-            			</div>
-            			<div class="footerNav4">
-            				<nav class="footerNavMenu">
-            					<h6 class="footerNavTitle">About us</h6>
-            					<ul class="footerNavList">
-            						<li class="footerNavItem"><a class="footerNavLink" href="/our-story">Our story</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/how-it-works">How it works</a></li>
-            						<li class="footerNavItem"><a class="footerNavLink" href="/app">The app</a></li>
-            						<!-- <li class="footerNavItem"><a class="footerNavLink" href="/blog">Blog</a></li> -->
-        								<li class="footerNavItem"><a class="footerNavLink" href="/info/faq">FAQs</a></li>
-            					</ul>
-            				</nav>
-            			</div>
-            		</div>
-            		<div class="footerBottom">
-            			<div class="fatolProtected">
-            				<span class="footerNavTitle">ATOL protected</span>
-            				<picture>
-            				    <source srcset="/assets/images/webp/atol-logo.webp" type="image/webp">
-            				    <source srcset="/assets/images/png/atol-logo.png" type="image/png">
-            				    <img src="/assets/images/png/atol-logo.png" alt="ATOL protected" />
-            				</picture>
+            @@include('../partials/globals/footer.html')
 
-            				<picture>
-            				    <source srcset="/assets/images/webp/tta-logo.webp" type="image/webp">
-            				    <source srcset="/assets/images/png/tta-logo.png" type="image/png">
-            				    <img src="/assets/images/png/tta-logo.png" alt="Overwhelmed with options?" />
-            				</picture>
-            			</div>
-            			<div class="fdownloadApp">
-            				<span class="footerNavTitle">Download our app</span>
-            				<a class="iosAppButton" href="https://click.google-analytics.com/redirect?tid=UA-105860454-1&amp;url=https%3A%2F%2Fitunes.apple.com%2Fgb%2Fapp%2Fpacked-group-trip-planner%2Fid1464657333&amp;aid=com.packed.packed&amp;idfa={idfa}&amp;cs=packed&amp;cm=website&amp;ck=homepage&amp;anid=admob&amp;hash=md5" target="_blank"></a>
-
-            				<a class="androidAppButton" href="https://play.google.com/store/apps/details?id=com.packed.packed&amp;referrer=utm_source%3Dpacked%26utm_medium%3Dwebsite%26utm_term%3Dhomepage%26anid%3Dadmob" target="_blank"></a>
-            			</div>
-            			<div class="fSocial">
-            				<span class="footerNavTitle">Follow us</span>
-            				<a href="https://www.facebook.com/all.packed" target="_blank" class="socialIcon facebookPage"></a>
-            				<a href="https://www.instagram.com/all.packed " target="_blank" class="socialIcon indstagramPage"></a>
-            			</div>
-            		</div>
-            	</div>
-
-            	<div class="rebranded">MySwft has rebranded to packed</div>
-            </footer>
 
         </div>
 
@@ -703,7 +394,7 @@
         		}
         	});
         </script>
-        <script type="text/javascript" src="https://api.feefo.com/api/javascript/my-swft" async></script>
+        <!--<script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script>-->
         <!--mySwft.html END-->
 
 
