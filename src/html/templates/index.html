@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 
 <head>
 	<meta charset="UTF-8">
@@ -853,8 +854,23 @@
             t.charset="utf-8";t.async=!0;t.defer=!0;
             t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
              })(document,"99395");
-        </script>
+		</script>
+		
 
+		<!--Carousel tiny slider-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+		<script type="module">
+			import {tns} from './src/tiny-slider.js';
+		  
+			var slider = tns({
+			  container: '.my-slider',
+			  items: 3,
+			  slideBy: 'page',
+			  autoplay: true
+			});
+		</script>
 </body>
 
 </html>
