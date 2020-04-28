@@ -193,10 +193,10 @@
     	</div>
     </section>
 
-    <section class="customersOpinion sContainer">
+    <section class="customersOpinion sContainer feefoCarousel2">
     	<p class="sectionTitle"> What our customers say</p>
 
-        @@include('../partials/components/feefoCarousel.html')
+       <!--  @@include('../partials/components/feefoCarousel.html')
         
     	<!-- <div class="apiDate">
             <div class="apiAverage">
@@ -204,8 +204,10 @@
             </div>
             <div class="apiReviews"></div>
         </div> -->
-    </section>
-
+	@@include('../partials/components/feefoCarousel2.html')  
+	</section>
+	
+  
 
     <section class="groupHoliday groupHolidayHome sContainer">
     	<h3 class="sectionTitle"> Our group holidays </h3>
@@ -862,14 +864,32 @@
 	<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 
 		<script type="module">
-			import {tns} from './src/tiny-slider.js';
 		  
 			var slider = tns({
 			  container: '.my-slider',
-			  items: 3,
+			  items: 1,
 			  slideBy: 'page',
-			  autoplay: true
-			});
+			  autoplay: false,   
+			  controlsContainer: "#customize-controls", 
+			  controlsText: ["prev", "next"], 
+			  navPosition: "bottom", 
+			  nav: true,   
+			  navAsThumbnails: true, 
+			  responsive: {
+					640: {
+						edgePadding: 20,
+						gutter: 20,
+						items: 3 
+					},
+					768: {
+						gutter: 30
+					},
+					900: {
+						items: 6
+					} 
+				}
+			}); 
+
 		</script>
 </body>
 
