@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title> packed | Q1 </title>
+	<title> packed | Q52 </title>
 
 	<!-- Enter a brief description of your page -->
 		<meta name="description" content="packed (previously MySwft) is a group travel planner at your fingertips. Receive recommendations personalised to you via WhatsApp or Facebook Messenger, then everyone pays separately. Get a handle on your group holiday">
@@ -76,20 +76,25 @@
 		@@include('../partials/globals/loader.html')
 		@@include('../partials/globals/problems/header2.html') 
 
-		<div class="topArea topAreaWithImage topAreaQ">
-			<div class="topAreaImage topAreaImageQ1"></div>
-			<div class="smallTopTitle topTilteImg">
+		
+		<div class="topArea topAreaWithImage topAreaQ topAreaQ2 topAreaQ3c">
+			<div class="topAreaImage topAreaImageQ1 topAreaImageQ2"></div>
+			
+			<div class="smallTopTitle topTilteImg q53Page">
 				<h4>Your holiday handled</h4>
 				<p>Hassle free trips with your favourites</p>
-			</div>
-			<div class="topQContainer">
+			</div> 
+			<div class="topQContainer topQContainer53 q53Page  q3aPage">  
 
 				<div class="smallTopTitle">
 					<h4>Your holiday handled</h4>
 					<p>Hassle free trips with your favourites</p>
 				</div>
 
-				<div class="progressBar q1Bar">
+				<div class="progressBar q3Bar">
+					<a href="q3a.html" class="progressBar__backBtn">
+						&#8592;
+					</a>
 					<div class="progressBar__gray">
 						<div class="progressBar__fill"></div>
 					</div>
@@ -97,95 +102,191 @@
 				</div>
 
 				<div class="mainTitle">
-					<h2>What’s the reason for your trip?</h2>
+					<h2>Where do you have in mind?</h2>
 				</div>
 
+				<form action="" class="q3aPageForm">
+                    <input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure">
+                    <div class="q3aPageForm__submitBtn">
+                        <label for="q3aPageForm__submit">
+                            <div class="buttonsContainer q53cPageBtn">
+                                <a class="purpleBg q3aPageForm__btn" href="#" target="_blank">
+									<span class="topQContainer53__textBtn">
+										Next
+									</span>
+                                    <span class="topQContainer53__rightArrow">&#8594;</span> 
+                                </a>
+                            </div>
+                        </label>
+                        <input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
+                    </div>
+                </form>
+
+                <div class="stagDestination q3cPage">
+                    <h4>Our most popular ski destinations</h4>
+        
+                    <div class="q3cPage__mainBox">
+                        <div class="q3cPage__elem">
+                            <div class="q3cPage__country">
+                                <a href="#" class="q3cPage__link">
+                                    <span class="q3cPage__flagIcon">
+                                        <img src="/assets/images/jpg/flag11.jpg" alt="">
+                                    </span>
+                                    FRANCE
+                                </a>
+                            </div>
+
+                            <div class="q3cPage__secondBox">
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Tignes
+                                    </a>
+                                </div>
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Val Thorens
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="q3cPage__secondBox">
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Chamonix
+                                    </a>
+                                </div>
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Meribel
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="q3cPage__secondBox">
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Val d'Isere
+                                    </a>
+                                </div>
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Morzine 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
 
 
-				<form class="boxesList boxesListQ1">
-
-					<label for="skiTrip" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/ski-trip/icon-q1_1.svg" alt="">
-						</span>
-						<span class="title">Ski trip</span> 
-					</label> 
-					<input type="checkbox" id="skiTrip" class="boxesItem__input">
-					
-
-					<label for="henDo" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_2.svg" alt="">
-						</span>
-						<span class="title">Hen do</span> 
-					</label> 
-					<input type="checkbox" id="henDo" class="boxesItem__input">
-
-
-					<label for="cityBreak" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_3.svg" alt="">
-						</span>
-						<span class="title">City break</span> 
-					</label> 
-					<input type="checkbox" id="cityBreak" class="boxesItem__input">
-
-					
-					<label for="companyTrip" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_4.svg" alt="">
-						</span>
-						<span class="title">Company trip</span> 
-					</label> 
-					<input type="checkbox" id="companyTrip" class="boxesItem__input">
-					
-					
-					<label for="summerHoliday" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_5.svg" alt="">
-						</span>
-						<span class="title">Summer holiday</span> 
-					</label> 
-					<input type="checkbox" id="summerHoliday" class="boxesItem__input">
-					
-
-					<label for="fitness" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_6.svg" alt="">
-						</span>
-						<span class="title">Fitness community getaway</span> 
-					</label> 
-					<input type="checkbox" id="fitness" class="boxesItem__input">
+                        <div class="q3cPage__elem">
+                            <div class="q3cPage__country">
+                                <a href="#" class="q3cPage__link">
+                                    <span class="q3cPage__flagIcon">
+                                        <img src="/assets/images/jpg/flag12.jpg" alt="">
+                                    </span>
+                                    AUSTRIA
+                                </a>
+                            </div>
+                            <div class="q3cPage__secondBox">
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Ischgl
+                                    </a>
+                                </div>
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Mayrhofen
+                                    </a>
+                                </div>
+							</div>
+                            <div class="q3cPage__secondBox">
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Saalbach
+                                    </a>
+                                </div>
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        St Anton
+                                    </a>
+                                </div>
+							</div>
+                        </div>
 
 
-					<label for="stagDo" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_7.svg" alt="">
-						</span>
-						<span class="title">Stag do</span> 
-					</label> 
-					<input type="checkbox" id="stagDo" class="boxesItem__input">
+
+                        <div class="q3cPage__elem">
+                            <div class="q3cPage__country">
+                                <a href="#" class="q3cPage__link">
+                                    <span class="q3cPage__flagIcon">
+                                        <img src="/assets/images/jpg/flag14.jpg" alt="">
+                                    </span>
+                                    BULGARIA 
+                                </a>
+                            </div>
+
+                            
+                            <div class="q3cPage__secondBox">
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Bansko 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
 
-					<label for="sportsClub" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_8.svg" alt="">
-						</span>
-						<span class="title">Sports club on tour</span> 
-					</label> 
-					<input type="checkbox" id="sportsClub" class="boxesItem__input">
 
-				</form>
- 
-				 
-			</div> 
-		</div> 
- 
+                        <div class="q3cPage__elem">
+                            <div class="q3cPage__country">
+                                <a href="#" class="q3cPage__link">
+                                    <!-- <span class="q3cPage__flagIcon">
+                                        <img src="/assets/images/jpg/flag13.jpg" alt="">
+                                    </span> -->
+                                    SKI WEEKENDS 
+                                </a>
+                            </div>
+                            
+                            <div class="q3cPage__secondBox">
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Chamonix
+                                    </a>
+                                </div>
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Courmayeur
+                                    </a>
+                                </div>
+							</div>
+							
+                            <div class="q3cPage__secondBox">
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Morzine
+                                    </a>
+                                </div>
+                                <div class="q3cPage__elemS">
+                                    <a href="#" class="q3cPage__itemS">
+                                        Avoriaz
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+
+        </div>   
+
 
 		<div class="sContainer q1PageFooter">
 			@@include('../partials/globals/problems/footer2.html')
 		</div>
+ 
     
 
     </div>

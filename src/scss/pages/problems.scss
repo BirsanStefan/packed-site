@@ -115,6 +115,7 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
         &:hover{
             border: 1px solid #512D87;
         }
@@ -924,7 +925,7 @@ span.stagDestination__flag img {
     }
 }
 .stagDestination.q3cPage{
-    width: 750px;
+    width: 800px;
 }
 
 .topQContainer.topQContainer53.q53Page.q3aPage {
@@ -1020,12 +1021,12 @@ span.stagDestination__flag img {
         font-weight: bold;
         border: 1px solid #E4E4E4;
         border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
         margin-right: 20px;
+        height: 30px;
+        display: table;
+        vertical-align: middle;
         @media only screen and (max-width: 540px) {
             display: none;
         }

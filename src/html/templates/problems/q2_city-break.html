@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title> packed | Q1 </title>
+	<title> packed | Q2 </title>
 
 	<!-- Enter a brief description of your page -->
 		<meta name="description" content="packed (previously MySwft) is a group travel planner at your fingertips. Receive recommendations personalised to you via WhatsApp or Facebook Messenger, then everyone pays separately. Get a handle on your group holiday">
@@ -76,8 +76,8 @@
 		@@include('../partials/globals/loader.html')
 		@@include('../partials/globals/problems/header2.html') 
 
-		<div class="topArea topAreaWithImage topAreaQ">
-			<div class="topAreaImage topAreaImageQ1"></div>
+		<div class="topArea topAreaWithImage topAreaQ topAreaQ2">
+			<div class="topAreaImage topAreaImageQ1 topAreaImageQ2"></div>
 			<div class="smallTopTitle topTilteImg">
 				<h4>Your holiday handled</h4>
 				<p>Hassle free trips with your favourites</p>
@@ -89,7 +89,10 @@
 					<p>Hassle free trips with your favourites</p>
 				</div>
 
-				<div class="progressBar q1Bar">
+				<div class="progressBar q2Bar">
+					<a href="q1.html" class="progressBar__backBtn">
+						&#8592;
+					</a>
 					<div class="progressBar__gray">
 						<div class="progressBar__fill"></div>
 					</div>
@@ -97,89 +100,53 @@
 				</div>
 
 				<div class="mainTitle">
-					<h2>What’s the reason for your trip?</h2>
+					<h2>What are you looking for?</h2>
 				</div>
 
+				<div class="boxesList boxesListMbottom">
 
-
-
-				<form class="boxesList boxesListQ1">
-
-					<label for="skiTrip" class="boxesItem">
+					<label for="nightlife" class="boxesItem">
 						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/ski-trip/icon-q1_1.svg" alt="">
+							<img src="/assets/images/svg/problems/q2/city-break/food.svg" alt="">
 						</span>
-						<span class="title">Ski trip</span> 
+						<span class="title">Food</span> 
 					</label> 
-					<input type="checkbox" id="skiTrip" class="boxesItem__input">
+					<input type="checkbox" id="nightlife" class="boxesItem__input">
+
+					<label for="skiWeekend" class="boxesItem">
+						<span class="icon">
+							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
+						</span>
+						<span class="title">Nightlife</span> 
+					</label> 
+					<input type="checkbox" id="skiWeekend" class="boxesItem__input">
+
+					<label for="bigAreaSki" class="boxesItem">
+						<span class="icon">
+							<img src="/assets/images/svg/problems/q2/city-break/culture.svg" alt="">
+						</span>
+						<span class="title">Culture and history</span> 
+					</label> 
+					<input type="checkbox" id="bigAreaSki" class="boxesItem__input">
+
+					<label for="somethingElse" class="boxesItem">
+						<span class="icon">
+							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
+						</span>
+						<span class="title">Something else</span> 
+					</label> 
+					<input type="checkbox" id="somethingElse" class="boxesItem__input">
+
+					<label for="beginner" class="boxesItem">
+						<span class="icon">
+							<img src="/assets/images/svg/problems/q2/city-break/festival.svg" alt="">
+						</span>
+						<span class="title">Festival or event</span>  
+					</label> 
+					<input type="checkbox" id="beginner" class="boxesItem__input">
 					
-
-					<label for="henDo" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_2.svg" alt="">
-						</span>
-						<span class="title">Hen do</span> 
-					</label> 
-					<input type="checkbox" id="henDo" class="boxesItem__input">
-
-
-					<label for="cityBreak" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_3.svg" alt="">
-						</span>
-						<span class="title">City break</span> 
-					</label> 
-					<input type="checkbox" id="cityBreak" class="boxesItem__input">
-
-					
-					<label for="companyTrip" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_4.svg" alt="">
-						</span>
-						<span class="title">Company trip</span> 
-					</label> 
-					<input type="checkbox" id="companyTrip" class="boxesItem__input">
-					
-					
-					<label for="summerHoliday" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_5.svg" alt="">
-						</span>
-						<span class="title">Summer holiday</span> 
-					</label> 
-					<input type="checkbox" id="summerHoliday" class="boxesItem__input">
-					
-
-					<label for="fitness" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_6.svg" alt="">
-						</span>
-						<span class="title">Fitness community getaway</span> 
-					</label> 
-					<input type="checkbox" id="fitness" class="boxesItem__input">
-
-
-					<label for="stagDo" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_7.svg" alt="">
-						</span>
-						<span class="title">Stag do</span> 
-					</label> 
-					<input type="checkbox" id="stagDo" class="boxesItem__input">
-
-
-					<label for="sportsClub" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q1/icon-q1_8.svg" alt="">
-						</span>
-						<span class="title">Sports club on tour</span> 
-					</label> 
-					<input type="checkbox" id="sportsClub" class="boxesItem__input">
-
-				</form>
- 
-				 
-			</div> 
+				</div>
+			</div>
 		</div> 
  
 
