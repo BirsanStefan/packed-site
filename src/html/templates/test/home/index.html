@@ -14,7 +14,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="author" content="packed" />
-	<meta name="robots" content="noindex, nofollow">
+	<meta name="robots" content="noindex, follow">
 
 	<!--facebook-->
 	<meta property="og:title"
@@ -89,7 +89,24 @@
 		<div class="topArea topAreaWithImage">
 			<div class="topAreaImage topAreaImageHome"></div>
 			<div class="topContent sContainer">
+				<h1 class="topTitle">packed makes group holidays happen</h1>
+				<h2 class="topText">
+					Try our free app to get your friends voting on dates, destination &amp; budget. Then receive
+					recommendations personalised to your group&rsquo;s needs.
+				</h2>
 
+
+				<div class="buttonsContainer">
+					<a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
+						<span class="buttonIcon	whiteMessengerIcon"></span>
+						Start in Messenger
+					</a>
+
+					<a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
+						<span class="buttonIcon	whiteWhatsappIcon"></span>
+						Start in WhatsApp
+					</a>
+				</div>
 
 
 				<div class="feefo">
@@ -99,109 +116,49 @@
 			</div>
 		</div>
 
-		<section class="notBooking">
-			<div class="sContainer booking">
-				<div class="navBooking">
-					<a class="navBookingItem active" href="#tab-1">Bring your favourite people together</a>
-					<a class="navBookingItem" href="#tab-2">How trips work with packed</a></div>
-				<div class="bookingPhotos">
-					<img class="straight-lines" src="/assets/images/png/straight-lines.png" />
-					<div class="contentBooking active" id="tab-1">
-						<div class="howItWorksAppPageBox">
+		@@include('../partials/components/benefits.html')
 
-							<div class="howItWorksGraphic">
-		
-								<div class="bgDotsBlue"></div>
-		
-								<div class="bgDotsPurple"></div>
-		
-								<picture class="android-app">
-									<source srcset="/assets/images/webp/android-app.webp" type="image/webp">
-									<source srcset="/assets/images/png/android-app.png" type="image/png">
-									<img src="/assets/images/png/android-app.png" alt="" />
-								</picture>
-		
-								<picture class="app-iphone">
-									<source srcset="/assets/images/webp/app-iphone.webp" type="image/webp">
-									<source srcset="/assets/images/png/app-iphone.png" type="image/png">
-									<img src="/assets/images/png/app-iphone.png" alt="" />
-								</picture>
-		
-							</div>
-		
-		
-							<div class="howItWorksContent">
-								<ol class="howItWorksList">
-		
-									<li data-aos="fade-left" data-aos-once="true">
-										<div class="listItemNo">
-											01</div>
-										<div class="listItemContent">
-											<h6 class="listItemTitle">
-												Create a trip</h6>
-											<div class="listItemText">
-												Give it a name and add a few dates, destinations and budgets</div>
-										</div>
-									</li>
-		
-		
-									<li data-aos="fade-left" data-aos-delay="300" data-aos-once="true">
-										<div class="listItemNo">
-											02</div>
-										<div class="listItemContent">
-											<h6 class="listItemTitle">
-												Invite your pals</h6>
-											<div class="listItemText">
-												Whoever they are, get them involved and voting on what matters</div>
-										</div>
-									</li>
-		
-		
-									<li data-aos="fade-left" data-aos-delay="600" data-aos-once="true">
-										<div class="listItemNo">
-											03</div>
-										<div class="listItemContent">
-											<h6 class="listItemTitle">
-												Put together your plan</h6>
-											<div class="listItemText">
-												See everyone&rsquo;s preferences clearly and in one place</div>
-										</div>
-									</li>
-		
-		
-									<li data-aos="fade-left" data-aos-delay="900" data-aos-once="true">
-										<div class="listItemNo">
-											04</div>
-										<div class="listItemContent">
-											<h6 class="listItemTitle">
-												Be ready to book</h6>
-											<div class="listItemText">
-												Gather full names, fad diets and dates of birth all at the tap of a button</div>
-										</div>
-									</li>
-		
-								</ol>
-							</div>
-		
-		
-							<div class="app-lines">
-								<img alt="" src="/assets/images/png/app-lines.png" />
-							</div>
-						</div>
 
+		<section class="ourStory container_12">
+
+			<h2 class="sectionTitle" data-aos="fade-down" data-aos-once="true">Great group holidays</h2>
+
+			<div class="ourStoryBox">
+
+				<div class="ourStoryLeft textStyle">
+
+					<div class="textContent" data-aos="fade-left" data-aos-once="true">
+
+						<p>Group holidays are the best.</p>
+
+						<p>Spending time away with your favourite people, soaking up the rays and taking in the eye
+							candy. Picture waking up in a plush penthouse in your favourite city, with your best pals,
+							ready to take on the day. Or booking into a ski chalet with your nearest and dearest,
+							spending the evening overlooking the Alps, toasting marshmallows and sipping hot toddies.
+						</p>
+
+						<p> With packed, you can tailor your group trip to suit everyone and then split the costs
+							between you - which just makes good sense.</p>
 
 					</div>
-					<div class="contentBooking" id="tab-2">
-						
 
-
-					</div>
 				</div>
-			</div>
-		</section>
-	
 
-		<section class="partying sContainer" style="margin-top: 200px">
+
+				<div class="ourStoryRight" data-aos="fade-right" data-aos-once="true">
+					<picture>
+						<source srcset="/assets/images/webp/tignes-for-non-skiers.webp" type="image/webp">
+						<source srcset="/assets/images/png/tignes-for-non-skiers.png" type="image/png">
+						<img src="/assets/images/png/tignes-for-non-skiers.png"
+							alt="Two women walking in the snow in show shoes">
+					</picture>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="partying sContainer">
 
 			<picture class="morePartyingDesktop">
 				<source srcset="/assets/images/webp/more-party.webp" type="image/webp">
@@ -217,7 +174,41 @@
 
 		</section>
 
-		<h2 style="text-align: center">Why thousands of customers love packed section from the funnel page goes here</h2>
+
+		<section class="callingMountains container_12">
+
+			<div class="callingMountainsImage">
+				<picture class="callingMountainsImgItem">
+					<source srcset="/assets/images/webp/the-mountains-are-calling.webp" type="image/webp">
+					<source srcset="/assets/images/png/the-mountains-are-calling.png" type="image/png"><img
+						src="/assets/images/png/the-mountains-are-calling.png" alt="" /></picture>
+			</div>
+
+			<div class="callingMountainsDescription">
+				<h4 class="callingMountainsTitle" data-aos="fade-right" data-aos-once="true">
+					Why book a group holiday with packed?
+				</h4>
+
+				<div class="callingMountainsText" data-aos="fade-left" data-aos-once="true">
+					The only issue with group holidays is they can be a &#39;mare to arrange. Especially with your mate
+					Joe offering suggestions for overpriced flights, never-ending club lines and hotels out in the
+					sticks. You finally agree on a destination and you then have to factor in everyone&#39;s
+					availability, ensure flights depart and arrive together, keep everyone happy on the accommodation
+					front, before the best bit…chasing people for payments. Nothing screams awkward like chasing up your
+					pal for the 7th time in a row and getting nothing but blue ticks back.
+				</div>
+
+				<div class="callingMountainsText" data-aos="fade-right" data-aos-once="true">
+					We understand these challenges better than anyone. packed was created to help make great group
+					holidays happen more often and more easily. Our travel planners are a quick and convenient chat
+					away, ready to bring your plans to life. They&#39;ll make great recommendations and offer impartial
+					advice to ensure you make the most of the time away with your favourite people. Then they handle all
+					the payments and book everything for you, including flights, transfers, accommodation and any extras
+					you might fancy on your behalf. It&#39;s a new level of hassle-free – just ask our customers:
+				</div>
+			</div>
+
+		</section>
 
 		<section class="customersOpinion sContainer">
 			<p class="sectionTitle"> What our customers say</p>
@@ -226,8 +217,62 @@
 
 		</section>
 
+		<section class="messageBg">
+			<div class="container_12">
+				<div class="messageTable">
+					<div class="messageMiddle">
+						<!--Title-->
+						<!--<div class="messageTitleItem">
+					<h5 class="messageTitle" data-aos="zoom-in" data-aos-once="true">
+					  Like what you see? Drop us a message
+					</h5>
+				  </div> -->
+						<!--Buttons Messenger&Whatsapp-->
+						<div class="messageButtons">
+							<div class="buttonsContainer">
+								<a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome"
+									target="_blank">
+									<span class="buttonIcon whiteMessengerIcon"></span>
+									Start in Messenger
+								</a>
+
+								<a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223"
+									target="_blank">
+									<span class="buttonIcon whiteWhatsappIcon"></span>
+									Start in WhatsApp
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="problem-solved sContainer">
+
+			<picture>
+				<source srcset="/assets/images/webp/app-home-page-trip-screen.webp" type="image/webp">
+				<source srcset="/assets/images/png/app-home-page-trip-screen.png" type="image/png">
+				<img src="/assets/images/png/app-home-page-trip-screen.png" alt="" />
+			</picture>
+
+			<div class="solvedContent">
+				<!--<h6 class="solvedTitle">
+    			Payment problems solved</h6>--->
+				<p class="solvedText">
+					One of the big challenges in getting your group on holiday is getting commitment. Organising your
+					friends shouldn&#39;t take 1,000 WhatsApps. We launched the packed app to help you get your team
+					together faster and with less stress. It&#39;s like Doodle for group holidays, and lets you poll
+					friends for the dates they&#39;re available, agree on location, and even lets you all vote on how
+					much you&#39;re willing to spend (anonymous voting is an option). You can also request travel
+					information like full names, dates of birth and fad diets at the tap of a button. Real handy,
+					especially for large groups.</p>
+			</div>
+		</section>
 
 		@@include('../partials/components/pressIcons.html')
+
 
 		<section class="convinced">
 			<div class="sContainer convincedContent">
@@ -266,7 +311,7 @@
 			</div>
 		</section>
 
-
+		<a name="french-resorts"></a>
 		<section class="topRegionsResorts container_12">
 
 			<h5 class="sectionTitle aos-init aos-animate" data-aos="fade-right" data-aos-once="true">So, what sort of
@@ -455,38 +500,6 @@
 	</div>
 	</section>
 
-	<section class="messageBg">
-		<div class="container_12">
-			<div class="messageTable">
-				<div class="messageMiddle">
-					<!--Title-->
-					<!--<div class="messageTitleItem">
-				<h5 class="messageTitle" data-aos="zoom-in" data-aos-once="true">
-				  Like what you see? Drop us a message
-				</h5>
-			  </div> -->
-					<!--Buttons Messenger&Whatsapp-->
-					<div class="messageButtons">
-						<div class="buttonsContainer">
-							<a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome"
-								target="_blank">
-								<span class="buttonIcon whiteMessengerIcon"></span>
-								Start in Messenger
-							</a>
-
-							<a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223"
-								target="_blank">
-								<span class="buttonIcon whiteWhatsappIcon"></span>
-								Start in WhatsApp
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
 	<section class="moreImage sContainer">
 		<!-- <img class="moreSunDesktop" src="/assets/images/more-sunbathing-less-stress.png" />  -->
 		<picture class="moreSunDesktop">
@@ -503,83 +516,13 @@
 		</picture>
 	</section>
 
-
-
-		<section class="callingMountains container_12">
-
-			<div class="callingMountainsImage">
-				<picture class="callingMountainsImgItem">
-					<source srcset="/assets/images/webp/the-mountains-are-calling.webp" type="image/webp">
-					<source srcset="/assets/images/png/the-mountains-are-calling.png" type="image/png"><img
-						src="/assets/images/png/the-mountains-are-calling.png" alt="" /></picture>
-			</div>
-
-			<div class="callingMountainsDescription">
-				<h4 class="callingMountainsTitle" data-aos="fade-right" data-aos-once="true" style="margin-bottom: 30px">
-					Why book a group holiday with packed?
-				</h4>
-
-				<div class="callingMountainsText" data-aos="fade-left" data-aos-once="true">
-					The only issue with group holidays is they can be a &#39;mare to arrange. Especially with your mate
-					Joe offering suggestions for overpriced flights, never-ending club lines and hotels out in the
-					sticks. </div>
-					
-				<div class="callingMountainsText" data-aos="fade-left" data-aos-once="true">
-					You finally agree on a destination and you then have to factor in everyone&#39;s
-					availability, ensure flights depart and arrive together, keep everyone happy on the accommodation
-					front, before the best bit…chasing people for payments. Nothing screams awkward like chasing up your
-					pal for the 7th time in a row and getting nothing but blue ticks back.
-				</div>
-
-				<div class="callingMountainsText" data-aos="fade-right" data-aos-once="true">
-					We understand these challenges better than anyone. packed was created to help make great group
-					holidays happen more often and more easily. Our travel planners are a quick and convenient chat
-					away, ready to bring your plans to life. They&#39;ll make great recommendations and offer impartial
-					advice to ensure you make the most of the time away with your favourite people. </div>
-					
-				<div class="callingMountainsText" data-aos="fade-left" data-aos-once="true">
-					Then they handle all the payments and book everything for you, including flights, transfers, accommodation and any extras
-					you might fancy on your behalf. It&#39;s a new level of hassle-free – just ask our customers:
-				</div>
-			</div>
-
-		</section>
-
-
-		<section class="problem-solved sContainer">
-
-			<picture>
-				<source srcset="/assets/images/webp/app-home-page-trip-screen.webp" type="image/webp">
-				<source srcset="/assets/images/png/app-home-page-trip-screen.png" type="image/png">
-				<img src="/assets/images/png/app-home-page-trip-screen.png" alt="" />
-			</picture>
-
-			<div class="solvedContent">
-				<h6 class="solvedTitle" style="margin-bottom: 30px">
-    			Organising your friends shouldn't take 1,000 WhatsApps</h6>
-				<p class="solvedText">
-					One of the big challenges in getting your group on holiday is getting commitment. We launched the packed app to help you get your team together faster and with less stress. </p>
-				
-				<p class="solvedText">
-					It&#39;s like Doodle for group holidays, and lets you poll
-					friends for the dates they&#39;re available, agree on location, and even lets you all vote on how
-					much you&#39;re willing to spend (anonymous voting is an option). You can also request travel
-					information like full names, dates of birth and fad diets at the tap of a button. Real handy,
-					especially for large groups.</p>
-			</div>
-		</section>
-
-
-
-
-
 	<section class="skiWeekends container_12">
 
 		<div class="skiWeekendsLeft skiAndorraBg"></div>
 
 		<div class="skiWeekendsRight">
 			<h3 class="skiWeekendsRightTitle" data-aos="fade-right" data-aos-once="true">
-				Ready to begin?
+				Ready to book your group holiday with packed?
 			</h3>
 
 			<div class="skiWeekendsRightText" data-aos="fade-left" data-aos-once="true">
@@ -604,6 +547,209 @@
 		<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
 			src="https://cdn.lightwidget.com/widgets/e70b1611353e544c9b23cc759703ebbd.html" scrolling="no"
 			allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+	</section>
+
+
+
+
+
+
+	<section class="benefits benefitsMain">
+		<div class="benefitsItems sContainer">
+			<div class="benefit">
+
+				<picture>
+					<source srcset="/assets/images/webp/overwhelmed.webp" type="image/webp">
+					<source srcset="/assets/images/png/overwhelmed.png" type="image/png">
+					<img src="/assets/images/png/overwhelmed.png" alt="Overwhelmed with options?" />
+				</picture>
+
+				<h6 class="benefitTitle">Overwhelmed with options?</h6>
+				<p class="benefitContent">
+					You can waste hours searching online for the right group holiday. Chat to packed and cut through the
+					noise. Tell us what you&#39;re looking for and receive recommendations tailored to you.</p>
+			</div>
+			<div class="benefit">
+				<picture>
+					<source srcset="/assets/images/webp/handle.webp" type="image/webp">
+					<source srcset="/assets/images/png/handle.png" type="image/png">
+					<img src="/assets/images/png/handle.png" alt="hassle free travel booking icon" />
+				</picture>
+				<h6 class="benefitTitle">Too much to handle?</h6>
+				<p class="benefitContent">
+					Our group travel experts create bespoke group packages, finding you the right accommodation, airport
+					transfers and flight options. We&#39;re even on hand to book restaurants and activities
+					in-destination.</p>
+			</div>
+			<div class="benefit">
+				<picture>
+					<source srcset="/assets/images/webp/commited.webp" type="image/webp">
+					<source srcset="/assets/images/png/commited.png" type="image/png">
+					<img src="/assets/images/png/commited.png" alt="pain free travel payments icon" />
+				</picture>
+				<h6 class="benefitTitle"> Chasing for commitment? </h6>
+				<p class="benefitContent">
+					Cut out the payment pains - everyone pays separately via their own link. We&#39;ll chase so you
+					don&#39;t have to and keep you posted.</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="twoSections-Content sContainer">
+		<h3 class="sectionTitle">Where do I start?</h3>
+
+		<section class="twoSections-howItWorks">
+			<div class="twoSections-howItWorks__elem left">
+				<div class="twoSections-howItWorks__elem__lL">
+					<img src="/assets/images/png/packed-app.png" alt="">
+				</div>
+				<div class="twoSections-howItWorks__elem__lR">
+					<h3>Still getting your group together?</h3>
+					<p>Vote on dates, destination and anything else that matters</p>
+
+					<a class="mswButton checkOutOurApp" href="/app" target="">
+						Try our free app
+					</a>
+				</div>
+			</div>
+			<div class="twoSections-howItWorks__elem right">
+				<div class="twoSections-howItWorks__elem__rL">
+					<img src="/assets/images/png/packed-messenger.png" alt="">
+				</div>
+				<div class="twoSections-howItWorks__elem__rR">
+					<h3>Looking for options?</h3>
+					<p>Drop us a message and receive personalised recommendations</p>
+
+					<div class="buttonsContainer">
+						<a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
+							<span class="buttonIcon   whiteMessengerIcon"></span>
+							Start in Messenger
+						</a>
+						<a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223"
+							target="_blank">
+							<span class="buttonIcon   whiteWhatsappIcon"></span>
+							Start in WhatsApp
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="twoSectionsDots bgDotsPurple"></div>
+			<div class="twoSectionsDots bgDotsBlue"></div>
+			<img class="app-lines twoSectionsLines" src="/assets/images/png/app-lines.png">
+		</section>
+	</div>
+
+	<section class="featuresSection">
+		<h3 class="sectionTitle">Still getting your team together? Try our app</h3>
+		<div class="features">
+			<!-- <img class="dotsPurple bgDotsPurple"/> -->
+			<div class="dotsPurple bgDotsPurple"></div>
+			<div class="featuresContainer sContainer">
+				<div class="featureItem">
+					<p class="featureTitle">
+						1. Create a trip
+					</p>
+					<p class="featureContent">
+						Give it a name and add a few dates, destinations and budgets</p>
+					<p class="featureTitle">
+						2. Invite your pals
+					</p>
+					<p class="featureContent">
+						Whoever they are, get them involved and voting on what matters</p>
+					<p class="featureTitle">
+						3. Put together your plan
+					</p>
+					<p class="featureContent">
+						See everyone&rsquo;s preferences clearly and in one place
+					</p>
+					<p class="featureTitle">
+						4. Be ready to book
+					</p>
+					<p class="featureContent">
+						Gather full names, fad diets and dates of birth all at the tap of a button</p>
+					<p class="featureContent">
+						&nbsp;
+					</p>
+					<a class="iosAppButton" href="https://packed.app.link/app-store-home" target="_blank"></a>
+
+					<a class="androidAppButton" href="https://packed.app.link/play-store-home" target="_blank"></a>
+				</div>
+				<div class="featureImages">
+					<picture class="abs z-2">
+						<source srcset="/assets/images/webp/photo2.webp" type="image/webp">
+						<source srcset="/assets/images/png/photo2.png" type="image/png">
+						<img src="/assets/images/png/photo2.png" alt="" />
+					</picture>
+
+					<picture class="abs z-1">
+						<source srcset="/assets/images/webp/phone1.webp" type="image/webp">
+						<source srcset="/assets/images/png/phone1.png" type="image/png">
+						<img src="/assets/images/png/phone1.png" alt="" />
+					</picture>
+
+					<picture class="abs z1">
+						<source srcset="/assets/images/webp/photo1.webp" type="image/webp">
+						<source srcset="/assets/images/png/photo1.png" type="image/png">
+						<img src="/assets/images/png/photo1.png" alt="" />
+					</picture>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="notBooking">
+		<div class="sContainer booking">
+			<div class="navBooking">
+				<a class="navBookingItem active" href="#tab-1">GOING PAINS</a>
+				<a class="navBookingItem" href="#tab-2">IT&#39;S TIME CONSUMING</a>
+				<a class="navBookingItem" href="#tab-3">BOOKING BIG PARTIES IS NOT MUCH FUN</a></div>
+			<div class="bookingPhotos">
+				<img class="straight-lines" src="/assets/images/png/straight-lines.png" />
+				<div class="contentBooking active" id="tab-1">
+					<div class="bookPhotoContainer bookPhotoContainer1"></div>
+					<div class="bookingText">
+						<h6 class="bookingTextTitle">
+							Going Pains</h6>
+						<p>
+							As lead booker, organising a group holiday can be a nightmare. All considerations rest on
+							you to herd the party towards a date and location, balancing concerns and managing budgets
+							and payments</p>
+					</div>
+				</div>
+				<div class="contentBooking" id="tab-2">
+					<div class="bookPhotoContainer bookPhotoContainer2"></div>
+					<div class="bookingText">
+						<h6 class="bookingTextTitle">
+							It&#39;s time consuming</h6>
+						<p>
+							The time invested is staggering. On average group leaders will consult 38 different websites
+							before settling on a location and will set foot on the plane having undertaken anywhere from
+							10-30 hours of planning. By way of comparison, in 24 hours Jack Bauer stopped a political
+							assassination and rescued his kidnapped wife and daughter.</p>
+					</div>
+				</div>
+				<div class="contentBooking" id="tab-3">
+					<div class="bookPhotoContainer bookPhotoContainer3"></div>
+					<div class="bookingText">
+						<h6 class="bookingTextTitle">
+							Booking big parties is not much fun</h6>
+						<p>
+							Large travelling groups bring many problems. The first big issue you&rsquo;ll have to
+							negotiate is nailing down a date you&rsquo;re all free. Even presenting an initial range of
+							weekends that the girls aren&rsquo;t already backed up with weddings can be challenging.</p>
+						<p>
+							But you finally have a date. How to organise the thing? Long email chain? People don&rsquo;t
+							check it often enough and will inevitably miss crucial emails. WhatsApp it is. With the onus
+							on the group leader to double save all the documents and track responses to questions about
+							individual needs. Dietary requirements? Ski carriage needed? Flying from a different airport
+							to the rest of the booking? Every change, every question, every detail must be accounted for
+							and relayed. And now there are just 16 lots of payments to be made on time. In one month.
+							And then again in three months time&hellip;</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
