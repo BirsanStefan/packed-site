@@ -2094,7 +2094,8 @@ div.photoGridTwo div.photoGridTwoElement .photoGridTwoDescr .photoGridTwoTitle a
 }
 
 .containerTabsTheBest .navTabsTop {
-	align-items: center
+	align-items: center;
+	padding-inline-start: 0px
 }
 
 .containerTabsTheBest .navTabsTop>li>a,
@@ -9102,7 +9103,7 @@ Start How it works Page .topArea {
 	.tabsContentTheBestText {
 		font-size: 14px
 	}
-	.stagDo .resortsGridItemWrapItem {
+	.resortsGridItemWrapItem {
 		width: 48%
 	}
 	.logo-navbar {
@@ -9888,7 +9889,7 @@ Start How it works Page .topArea {
 		padding: 30px 15px;
 		text-align: center
 	}
-	.stagDo .resortsGridItemWrapItem {
+	.resortsGridItemWrapItem {
 		width: 400px;
 		max-width: 100%
 	}
@@ -11381,7 +11382,7 @@ Start How it works Page .topArea {
 
 @media (max-device-width: 376px) {
   .onPageNav {
-    z-index: 95;
+    z-index: 500;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -11389,7 +11390,7 @@ Start How it works Page .topArea {
 
 @media screen and (min-width: 768px) {
   .onPageNav {
-    z-index: 95;
+    z-index: 500;
     margin-top: 35px;
     margin-bottom: 30px;
 }
@@ -11397,7 +11398,7 @@ Start How it works Page .topArea {
 
 @media screen and (min-width: 992px) {
   .onPageNav {
-    z-index: 95;
+    z-index: 500;
     margin-top: 50px;
     margin-bottom: 150px;
     position: -webkit-sticky;
@@ -11576,7 +11577,8 @@ Start How it works Page .topArea {
   position: relative;
   min-height: 1px;
   padding-left: 10px;
-  padding-right: 10px
+  padding-right: 10px;
+  margin-bottom: 50px
 }
 
 @media (min-width: 992px) {
@@ -11910,4 +11912,362 @@ Start How it works Page .topArea {
 }
 
 
-/* Instagram link tree section ends*/
+/* Instagram link tree section ends */
+
+
+/**************************************start*/
+.mainBoxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-bottom: 120px;
+	margin-top: 110px;
+    width: calc(100% - 100px);
+	max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (max-width: 991px) {
+        display: block;
+    }
+    @media only screen and (max-width: 680px) {
+        width: calc(100% - 40px);
+    }
+    &__elem{
+        width: 50%;
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px;
+        }
+        @media only screen and (max-width: 680px) {
+            width: 100%;
+        }
+        &.left{
+            position: relative;
+        }
+        h3{
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 48px;
+            color: #464860;
+            padding-left: 50px;
+            @media only screen and (max-width: 991px) {
+                margin-right: 50px;
+            }
+            @media only screen and (max-width: 601px) {
+                padding-left: 15px;
+            }
+            @media only screen and (max-width: 601px) {
+                padding-left: 15px;
+            }
+            @media only screen and (max-width: 280px) {
+                text-align: center;
+                padding: 0;
+                margin-right: 0;
+            }
+        }
+    }
+    &__image{
+        width: 100%;
+        height: 460px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border-radius: 10px;
+        @media only screen and (max-width: 580px) {
+            height: 485px;
+        }
+        @media only screen and (max-width: 350px) {
+            height: 510px;
+        }
+        @media only screen and (max-width: 233px) {
+            height: 560px;
+        }
+        @media only screen and (max-width: 220px) {
+            height: 510px;
+            justify-content: space-between;
+        } 
+        &__mask{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(89.82deg, rgba(255, 255, 255, 0) 0.12%, rgba(1, 1, 1, 0.3) 99.87%);
+            border-radius: 10px;
+        }
+    }
+    &__dots{
+        display: block;
+        position: absolute;
+        bottom: -60px;
+        left: -65px;
+        width: 140px;
+        height: 140px;
+        z-index: -1;
+    }
+    &__lines{
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        right: -20px;
+        width: 50px;
+        height: 50px;
+        z-index: 99;
+    }
+    &__detailsOverImg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.16);
+        backdrop-filter: blur(6px);
+        border-radius: 0px 10px 10px 0px;
+        @media only screen and (max-width: 520px) {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    &__blurItem{
+        margin-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 10px;
+        @media only screen and (max-width: 520px) {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        @media only screen and (max-width: 280px) {
+            text-align: center;
+        }
+        img{
+            margin-bottom: 5px;
+        }
+        &:first-child{
+            padding-top: 30px;
+        }
+        h5, p{
+            margin: 0;
+            color: #fff;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5{
+            font-weight: bold;
+        }
+    }
+    &__boxIcon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        margin-bottom: 25px;
+        @media only screen and (max-width: 991px) {
+            margin-right: 50px;
+        }
+        @media only screen and (max-width: 601px) {
+            display: block;
+            padding-left: 15px;
+            margin-right: 15px;
+        }
+        &__item{
+            width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+            @media only screen and (max-width: 601px) {
+                width: 100%;
+            }
+            @media only screen and (max-width: 280px) {
+                display: block;
+                text-align: center;
+            }
+            img{
+                width: 45px;
+                height: auto;
+                margin-right: 20px;
+                @media only screen and (max-width: 280px) {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &__text{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #464860;
+        }
+    }
+    &__boxBottom{
+        background: hsla(263, 50%, 35%, 0.08);
+        border-radius: 10px;
+        margin-left: 50px;
+        padding-bottom: 30px;
+        @media only screen and (max-width: 991px) {
+            margin-right: 50px;
+        }
+        @media only screen and (max-width: 601px) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        &__text{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #464860;
+            margin-bottom: 20px;
+            padding-top: 30px;
+            padding-left: 30px;
+            @media only screen and (max-width: 1220px) {
+                padding: 0;
+            }
+        }
+        @media only screen and (max-width: 1220px) {
+            padding: 30px;
+        }
+    }
+    &__bottomBtn{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #4F2D87;
+        padding-left: 30px;
+        @media only screen and (max-width: 1220px) {
+            padding: 0;
+        }
+    }
+}
+
+span.mainBoxes__bottomBtn__icon{
+    position: relative;
+    margin-right: 35px;
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 20px;
+        background-image: url(../images/svg/iconBtn.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top 0 left 0;
+    }
+}   
+/*top section end*/
+
+
+/*piste map page starts*/
+
+.pisteMapGridTitle {
+	padding: 15px 10px 5px 25px;
+	font-family: Montserrat, sans-serif;
+	color: #464860;
+	font-size: 20px;
+    font-weight: 700
+}
+
+.pisteMapSubtitle {
+	padding: 0px 10px 5px 25px;
+	font-family: Montserrat, sans-serif;
+	color: #464860
+}
+
+.pisteMapDescription {
+	padding: 0px 10px 5px 25px;
+	font-family: Montserrat, sans-serif;
+	color: #464860;
+	font-size: 16px
+}
+
+.seriouslyBox .fatmapLeft {
+	width: 60%;
+	z-index: 1;
+    position: relative;
+}
+
+.seriouslyBox .fatmapRight {
+	width: 40%;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 0 5px 54px hsla(0,0%,56%,.22);
+    padding: 20px 30px;
+    margin-left: -30px;
+    border-radius: 7px;
+}
+
+section.fatmap {
+	margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width:768px) {
+	.seriouslyBox .fatmapLeft {
+		width: 100%
+	}
+
+	.seriouslyBox .fatmapRight {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto
+	}
+}
+
+.gMapContainer {
+	width: calc(100% - 50px);
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 100px
+}
+
+.SkiMapStatsSection .SkiMapStats {
+	margin-top: 0px
+}
+
+.skiMapStats {
+	width: 100%;
+	padding-left: 50px;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.skiMapStats .skiMapsStatsTitle {
+	font-weight: bold;
+    font-size: 28px;
+    line-height: 48px;
+    color: #464860;
+	padding-left: 20px;
+	margin-bottom: 0px;
+}
+
+.skiMapStatsList {
+	font-size: 16px;
+	line-height: 24px;
+	color: #464860;
+	font-family: Montserrat;
+	font-weight: 400
+}
+
+.SkiMapStats .mainBoxes__elem .skiMapStatsBoxIcon {
+	margin-bottom: 10px
+}
+
+
+@media only screen and (max-width:1280px) {
+	.skiMapStatsList {
+		font-size: 13px;
+		line-height: 20px;
+	}
+}
+
+/*piste map page ends*/
