@@ -7945,7 +7945,7 @@ Start How it works Page .topArea {
     height: 300px; }
   .tabsContentTheBestContent {
     width: 100%;
-    text-align: center; }
+    text-align: left; }
   .tabsContentTheBestIcon {
     margin: 50px auto 40px; }
   .navTabsBottom {
@@ -9978,6 +9978,9 @@ span.mainBoxes__bottomBtn__icon {
     background-size: contain;
     background-position: top 0 left 0; }
 
+.mainBoxes__blurItem__span {
+  font-weight: 400; }
+
 /*top section end*/
 /*piste map page starts*/
 .pisteMapGridTitle {
@@ -9998,6 +10001,21 @@ span.mainBoxes__bottomBtn__icon {
   color: #464860;
   font-size: 16px; }
 
+.pisteMaps .sectionTitle {
+  margin-bottom: 30px;
+  margin-top: 80px; }
+
+.stepRight .pisteMapButtonContainer {
+  justify-content: left;
+  margin-top: 40px; }
+
+@media only screen and (max-width: 768px) {
+  .stepRight .pisteMapButtonContainer {
+    justify-content: center; } }
+
+.pisteMapButtonContainer .pisteMapButtonLeft {
+  margin-bottom: 0px; }
+
 .seriouslyBox .fatmapLeft {
   width: 60%;
   z-index: 1;
@@ -10013,7 +10031,7 @@ span.mainBoxes__bottomBtn__icon {
   border-radius: 7px; }
 
 section.fatmap {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 100px; }
 
 @media only screen and (max-width: 768px) {
@@ -10061,8 +10079,12 @@ section.fatmap {
 
 @media only screen and (max-width: 1280px) {
   .skiMapStatsList {
-    font-size: 13px;
-    line-height: 20px; } }
+    font-size: 16px;
+    line-height: 24px; }
+  .skiPassList {
+    padding-left: 20px; }
+  .skiMapStatsList .skiMapStatsListUL {
+    padding-inline-start: 20px; } }
 
 /*piste map page ends*/
 
