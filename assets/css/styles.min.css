@@ -10001,6 +10001,9 @@ span.mainBoxes__bottomBtn__icon {
   color: #464860;
   font-size: 16px; }
 
+section.pisteMaps {
+  margin-bottom: 50px; }
+
 .pisteMaps .sectionTitle {
   margin-bottom: 30px;
   margin-top: 80px; }
@@ -10008,6 +10011,9 @@ span.mainBoxes__bottomBtn__icon {
 .stepRight .pisteMapButtonContainer {
   justify-content: left;
   margin-top: 40px; }
+
+.pisteMaps .stepBox .nowRight {
+  left: 0px; }
 
 @media only screen and (max-width: 768px) {
   .stepRight .pisteMapButtonContainer {
