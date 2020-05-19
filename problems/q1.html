@@ -63,7 +63,9 @@
 	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script> -->
 	<!-- End Google Tag Manager -->
 
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://company.packed.co/", "name": "packed", "legalName": "My Swft Ltd", "description": "packed is a group travel company that is always available on WhatsApp (02039 000 223) & Facebook Messenger to make your group holiday happen.", "url": "https://packed.co/", "aggregateRating":{"@type": "AggregateRating", "ratingValue" : "4.9", "ratingCount": "76"}, "sameAs": [ "https://www.instagram.com/all.packed", "https://www.facebook.com/all.packed", "https://www.linkedin.com/company/all-packed/", "https://beta.companieshouse.gov.uk/company/10719004"], "contactPoint" : [{"@type" : "ContactPoint", "telephone" : "+44-20-3900-0223", "contactType" : "customer service"}]}"owns": [{"@type": "product", "name": "packed: Group Trip Planner", "url": "https://packed.co/app/",}]</script>
+	<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://company.packed.co/", "name": "packed", "legalName": "My Swft Ltd", "description": "packed is a group travel company that is always available on WhatsApp (02039 000 223) & Facebook Messenger to make your group holiday happen.", "url": "https://packed.co/", "aggregateRating":{"@type": "AggregateRating", "ratingValue" : "4.9", "ratingCount": "76"}, "sameAs": [ "https://www.instagram.com/all.packed", "https://www.facebook.com/all.packed", "https://www.linkedin.com/company/all-packed/", "https://beta.companieshouse.gov.uk/company/10719004"], "contactPoint" : [{"@type" : "ContactPoint", "telephone" : "+44-20-3900-0223", "contactType" : "customer service"}]}"owns": [{"@type": "product", "name": "packed: Group Trip Planner", "url": "https://packed.co/app/",}]</script>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -263,7 +265,7 @@
 		        </div>
 
 			</div>
-		</header> 
+		</header>
 
 		<div class="topArea topAreaWithImage topAreaQ">
 			<div class="topAreaImage topAreaImageQ1"></div>
@@ -282,7 +284,7 @@
 					<div class="progressBar__gray">
 						<div class="progressBar__fill"></div>
 					</div>
-					<div class="progressBar__text">4/5</div> 
+					<div class="progressBar__text">1/5</div>
 				</div>
 
 				<div class="mainTitle">
@@ -292,85 +294,85 @@
 
 
 
-				<form class="boxesList boxesListQ1">
+				<form class="boxesList boxesListQ1" id="q1form">
 
 					<label for="skiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/ski-trip/icon-q1_1.svg" alt="">
 						</span>
-						<span class="title">Ski trip</span> 
-					</label> 
-					<input type="checkbox" id="skiTrip" class="boxesItem__input">
-					
+						<span class="title">Ski trip</span>
+					</label>
+					<input type="radio" id="skiTrip" class="boxesItem__input" name="skiTrip" value="skiTrip">
+
 
 					<label for="henDo" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_2.svg" alt="">
 						</span>
-						<span class="title">Hen do</span> 
-					</label> 
-					<input type="checkbox" id="henDo" class="boxesItem__input">
+						<span class="title">Hen do</span>
+					</label>
+					<input type="radio" id="henDo" class="boxesItem__input" name="henDo" value="henDo">
 
 
 					<label for="cityBreak" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_3.svg" alt="">
 						</span>
-						<span class="title">City break</span> 
-					</label> 
-					<input type="checkbox" id="cityBreak" class="boxesItem__input">
+						<span class="title">City break</span>
+					</label>
+					<input type="radio" id="cityBreak" class="boxesItem__input" name="cityBreak" value="cityBreak">
 
-					
+
 					<label for="companyTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_4.svg" alt="">
 						</span>
-						<span class="title">Company trip</span> 
-					</label> 
-					<input type="checkbox" id="companyTrip" class="boxesItem__input">
-					
-					
+						<span class="title">Company trip</span>
+					</label>
+					<input type="radio" id="companyTrip" class="boxesItem__input" name="companyTrip" value="companyTrip">
+
+
 					<label for="summerHoliday" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_5.svg" alt="">
 						</span>
-						<span class="title">Summer holiday</span> 
-					</label> 
-					<input type="checkbox" id="summerHoliday" class="boxesItem__input">
-					
+						<span class="title">Summer holiday</span>
+					</label>
+					<input type="radio" id="summerHoliday" class="boxesItem__input" name="summerHoliday" value="summerHoliday">
+
 
 					<label for="fitness" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_6.svg" alt="">
 						</span>
-						<span class="title">Fitness community getaway</span> 
-					</label> 
-					<input type="checkbox" id="fitness" class="boxesItem__input">
+						<span class="title">Fitness community getaway</span>
+					</label>
+					<input type="radio" id="fitness" class="boxesItem__input" name="fitness" value="fitness">
 
 
 					<label for="stagDo" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_7.svg" alt="">
 						</span>
-						<span class="title">Stag do</span> 
-					</label> 
-					<input type="checkbox" id="stagDo" class="boxesItem__input">
+						<span class="title">Stag do</span>
+					</label>
+					<input type="radio" id="stagDo" class="boxesItem__input" name="stagDo" value="stagDo">
 
 
 					<label for="sportsClub" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_8.svg" alt="">
 						</span>
-						<span class="title">Sports club on tour</span> 
-					</label> 
-					<input type="checkbox" id="sportsClub" class="boxesItem__input">
+						<span class="title">Sports club on tour</span>
+					</label>
+					<input type="radio" checked="checked" id="sportsClub" class="boxesItem__input" name="sportsClub" value="sportsClub">
 
 				</form>
- 
-				 
-			</div> 
-		</div> 
- 
+
+
+			</div>
+		</div>
+
 
 		<div class="sContainer q1PageFooter">
 			<!-- <div class="footerTopQ1Page">
@@ -448,7 +450,7 @@
 			    </div>
 			</div>
 		</div>
-    
+
 
     </div>
 
@@ -474,7 +476,41 @@
             t.charset="utf-8";t.async=!0;t.defer=!0;
             t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
              })(document,"99395");
-        </script>
+		</script>
+		
+		<script>
+			$(document).ready(function() {
+				$(".boxesItem").click(function(){
+					$('#q1form').submit();
+				});
+	
+				$('#q1form').submit(function(e) {
+					e.preventDefault();
+						$.ajax({
+						type: "POST",
+						url: 'https://sagesvision.com/problems/q1.php',
+						data: $(this).serialize(),
+						success: function(response)
+						{
+							var jsonData = JSON.parse(response);
+	
+							console.log(1);
+	
+							// user is logged in successfully in the back-end
+							// let's redirect
+							if (jsonData.success == "1")
+							{
+								location.href = '/problems/q2_city-break.html';
+							}
+							else
+							{
+								alert('Invalid Credentials!');
+							}
+						 }
+					});
+				});
+			});
+		</script>
 
 </body>
 
