@@ -1321,3 +1321,73 @@ span.mainBoxes__bottomBtn__icon{
     }
 }   
 /*top section end*/
+
+.q3cityBreakD{
+    .boxesItem__input{
+        display: none;
+    }
+}
+.hendodestinations{
+    .stagDestination__item{
+        width: 20%;
+    }
+}
+.fitness{
+    .stagDestination__box{
+        padding-left: 35px;
+    }
+    .stagDestination__item{
+        width: 30%;
+    }
+}
+.purpleBg {
+    transition: all .25s linear;
+}
+.teamBuilding {
+    .stagDestination.q3cPage{
+        max-width: 90%;
+    } 
+    .q3cPage__elem:first-child{
+        width: 37%;
+        @media only screen and (max-width: 901px) {
+            width: 50%;
+        }
+        @media only screen and (max-width: 540px) {
+            width: 100%;
+        }
+    }
+    .q3cPage__elem:nth-child(2){
+        width: 20%;
+        @media only screen and (max-width: 901px) {
+            width: 50%;
+        }
+        @media only screen and (max-width: 540px) {
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+    .q3cPage__elem:nth-child(3){
+        width: 40%;
+        @media only screen and (max-width: 901px) {
+            width: 50%;
+            margin-top: 50px;
+        }
+        @media only screen and (max-width: 540px) {
+            width: 100%;
+        }
+    }
+    .q3cPage__mainBox{
+        padding-left: 50px;
+        @media only screen and (max-width: 901px) {
+            padding-left: 0;
+        }
+    }
+    .boxesItem__input{
+        display: none;
+    }
+}
+.q3skidestinations{
+    .boxesItem__input{
+        display: none;
+    }
+}

@@ -47,23 +47,26 @@
 
 	<link rel="canonical" href="https://packed.co" />
 
-    <link rel="prefetch" href="https://q.quora.com">
+    <!-- <link rel="prefetch" href="https://q.quora.com">
     <link rel="prefetch" href="https://www.googleadservices.com">
     <link rel="prefetch" href="https://www.googletagmanager.com">
     <link rel="prefetch" href="https://scontent.cdninstagram.com">
     <link rel="prefetch" href="https://connect.facebook.net">
     <link rel="prefetch" href="https://www.facebook.com">
-    <link rel="prefetch" href="https://bat.bing.com">
+    <link rel="prefetch" href="https://bat.bing.com"> -->
 
 	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script>
+	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script> -->
 	<!-- End Google Tag Manager -->
 
-    @@include('../partials/globals/orgSchema.html')
+	@@include('../partials/globals/orgSchema.html')
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -92,7 +95,7 @@
 				</div>
 
 				<div class="progressBar q3Bar">
-					<a href="q3a.html" class="progressBar__backBtn">
+					<a href="q2_ski-trip.html" class="progressBar__backBtn">
 						&#8592;
 					</a>
 					<div class="progressBar__gray">
@@ -105,176 +108,215 @@
 					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form action="" class="q3aPageForm">
-                    <input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure">
-                    <div class="q3aPageForm__submitBtn">
-                        <label for="q3aPageForm__submit">
-                            <div class="buttonsContainer q53cPageBtn">
-                                <a class="purpleBg q3aPageForm__btn" href="#" target="_blank">
-									<span class="topQContainer53__textBtn">
-										Next
-									</span>
-                                    <span class="topQContainer53__rightArrow">&#8594;</span> 
-                                </a>
-                            </div>
-                        </label>
-                        <input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
-                    </div>
-                </form>
+				<form class="q3skidestinations" id="q3form">
 
-                <div class="stagDestination q3cPage">
-                    <h4>Our most popular ski destinations</h4>
-        
-                    <div class="q3cPage__mainBox">
-                        <div class="q3cPage__elem">
-                            <div class="q3cPage__country">
-                                <a href="#" class="q3cPage__link">
-                                    <span class="q3cPage__flagIcon">
-                                        <img src="/assets/images/jpg/flag11.jpg" alt="">
-                                    </span>
-                                    FRANCE
-                                </a>
-                            </div>
+					<div class="q3aPageForm">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200">
+						<div class="q3aPageForm__submitBtn">
+							<label for="q3aPageForm__submit">
+								<div class="buttonsContainer q53cPageBtn">
+									<a class="purpleBg q3aPageForm__btn" href="#" target="_blank">
+										<span class="topQContainer53__textBtn">
+											Next
+										</span>
+										<span class="topQContainer53__rightArrow">&#8594;</span> 
+									</a>
+								</div>
+							</label>
+							<input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
+						</div>
+					</div>
 
-                            <div class="q3cPage__secondBox">
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Tignes
-                                    </a>
-                                </div>
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Val Thorens
-                                    </a>
-                                </div>
-                            </div>
+					<div class="stagDestination q3cPage">
+						<h4>Our most popular ski destinations</h4>
+			
+						<div class="q3cPage__mainBox">
+							<div class="q3cPage__elem">
+								<div class="q3cPage__country">
+									<a href="javascript:void(0);" class="q3cPage__link">
+										<span class="q3cPage__flagIcon">
+											<img src="/assets/images/jpg/flag11.jpg" alt="">
+										</span>
+										FRANCE
+									</a>
+								</div>
 
-                            <div class="q3cPage__secondBox">
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Chamonix
-                                    </a>
-                                </div>
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Meribel
-                                    </a>
-                                </div>
-                            </div>
+								<div class="q3cPage__secondBox">
+									<label for="tignes" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Tignes
+										</a>
+									</label>
+									<input type="checkbox" id="tignes" class="boxesItem__input" name="tignes" value="tignes">
 
-                            <div class="q3cPage__secondBox">
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Val d'Isere
-                                    </a>
-                                </div>
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Morzine 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+									<label for="valThorens" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Val Thorens
+										</a>
+									</label>
+									<input type="checkbox" id="valThorens" class="boxesItem__input" name="valThorens" value="valThorens">
 
+								</div>
 
+								<div class="q3cPage__secondBox">
+									<label for="chamonix" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Chamonix
+										</a>
+									</label>
+									<input type="checkbox" id="chamonix" class="boxesItem__input" name="chamonix" value="chamonix">
 
-                        <div class="q3cPage__elem">
-                            <div class="q3cPage__country">
-                                <a href="#" class="q3cPage__link">
-                                    <span class="q3cPage__flagIcon">
-                                        <img src="/assets/images/jpg/flag12.jpg" alt="">
-                                    </span>
-                                    AUSTRIA
-                                </a>
-                            </div>
-                            <div class="q3cPage__secondBox">
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Ischgl
-                                    </a>
-                                </div>
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Mayrhofen
-                                    </a>
-                                </div>
+									<label for="meribel" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Meribel
+										</a>
+									</label>
+									<input type="checkbox" id="meribel" class="boxesItem__input" name="meribel" value="meribel"> 
+
+								</div>
+
+								<div class="q3cPage__secondBox">
+									<label for="valdIsere" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Val d'Isere
+										</a>
+									</label>
+									<input type="checkbox" id="valdIsere" class="boxesItem__input" name="valdIsere" value="valdIsere">
+
+									<label for="morzine" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Morzine 
+										</a>
+									</label>
+									<input type="checkbox" id="morzine" class="boxesItem__input" name="morzine" value="morzine">
+
+								</div>
 							</div>
-                            <div class="q3cPage__secondBox">
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Saalbach
-                                    </a>
-                                </div>
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        St Anton
-                                    </a>
-                                </div>
+
+
+
+							<div class="q3cPage__elem">
+								<div class="q3cPage__country">
+									<a href="javascript:void(0);" class="q3cPage__link">
+										<span class="q3cPage__flagIcon">
+											<img src="/assets/images/jpg/flag12.jpg" alt="">
+										</span>
+										AUSTRIA
+									</a>
+								</div>
+								<div class="q3cPage__secondBox">
+
+									<label for="ischgl" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Ischgl
+										</a>
+									</label>
+									<input type="checkbox" id="ischgl" class="boxesItem__input" name="ischgl" value="ischgl">
+
+									<label for="mayrhofen" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Mayrhofen
+										</a>
+									</label>
+									<input type="checkbox" id="mayrhofen" class="boxesItem__input" name="mayrhofen" value="mayrhofen">
+
+								</div>
+								<div class="q3cPage__secondBox">
+
+									<label for="saalbach" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Saalbach
+										</a>
+									</label>
+									<input type="checkbox" id="saalbach" class="boxesItem__input" name="saalbach" value="saalbach">
+
+									<label for="stAnton" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											St Anton
+										</a>
+									</label>
+									<input type="checkbox" id="stAnton" class="boxesItem__input" name="stAnton" value="stAnton">
+
+								</div>
 							</div>
-                        </div>
 
 
 
-                        <div class="q3cPage__elem">
-                            <div class="q3cPage__country">
-                                <a href="#" class="q3cPage__link">
-                                    <span class="q3cPage__flagIcon">
-                                        <img src="/assets/images/jpg/flag14.jpg" alt="">
-                                    </span>
-                                    BULGARIA 
-                                </a>
-                            </div>
+							<div class="q3cPage__elem">
+								<div class="q3cPage__country">
+									<a href="javascript:void(0);" class="q3cPage__link">
+										<span class="q3cPage__flagIcon">
+											<img src="/assets/images/jpg/flag14.jpg" alt="">
+										</span>
+										BULGARIA 
+									</a>
+								</div>
 
-                            
-                            <div class="q3cPage__secondBox">
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Bansko 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+								
+								<div class="q3cPage__secondBox">
 
+									<label for="bansko" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Bansko 
+										</a>
+									</label>
+									<input type="checkbox" id="bansko" class="boxesItem__input" name="bansko" value="bansko">
 
-
-                        <div class="q3cPage__elem">
-                            <div class="q3cPage__country">
-                                <a href="#" class="q3cPage__link">
-                                    <!-- <span class="q3cPage__flagIcon">
-                                        <img src="/assets/images/jpg/flag13.jpg" alt="">
-                                    </span> -->
-                                    SKI WEEKENDS 
-                                </a>
-                            </div>
-                            
-                            <div class="q3cPage__secondBox">
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Chamonix
-                                    </a>
-                                </div>
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Courmayeur
-                                    </a>
-                                </div>
+								</div>
 							</div>
-							
-                            <div class="q3cPage__secondBox">
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Morzine
-                                    </a>
-                                </div>
-                                <div class="q3cPage__elemS">
-                                    <a href="#" class="q3cPage__itemS">
-                                        Avoriaz
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+							<div class="q3cPage__elem">
+								<div class="q3cPage__country">
+									<a href="javascript:void(0);" class="q3cPage__link">
+										<!-- <span class="q3cPage__flagIcon">
+											<img src="/assets/images/jpg/flag13.jpg" alt="">
+										</span> -->
+										SKI WEEKENDS 
+									</a>
+								</div>
+								
+								<div class="q3cPage__secondBox">
+
+									<label for="chamonix" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Chamonix
+										</a>
+									</label>
+									<input type="checkbox" id="chamonix" class="boxesItem__input" name="chamonix" value="chamonix">
+
+									<label for="courmayeur" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Courmayeur
+										</a>
+									</label>
+									<input type="checkbox" id="courmayeur" class="boxesItem__input" name="courmayeur" value="courmayeur">
+
+								</div>
+								
+								<div class="q3cPage__secondBox">
+
+									<label for="morzine" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Morzine
+										</a>
+									</label>
+									<input type="checkbox" id="morzine" class="boxesItem__input" name="morzine" value="morzine">
+
+									<label for="avoriaz" class="q3cPage__elemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS">
+											Avoriaz
+										</a>
+									</label>
+									<input type="checkbox" id="avoriaz" class="boxesItem__input" name="avoriaz" value="avoriaz">
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</form>
             </div>
             
             
@@ -297,372 +339,57 @@
 	  }, false);
 	</script>
 
-	<!-- <script src="assets/js/vendor.min.js" defer></script> -->
-	<!-- <script src="assets/js/app.js" defer></script> -->
-
-	<script>
-		function mobileMenu() {
-			var element = document.body;
-
-			if (element.classList) {
-				element.classList.toggle("mobileMenuActive");
-			} else {
-				var classes = element.className.split(" ");
-				var i = classes.indexOf("mobileMenuActive");
-
-				if (i >= 0)
-					classes.splice(i, 1);
-				else
-					classes.push("mobileMenuActive");
-					element.className = classes.join(" ");
-			}
-		}
-	</script>
-
-	<script>
-		  var hasSubmenu = document.querySelectorAll(".hasSubmenu");
-
-			for (i = 0; i < hasSubmenu.length; i++) {
-				hasSubmenu[i].addEventListener("click", function() {
-					this.classList.toggle("subMenuActive");
-				})
-			}
-	</script>
-
-
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-	    AOS.init({
-	        duration: 1000,
-	        disable: 'mobile'
-	    });
-	</script><!-- for countdown -->
-
-
+	
 	<!-- webP detection -->
-	<script>
+	<!-- <script>
 		!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+	</script> -->
+
+	
+
+	<script type="text/javascript">
+		(function(e,a){
+		var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+		t=e.createElement("script");t.type="text/javascript";
+		t.charset="utf-8";t.async=!0;t.defer=!0;
+		t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+			})(document,"99395");
 	</script>
 
-	<!--grid-3-col-img.html START-->
+
 	<script>
-		window.addEventListener("load", function() {
-			// store tabs variable
-		  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
-		  function myTabClicks(tabClickEvent) {
-				for (var i = 0; i < myTabs.length; i++) {
-					myTabs[i].classList.remove("active");
-				}
-				var clickedTab = tabClickEvent.currentTarget;
-				clickedTab.classList.add("active");
-				tabClickEvent.preventDefault();
-				var myContentPanes = document.querySelectorAll(".tabPaneResorts");
-				for (i = 0; i < myContentPanes.length; i++) {
-					myContentPanes[i].classList.remove("active");
-				}
-				var anchorReference = tabClickEvent.target;
-				var activePaneId = anchorReference.getAttribute("href");
-				console.log(activePaneId);
-				var activePane = document.querySelector(activePaneId);
-				activePane.classList.add("active");
-			}
-			for (i = 0; i < myTabs.length; i++) {
-				myTabs[i].addEventListener("click", myTabClicks)
-			}
-		});
+		$(document).ready(function() {
+			$(".boxesItem").click(function(){
+				$('#q3form').submit();
+			});
 
-	</script>
-	<!--grid-3-col-img.html END-->
+			$('#q3form').submit(function(e) {
+				e.preventDefault();
+					$.ajax({
+					type: "POST",
+					url: 'https://sagesvision.com/problems/q1.php',
+					data: $(this).serialize(),
+					success: function(response)
+					{
+						var jsonData = JSON.parse(response);
 
-	<!--the-best-of.html START-->
-	<script>
-		window.addEventListener("load", function() {
+						console.log(1);
 
-			// store tabs variable
-			var tabsArrowItem = document.querySelectorAll(".tabsArrowItem");
-			var myTabs = document.querySelectorAll("ul.navTabsTheBest > li");
-			var navTabsTop = document.querySelectorAll("ul.navTabsTop > li");
-			var navTabsBottom = document.querySelectorAll("ul.navTabsBottom > li");
-			var myContentPanes = document.querySelectorAll(".navTabsTheBestPane");
-
-			function myTabClicks(tabClickEvent) {
-				for (var i = 0; i < myTabs.length; i++) {
-					myTabs[i].classList.remove("active");
-				}
-				var clickedTab = tabClickEvent.currentTarget;
-				var indexOfElement = getElementIndex(clickedTab);
-
-				navTabsTop[indexOfElement].classList.add("active");
-				navTabsBottom[indexOfElement].classList.add("active");
-				tabClickEvent.preventDefault();
-
-				for (i = 0; i < myContentPanes.length; i++) {
-					myContentPanes[i].classList.remove("active");
-				}
-				var anchorReference = tabClickEvent.target;
-				var activePaneId = anchorReference.getAttribute("href");
-				var activePane = document.querySelector(activePaneId);
-				activePane.classList.add("active");
-			}
-
-			for (i = 0; i < myTabs.length; i++) {
-				myTabs[i].addEventListener("click", myTabClicks)
-			}
-
-			function navToNextTab (){
-				indexActive = getActiveTabIndex();
-
-				if ((navTabsTop.length - indexActive) > 1 ) {
-					nextIndex = indexActive+1;
-				}
-				else if ((navTabsTop.length - indexActive) == 1){
-				 	nextIndex = 0;
-				}
-
-				changeTabs(nextIndex);
-			}
-
-			function navToPrevTab (){
-				indexActive = getActiveTabIndex();
-
-				if (indexActive > 0) {
-					nextIndex = indexActive-1;
-				}
-				else if (indexActive == 0){
-				 	nextIndex = navTabsTop.length-1;
-				}
-
-
-				changeTabs(nextIndex);
-			}
-
-			document.getElementById("tabsLeft").addEventListener("click", navToPrevTab);
-			document.getElementById("tabsRight").addEventListener("click", navToNextTab);
-
-			function getActiveTabIndex(){
-				for (var i = 0; i < navTabsTop.length; i++) {
-					if(navTabsTop[i].classList.contains("active")){
-						var indexActive = getElementIndex(navTabsTop[i]);
+						// user is logged in successfully in the back-end
+						// let's redirect
+						if (jsonData.success == "1")
+						{
+							location.href = '/problems/q4.html';
+						}
+						else
+						{
+							alert('Invalid Credentials!');
+						}
 					}
-				}
-				return indexActive;
-			}
-
-			function changeTabs(nextIndex){
-				for (var i = 0; i < navTabsTop.length; i++) {
-					navTabsTop[i].classList.remove("active");
-					navTabsBottom[i].classList.remove("active");
-					myContentPanes[i].classList.remove("active");
-				}
-
-				navTabsTop[nextIndex].classList.add("active");
-				navTabsBottom[nextIndex].classList.add("active");
-				myContentPanes[nextIndex].classList.add("active");
-			}
-
-			function getElementIndex (element) {
-				return Array.from(element.parentNode.children).indexOf(element);
-			}
-
-		});
-
-	</script>
-	<!--the-best-of.html END-->
-
-
-	<!--accommodation-options.html START-->
-	<script>
-		window.addEventListener("load", function() {
-			// store tabs variable
-		  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
-		  function myTabClicks(tabClickEvent) {
-				for (var i = 0; i < myTabs.length; i++) {
-					myTabs[i].classList.remove("active");
-				}
-				var clickedTab = tabClickEvent.currentTarget;
-				clickedTab.classList.add("active");
-				tabClickEvent.preventDefault();
-				var myContentPanes = document.querySelectorAll(".tabPaneResorts");
-				for (i = 0; i < myContentPanes.length; i++) {
-					myContentPanes[i].classList.remove("active");
-				}
-				var anchorReference = tabClickEvent.target;
-				var activePaneId = anchorReference.getAttribute("href");
-				console.log(activePaneId);
-				var activePane = document.querySelector(activePaneId);
-				activePane.classList.add("active");
-			}
-			for (i = 0; i < myTabs.length; i++) {
-				myTabs[i].addEventListener("click", myTabClicks)
-			}
-		});
-
-	</script>
-	<!--accommodation-options.html END-->
-
-
-	<!--activities.html START-->
-	<script>
-		window.addEventListener("load", function() {
-			// store tabs variable
-		  var myTabs = document.querySelectorAll("ul.navTabsResorts2 > li");
-		  function myTabClicks(tabClickEvent) {
-				for (var i = 0; i < myTabs.length; i++) {
-					myTabs[i].classList.remove("active");
-				}
-				var clickedTab = tabClickEvent.currentTarget;
-				clickedTab.classList.add("active");
-				tabClickEvent.preventDefault();
-				var myContentPanes = document.querySelectorAll(".activitiestabPaneResorts");
-				for (i = 0; i < myContentPanes.length; i++) {
-					myContentPanes[i].classList.remove("active");
-				}
-				var anchorReference = tabClickEvent.target;
-				var activePaneId = anchorReference.getAttribute("href");
-				console.log(activePaneId);
-				var activePane = document.querySelector(activePaneId);
-				activePane.classList.add("active");
-			}
-			for (i = 0; i < myTabs.length; i++) {
-				myTabs[i].addEventListener("click", myTabClicks)
-			}
-		});
-
-	</script>
-	<!--activities.html END-->
-
-
-	<!--accommodation-options2.html START-->
-	<script>
-		window.addEventListener("load", function() {
-			// store tabs variable
-		  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
-		  function myTabClicks(tabClickEvent) {
-				for (var i = 0; i < myTabs.length; i++) {
-					myTabs[i].classList.remove("active");
-				}
-				var clickedTab = tabClickEvent.currentTarget;
-				clickedTab.classList.add("active");
-				tabClickEvent.preventDefault();
-				var myContentPanes = document.querySelectorAll(".tabPaneResorts");
-				for (i = 0; i < myContentPanes.length; i++) {
-					myContentPanes[i].classList.remove("active");
-				}
-				var anchorReference = tabClickEvent.target;
-				var activePaneId = anchorReference.getAttribute("href");
-				console.log(activePaneId);
-				var activePane = document.querySelector(activePaneId);
-				activePane.classList.add("active");
-			}
-			for (i = 0; i < myTabs.length; i++) {
-				myTabs[i].addEventListener("click", myTabClicks)
-			}
-		});
-
-	</script>
-	<!--accommodation-options2.html END-->
-
-
-	<!--mySwft.html START-->
-	<script>
-		window.addEventListener("load", function() {
-			// store tabs variable
-			var myTabs = document.querySelectorAll(".navBooking .navBookingItem");
-			function myTabClicks(tabClickEvent) {
-				for (var i = 0; i < myTabs.length; i++) {
-					myTabs[i].classList.remove("active");
-				}
-				var clickedTab = tabClickEvent.currentTarget;
-				clickedTab.classList.add("active");
-				tabClickEvent.preventDefault();
-				var myContentPanes = document.querySelectorAll(".contentBooking");
-				for (i = 0; i < myContentPanes.length; i++) {
-					myContentPanes[i].classList.remove("active");
-				}
-				var anchorReference = tabClickEvent.target;
-				var activePaneId = anchorReference.getAttribute("href");
-				var activePane = document.querySelector(activePaneId);
-
-				activePane.classList.add("active");
-			}
-			for (i = 0; i < myTabs.length; i++) {
-				myTabs[i].addEventListener("click", myTabClicks)
-			}
+				});
+			});
 		});
 	</script>
-	<!-- <script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script> -->
-	<!--mySwft.html END-->
-
-
-	<!--resorts-grid START-->
-	<script>
-		window.addEventListener("load", function() {
-			// store tabs variable
-		  var myTabs = document.querySelectorAll("ul.navTabsResorts > li");
-		  function myTabClicks(tabClickEvent) {
-				for (var i = 0; i < myTabs.length; i++) {
-					myTabs[i].classList.remove("active");
-				}
-				var clickedTab = tabClickEvent.currentTarget;
-				clickedTab.classList.add("active");
-				tabClickEvent.preventDefault();
-				var myContentPanes = document.querySelectorAll(".tabPaneResorts");
-				for (i = 0; i < myContentPanes.length; i++) {
-					myContentPanes[i].classList.remove("active");
-				}
-				var anchorReference = tabClickEvent.target;
-				var activePaneId = anchorReference.getAttribute("href");
-				console.log(activePaneId);
-				var activePane = document.querySelector(activePaneId);
-				activePane.classList.add("active");
-			}
-			for (i = 0; i < myTabs.length; i++) {
-				myTabs[i].addEventListener("click", myTabClicks)
-			}
-		});
-
-	</script>
-	<!--resorts-grid END-->
-
-	<script>
-		window.addEventListener("load", function() {
-		    // store tabs variable
-		    var myTabs = document.querySelectorAll(".navBooking .navBookingItem");
-		    function myTabClicks(tabClickEvent) {
-		        for (var i = 0; i < myTabs.length; i++) {
-		            myTabs[i].classList.remove("active");
-		        }
-		        var clickedTab = tabClickEvent.currentTarget;
-		        clickedTab.classList.add("active");
-		        tabClickEvent.preventDefault();
-		        var myContentPanes = document.querySelectorAll(".contentBooking");
-		        for (i = 0; i < myContentPanes.length; i++) {
-		            myContentPanes[i].classList.remove("active");
-		        }
-		        var anchorReference = tabClickEvent.target;
-		        var activePaneId = anchorReference.getAttribute("href");
-		        var activePane = document.querySelector(activePaneId);
-
-		        activePane.classList.add("active");
-		    }
-		    for (i = 0; i < myTabs.length; i++) {
-		        myTabs[i].addEventListener("click", myTabClicks)
-		    }
-		});
-	</script>
-
-    @@include('../partials/scripts/carousel.html')
-	<!-- <script type="text/javascript" src="https://api.feefo.com/api/javascript/packed" async></script> -->
-
-        <script type="text/javascript">
-            (function(e,a){
-            var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
-            t=e.createElement("script");t.type="text/javascript";
-            t.charset="utf-8";t.async=!0;t.defer=!0;
-            t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
-             })(document,"99395");
-        </script>
 
 </body>
 

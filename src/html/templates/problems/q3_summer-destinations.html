@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title> packed | Q2 </title>
+	<title> packed | Q52 </title>
 
 	<!-- Enter a brief description of your page -->
 		<meta name="description" content="packed (previously MySwft) is a group travel planner at your fingertips. Receive recommendations personalised to you via WhatsApp or Facebook Messenger, then everyone pays separately. Get a handle on your group holiday">
@@ -63,10 +63,10 @@
 	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script> -->
 	<!-- End Google Tag Manager -->
 
-	@@include('../partials/globals/orgSchema.html')
+    @@include('../partials/globals/orgSchema.html')
+	
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
 </head>
 
 
@@ -78,83 +78,146 @@
 		@@include('../partials/globals/loader.html')
 		@@include('../partials/globals/problems/header2.html') 
 
+		
 		<div class="topArea topAreaWithImage topAreaQ topAreaQ2">
 			<div class="topAreaImage topAreaImageQ1 topAreaImageQ2"></div>
-			<div class="smallTopTitle topTilteImg">
+			
+			<div class="smallTopTitle topTilteImg q53Page">
 				<h4>Your holiday handled</h4>
 				<p>Hassle free trips with your favourites</p>
-			</div>
-			<div class="topQContainer">
+			</div> 
+			<div class="topQContainer topQContainer53 q53Page  q3aPage">  
 
 				<div class="smallTopTitle">
 					<h4>Your holiday handled</h4>
 					<p>Hassle free trips with your favourites</p>
 				</div>
 
-				<div class="progressBar q2Bar">
-					<a href="q1.html" class="progressBar__backBtn">
+				<div class="progressBar q3Bar">
+					<a href="q2_summer-holiday.html" class="progressBar__backBtn">
 						&#8592;
 					</a>
 					<div class="progressBar__gray">
 						<div class="progressBar__fill"></div>
 					</div>
-					<div class="progressBar__text">2/5</div> 
+					<div class="progressBar__text">3/5</div> 
 				</div>
 
 				<div class="mainTitle">
-					<h2>What are you looking for?</h2>
+					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form">
+				<form id="q3form" class="q3cityBreakD">
+					<div class="q3aPageForm">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200">
+						<div class="q3aPageForm__submitBtn">
+							<label for="q3aPageForm__submit">
+								<div class="buttonsContainer q53cPageBtn">
+									<a class="purpleBg q3aPageForm__btn" href="#" target="_blank">
+										<span class="topQContainer53__textBtn">
+											Next
+										</span>
+										<span class="topQContainer53__rightArrow">&#8594;</span> 
+									</a>
+								</div>
+							</label>
+							<input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
+						</div>
+					</div>
 
-					<label for="nightlife" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/stag-do/outdoor-stag.svg" alt="">
-						</span>
-						<span class="title">Outdoor and active</span> 
-					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<div class="stagDestination">
+						<h4>Our most popular summer destinations</h4>
+			
+						<div class="stagDestination__box">
 
-					<label for="skiWeekend" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/stag-do/smth-unique-stag.svg" alt="">
-						</span>
-						<span class="title">Something unique</span> 
-					</label> 
-					<input type="radio" id="skiWeekend" class="boxesItem__input" name="skiWeekend" value="skiWeekend">
+							
+							<label for="croatia" class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Croatia</a>
+							</label>
+							<input type="radio" id="croatia" class="boxesItem__input" name="croatia" value="croatia">
 
-					<label for="bigAreaSki" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
-						</span>
-						<span class="title">Nightlife</span> 
-					</label> 
-					<input type="radio" id="bigAreaSki" class="boxesItem__input" name="bigAreaSki" value="bigAreaSki">
 
-					<label for="somethingElse" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="" name="" value="">
-						</span>
-						<span class="title">Something else</span> 
-					</label> 
-					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+							<label for="greece" class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Greece</a>
+							</label>
+							<input type="radio" id="greece" class="boxesItem__input" name="greece" value="greece">
 
-					<label for="beginner" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/stag-do/booze-based.svg" alt="">
-						</span>
-						<span class="title">Booze-based fun</span> 
-					</label> 
-					<input type="radio" id="beginner" class="boxesItem__input" name="beginner" value="beginner">
-					
+
+							<label for="marocco" class="stagDestination__item right">
+								<a href="#" class="stagDestination__link">Marocco</a>
+							</label> 
+							<input type="radio" id="marocco" class="boxesItem__input" name="marocco" value="marocco">
+
+
+						</div>
+			
+						<div class="stagDestination__box">
+							
+							<label for="cyprus" class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Cyprus</a>
+							</label>
+							<input type="radio" id="cyprus" class="boxesItem__input" name="cyprus" value="cyprus">
+
+
+							<label for="italy" class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Italy</a>
+							</label>
+							<input type="radio" id="italy" class="boxesItem__input" name="italy" value="italy">
+
+
+							<label for="portugal" class="stagDestination__item right">
+								<a href="#" class="stagDestination__link">Portugal</a>
+							</label>
+							<input type="radio" id="portugal" class="boxesItem__input" name="portugal" value="portugal">
+
+
+						</div>
+			
+						<div class="stagDestination__box">
+
+							<label for="france" class="stagDestination__item">
+								<a href="#" class="stagDestination__link">France</a>
+							</label>
+							<input type="radio" id="france" class="boxesItem__input" name="france" value="france">
+
+
+							<label for="malta" class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Malta</a>
+							</label>
+							<input type="radio" id="malta" class="boxesItem__input" name="malta" value="malta">
+
+
+							<label for="spain" class="stagDestination__item right">
+								<a href="#" class="stagDestination__link">Spain</a>
+							</label>
+							<input type="radio" id="spain" class="boxesItem__input" name="spain" value="spain">
+
+
+						</div>
+			
+						<div class="stagDestination__box">
+
+							<label for="turkey" class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Turkey</a>
+							</label>
+							<input type="radio" id="turkey" class="boxesItem__input" name="turkey" value="turkey">
+
+						</div>
+			
+					</div>
 				</form>
-			</div>
-		</div> 
- 
+            </div>
+            
+            
+
+
+        </div>   
+
 
 		<div class="sContainer q1PageFooter">
 			@@include('../partials/globals/problems/footer2.html')
 		</div>
+ 
     
 
     </div>
@@ -166,10 +229,13 @@
 	</script>
 
 	
+
 	<!-- webP detection -->
 	<!-- <script>
 		!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
 	</script> -->
+
+	
 
 	<script type="text/javascript">
 		(function(e,a){
@@ -180,13 +246,14 @@
 			})(document,"99395");
 	</script>
 
+
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+				$('#q3form').submit();
 			});
 
-			$('#q2form').submit(function(e) {
+			$('#q3form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -202,7 +269,7 @@
 						// let's redirect
 						if (jsonData.success == "1")
 						{
-							location.href = '/problems/q3a_noflag_stag-destinations.html';
+							location.href = '/problems/q4.html';
 						}
 						else
 						{
@@ -211,7 +278,7 @@
 					}
 				});
 			});
-		});
+		}); 
 	</script>
 
 </body>

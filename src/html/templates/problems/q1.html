@@ -105,9 +105,9 @@
 
 
 
-				<form class="boxesList boxesListQ1" id="q1form">
+				<form name="q1form" class="boxesList boxesListQ1" id="q1form">
 
-					<label for="skiTrip" class="boxesItem">
+					<label onclick="display1()" for="skiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/ski-trip/icon-q1_1.svg" alt="">
 						</span>
@@ -116,7 +116,7 @@
 					<input type="radio" id="skiTrip" class="boxesItem__input" name="skiTrip" value="skiTrip">
 
 
-					<label for="henDo" class="boxesItem">
+					<label onclick="display2()" for="henDo" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_2.svg" alt="">
 						</span>
@@ -125,7 +125,7 @@
 					<input type="radio" id="henDo" class="boxesItem__input" name="henDo" value="henDo">
 
 
-					<label for="cityBreak" class="boxesItem">
+					<label onclick="display3()" for="cityBreak" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_3.svg" alt="">
 						</span>
@@ -134,7 +134,7 @@
 					<input type="radio" id="cityBreak" class="boxesItem__input" name="cityBreak" value="cityBreak">
 
 
-					<label for="companyTrip" class="boxesItem">
+					<label onclick="display4()" for="companyTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_4.svg" alt="">
 						</span>
@@ -143,7 +143,7 @@
 					<input type="radio" id="companyTrip" class="boxesItem__input" name="companyTrip" value="companyTrip">
 
 
-					<label for="summerHoliday" class="boxesItem">
+					<label onclick="display5()" for="summerHoliday" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_5.svg" alt="">
 						</span>
@@ -152,7 +152,7 @@
 					<input type="radio" id="summerHoliday" class="boxesItem__input" name="summerHoliday" value="summerHoliday">
 
 
-					<label for="fitness" class="boxesItem">
+					<label onclick="display6()" for="fitness" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_6.svg" alt="">
 						</span>
@@ -161,7 +161,7 @@
 					<input type="radio" id="fitness" class="boxesItem__input" name="fitness" value="fitness">
 
 
-					<label for="stagDo" class="boxesItem">
+					<label onclick="display7()" for="stagDo" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_7.svg" alt="">
 						</span>
@@ -170,7 +170,7 @@
 					<input type="radio" id="stagDo" class="boxesItem__input" name="stagDo" value="stagDo">
 
 
-					<label for="sportsClub" class="boxesItem">
+					<label onclick="display8()" for="sportsClub" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_8.svg" alt="">
 						</span>
@@ -238,7 +238,7 @@
 							// let's redirect
 							if (jsonData.success == "1")
 							{
-								location.href = '/problems/q2_city-break.html';
+								// location.href = '/problems/q2_city-break.html';
 							}
 							else
 							{
@@ -248,6 +248,41 @@
 					});
 				});
 			});
+		</script>
+
+		<script>
+			function display1() {
+				var skiTrip = document.getElementById("skiTrip").value;
+				location.href = 'q2_ski-trip.html';
+			}
+			function display2() {
+				var henDo = document.getElementById("henDo").value;
+				location.href = 'q2_hen-do.html';
+			}
+			function display3() {
+				var cityBreak = document.getElementById("cityBreak").value;
+				location.href = 'q2_city-break.html';
+			}
+			function display4() {
+				var companyTrip = document.getElementById("companyTrip").value;
+				location.href = 'q2_company-trip.html';
+			}
+			function display5() {
+				var summerHoliday = document.getElementById("summerHoliday").value;
+				location.href = 'q2_summer-holiday.html';
+			}
+			function display6() {
+				var fitness = document.getElementById("fitness").value;
+				location.href = 'q2_fitness-community-getaway.html';
+			}
+			function display7() {
+				var stagDo = document.getElementById("stagDo").value;
+				location.href = 'q2_stag-do.html';
+			}
+			function display8() {
+				var sportsClub = document.getElementById("sportsClub").value;
+				location.href = 'q2_sports-club-on-tour.html';
+			}
 		</script>
 
 </body>
