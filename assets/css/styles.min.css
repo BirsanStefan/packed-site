@@ -10008,6 +10008,16 @@ section.pisteMaps {
   margin-bottom: 30px;
   margin-top: 80px; }
 
+.pisteMapsText {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  color: #464860;
+  margin-top: 30px;
+  line-height: 1.4;
+  max-width: 1053px;
+  margin-right: auto;
+  margin-left: auto; }
+
 .stepRight .pisteMapButtonContainer {
   justify-content: left;
   margin-top: 40px; }

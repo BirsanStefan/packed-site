@@ -14,7 +14,15 @@
 
       <loc>https://packed.co/blog/sitemap-posts.xml</loc>
 
-      <lastmod>2020-04-24</lastmod>
+      <lastmod>2020-05-29</lastmod>
+
+   </sitemap>
+
+   <sitemap>
+
+      <loc>https://packed.co/blog/sitemap-tags.xml</loc>
+
+      <lastmod>2020-05-29</lastmod>
 
    </sitemap>
 
