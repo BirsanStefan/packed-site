@@ -444,6 +444,40 @@
 			})(document,"99395");
 	</script>
 
+
+	<script>
+		$(document).ready(function() {
+			$(".boxesItem").click(function(){
+				$('#q2form').submit();
+			});
+
+			$('#q2form').submit(function(e) {
+				e.preventDefault();
+					$.ajax({
+					type: "POST",
+					url: 'https://sagesvision.com/problems/q1.php',
+					data: $(this).serialize(),
+					success: function(response)
+					{
+						var jsonData = JSON.parse(response);
+
+						console.log(1);
+
+						// user is logged in successfully in the back-end
+						// let's redirect
+						if (jsonData.success == "1")
+						{
+							location.href = '/problems/q3a.html';
+						}
+						else
+						{
+							alert('Invalid Credentials!');
+						}
+					}
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>

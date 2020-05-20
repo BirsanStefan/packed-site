@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title> packed | Q2 </title>
+	<title> packed | Q52 </title>
 
 	<!-- Enter a brief description of your page -->
 		<meta name="description" content="packed (previously MySwft) is a group travel planner at your fingertips. Receive recommendations personalised to you via WhatsApp or Facebook Messenger, then everyone pays separately. Get a handle on your group holiday">
@@ -63,10 +63,10 @@
 	})(window,document,'script','dataLayer','GTM-KVXPGSD');</script> -->
 	<!-- End Google Tag Manager -->
 
-	@@include('../partials/globals/orgSchema.html')
+    @@include('../partials/globals/orgSchema.html')
+	
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
 </head>
 
 
@@ -78,83 +78,128 @@
 		@@include('../partials/globals/loader.html')
 		@@include('../partials/globals/problems/header2.html') 
 
+		
 		<div class="topArea topAreaWithImage topAreaQ topAreaQ2">
 			<div class="topAreaImage topAreaImageQ1 topAreaImageQ2"></div>
-			<div class="smallTopTitle topTilteImg">
+			
+			<div class="smallTopTitle topTilteImg q53Page">
 				<h4>Your holiday handled</h4>
 				<p>Hassle free trips with your favourites</p>
-			</div>
-			<div class="topQContainer">
+			</div> 
+			<div class="topQContainer topQContainer53 q53Page  q3aPage">  
 
 				<div class="smallTopTitle">
 					<h4>Your holiday handled</h4>
 					<p>Hassle free trips with your favourites</p>
 				</div>
 
-				<div class="progressBar q2Bar">
-					<a href="q1.html" class="progressBar__backBtn">
+				<div class="progressBar q3Bar">
+					<a href="q3a.html" class="progressBar__backBtn">
 						&#8592;
 					</a>
 					<div class="progressBar__gray">
 						<div class="progressBar__fill"></div>
 					</div>
-					<div class="progressBar__text">2/5</div> 
+					<div class="progressBar__text">3/5</div> 
 				</div>
 
 				<div class="mainTitle">
-					<h2>What are you looking for?</h2>
+					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form">
+				<form id="q3form">
+					<div class="q3aPageForm">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure">
+						<div class="q3aPageForm__submitBtn">
+							<label for="q3aPageForm__submit">
+								<div class="buttonsContainer q53cPageBtn">
+									<a class="purpleBg q3aPageForm__btn" href="#" target="_blank">
+										<span class="topQContainer53__textBtn">
+											Next
+										</span>
+										<span class="topQContainer53__rightArrow">&#8594;</span> 
+									</a>
+								</div>
+							</label>
+							<input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
+						</div>
+					</div>
 
-					<label for="nightlife" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/sports-club-on-tour/end-of-season.svg" alt="">
-						</span>
-						<span class="title">End of season tour</span> 
-					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<div class="stagDestination">
+						<h4>Our most popular stag destinations</h4>
+			
+						<div class="stagDestination__box">
 
-					<label for="skiWeekend" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/sports-club-on-tour/competition.svg" alt="">
-						</span>
-						<span class="title">Competition-specific</span> 
-					</label> 
-					<input type="radio" id="skiWeekend" class="boxesItem__input" name="skiWeekend" value="skiWeekend">
+							
+							<label class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Amsterdam</a>
+							</label>
+							<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
 
-					<label for="bigAreaSki" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/fitness-community-getaway/training-holiday.svg" alt="">
-						</span>
-						<span class="title">Pre-season training camp</span> 
-					</label> 
-					<input type="radio" id="bigAreaSki" class="boxesItem__input" name="bigAreaSki" value="bigAreaSki">
 
-					<label for="somethingElse" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
-						</span>
-						<span class="title">Something else</span> 
-					</label> 
-					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+							<label class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Budapest</a>
+							</label>
+							<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
 
-					<label for="beginner" class="boxesItem">
-						<span class="icon">
-							<img src="/assets/images/svg/problems/q2/companny-trip/ski-trip.svg" alt="">
-						</span>
-						<span class="title">Mid-season ski trip</span> 
-					</label> 
-					<input type="radio" id="beginner" class="boxesItem__input" name="beginner" value="beginner">
-					
+
+							<label class="stagDestination__item right">
+								<a href="#" class="stagDestination__link">Krakow</a>
+							</label>
+							<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+
+
+						</div>
+			
+						<div class="stagDestination__box">
+							<div class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Barcelona</a>
+							</div>
+							<div class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Dublin</a>
+							</div>
+							<div class="stagDestination__item right">
+								<a href="#" class="stagDestination__link">Lisbon</a>
+							</div>
+						</div>
+			
+						<div class="stagDestination__box">
+							<div class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Benidorm</a>
+							</div>
+							<div class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Edinburgh</a>
+							</div>
+							<div class="stagDestination__item right">
+								<a href="#" class="stagDestination__link">Prague</a>
+							</div>
+						</div>
+			
+						<div class="stagDestination__box">
+							<div class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Berlin</a>
+							</div>
+							<div class="stagDestination__item">
+								<a href="#" class="stagDestination__link">Hamburg</a>
+							</div>
+							<div class="stagDestination__item right">
+								<a href="#" class="stagDestination__link">Riga</a> 
+							</div>
+						</div>
+					</div>
 				</form>
-			</div>
-		</div> 
- 
+            </div>
+            
+            
+
+
+        </div>   
+
 
 		<div class="sContainer q1PageFooter">
 			@@include('../partials/globals/problems/footer2.html')
 		</div>
+ 
     
 
     </div>
@@ -164,6 +209,8 @@
 	     document.getElementById("pageLoader").classList.add("loaded");
 	  }, false);
 	</script>
+
+	
 
 	<!-- webP detection -->
 	<!-- <script>
@@ -185,10 +232,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+				$('#q3form').submit();
 			});
 
-			$('#q2form').submit(function(e) {
+			$('#q3form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -204,7 +251,7 @@
 						// let's redirect
 						if (jsonData.success == "1")
 						{
-							location.href = '/problems/q3a.html';
+							location.href = '/problems/q4.html';
 						}
 						else
 						{
@@ -213,7 +260,7 @@
 					}
 				});
 			});
-		});
+		}); 
 	</script>
 
 </body>
