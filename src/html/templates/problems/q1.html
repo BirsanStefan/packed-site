@@ -64,7 +64,7 @@
 	<!-- End Google Tag Manager -->
 
 	@@include('../partials/globals/orgSchema.html')
-	
+
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
 </head>
@@ -102,11 +102,11 @@
 					<h2>What’s the reason for your trip?</h2>
 				</div>
 
-
+ 
 
 
 				<form name="q1form" class="boxesList boxesListQ1" id="q1form">
-
+ 
 					<label onclick="display1()" for="skiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/ski-trip/icon-q1_1.svg" alt="">
@@ -215,45 +215,66 @@
             t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
              })(document,"99395");
 		</script>
-		
+
 		<script>
 			$(document).ready(function() {
 				$(".boxesItem").click(function(){
 					$('#q1form').submit();
 				});
-	
+  
 				$('#q1form').submit(function(e) {
 					e.preventDefault();
 						$.ajax({
-						type: "POST",
-						url: 'https://sagesvision.com/problems/q1.php',
-						data: $(this).serialize(),
-						success: function(response)
-						{
+							type: "POST",
+							url: 'https://sagesvision.com/problems/q1.php',
+							data: $(this).serialize(),
+							success: function(response)
+							{
 							var jsonData = JSON.parse(response);
-	
+
 							console.log(1);
-	
+
 							// user is logged in successfully in the back-end
 							// let's redirect
 							if (jsonData.success == "1")
 							{
-								// location.href = '/problems/q2_city-break.html';
+							// location.href = '/problems/q2_city-break.html';
 							}
 							else
 							{
-								alert('Invalid Credentials!');
+							// 		alert('Invalid Credentials!');
 							}
-						 }
+						}
 					});
 				});
 			});
 		</script>
 
+
+
+	<!--db_connection START-->
+		<!-- <script>
+
+			$(document).ready(function(){
+				$("#q1form").submit(function(e) {
+					e.preventDefault();
+				
+					$.post('https://sagesvision.com/problems/db_connection.php', $('#q1form').serialize(), function(data) {
+						alert(data);
+					});
+					return false;
+				});
+			}); 
+			
+		</script> -->
+		<!--db_connection END-->
+
+
+	<!--Go to next page START-->
 		<script>
 			function display1() {
-				var skiTrip = document.getElementById("skiTrip").value;
-				location.href = 'q2_ski-trip.html';
+			 	var skiTrip = document.getElementById("skiTrip").value;
+			 	location.href = 'q2_ski-trip.html';
 			}
 			function display2() {
 				var henDo = document.getElementById("henDo").value;
@@ -284,6 +305,7 @@
 				location.href = 'q2_sports-club-on-tour.html';
 			}
 		</script>
+		<!--Go to next page END-->
 
 </body>
 
