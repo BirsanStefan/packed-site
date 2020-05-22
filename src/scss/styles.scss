@@ -7289,7 +7289,8 @@ img.teamImgItemTablet {
 	border-radius: 6px;
 	background-color: #f8f8ff;
 	margin-bottom: 25px;
-	text-decoration: none
+	text-decoration: none;
+	border-radius: 7px;
 }
 
 .holidayItem:hover {
@@ -7311,7 +7312,8 @@ img.teamImgItemTablet {
 	height: 350px;
 	display: block;
 	background-size: cover;
-	background-position: 50%
+	background-position: 50%;
+	border-radius: 7px 7px 0 0;
 }
 
 .linkContentTitle {
