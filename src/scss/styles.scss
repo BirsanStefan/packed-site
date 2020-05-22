@@ -22,9 +22,10 @@
  */
 
 @import 'pages/problems';
-@import 'components/problems/header2.scss';
-@import 'components/problems/footer2.scss';
-@import 'components/feefoCarousel2.scss';
+@import 'components/problems/header2';
+@import 'components/problems/footer2';
+@import 'components/problems/start-button';
+@import 'components/feefoCarousel2';
 
 
 .clearfix:after {
