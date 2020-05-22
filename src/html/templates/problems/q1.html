@@ -260,27 +260,15 @@
 						}
 					});
 				});
-			});
+			}); 
 		</script>
 
 
 
 
-	<!--db_connection START
+	<!--db_connection START-->
 		<script>
-
-			$(document).ready(function(){
-				$("#q1form").submit(function(e) {
-					e.preventDefault();
-				
-					$.post('https://sagesvision.com/problems/db_connection.php', $('#q1form').serialize(), function(data) {
-						alert(data);
-					});
-					return false;
-				});
-			}); 
-			
-		</script>-->
+		</script>
 		<!--db_connection END--> 
 
 
