@@ -127,7 +127,7 @@
 						<span class="title">Ski trip</span>
 					</label>
 					<input type="radio" id="skiTrip" class="boxesItem__input" name="skiTrip" value="skiTrip">
-
+ 
 
 					<label onclick="display2()" for="henDo" class="boxesItem">
 						<span class="icon">
@@ -193,7 +193,7 @@
 
 				</form>
 
-
+  
 			</div>
 		</div>
 
@@ -272,43 +272,92 @@
 		<!--db_connection END--> 
 
 
-	<!--Go to next page START-->
+	
+
+		<!-- <script>
+			$('input[type=radio]').on('change', function() {
+				$(this).closest("q1form").submit();
+			});
+		</script> -->
+
+
+		<script>
+			$(function () {
+				$("#q1form").submit(function () {
+					// alert("Form send event");
+					var skiTrip = document.getElementById("skiTrip").value;
+					var henDo = document.getElementById("henDo").value;
+					var cityBreak = document.getElementById("cityBreak").value;
+					var companyTrip = document.getElementById("companyTrip").value;
+					var summerHoliday = document.getElementById("summerHoliday").value;
+					var fitness = document.getElementById("fitness").value;
+					var stagDo = document.getElementById("stagDo").value;
+					var sportsClub = document.getElementById("sportsClub").value;
+				}); 
+		
+				$("input[name=skiTrip]").click(function (e) {
+					$("#q1form").trigger("submit");
+				});
+				$("input[name=henDo]").click(function (e) {
+					$("#q1form").trigger("submit");
+				});
+
+				$("input[name=cityBreak]").click(function (e) {
+					$("#q1form").trigger("submit");
+				});
+
+				$("input[name=companyTrip]").click(function (e) {
+					$("#q1form").trigger("submit");
+				});
+
+				$("input[name=summerHoliday]").click(function (e) {
+					$("#q1form").trigger("submit");
+				});
+
+				$("input[name=fitness]").click(function (e) {
+					$("#q1form").trigger("submit");
+				});
+
+				$("input[name=stagDo]").click(function (e) {
+					$("#q1form").trigger("submit");
+				});
+
+				$("input[name=sportsClub]").click(function (e) {
+					$("#q1form").trigger("submit");
+				}); 
+			});   
+		</script>
+
+
+		<!--Go to next page START-->
 		<script>
 			function display1() {
-			 	var skiTrip = document.getElementById("skiTrip").value;
+			 	// var skiTrip = document.getElementById("skiTrip").value;
 			 	location.href = 'q2_ski-trip.html';
 			}
 			function display2() {
-				var henDo = document.getElementById("henDo").value;
 				location.href = 'q2_hen-do.html';
 			}
 			function display3() {
-				var cityBreak = document.getElementById("cityBreak").value;
 				location.href = 'q2_city-break.html';
 			}
 			function display4() {
-				var companyTrip = document.getElementById("companyTrip").value;
 				location.href = 'q2_company-trip.html';
 			}
 			function display5() {
-				var summerHoliday = document.getElementById("summerHoliday").value;
 				location.href = 'q2_summer-holiday.html';
 			}
 			function display6() {
-				var fitness = document.getElementById("fitness").value;
 				location.href = 'q2_fitness-community-getaway.html';
 			}
 			function display7() {
-				var stagDo = document.getElementById("stagDo").value;
 				location.href = 'q2_stag-do.html';
 			}
 			function display8() {
-				var sportsClub = document.getElementById("sportsClub").value;
 				location.href = 'q2_sports-club-on-tour.html';
 			}
 		</script>
 		<!--Go to next page END-->
-
 </body>
 
 </html>
