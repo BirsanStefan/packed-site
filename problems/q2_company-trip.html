@@ -294,7 +294,7 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
+				<form class="boxesList boxesListMbottom" id="q2formB" name="q2formB">
 
 					<label for="teamBuildingActivities" class="boxesItem">
 						<span class="icon">
@@ -439,10 +439,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+				$('#q2formB').submit();
 			});
 
-			$('#q2form').submit(function(e) {
+			$('#q2formB').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -475,21 +475,25 @@
 
 	<script id="rendered-js">
 		$(function () {
-			$("#q2form").submit(function () {
+			$("#q2formB").submit(function () {
 				// alert("Form send event");
-				console.log("Your message was sent");
+				// console.log("Your message was sent");
+				var teamBuildingActivities = document.getElementById("teamBuildingActivities").value;
+				var skiTrip = document.getElementById("skiTrip").value;
+				var incentiveTrip = document.getElementById("incentiveTrip").value;
+				var somethingElse = document.getElementById("somethingElse").value;
 			});
 			$("input[name=teamBuildingActivities]").click(function (e) {
-				$("#q2form").trigger("submit");
+				$("#q2formB").trigger("submit");
 			});
 			$("input[name=skiTrip]").click(function (e) {
-				$("#q2form").trigger("submit");
+				$("#q2formB").trigger("submit");
 			});
 			$("input[name=incentiveTrip]").click(function (e) {
-				$("#q2form").trigger("submit");
+				$("#q2formB").trigger("submit");
 			});
 			$("input[name=somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
+				$("#q2formB").trigger("submit");
 			});
 		});
 		//# sourceURL=pen.js

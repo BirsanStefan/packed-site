@@ -294,7 +294,7 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
+				<form class="boxesList boxesListMbottom" id="q2formD" name="q2formD">
 
 					<label for="outdoorAndActive" class="boxesItem">
 						<span class="icon">
@@ -445,41 +445,15 @@
 	</script>
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-	<script id="rendered-js">
-		$(function () {
-			$("#q2form").submit(function () {
-				// alert("Form send event");
-				console.log("Your message was sent");
-			});
-			$("input[name=outdoorAndActive]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=somethingUnique]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=nightlife]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=pamperingRelax]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-		}); 
-		//# sourceURL=pen.js
-	</script>
 
 
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+				$('#q2formD').submit();
 			});
 
-			$('#q2form').submit(function(e) {
+			$('#q2formD').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -505,6 +479,39 @@
 				});
 			});
 		});
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script id="rendered-js">
+		$(function () {
+			$("#q2formD").submit(function () {
+				// alert("Form send event");
+				// console.log("Your message was sent");
+				var outdoorAndActive = document.getElementById("outdoorAndActive").value;
+				var somethingUnique = document.getElementById("somethingUnique").value;
+				var nightlife = document.getElementById("nightlife").value;
+				var somethingElse = document.getElementById("somethingElse").value;
+				var pamperingRelax = document.getElementById("pamperingRelax").value; 
+			}); 
+			$("input[name=outdoorAndActive]").click(function (e) {
+				$("#q2formD").trigger("submit");
+			});
+			$("input[name=somethingUnique]").click(function (e) {
+				$("#q2formD").trigger("submit");
+			});
+			$("input[name=nightlife]").click(function (e) {
+				$("#q2formD").trigger("submit");
+			});
+			$("input[name=somethingElse]").click(function (e) {
+				$("#q2formD").trigger("submit");
+			});
+			$("input[name=pamperingRelax]").click(function (e) {
+				$("#q2formD").trigger("submit");
+			});
+		}); 
+		//# sourceURL=pen.js
 	</script>
 </body>
 
