@@ -106,31 +106,31 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
+				<form class="boxesList boxesListMbottom" id="q2formA" name="q2formA">
 
-					<label for="nightlife" class="boxesItem">
+					<label for="food" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/food.svg" alt="">
 						</span>
 						<span class="title">Food</span> 
 					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="radio" id="food" class="boxesItem__input" name="food" value="food">
 
-					<label for="skiWeekend" class="boxesItem">
+					<label for="nightlife" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
 						</span>
 						<span class="title">Nightlife</span> 
 					</label> 
-					<input type="radio" id="skiWeekend" class="boxesItem__input" name="skiWeekend" value="skiWeekend">
+					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
 
-					<label for="bigAreaSki" class="boxesItem">
+					<label for="cultureAndHistory" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/culture.svg" alt="">
 						</span>
 						<span class="title">Culture and history</span> 
 					</label> 
-					<input type="radio" id="bigAreaSki" class="boxesItem__input" name="bigAreaSki" value="bigAreaSki">
+					<input type="radio" id="cultureAndHistory" class="boxesItem__input" name="cultureAndHistory" value="cultureAndHistory">
 
 					<label for="somethingElse" class="boxesItem">
 						<span class="icon">
@@ -140,13 +140,13 @@
 					</label> 
 					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
 
-					<label for="beginner" class="boxesItem">
+					<label for="festivalOrEvent" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/festival.svg" alt="">
 						</span>
 						<span class="title">Festival or event</span>  
 					</label> 
-					<input type="radio" id="beginner" class="boxesItem__input" name="beginner" value="beginner">
+					<input type="radio" id="festivalOrEvent" class="boxesItem__input" name="festivalOrEvent" value="festivalOrEvent">
 					
 				</form>
 			</div>
@@ -181,37 +181,14 @@
 	</script>
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-	<script id="rendered-js">
-		$(function () {
-			$("#q2form").submit(function () {
-				// alert("Form send event");
-				console.log("Your message was sent");
-			});
-			$("input[name=teamBuildingActivities]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=skiTrip]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=incentiveTrip]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-		});
-		//# sourceURL=pen.js
-	</script>
 	
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+				$('#q2formA').submit();
 			});
 
-			$('#q2form').submit(function(e) {
+			$('#q2formA').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -237,6 +214,40 @@
 				});
 			});
 		});
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script id="rendered-js">
+		$(function () {
+			$("#q2formA").submit(function () {
+				// alert("Form send event");
+				// console.log("Your message was sent");
+				var food = document.getElementById("food").value;
+				var nightlife = document.getElementById("nightlife").value;
+				var cultureAndHistory = document.getElementById("cultureAndHistory").value;
+				var somethingElse = document.getElementById("somethingElse").value;
+				var festivalOrEvent = document.getElementById("festivalOrEvent").value;
+			});
+			
+			$("input[name=food]").click(function (e) {
+				$("#q2formA").trigger("submit");
+			});
+			$("input[name=nightlife]").click(function (e) {
+				$("#q2formA").trigger("submit");
+			});
+			$("input[name=cultureAndHistory]").click(function (e) {
+				$("#q2formA").trigger("submit");
+			});
+			$("input[name=somethingElse]").click(function (e) {
+				$("#q2formA").trigger("submit");
+			});
+			$("input[name=festivalOrEvent]").click(function (e) {
+				$("#q2formA").trigger("submit");
+			});
+		});
+		//# sourceURL=pen.js
 	</script>
 
 </body>

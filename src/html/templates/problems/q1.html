@@ -189,7 +189,7 @@
 						</span>
 						<span class="title">Sports club on tour</span>
 					</label>
-					<input type="radio" checked="checked" id="sportsClub" class="boxesItem__input" name="sportsClub" value="sportsClub">
+					<input type="radio" id="sportsClub" class="boxesItem__input" name="sportsClub" value="sportsClub">
 
 				</form>
 
@@ -237,26 +237,27 @@
    
 				$('#q1form').submit(function(e) {
 					e.preventDefault();
-						$.ajax({
-							type: "POST",
-							url: 'https://sagesvision.com/problems/q1.php',
-							data: $(this).serialize(),
-							success: function(response)
-							{
-							// var jsonData = JSON.parse(response);
+					$.ajax({
+						type: "POST",
+						url: 'https://sagesvision.com/problems/q1.php',
+						data: $(this).serialize(),
+						success: function(response)
+						{
+							var jsonData = JSON.parse(response);
 
-							// console.log(1);
+							console.log(1);
 
 							// // user is logged in successfully in the back-end
 							// // let's redirect
-							// if (jsonData.success == "1")
-							// {
-							// 	alert('Your message was sent!');
-							// }
-							// else
-							// {
-							//  	alert('Invalid Credentials!');
-							// } 
+							if (jsonData.success == "1")
+							{
+								// alert('Your message was sent!');
+								console.log('Your message was sent!');
+							}
+							else
+							{
+								// alert('Invalid Credentials!');
+							} 
 						}
 					});
 				});
@@ -333,28 +334,36 @@
 		<script>
 			function display1() {
 			 	// var skiTrip = document.getElementById("skiTrip").value;
-			 	// location.href = 'q2_ski-trip.html';
+			 	location.href = 'q2_ski-trip.html';
+				// alert('success!');
 			}
 			function display2() {
 				location.href = 'q2_hen-do.html';
+				// alert('success!');
 			}
 			function display3() {
 				location.href = 'q2_city-break.html';
+				// alert('success!');
 			}
 			function display4() {
 				location.href = 'q2_company-trip.html';
+				// alert('success!');
 			}
 			function display5() {
 				location.href = 'q2_summer-holiday.html';
+				// alert('success!');
 			}
 			function display6() {
 				location.href = 'q2_fitness-community-getaway.html';
+				// alert('success!');
 			}
 			function display7() {
 				location.href = 'q2_stag-do.html';
+				// alert('success!');
 			}
 			function display8() {
 				location.href = 'q2_sports-club-on-tour.html';
+				// alert('success!');
 			}
 		</script>
 		<!--Go to next page END-->
