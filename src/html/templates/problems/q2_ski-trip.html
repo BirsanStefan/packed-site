@@ -105,15 +105,15 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="nightlife" class="boxesItem">
+					<label for="apresNightlife" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/ski-trip/icon-q2_1.svg" alt="">
 						</span>
 						<span class="title">Apres & nightlife</span>  
 					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="radio" id="apresNightlife" class="boxesItem__input" name="apresNightlife" value="apresNightlife">
 					
 					<label for="skiWeekend" class="boxesItem">
 						<span class="icon">
@@ -179,6 +179,34 @@
 		t.charset="utf-8";t.async=!0;t.defer=!0;
 		t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
 			})(document,"99395");
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script id="rendered-js">
+		$(function () {
+			$("#q2form").submit(function () {
+				// alert("Form send event");
+				console.log("Your message was sent");
+			});
+			$("input[name=apresNightlife]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=skiWeekend]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=bigAreaSki]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=beginner]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+		});
+		//# sourceURL=pen.js
 	</script>
 
 

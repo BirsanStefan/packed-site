@@ -105,31 +105,31 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="nightlife" class="boxesItem">
+					<label for="communitySkiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/companny-trip/ski-trip.svg" alt="">
 						</span>
 						<span class="title">Community ski trip</span> 
 					</label> 
-					<input type="checkbox" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="checkbox" id="communitySkiTrip" class="boxesItem__input" name="communitySkiTrip" value="communitySkiTrip">
 
-					<label for="skiWeekend" class="boxesItem">
+					<label for="cityBreak1" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/fitness-community-getaway/city-break.svg" alt="">
 						</span>
 						<span class="title">City break</span> 
 					</label> 
-					<input type="checkbox" id="skiWeekend" class="boxesItem__input" name="skiWeekend" value="skiWeekend">
+					<input type="checkbox" id="cityBreak1" class="boxesItem__input" name="cityBreak1" value="cityBreak1">
 
-					<label for="bigAreaSki" class="boxesItem">
+					<label for="trainingHoliday" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/fitness-community-getaway/training-holiday.svg" alt="">
 						</span>
 						<span class="title">Training holiday</span> 
 					</label> 
-					<input type="checkbox" id="bigAreaSki" class="boxesItem__input" name="bigAreaSki" value="bigAreaSki">
+					<input type="checkbox" id="trainingHoliday" class="boxesItem__input" name="trainingHoliday" value="trainingHoliday">
 
 					<label for="somethingElse" class="boxesItem">
 						<span class="icon">
@@ -177,6 +177,34 @@
 		t.charset="utf-8";t.async=!0;t.defer=!0;
 		t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
 			})(document,"99395");
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script id="rendered-js">
+		$(function () {
+			$("#q2form").submit(function () {
+				// alert("Form send event");
+				console.log("Your message was sent");
+			});
+			$("input[name=communitySkiTrip]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=cityBreak1]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=trainingHoliday]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=beginner]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+		});
+		//# sourceURL=pen.js
 	</script>
 
 	<script>

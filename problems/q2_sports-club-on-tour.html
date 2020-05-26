@@ -294,31 +294,31 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="nightlife" class="boxesItem">
+					<label for="endOfSeasonTour" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/sports-club-on-tour/end-of-season.svg" alt="">
 						</span>
 						<span class="title">End of season tour</span> 
 					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="radio" id="endOfSeasonTour" class="boxesItem__input" name="endOfSeasonTour" value="endOfSeasonTour">
 
-					<label for="skiWeekend" class="boxesItem">
+					<label for="competitionSpecific" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/sports-club-on-tour/competition.svg" alt="">
 						</span>
 						<span class="title">Competition-specific</span> 
 					</label> 
-					<input type="radio" id="skiWeekend" class="boxesItem__input" name="skiWeekend" value="skiWeekend">
+					<input type="radio" id="competitionSpecific" class="boxesItem__input" name="competitionSpecific" value="competitionSpecific">
 
-					<label for="bigAreaSki" class="boxesItem">
+					<label for="preseasonTrainingCamp" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/fitness-community-getaway/training-holiday.svg" alt="">
 						</span>
 						<span class="title">Pre-season training camp</span> 
 					</label> 
-					<input type="radio" id="bigAreaSki" class="boxesItem__input" name="bigAreaSki" value="bigAreaSki">
+					<input type="radio" id="preseasonTrainingCamp" class="boxesItem__input" name="preseasonTrainingCamp" value="preseasonTrainingCamp">
 
 					<label for="somethingElse" class="boxesItem">
 						<span class="icon">
@@ -328,13 +328,13 @@
 					</label> 
 					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
 
-					<label for="beginner" class="boxesItem">
+					<label for="midseasonSkiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/companny-trip/ski-trip.svg" alt="">
 						</span>
 						<span class="title">Mid-season ski trip</span> 
 					</label> 
-					<input type="radio" id="beginner" class="boxesItem__input" name="beginner" value="beginner">
+					<input type="radio" id="midseasonSkiTrip" class="boxesItem__input" name="midseasonSkiTrip" value="midseasonSkiTrip">
 					
 				</form>
 			</div>
@@ -442,6 +442,34 @@
 		t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
 			})(document,"99395");
 	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script id="rendered-js">
+		$(function () {
+			$("#q2form").submit(function () {
+				// alert("Form send event");
+				console.log("Your message was sent");
+			});
+			$("input[name=endOfSeasonTour]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=competitionSpecific]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=preseasonTrainingCamp]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=midseasonSkiTrip]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+		});
+		//# sourceURL=pen.js
+	</script> 
 
 
 	<script>

@@ -105,31 +105,31 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2form">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="nightlife" class="boxesItem">
+					<label for="outdoorAndActive" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/stag-do/outdoor-stag.svg" alt="">
 						</span>
 						<span class="title">Outdoor and active</span> 
 					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="radio" id="outdoorAndActive" class="boxesItem__input" name="outdoorAndActive" value="outdoorAndActive">
 
-					<label for="skiWeekend" class="boxesItem">
+					<label for="somethingUnique" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/stag-do/smth-unique-stag.svg" alt="">
 						</span>
 						<span class="title">Something unique</span> 
 					</label> 
-					<input type="radio" id="skiWeekend" class="boxesItem__input" name="skiWeekend" value="skiWeekend">
+					<input type="radio" id="somethingUnique" class="boxesItem__input" name="somethingUnique" value="somethingUnique">
 
-					<label for="bigAreaSki" class="boxesItem">
+					<label for="nightlife" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
 						</span>
 						<span class="title">Nightlife</span> 
 					</label> 
-					<input type="radio" id="bigAreaSki" class="boxesItem__input" name="bigAreaSki" value="bigAreaSki">
+					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
 
 					<label for="somethingElse" class="boxesItem">
 						<span class="icon">
@@ -139,13 +139,13 @@
 					</label> 
 					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
 
-					<label for="beginner" class="boxesItem">
+					<label for="boozeBasedFun" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/stag-do/booze-based.svg" alt="">
 						</span>
 						<span class="title">Booze-based fun</span> 
 					</label> 
-					<input type="radio" id="beginner" class="boxesItem__input" name="beginner" value="beginner">
+					<input type="radio" id="boozeBasedFun" class="boxesItem__input" name="boozeBasedFun" value="boozeBasedFun">
 					
 				</form>
 			</div>
@@ -179,6 +179,34 @@
 		t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
 			})(document,"99395");
 	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script id="rendered-js">
+		$(function () {
+			$("#q2form").submit(function () {
+				// alert("Form send event");
+				console.log("Your message was sent");
+			});
+			$("input[name=outdoorAndActive]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=somethingUnique]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=nightlife]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+			$("input[name=boozeBasedFun]").click(function (e) {
+				$("#q2form").trigger("submit");
+			});
+		});
+		//# sourceURL=pen.js
+	</script> 
 
 	<script>
 		$(document).ready(function() {

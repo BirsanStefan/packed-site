@@ -91,9 +91,9 @@
 				</div>
 
 				<div class="progressBar q4Bar">
-					<a href="q3a.html" class="progressBar__backBtn">
+					<div onclick="goBack()" class="progressBar__backBtn">
 						&#8592;
-					</a>
+					</div>
 					<div class="progressBar__gray">
 						<div class="progressBar__fill"></div>
 					</div>
@@ -513,7 +513,13 @@
             t.charset="utf-8";t.async=!0;t.defer=!0;
             t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
              })(document,"99395");
-        </script>
+		</script>
+		
+		<script>
+			function goBack() {
+			  window.history.back();
+			}
+		</script> 
 
 </body>
 
