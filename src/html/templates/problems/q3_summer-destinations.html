@@ -107,9 +107,9 @@
 					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form id="q3form" class="q3cityBreakD q3formNoLink">
+				<form id="q3formE" class="q3cityBreakD q3formNoLink">
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formE__summerDest">
 						<div class="q3aPageForm__submitBtn">
 							<label for="q3aPageForm__submit">
 								<div class="buttonsContainer q53cPageBtn">
@@ -250,10 +250,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3form').submit();
+				$('#q3formE').submit();
 			});
 
-			$('#q3form').submit(function(e) {
+			$('#q3formE').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -261,20 +261,20 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q4.html';
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q4.html';
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});

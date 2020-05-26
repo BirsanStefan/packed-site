@@ -108,10 +108,10 @@
 				</div>
 
 
-				<form class="q3formNoLink q3formNoLink" id="q3form">
+				<form class="q3formNoLink q3formNoLink" id="q3formF1">
 
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formF1__stagDest-flag">
 						<div class="q3aPageForm__submitBtn">
 							<label for="q3aPageForm__submit">
 								<div class="buttonsContainer q53cPageBtn">
@@ -280,10 +280,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3form').submit();
+				$('#q3formF1').submit();
 			});
 
-			$('#q3form').submit(function(e) {
+			$('#q3formF1').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",

@@ -297,10 +297,10 @@
 					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form class="q3skidestinations q3formNoLink q3formNoLink" id="q3form">
+				<form class="q3skidestinations q3formNoLink q3formNoLink" id="q3formG">
 
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formG__skiTrip">
 						<div class="q3aPageForm__submitBtn">
 							<label for="q3aPageForm__submit">
 								<div class="buttonsContainer q53cPageBtn">
@@ -622,10 +622,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3form').submit();
+				$('#q3formG').submit();
 			});
 
-			$('#q3form').submit(function(e) {
+			$('#q3formG').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
