@@ -418,7 +418,15 @@ input[type=submit] {
 	background-image: url(../images/png/ios.png)
 }
 
+.no-webp .iosAppButtonNew {
+	background-image: url(../images/png/packed-ios-app.png)
+}
+
 .no-webp .androidAppButton {
+	background-image: url(../images/png/packed-andorid-app.png)
+}
+
+.no-webp .androidAppButtonNew {
 	background-image: url(../images/png/android.png)
 }
 
@@ -784,6 +792,14 @@ input[type=submit] {
 	background-image: url(../images/webp/android.webp)
 }
 
+.webp .iosAppButtonNew {
+	background-image: url(../images/webp/packed-ios-app.webp)
+}
+
+.webp .androidAppButtonNew {
+	background-image: url(../images/webp/packed-andorid-app.webp)
+}
+
 .webp .skiAndorraBkg {
 	background-image: url(../images/webp/group-ski-trips-to-andorra.webp)
 }
@@ -980,6 +996,21 @@ body {
 .iosAppButton {
 	width: 118px
 }
+
+.androidAppButtonNew {
+	width: 128px
+}
+
+.androidAppButtonNew,
+.iosAppButtonNew {
+	display: inline-block;
+	height: 40px
+}
+
+.iosAppButtonNew {
+	width: 117px
+}
+
 
 .socialIcon {
 	width: 25px;
@@ -4842,19 +4873,19 @@ section.convinced .convincedContent .contact .buttonsContainer {
 .footerBottom {
 	border-top: 1px solid #502d87;
 	margin-top: 25px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between
 }
 
-.footerBottom .androidAppButton {
+.footerBottom .androidAppButtonNew {
 	vertical-align: middle;
 	margin-left: 10px
 }
 
-.footerBottom .iosAppButton {
+.footerBottom .iosAppButtonNew {
 	vertical-align: middle;
 	margin-left: 20px
 }
@@ -4866,7 +4897,7 @@ section.convinced .convincedContent .contact .buttonsContainer {
 
 .footerBottom .fdownloadApp {
 	flex-wrap: wrap;
-	padding-left: 50px
+	padding-left: 0px
 }
 
 .footerBottom .fdownloadApp .footerNavTitle {
@@ -4874,17 +4905,29 @@ section.convinced .convincedContent .contact .buttonsContainer {
 	display: inline-block
 }
 
-.footerBottom .androidAppButton,
-.footerBottom .iosAppButton {
+.footerBottom .androidAppButtonNew,
+.footerBottom .iosAppButtonNew {
 	display: inline-block;
-	margin-left: 0;
-	margin-right: 10px;
-	margin-top: 10px
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .fSocial {
 	display: flex;
 	align-items: center
+}
+.fatolProtected {
+	display: flex;
+}
+
+.fatolProtected p.footerNavTitle {
+	margin-bottom: 4px;
+}
+
+.fatolProtected p.topAtol {
+	margin-top: 5px;
 }
 
 .fatolProtected picture img {
@@ -4900,7 +4943,11 @@ section.convinced .convincedContent .contact .buttonsContainer {
 	color: #464860;
 	font-size: 16px;
 	margin-top: 10px;
-	margin-bottom: 35px
+	margin-bottom: 10px
+}
+
+.siteFooter .rebranded a {
+	color: #464860;
 }
 
 .mainTitle h1 {
@@ -9172,7 +9219,9 @@ Start How it works Page .topArea {
 	.footerBottom {
 		flex-wrap: wrap;
 		padding-top: 20px;
-		padding-bottom: 40px
+		padding-bottom: 20px;
+		align-items: flex-end;
+		justify-content: center;
 	}
 	.footerBottom .fatolProtected,
 	.footerBottom .fdownloadApp,
@@ -9180,6 +9229,11 @@ Start How it works Page .topArea {
 		width: 100%;
 		margin-top: 25px
 	}
+
+	.fatolProtected {
+		justify-content: center;
+	}
+
 	.footerBottom .fdownloadApp {
 		padding-left: 0
 	}
@@ -9190,6 +9244,11 @@ Start How it works Page .topArea {
 		margin-left: auto;
 		margin-right: auto
 	}
+
+	.footerBottom .instaSocialContainer {
+		margin-top: 25px;
+	}
+
 	.fSocial {
 		justify-content: center
 	}
@@ -12015,9 +12074,14 @@ Start How it works Page .topArea {
         position: absolute;
         bottom: -10px;
         right: -20px;
-        width: 50px;
-        height: 50px;
-        z-index: 99;
+        width: 90px;
+        height: 90px;
+		z-index: 99;
+		@media only screen and (max-width: 520px) {
+		width: 60px;
+		height: 60px;
+		right: -10px;
+		}
     }
     &__detailsOverImg{
         position: absolute;
@@ -12328,3 +12392,103 @@ section.fatmap {
 
 
 /*piste map page ends*/
+
+
+/*home page insta feed starts*/
+section.instaContent {
+	margin-bottom: 80px;
+}
+
+.stepBox div.instaContentRight {
+	width: 75%;
+	padding: 0 20px 0 20px;
+}
+
+.stepBox div.instaContentLeft {
+	width: 25%;
+	padding: 0 20px 0 20px;
+	left: 0px;
+}
+
+@media only screen and (max-width:870px) {
+
+	.instaContent .instaContentFlex{
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 0;
+	}
+
+	.stepBox div.instaContentRight {
+		width: 100%;
+		margin-top: 30px;
+	}
+	
+	.stepBox div.instaContentLeft {
+		width: 90%;
+		margin: auto;
+		padding: 0
+	}
+
+	.stepBox .instaContentLeft .skiWeekendsRightTitle {
+		margin-bottom: 20px;
+	}	
+
+}
+
+.stepBox .instaContentLeft .skiWeekendsRightTitle {
+	text-align: left;
+}
+
+.stepBox .instaContentLeft .skiWeekendsRightText {
+	text-align: left;
+	width: 100%;
+	padding: 0;
+	margin: 10px 0 30px 0;
+}
+
+.instaContentFlex .instaContentRight .mainBoxes__lines {
+	right: -10px;
+}
+
+.instaSocialContainer {
+	display: flex;
+	align-items: center;
+}
+
+.instaIcons {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin: 0 8px 0 0;
+	border-radius: 50%;
+}
+
+.instaIcons:hover {
+	box-shadow: 5px 5px 15px rgba(113, 100, 155, 0.4);
+	opacity: 0.8;
+}
+
+.instaIcon {
+	background-image: url(../images/png/instagram_icon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.facebookIcon {
+	background-image: url(../images/png/facebook_icon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.linkedinIcon {
+	background-image: url(../images/png/linkedin_icon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.stepBox .instaContentRight .mainBoxes__dots {
+	top: -25px;
+    left: -45px;
+}
+/*home page insta feed ends*/
