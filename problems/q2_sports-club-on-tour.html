@@ -310,7 +310,7 @@
 						</span>
 						<span class="title">Competition-specific</span> 
 					</label> 
-					<input type="radio" id="competitionSpecific" class="boxesItem__input" name="competitionSpecific" value="competitionSpecific">
+					<input type="radio" id="competitionSpecific" class="boxesItem__input" name="competitionSpecific" value="competitionSpecific"> 
 
 					<label for="preseasonTrainingCamp" class="boxesItem">
 						<span class="icon">
@@ -454,7 +454,7 @@
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
-					url: 'https://sagesvision.com/problems/q1.php',
+					url: 'https://sagesvision.com/problems/q2.php',
 					data: $(this).serialize(),
 					success: function(response)
 					{
@@ -467,6 +467,7 @@
 						if (jsonData.success == "1")
 						{
 							location.href = '/problems/q3_sports-club.html';
+							// console.log('dddd');
 						}
 						else
 						{
@@ -476,7 +477,7 @@
 				});
 			});
 		});
-	</script>
+	</script>  
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

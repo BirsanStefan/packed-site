@@ -335,7 +335,7 @@
 						<span class="title">Pampering & relaxation</span> 
 					</label> 
 					<input type="checkbox" id="pamperingRelax" class="boxesItem__input" name="pamperingRelax" value="pamperingRelax">
-					
+					 
 				</form>
 			</div>
 		</div> 
@@ -457,7 +457,7 @@
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
-					url: 'https://sagesvision.com/problems/q1.php',
+					url: 'https://sagesvision.com/problems/q2.php',
 					data: $(this).serialize(),
 					success: function(response)
 					{
@@ -469,20 +469,20 @@
 						// let's redirect
 						if (jsonData.success == "1")
 						{
-							location.href = '/problems/q3_hen-do-destinations.html';
+							// location.href = '/problems/q3_hen-do-destinations.html';
+							console.log("Your message was sent");
 						}
 						else
 						{
 							alert('Invalid Credentials!');
-						}
-					}
+						} 
+					} 
 				});
 			});
 		});
 	</script>
 
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 	<script id="rendered-js">
 		$(function () {

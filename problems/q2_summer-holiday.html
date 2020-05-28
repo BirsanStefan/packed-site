@@ -456,7 +456,7 @@
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
-					url: 'https://sagesvision.com/problems/q1.php',
+					url: 'https://sagesvision.com/problems/q2.php',
 					data: $(this).serialize(),
 					success: function(response)
 					{
@@ -469,8 +469,9 @@
 						if (jsonData.success == "1")
 						{
 							location.href = '/problems/q3_summer-destinations.html';
+							// console.log('Successssss');
 						}
-						else
+						else 
 						{
 							alert('Invalid Credentials!');
 						}
@@ -478,7 +479,7 @@
 				}); 
 			});
 		});
-	</script>
+	</script> 
 
 	
 

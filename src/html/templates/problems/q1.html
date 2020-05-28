@@ -66,7 +66,8 @@
 	@@include('../partials/globals/orgSchema.html')
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
+	
+	
 </head>
 
 
@@ -229,6 +230,8 @@
              })(document,"99395");
 		</script>
 
+
+
 		<script>
 			$(document).ready(function() {
 				$(".boxesItem").click(function(){
@@ -243,37 +246,30 @@
 						data: $(this).serialize(),
 						success: function(response)
 						{
-							// var jsonData = JSON.parse(response);
+							var jsonData = JSON.parse(response);
 
-							// console.log(1);
+							console.log(1);
 
-							// // // user is logged in successfully in the back-end
-							// // // let's redirect
-							// if (jsonData.success == "1")
-							// {
-							// 	// alert('Your message was sent!');
-							// 	console.log('Your message was sent!');
-							// }
-							// else
-							// {
-							// 	// alert('Invalid Credentials!');
-							// } 
+							// // user is logged in successfully in the back-end
+							// // let's redirect
+							if (jsonData.success == "1")
+							{
+								// alert('Your message was sent!');
+								console.log('Your message was sent!');
+								// location.href = 'q2_ski-trip.html';
+							}
+							else
+							{
+								alert('Invalid Credentials!');
+							}  
 						}
-					});
+					}); 
 				});
 			}); 
 		</script>
 
 
 
-
-	<!--db_connection START-->
-		<script>
-		</script>
-		<!--db_connection END--> 
-
-
-	
 
 		<!-- <script>
 			$('input[type=radio]').on('change', function() {
@@ -333,37 +329,45 @@
 		<!--Go to next page START-->
 		<script>
 			function display1() {
-			 	// var skiTrip = document.getElementById("skiTrip").value;
-			 	// location.href = 'q2_ski-trip.html';
-				// alert('success 1 !');
+			 	// // var skiTrip = document.getElementById("skiTrip").value;
+			 	location.href = 'q2_ski-trip.html';
+				// // alert('success 1 !');
+				console.log('success1');
 			}
 			function display2() {
-				// location.href = 'q2_hen-do.html';
-				alert('success 2 !');
+				location.href = 'q2_hen-do.html';
+				// alert('success 2 !');
+				console.log('success2');
 			}
 			function display3() {
 				location.href = 'q2_city-break.html';
 				// alert('success!');
+				console.log('success3');
 			}
 			function display4() {
 				location.href = 'q2_company-trip.html';
 				// alert('success!');
+				console.log('success4');
 			}
 			function display5() {
 				location.href = 'q2_summer-holiday.html';
 				// alert('success!');
+				console.log('success5');
 			}
 			function display6() {
 				location.href = 'q2_fitness-community-getaway.html';
 				// alert('success!');
+				console.log('success6');
 			}
 			function display7() {
 				location.href = 'q2_stag-do.html';
 				// alert('success!');
+				console.log('success7');
 			}
 			function display8() {
 				location.href = 'q2_sports-club-on-tour.html';
 				// alert('success!');
+				console.log('success8');
 			}
 		</script>
 		<!--Go to next page END-->

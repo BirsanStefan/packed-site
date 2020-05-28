@@ -453,7 +453,7 @@
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
-					url: 'https://sagesvision.com/problems/q1.php',
+					url: 'https://sagesvision.com/problems/q2.php',
 					data: $(this).serialize(),
 					success: function(response)
 					{
@@ -466,8 +466,9 @@
 						if (jsonData.success == "1")
 						{
 							location.href = '/problems/q3_fitness.html';
+							// console.log('succceeees');
 						}
-						else
+						else 
 						{
 							alert('Invalid Credentials!');
 						}
@@ -475,7 +476,7 @@
 				});
 			});
 		});
-	</script>
+	</script> 
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

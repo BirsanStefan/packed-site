@@ -106,10 +106,11 @@
 					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form class="teamBuilding q3formNoLink" id="q3formH">
+				<form class="teamBuilding q3formNoLink" id="q3formB" name="q3formB" method="POST">
 
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formH__teamBuilding">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formB__teamBuilding" id="q3formB__teamBuilding"
+						value="">
 						<div class="q3aPageForm__submitBtn">
 							<label for="q3aPageForm__submit">
 								<div class="buttonsContainer q53cPageBtn">
@@ -121,7 +122,8 @@
 									</div>
 								</div>
 							</label>
-							<input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
+							<input type="submit" class="q3aPageForm__submit" id="q3aPageFormB__submit"
+							name="q3aPageFormB__submit" value="q3aPageFormB__submit">
 						</div>
 					</div>
 
@@ -336,31 +338,31 @@
 	<script> 
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3formH').submit();
-			});
+				$('#q3formB').submit();
+			}); 
 
-			$('#q3formH').submit(function(e) {
+			$('#q3formB').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
-					url: 'https://sagesvision.com/problems/q1.php',
+					url: 'https://sagesvision.com/problems/q3.php',
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q4.html';
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q4.html';
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});
