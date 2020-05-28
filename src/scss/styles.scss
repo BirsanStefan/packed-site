@@ -387,6 +387,22 @@ input[type=submit] {
 	background-image: url(../images/jpg/morzine-mountain-restaurants.jpg)
 }
 
+.no-webp .bookPhotoContainer36 {
+	background-image: url(../images/jpg/les-arcs-apres-ski.jpg)
+}
+
+.no-webp .bookPhotoContainer37 {
+	background-image: url(../images/jpg/les-arcs-best-restaurants.jpg)
+}
+
+.no-webp .bookPhotoContainer38 {
+	background-image: url(../images/jpg/les-arcs-best-bars.jpg)
+}
+
+.no-webp .bookPhotoContainer39 {
+	background-image: url(../images/jpg/les-arcs-mountain-restaurants.jpg)
+}
+
 
 
 
@@ -419,7 +435,9 @@ input[type=submit] {
 }
 
 .no-webp .iosAppButtonNew {
-	background-image: url(../images/png/packed-ios-app.png)
+	background-image: url(../images/png/packed-ios-app.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .no-webp .androidAppButton {
@@ -427,7 +445,9 @@ input[type=submit] {
 }
 
 .no-webp .androidAppButtonNew {
-	background-image: url(../images/png/android.png)
+	background-image: url(../images/png/android.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .no-webp .imgTarter {
@@ -754,7 +774,21 @@ input[type=submit] {
 	background-image: url(../images/webp/morzine-mountain-restaurants.webp)
 }
 
+.webp .bookPhotoContainer36 {
+	background-image: url(../images/webp/les-arcs-apres-ski.webp)
+}
 
+.webp .bookPhotoContainer37 {
+	background-image: url(../images/webp/les-arcs-best-restaurants.webp)
+}
+
+.webp .bookPhotoContainer38 {
+	background-image: url(../images/webp/les-arcs-best-bars.webp)
+}
+
+.webp .bookPhotoContainer39 {
+	background-image: url(../images/webp/les-arcs-mountain-restaurants.webp)
+}
 
 
 
@@ -793,11 +827,15 @@ input[type=submit] {
 }
 
 .webp .iosAppButtonNew {
-	background-image: url(../images/webp/packed-ios-app.webp)
+	background-image: url(../images/webp/packed-ios-app.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .webp .androidAppButtonNew {
-	background-image: url(../images/webp/packed-andorid-app.webp)
+	background-image: url(../images/webp/packed-andorid-app.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .webp .skiAndorraBkg {
@@ -1001,6 +1039,11 @@ body {
 	width: 128px
 }
 
+.androidAppButtonNew:hover {
+	box-shadow: 5px 5px 15px rgba(113, 100, 155, 0.4);
+	opacity: 0.9;
+}
+
 .androidAppButtonNew,
 .iosAppButtonNew {
 	display: inline-block;
@@ -1009,6 +1052,11 @@ body {
 
 .iosAppButtonNew {
 	width: 117px
+}
+
+.iosAppButtonNew:hover {
+	box-shadow: 5px 5px 15px rgba(113, 100, 155, 0.4);
+	opacity: 0.9;
 }
 
 
