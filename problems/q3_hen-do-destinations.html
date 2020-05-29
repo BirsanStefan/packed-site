@@ -296,11 +296,11 @@
 					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form id="q3formC" class="q3cityBreakD hendodestinations q3formNoLink">
+				<form id="q3formD" class="q3cityBreakD hendodestinations q3formNoLink" name="q3formD">
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formC__henDo">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formD__henDo" id="q3formD__henDo" value="">
 						<div class="q3aPageForm__submitBtn">
-							<label for="q3aPageForm__submit">
+							<label for="q3aPageFormD__submit">
 								<div class="buttonsContainer q53cPageBtn">
 									<div class="purpleBg q3aPageForm__btn">
 										<span class="topQContainer53__textBtn">
@@ -310,7 +310,7 @@
 									</div>
 								</div>
 							</label>
-							<input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
+							<input type="submit" class="q3aPageForm__submit" id="q3aPageFormD__submit" name="q3aPageFormD__submit" value="q3aPageFormD__submit">
 						</div>
 					</div>
 
@@ -522,31 +522,31 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3formC').submit();
+				$('#q3formD').submit();
 			});
 
-			$('#q3formC').submit(function(e) {
-				e.preventDefault();
+			$('#q3formD').submit(function(e) {
+				e.preventDefault(); 
 					$.ajax({
 					type: "POST",
-					url: 'https://sagesvision.com/problems/q1.php',
+					url: 'https://sagesvision.com/problems/q3.php',
 					data: $(this).serialize(),
-					success: function(response)
+					success: function(response)  
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q4.html';
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q4.html';
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});

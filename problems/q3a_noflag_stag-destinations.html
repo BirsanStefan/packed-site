@@ -297,12 +297,12 @@
 					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form id="q3formF" class="q3formNoLink">
+				<form id="q3formG" class="q3formNoLink">
 
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" name="q3formF__StagDest-noflag">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" name="q3formG__StagDest-noflag" id="q3formG__StagDest-noflag" value="">
 						<div class="q3aPageForm__submitBtn">
-							<label for="q3aPageForm__submit">
+							<label for="q3aPageFormG__submit">
 								<div class="buttonsContainer q53cPageBtn">
 									<div class="purpleBg q3aPageForm__btn">
 										<span class="topQContainer53__textBtn">
@@ -312,7 +312,7 @@
 									</div>
 								</div>
 							</label>
-							<input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
+							<input type="submit" class="q3aPageForm__submit" id="q3aPageFormG__submit" name="q3aPageFormG__submit" value="q3aPageFormG__submit">
 						</div>
 					</div>
 
@@ -482,31 +482,31 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3formF').submit();
+				$('#q3formG').submit();
 			});
 
-			$('#q3formF').submit(function(e) {
+			$('#q3formG').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
-					url: 'https://sagesvision.com/problems/q1.php',
+					url: 'https://sagesvision.com/problems/q3.php',
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q4.html';
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q4.html';
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});

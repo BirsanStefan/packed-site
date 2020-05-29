@@ -296,11 +296,11 @@
 					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form id="q3formE" class="q3cityBreakD q3formNoLink">
+				<form id="q3formH" name="q3formH" class="q3cityBreakD q3formNoLink">
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formE__summerDest">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formH__summerDest" id="q3formH__summerDest" value="">
 						<div class="q3aPageForm__submitBtn">
-							<label for="q3aPageForm__submit">
+							<label for="q3aPageFormH__submit">
 								<div class="buttonsContainer q53cPageBtn">
 									<div class="purpleBg q3aPageForm__btn">
 										<span class="topQContainer53__textBtn">
@@ -310,8 +310,8 @@
 									</div>
 								</div>
 							</label>
-							<input type="submit" class="q3aPageForm__submit" id="q3aPageForm__submit">
-						</div>
+							<input type="submit" class="q3aPageForm__submit" id="q3aPageFormH__submit" name="q3aPageFormH__submit" value="q3aPageFormH__submit">  
+						</div> 
 					</div>
 
 					<div class="stagDestination">
@@ -512,14 +512,14 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3formE').submit();
+				$('#q3formH').submit();
 			});
 
-			$('#q3formE').submit(function(e) {
+			$('#q3formH').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
-					url: 'https://sagesvision.com/problems/q1.php',
+					url: 'https://sagesvision.com/problems/q3.php',
 					data: $(this).serialize(),
 					success: function(response)
 					{
