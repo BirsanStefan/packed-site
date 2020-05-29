@@ -105,47 +105,47 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2formG" name="q2formG">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="outdoorAndActive" class="boxesItem">
+					<label for="q2_stagDo_outdoorAndActive" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/stag-do/outdoor-stag.svg" alt="">
 						</span>
 						<span class="title">Outdoor and active</span> 
 					</label> 
-					<input type="radio" id="outdoorAndActive" class="boxesItem__input" name="outdoorAndActive" value="outdoorAndActive">
+					<input type="radio" id="q2_stagDo_outdoorAndActive" class="boxesItem__input" name="q2_stagDo_outdoorAndActive" value="q2_stagDo_outdoorAndActive">
 
-					<label for="somethingUnique" class="boxesItem">
+					<label for="q2_stagDo_somethingUnique" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/stag-do/smth-unique-stag.svg" alt="">
 						</span>
 						<span class="title">Something unique</span> 
 					</label> 
-					<input type="radio" id="somethingUnique" class="boxesItem__input" name="somethingUnique" value="somethingUnique">
+					<input type="radio" id="q2_stagDo_somethingUnique" class="boxesItem__input" name="q2_stagDo_somethingUnique" value="q2_stagDo_somethingUnique">
 
-					<label for="nightlife" class="boxesItem">
+					<label for="q2_stagDo_nightlife" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
 						</span>
 						<span class="title">Nightlife</span> 
 					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="radio" id="q2_stagDo_nightlife" class="boxesItem__input" name="q2_stagDo_nightlife" value="q2_stagDo_nightlife">
 
-					<label for="somethingElse" class="boxesItem">
+					<label for="q2_stagDo_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="" name="" value="">
 						</span>
 						<span class="title">Something else</span> 
 					</label> 
-					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+					<input type="radio" id="q2_stagDo_somethingElse" class="boxesItem__input" name="q2_stagDo_somethingElse" value="q2_stagDo_somethingElse">
 
-					<label for="boozeBasedFun" class="boxesItem">
+					<label for="q2_stagDo_boozeBasedFun" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/stag-do/booze-based.svg" alt="">
 						</span>
 						<span class="title">Booze-based fun</span> 
 					</label> 
-					<input type="radio" id="boozeBasedFun" class="boxesItem__input" name="boozeBasedFun" value="boozeBasedFun">
+					<input type="radio" id="q2_stagDo_boozeBasedFun" class="boxesItem__input" name="q2_stagDo_boozeBasedFun" value="q2_stagDo_boozeBasedFun">
 					
 				</form>
 			</div>
@@ -185,10 +185,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2formG').submit();
+				$('#q2form').submit();
 			});
 
-			$('#q2formG').submit(function(e) {
+			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -196,21 +196,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q3a_noflag_stag-destinations.html';
-							// console.log('sssss');
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q3a_noflag_stag-destinations.html';
+						// 	// console.log('sssss');
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				}); 
 			});
@@ -221,29 +221,29 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script id="rendered-js">
 		$(function () {
-			$("#q2formG").submit(function () {
+			$("#q2form").submit(function () {
 				// alert("Form send event");
 				// console.log("Your message was sent");
-				var outdoorAndActive = document.getElementById("outdoorAndActive").value;
-				var somethingUnique = document.getElementById("somethingUnique").value;
-				var nightlife = document.getElementById("nightlife").value;
-				var somethingElse = document.getElementById("somethingElse").value;
-				var boozeBasedFun = document.getElementById("boozeBasedFun").value;
+				var outdoorAndActive = document.getElementById("q2_stagDo_outdoorAndActive").value;
+				var somethingUnique = document.getElementById("q2_stagDo_somethingUnique").value;
+				var nightlife = document.getElementById("q2_stagDo_nightlife").value;
+				var somethingElse = document.getElementById("q2_stagDo_somethingElse").value;
+				var boozeBasedFun = document.getElementById("q2_stagDo_boozeBasedFun").value;
 			});
-			$("input[name=outdoorAndActive]").click(function (e) {
-				$("#q2formG").trigger("submit");
+			$("input[name=q2_stagDo_outdoorAndActive]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingUnique]").click(function (e) {
-				$("#q2formG").trigger("submit");
+			$("input[name=q2_stagDo_somethingUnique]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=nightlife]").click(function (e) {
-				$("#q2formG").trigger("submit");
+			$("input[name=q2_stagDo_nightlife]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2formG").trigger("submit");
+			$("input[name=q2_stagDo_somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=boozeBasedFun]").click(function (e) {
-				$("#q2formG").trigger("submit");
+			$("input[name=q2_stagDo_boozeBasedFun]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 		});
 		//# sourceURL=pen.js

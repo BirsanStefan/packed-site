@@ -105,47 +105,47 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2formC" name="q2formC">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="communitySkiTrip" class="boxesItem">
+					<label for="q2_fitness_communitySkiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/companny-trip/ski-trip.svg" alt="">
 						</span>
 						<span class="title">Community ski trip</span> 
 					</label> 
-					<input type="checkbox" id="communitySkiTrip" class="boxesItem__input" name="communitySkiTrip" value="communitySkiTrip">
+					<input type="checkbox" id="q2_fitness_communitySkiTrip" class="boxesItem__input" name="q2_fitness_communitySkiTrip" value="q2_fitness_communitySkiTrip">
 
-					<label for="cityBreak1" class="boxesItem">
+					<label for="q2_fitness_cityBreak1" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/fitness-community-getaway/city-break.svg" alt="">
 						</span>
 						<span class="title">City break</span> 
 					</label> 
-					<input type="checkbox" id="cityBreak1" class="boxesItem__input" name="cityBreak1" value="cityBreak1">
+					<input type="checkbox" id="q2_fitness_cityBreak1" class="boxesItem__input" name="q2_fitness_cityBreak1" value="q2_fitness_cityBreak1">
 
-					<label for="trainingHoliday" class="boxesItem">
+					<label for="q2_fitness_trainingHoliday" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/fitness-community-getaway/training-holiday.svg" alt="">
 						</span>
 						<span class="title">Training holiday</span> 
 					</label> 
-					<input type="checkbox" id="trainingHoliday" class="boxesItem__input" name="trainingHoliday" value="trainingHoliday">
+					<input type="checkbox" id="q2_fitness_trainingHoliday" class="boxesItem__input" name="q2_fitness_trainingHoliday" value="q2_fitness_trainingHoliday">
 
-					<label for="somethingElse" class="boxesItem">
+					<label for="q2_fitness_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
 						</span>
 						<span class="title">Something else</span> 
 					</label> 
-					<input type="checkbox" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+					<input type="checkbox" id="q2_fitness_somethingElse" class="boxesItem__input" name="q2_fitness_somethingElse" value="q2_fitness_somethingElse">
 
-					<label for="villaHoliday" class="boxesItem">
+					<label for="q2_fitness_villaHoliday" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/fitness-community-getaway/villa.svg" alt="">
 						</span>
 						<span class="title">Villa holiday</span> 
 					</label> 
-					<input type="checkbox" id="villaHoliday" class="boxesItem__input" name="villaHoliday" value="villaHoliday">
+					<input type="checkbox" id="q2_fitness_villaHoliday" class="boxesItem__input" name="q2_fitness_villaHoliday" value="q2_fitness_villaHoliday">
 					
 				</form>
 			</div>
@@ -184,10 +184,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2formC').submit();
+				$('#q2form').submit();
 			});
 
-			$('#q2formC').submit(function(e) {
+			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -195,21 +195,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q3_fitness.html';
-							// console.log('succceeees');
-						}
-						else 
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q3_fitness.html';
+						// 	// console.log('succceeees');
+						// }
+						// else 
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});
@@ -221,29 +221,29 @@
 
 	<script id="rendered-js">
 		$(function () {
-			$("#q2formC").submit(function () {
+			$("#q2form").submit(function () {
 				// alert("Form send event");
 				// console.log("Your message was sent");
-				var communitySkiTrip = document.getElementById("communitySkiTrip").value;
-				var cityBreak1 = document.getElementById("cityBreak1").value;
-				var trainingHoliday = document.getElementById("trainingHoliday").value;
-				var somethingElse = document.getElementById("somethingElse").value;
-				var villaHoliday = document.getElementById("villaHoliday").value;
+				var communitySkiTrip = document.getElementById("q2_fitness_communitySkiTrip").value;
+				var cityBreak1 = document.getElementById("q2_fitness_cityBreak1").value;
+				var trainingHoliday = document.getElementById("q2_fitness_trainingHoliday").value;
+				var somethingElse = document.getElementById("q2_fitness_somethingElse").value;
+				var villaHoliday = document.getElementById("q2_fitness_villaHoliday").value;
 			});
-			$("input[name=communitySkiTrip]").click(function (e) {
-				$("#q2formC").trigger("submit");
+			$("input[name=q2_fitness_communitySkiTrip]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=cityBreak1]").click(function (e) {
-				$("#q2formC").trigger("submit");
+			$("input[name=q2_fitness_cityBreak1]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=trainingHoliday]").click(function (e) {
-				$("#q2formC").trigger("submit");
+			$("input[name=q2_fitness_trainingHoliday]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2formC").trigger("submit");
+			$("input[name=q2_fitness_somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=villaHoliday]").click(function (e) {
-				$("#q2formC").trigger("submit");
+			$("input[name=q2_fitness_villaHoliday]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 		});
 		//# sourceURL=pen.js

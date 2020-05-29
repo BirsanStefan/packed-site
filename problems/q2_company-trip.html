@@ -294,39 +294,39 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2formB" name="q2formB">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="teamBuildingActivities" class="boxesItem">
+					<label for="q2_compTrip_teamBuildingActivities" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/companny-trip/team-building.svg" alt="">
 						</span>
 						<span class="title">Team-building activities</span> 
 					</label> 
-					<input type="radio" id="teamBuildingActivities" class="boxesItem__input" name="teamBuildingActivities" value="teamBuildingActivities">
+					<input type="radio" id="q2_compTrip_teamBuildingActivities" class="boxesItem__input" name="q2_compTrip_teamBuildingActivities" value="q2_compTrip_teamBuildingActivities">
 
-					<label for="skiTrip" class="boxesItem">
+					<label for="q2_compTrip_skiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/companny-trip/ski-trip.svg" alt="">
 						</span>
 						<span class="title">Ski trip</span> 
 					</label> 
-					<input type="radio" id="skiTrip" class="boxesItem__input" name="skiTrip" value="skiTrip">
+					<input type="radio" id="q2_compTrip_skiTrip" class="boxesItem__input" name="q2_compTrip_skiTrip" value="q2_compTrip_skiTrip">
 
-					<label for="incentiveTrip" class="boxesItem">
+					<label for="q2_compTrip_incentiveTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/companny-trip/incentive.svg" alt="">
 						</span>
 						<span class="title">Incentive trip</span> 
 					</label> 
-					<input type="radio" id="incentiveTrip" class="boxesItem__input" name="incentiveTrip" value="incentiveTrip">
+					<input type="radio" id="q2_compTrip_incentiveTrip" class="boxesItem__input" name="q2_compTrip_incentiveTrip" value="q2_compTrip_incentiveTrip">
 
-					<label for="somethingElse" class="boxesItem">
+					<label for="q2_compTrip_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
 						</span>
 						<span class="title">Something else</span> 
 					</label> 
-					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+					<input type="radio" id="q2_compTrip_somethingElse" class="boxesItem__input" name="q2_compTrip_somethingElse" value="q2_compTrip_somethingElse">
 					
 				</form>
 			</div>
@@ -439,10 +439,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2formB').submit();
+				$('#q2form').submit();
 			});
 
-			$('#q2formB').submit(function(e) {
+			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -450,20 +450,20 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q3c_team-building.html';
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q3c_team-building.html';
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});
@@ -475,25 +475,25 @@
 
 	<script id="rendered-js">
 		$(function () {
-			$("#q2formB").submit(function () {
+			$("#q2form").submit(function () {
 				// alert("Form send event");
 				// console.log("Your message was sent");
-				var teamBuildingActivities = document.getElementById("teamBuildingActivities").value;
-				var skiTrip = document.getElementById("skiTrip").value;
-				var incentiveTrip = document.getElementById("incentiveTrip").value;
-				var somethingElse = document.getElementById("somethingElse").value;
+				var teamBuildingActivities = document.getElementById("q2_compTrip_teamBuildingActivities").value;
+				var skiTrip = document.getElementById("q2_compTrip_skiTrip").value;
+				var incentiveTrip = document.getElementById("q2_compTrip_incentiveTrip").value;
+				var somethingElse = document.getElementById("q2_compTrip_somethingElse").value;
 			});
-			$("input[name=teamBuildingActivities]").click(function (e) {
-				$("#q2formB").trigger("submit");
+			$("input[name=q2_compTrip_teamBuildingActivities]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=skiTrip]").click(function (e) {
-				$("#q2formB").trigger("submit");
+			$("input[name=q2_compTrip_skiTrip]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=incentiveTrip]").click(function (e) {
-				$("#q2formB").trigger("submit");
+			$("input[name=q2_compTrip_incentiveTrip]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2formB").trigger("submit");
+			$("input[name=q2_compTrip_somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 		});
 		//# sourceURL=pen.js

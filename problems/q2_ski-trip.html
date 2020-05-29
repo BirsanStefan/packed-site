@@ -294,47 +294,47 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2formE" name="q2formE">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="apresNightlife" class="boxesItem">
+					<label for="q2_skiTrip_apresNightlife" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/ski-trip/icon-q2_1.svg" alt="">
 						</span>
 						<span class="title">Apres & nightlife</span>  
 					</label> 
-					<input type="radio" id="apresNightlife" class="boxesItem__input" name="apresNightlife" value="apresNightlife">
+					<input type="radio" id="q2_skiTrip_apresNightlife" class="boxesItem__input" name="q2_skiTrip_apresNightlife" value="q2_skiTrip_apresNightlife">
 					
-					<label for="skiWeekend" class="boxesItem">
+					<label for="q2_skiTrip_skiWeekend" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/ski-trip/icon-q2_2.svg" alt="">
 						</span>
 						<span class="title">Ski weekend</span> 
 					</label> 
-					<input type="radio" id="skiWeekend" class="boxesItem__input" name="skiWeekend" value="skiWeekend">
+					<input type="radio" id="q2_skiTrip_skiWeekend" class="boxesItem__input" name="q2_skiTrip_skiWeekend" value="q2_skiTrip_skiWeekend">
 					
-					<label for="bigAreaSki" class="boxesItem">
+					<label for="q2_skiTrip_bigAreaSki" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/ski-trip/icon-q2_3.svg" alt="">
 						</span>
 						<span class="title">A big ski area</span> 
 					</label> 
-					<input type="radio" id="bigAreaSki" class="boxesItem__input" name="bigAreaSki" value="bigAreaSki">
+					<input type="radio" id="q2_skiTrip_bigAreaSki" class="boxesItem__input" name="q2_skiTrip_bigAreaSki" value="q2_skiTrip_bigAreaSki">
 					
-					<label for="somethingElse" class="boxesItem">
+					<label for="q2_skiTrip_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/ski-trip/icon-q2_4.svg" alt="">
 						</span>
 						<span class="title">Something else</span> 
 					</label> 
-					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+					<input type="radio" id="q2_skiTrip_somethingElse" class="boxesItem__input" name="q2_skiTrip_somethingElse" value="q2_skiTrip_somethingElse">
 					
-					<label for="beginnerFriendly" class="boxesItem">
+					<label for="q2_skiTrip_beginnerFriendly" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/ski-trip/icon-q2_5.svg" alt="">
 						</span>
 						<span class="title">Beginner-friendly</span> 
 					</label> 
-					<input type="radio" id="beginnerFriendly" class="boxesItem__input" name="beginnerFriendly" value="beginnerFriendly">
+					<input type="radio" id="q2_skiTrip_beginnerFriendly" class="boxesItem__input" name="q2_skiTrip_beginnerFriendly" value="q2_skiTrip_beginnerFriendly">
 					
 				</form>
 			</div>
@@ -449,10 +449,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2formE').submit();
+				$('#q2form').submit();
 			});
 
-			$('#q2formE').submit(function(e) {
+			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -460,20 +460,20 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q3c_ski-destinations.html';
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}  
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q3c_ski-destinations.html';
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }  
 					} 
 				});
 			}); 
@@ -485,29 +485,29 @@
 
 	<script id="rendered-js">
 		$(function () {
-			$("#q2formE").submit(function () {
+			$("#q2form").submit(function () {
 				// alert("Form send event");
 				// console.log("Your message was sent");
-				var apresNightlife = document.getElementById("apresNightlife").value;
-				var skiWeekend = document.getElementById("skiWeekend").value;
-				var bigAreaSki = document.getElementById("bigAreaSki").value;
-				var somethingElse = document.getElementById("somethingElse").value;
-				var beginnerFriendly = document.getElementById("beginnerFriendly").value;
+				var apresNightlife = document.getElementById("q2_skiTrip_apresNightlife").value;
+				var skiWeekend = document.getElementById("q2_skiTrip_skiWeekend").value;
+				var bigAreaSki = document.getElementById("q2_skiTrip_bigAreaSki").value;
+				var somethingElse = document.getElementById("q2_skiTrip_somethingElse").value;
+				var beginnerFriendly = document.getElementById("q2_skiTrip_beginnerFriendly").value;
 			});
-			$("input[name=apresNightlife]").click(function (e) {
-				$("#q2formE").trigger("submit");
+			$("input[name=q2_skiTrip_apresNightlife]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=skiWeekend]").click(function (e) {
-				$("#q2formE").trigger("submit");
+			$("input[name=q2_skiTrip_skiWeekend]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=bigAreaSki]").click(function (e) {
-				$("#q2formE").trigger("submit");
+			$("input[name=q2_skiTrip_bigAreaSki]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2formE").trigger("submit");
+			$("input[name=q2_skiTrip_somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=beginnerFriendly]").click(function (e) {
-				$("#q2formE").trigger("submit");
+			$("input[name=q2_skiTrip_beginnerFriendly]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 		});
 		//# sourceURL=pen.js

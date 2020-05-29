@@ -106,47 +106,47 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2formA" name="q2formA">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="food" class="boxesItem">
+					<label for="q2_cityBreak_food" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/food.svg" alt="">
 						</span>
 						<span class="title">Food</span> 
 					</label> 
-					<input type="radio" id="food" class="boxesItem__input" name="food" value="food">
+					<input type="radio" id="q2_cityBreak_food" class="boxesItem__input" name="q2_cityBreak_food" value="q2_cityBreak_food">
 
-					<label for="nightlife" class="boxesItem">
+					<label for="q2_cityBreak_nightlife" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
 						</span>
 						<span class="title">Nightlife</span> 
 					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="radio" id="q2_cityBreak_nightlife" class="boxesItem__input" name="q2_cityBreak_nightlife" value="q2_cityBreak_nightlife">
 
-					<label for="cultureAndHistory" class="boxesItem">
+					<label for="q2_cityBreak_cultureAndHistory" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/culture.svg" alt="">
 						</span>
 						<span class="title">Culture and history</span> 
 					</label> 
-					<input type="radio" id="cultureAndHistory" class="boxesItem__input" name="cultureAndHistory" value="cultureAndHistory">
+					<input type="radio" id="q2_cityBreak_cultureAndHistory" class="boxesItem__input" name="q2_cityBreak_cultureAndHistory" value="q2_cityBreak_cultureAndHistory">
 
-					<label for="somethingElse" class="boxesItem">
+					<label for="q2_cityBreak_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
 						</span>
 						<span class="title">Something else</span> 
 					</label> 
-					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+					<input type="radio" id="q2_cityBreak_somethingElse" class="boxesItem__input" name="q2_cityBreak_somethingElse" value="q2_cityBreak_somethingElse">
 
-					<label for="festivalOrEvent" class="boxesItem">
+					<label for="q2_cityBreak_festivalOrEvent" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/festival.svg" alt="">
 						</span>
 						<span class="title">Festival or event</span>  
 					</label> 
-					<input type="radio" id="festivalOrEvent" class="boxesItem__input" name="festivalOrEvent" value="festivalOrEvent">
+					<input type="radio" id="q2_cityBreak_festivalOrEvent" class="boxesItem__input" name="q2_cityBreak_festivalOrEvent" value="q2_cityBreak_festivalOrEvent">
 					
 				</form>
 			</div>
@@ -180,15 +180,15 @@
 			})(document,"99395");
 	</script>
 
-
+  
 	
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2formA').submit();
+				$('#q2form').submit();
 			});
 
-			$('#q2formA').submit(function(e) {
+			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -196,21 +196,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q3_city-break-destinations.html';
-							// alert('Success!');
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q3_city-break-destinations.html';
+						// 	// alert('Success!');
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					} 
 				}); 
 			});
@@ -222,30 +222,30 @@
 
 	<script id="rendered-js">
 		$(function () {
-			$("#q2formA").submit(function () {
+			$("#q2form").submit(function () {
 				// alert("Form send event");
 				// console.log("Your message was sent");
-				var food = document.getElementById("food").value;
-				var nightlife = document.getElementById("nightlife").value;
-				var cultureAndHistory = document.getElementById("cultureAndHistory").value;
-				var somethingElse = document.getElementById("somethingElse").value;
-				var festivalOrEvent = document.getElementById("festivalOrEvent").value;
+				var food = document.getElementById("q2_cityBreak_food").value;
+				var nightlife = document.getElementById("q2_cityBreak_nightlife").value;
+				var cultureAndHistory = document.getElementById("q2_cityBreak_cultureAndHistory").value;
+				var somethingElse = document.getElementById("q2_cityBreak_somethingElse").value;
+				var festivalOrEvent = document.getElementById("q2_cityBreak_festivalOrEvent").value;
 			});
 			
-			$("input[name=food]").click(function (e) {
-				$("#q2formA").trigger("submit");
+			$("input[name=q2_cityBreak_food]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=nightlife]").click(function (e) {
-				$("#q2formA").trigger("submit");
+			$("input[name=q2_cityBreak_nightlife]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=cultureAndHistory]").click(function (e) {
-				$("#q2formA").trigger("submit"); 
+			$("input[name=q2_cityBreak_cultureAndHistory]").click(function (e) {
+				$("#q2form").trigger("submit"); 
 			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2formA").trigger("submit");
+			$("input[name=q2_cityBreak_somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=festivalOrEvent]").click(function (e) {
-				$("#q2formA").trigger("submit");
+			$("input[name=q2_cityBreak_festivalOrEvent]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 		});
 		//# sourceURL=pen.js

@@ -294,47 +294,47 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2formD" name="q2formD">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="outdoorAndActive" class="boxesItem">
+					<label for="q2_henDo_outdoorAndActive" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/hen-do/outdoor-hen.svg" alt="">
 						</span>
 						<span class="title">Outdoor and active</span> 
 					</label> 
-					<input type="checkbox" id="outdoorAndActive" class="boxesItem__input" name="outdoorAndActive" value="outdoorAndActive">
+					<input type="checkbox" id="q2_henDo_outdoorAndActive" class="boxesItem__input" name="q2_henDo_outdoorAndActive" value="q2_henDo_outdoorAndActive">
 
-					<label for="somethingUnique" class="boxesItem">
+					<label for="q2_henDo_somethingUnique" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/hen-do/smth_unique.svg" alt="">
 						</span>
 						<span class="title">Something unique</span> 
 					</label> 
-					<input type="checkbox" id="somethingUnique" class="boxesItem__input" name="somethingUnique" value="somethingUnique">
+					<input type="checkbox" id="q2_henDo_somethingUnique" class="boxesItem__input" name="q2_henDo_somethingUnique" value="q2_henDo_somethingUnique">
 
-					<label for="nightlife" class="boxesItem"> 
+					<label for="q2_henDo_nightlife" class="boxesItem"> 
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
 						</span>
 						<span class="title">Nightlife</span>  
 					</label> 
-					<input type="checkbox" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="checkbox" id="q2_henDo_nightlife" class="boxesItem__input" name="q2_henDo_nightlife" value="q2_henDo_nightlife">
 
-					<label for="somethingElse" class="boxesItem">
+					<label for="q2_henDo_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
 						</span>
 						<span class="title">Something else</span> 
 					</label> 
-					<input type="checkbox" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+					<input type="checkbox" id="q2_henDo_somethingElse" class="boxesItem__input" name="q2_henDo_somethingElse" value="q2_henDo_somethingElse">
 
-					<label for="pamperingRelax" class="boxesItem">
+					<label for="q2_henDo_pamperingRelax" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/hen-do/pampering.svg" alt="">
 						</span>
 						<span class="title">Pampering & relaxation</span> 
 					</label> 
-					<input type="checkbox" id="pamperingRelax" class="boxesItem__input" name="pamperingRelax" value="pamperingRelax">
+					<input type="checkbox" id="q2_henDo_pamperingRelax" class="boxesItem__input" name="q2_henDo_pamperingRelax" value="q2_henDo_pamperingRelax">
 					 
 				</form>
 			</div>
@@ -450,10 +450,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2formD').submit();
+				$('#q2form').submit();
 			});
 
-			$('#q2formD').submit(function(e) {
+			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -461,21 +461,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q3_hen-do-destinations.html';
-							console.log("Your message was sent");
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						} 
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q3_hen-do-destinations.html';
+						// 	console.log("Your message was sent");
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// } 
 					} 
 				});
 			});
@@ -486,29 +486,29 @@
 
 	<script id="rendered-js">
 		$(function () {
-			$("#q2formD").submit(function () {
+			$("#q2form").submit(function () {
 				// alert("Form send event");
 				// console.log("Your message was sent");
-				var outdoorAndActive = document.getElementById("outdoorAndActive").value;
-				var somethingUnique = document.getElementById("somethingUnique").value;
-				var nightlife = document.getElementById("nightlife").value;
-				var somethingElse = document.getElementById("somethingElse").value;
-				var pamperingRelax = document.getElementById("pamperingRelax").value; 
+				var outdoorAndActive = document.getElementById("q2_henDo_outdoorAndActive").value;
+				var somethingUnique = document.getElementById("q2_henDo_somethingUnique").value;
+				var nightlife = document.getElementById("q2_henDo_nightlife").value;
+				var somethingElse = document.getElementById("q2_henDo_somethingElse").value;
+				var pamperingRelax = document.getElementById("q2_henDo_pamperingRelax").value; 
 			}); 
-			$("input[name=outdoorAndActive]").click(function (e) {
-				$("#q2formD").trigger("submit");
+			$("input[name=q2_henDo_outdoorAndActive]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingUnique]").click(function (e) {
-				$("#q2formD").trigger("submit");
+			$("input[name=q2_henDo_somethingUnique]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=nightlife]").click(function (e) {
-				$("#q2formD").trigger("submit");
+			$("input[name=q2_henDo_nightlife]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2formD").trigger("submit");
+			$("input[name=q2_henDo_somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=pamperingRelax]").click(function (e) {
-				$("#q2formD").trigger("submit");
+			$("input[name=q2_henDo_pamperingRelax]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 		}); 
 		//# sourceURL=pen.js

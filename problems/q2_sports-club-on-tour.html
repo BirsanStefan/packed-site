@@ -294,47 +294,47 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2formF" name="q2formF">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="endOfSeasonTour" class="boxesItem">
+					<label for="q2_sportsClub_endOfSeasonTour" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/sports-club-on-tour/end-of-season.svg" alt="">
 						</span>
 						<span class="title">End of season tour</span> 
 					</label> 
-					<input type="radio" id="endOfSeasonTour" class="boxesItem__input" name="endOfSeasonTour" value="endOfSeasonTour">
+					<input type="radio" id="q2_sportsClub_endOfSeasonTour" class="boxesItem__input" name="q2_sportsClub_endOfSeasonTour" value="q2_sportsClub_endOfSeasonTour">
 
-					<label for="competitionSpecific" class="boxesItem">
+					<label for="q2_sportsClub_competitionSpecific" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/sports-club-on-tour/competition.svg" alt="">
 						</span>
 						<span class="title">Competition-specific</span> 
 					</label> 
-					<input type="radio" id="competitionSpecific" class="boxesItem__input" name="competitionSpecific" value="competitionSpecific"> 
+					<input type="radio" id="q2_sportsClub_competitionSpecific" class="boxesItem__input" name="q2_sportsClub_competitionSpecific" value="q2_sportsClub_competitionSpecific"> 
 
-					<label for="preseasonTrainingCamp" class="boxesItem">
+					<label for="q2_sportsClub_preseasonTrainingCamp" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/fitness-community-getaway/training-holiday.svg" alt="">
 						</span>
 						<span class="title">Pre-season training camp</span> 
 					</label> 
-					<input type="radio" id="preseasonTrainingCamp" class="boxesItem__input" name="preseasonTrainingCamp" value="preseasonTrainingCamp">
+					<input type="radio" id="q2_sportsClub_preseasonTrainingCamp" class="boxesItem__input" name="q2_sportsClub_preseasonTrainingCamp" value="q2_sportsClub_preseasonTrainingCamp">
 
-					<label for="somethingElse" class="boxesItem">
+					<label for="q2_sportsClub_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
 						</span>
 						<span class="title">Something else</span> 
 					</label> 
-					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+					<input type="radio" id="q2_sportsClub_somethingElse" class="boxesItem__input" name="q2_sportsClub_somethingElse" value="q2_sportsClub_somethingElse">
 
-					<label for="midseasonSkiTrip" class="boxesItem">
+					<label for="q2_sportsClub_midseasonSkiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/companny-trip/ski-trip.svg" alt="">
 						</span>
 						<span class="title">Mid-season ski trip</span> 
 					</label> 
-					<input type="radio" id="midseasonSkiTrip" class="boxesItem__input" name="midseasonSkiTrip" value="midseasonSkiTrip">
+					<input type="radio" id="q2_sportsClub_midseasonSkiTrip" class="boxesItem__input" name="q2_sportsClub_midseasonSkiTrip" value="q2_sportsClub_midseasonSkiTrip">
 					
 				</form>
 			</div>
@@ -447,10 +447,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2formF').submit();
+				$('#q2form').submit();
 			});
 
-			$('#q2formF').submit(function(e) {
+			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -458,21 +458,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q3_sports-club.html';
-							// console.log('dddd');
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+						// 	location.href = '/problems/q3_sports-club.html';
+						// 	// console.log('dddd');
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});
@@ -484,29 +484,29 @@
 
 	<script id="rendered-js">
 		$(function () {
-			$("#q2formF").submit(function () {
+			$("#q2form").submit(function () {
 				// alert("Form send event");
 				// console.log("Your message was sent");
-				var endOfSeasonTour = document.getElementById("endOfSeasonTour").value;
-				var competitionSpecific = document.getElementById("competitionSpecific").value;
-				var cultureAndHistory = document.getElementById("preseasonTrainingCamp").value;
-				var preseasonTrainingCamp = document.getElementById("somethingElse").value;
-				var midseasonSkiTrip = document.getElementById("midseasonSkiTrip").value;
+				var endOfSeasonTour = document.getElementById("q2_sportsClub_endOfSeasonTour").value;
+				var competitionSpecific = document.getElementById("q2_sportsClub_competitionSpecific").value;
+				var cultureAndHistory = document.getElementById("q2_sportsClub_preseasonTrainingCamp").value;
+				var preseasonTrainingCamp = document.getElementById("q2_sportsClub_somethingElse").value;
+				var midseasonSkiTrip = document.getElementById("q2_sportsClub_midseasonSkiTrip").value;
 			});
-			$("input[name=endOfSeasonTour]").click(function (e) {
-				$("#q2formF").trigger("submit");
+			$("input[name=q2_sportsClub_endOfSeasonTour]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=competitionSpecific]").click(function (e) {
-				$("#q2formF").trigger("submit");
+			$("input[name=q2_sportsClub_competitionSpecific]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=preseasonTrainingCamp]").click(function (e) {
-				$("#q2formF").trigger("submit");
+			$("input[name=q2_sportsClub_preseasonTrainingCamp]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2formF").trigger("submit");
+			$("input[name=q2_sportsClub_somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=midseasonSkiTrip]").click(function (e) {
-				$("#q2formF").trigger("submit");
+			$("input[name=q2_sportsClub_midseasonSkiTrip]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 		});
 		//# sourceURL=pen.js
