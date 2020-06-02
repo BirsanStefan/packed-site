@@ -106,13 +106,13 @@
 					<h2>Where do you have in mind?</h2>
 				</div>
 
-				<form class="teamBuilding q3formNoLink" id="q3formB" name="q3formB" method="POST">
+				<form class="teamBuilding q3formNoLink" id="q3form" name="q3form" method="POST">
 
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formB__teamBuilding" id="q3formB__teamBuilding"
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3_compTrip_teamBuilding" id="q3_compTrip_teamBuilding"
 						value="">
 						<div class="q3aPageForm__submitBtn">
-							<label for="q3aPageFormB__submit">
+							<label for="q3_compTrip_submit">
 								<div class="buttonsContainer q53cPageBtn">
 									<div class="purpleBg q3aPageForm__btn">
 										<span class="topQContainer53__textBtn">
@@ -122,8 +122,8 @@
 									</div>
 								</div>
 							</label>
-							<input type="submit" class="q3aPageForm__submit" id="q3aPageFormB__submit"
-							name="q3aPageFormB__submit" value="q3aPageFormB__submit">
+							<input type="submit" class="q3aPageForm__submit" id="q3_compTrip_submit"
+							name="q3_compTrip_submit" value="q3_compTrip_submit">
 						</div>
 					</div>
 
@@ -338,10 +338,10 @@
 	<script> 
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3formB').submit();
+				$('#q3form').submit();
 			}); 
 
-			$('#q3formB').submit(function(e) {
+			$('#q3form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",

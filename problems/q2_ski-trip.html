@@ -460,20 +460,20 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						// var jsonData = JSON.parse(response);
+						var jsonData = JSON.parse(response);
 
-						// console.log(1);
+						console.log(1);
 
-						// // user is logged in successfully in the back-end
-						// // let's redirect
-						// if (jsonData.success == "1")
-						// {
-						// 	location.href = '/problems/q3c_ski-destinations.html';
-						// }
-						// else
-						// {
-						// 	alert('Invalid Credentials!');
-						// }  
+						// user is logged in successfully in the back-end
+						// let's redirect
+						if (jsonData.success == "1")
+						{
+							location.href = '/problems/q3c_ski-destinations.html';
+						}
+						else
+						{
+							alert('Invalid Credentials!');
+						}  
 					} 
 				});
 			}); 

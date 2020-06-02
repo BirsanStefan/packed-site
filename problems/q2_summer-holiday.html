@@ -295,47 +295,47 @@
 					<h2>What are you looking for?</h2>
 				</div>
 
-				<form class="boxesList boxesListMbottom" id="q2formH" name="q2formH">
+				<form class="boxesList boxesListMbottom" id="q2form" name="q2form">
 
-					<label for="aGreatVilla" class="boxesItem">
+					<label for="q2_summerHoliday_aGreatVilla" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/summer-holiday/villa.svg" alt="">
 						</span>
 						<span class="title">A great villa</span> 
 					</label> 
-					<input type="radio" id="aGreatVilla" class="boxesItem__input" name="aGreatVilla" value="aGreatVilla">
+					<input type="radio" id="q2_summerHoliday_aGreatVilla" class="boxesItem__input" name="q2_summerHoliday_aGreatVilla" value="q2_summerHoliday_aGreatVilla">
 
-					<label for="nightlife" class="boxesItem">
+					<label for="q2_summerHoliday_nightlife" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
 						</span>
 						<span class="title">Nightlife</span> 
 					</label> 
-					<input type="radio" id="nightlife" class="boxesItem__input" name="nightlife" value="nightlife">
+					<input type="radio" id="q2_summerHoliday_nightlife" class="boxesItem__input" name="q2_summerHoliday_nightlife" value="q2_summerHoliday_nightlife">
 
-					<label for="theBeach" class="boxesItem">
+					<label for="q2_summerHoliday_theBeach" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/summer-holiday/the-beach.svg" alt="">
 						</span>
 						<span class="title">The beach</span> 
 					</label> 
-					<input type="radio" id="theBeach" class="boxesItem__input" name="theBeach" value="theBeach">
+					<input type="radio" id="q2_summerHoliday_theBeach" class="boxesItem__input" name="q2_summerHoliday_theBeach" value="q2_summerHoliday_theBeach">
 
-					<label for="somethingElse" class="boxesItem">
+					<label for="q2_summerHoliday_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
 						</span>
 						<span class="title">Something else</span> 
 					</label> 
-					<input type="radio" id="somethingElse" class="boxesItem__input" name="somethingElse" value="somethingElse">
+					<input type="radio" id="q2_summerHoliday_somethingElse" class="boxesItem__input" name="q2_summerHoliday_somethingElse" value="q2_summerHoliday_somethingElse">
 
-					<label for="sportsActivities" class="boxesItem">
+					<label for="q2_summerHoliday_sportsActivities" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/summer-holiday/sports.svg" alt="">
 						</span>
 						<span class="title">Sports & activities</span>  
 					</label> 
-					<input type="radio" id="sportsActivities" class="boxesItem__input" name="sportsActivities" value="sportsActivities">
+					<input type="radio" id="q2_summerHoliday_sportsActivities" class="boxesItem__input" name="q2_summerHoliday_sportsActivities" value="q2_summerHoliday_sportsActivities">
 					
 				</form>
 			</div>
@@ -449,10 +449,10 @@
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q2formH').submit();
+				$('#q2form').submit();
 			});
 
-			$('#q2formH').submit(function(e) {
+			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
@@ -487,29 +487,29 @@
 
 	<script id="rendered-js">
 		$(function () {
-			$("#q2formH").submit(function () {
+			$("#q2form").submit(function () {
 				// alert("Form send event");
 				// console.log("Your message was sent");
-				var aGreatVilla = document.getElementById("aGreatVilla").value;
-				var nightlife = document.getElementById("nightlife").value;
-				var theBeach = document.getElementById("theBeach").value;
-				var somethingElse = document.getElementById("somethingElse").value;
-				var sportsActivities = document.getElementById("sportsActivities").value;
+				var aGreatVilla = document.getElementById("q2_summerHoliday_aGreatVilla").value;
+				var nightlife = document.getElementById("q2_summerHoliday_nightlife").value;
+				var theBeach = document.getElementById("q2_summerHoliday_theBeach").value;
+				var somethingElse = document.getElementById("q2_summerHoliday_somethingElse").value;
+				var sportsActivities = document.getElementById("q2_summerHoliday_sportsActivities").value;
 			});
-			$("input[name=aGreatVilla]").click(function (e) {
-				$("#q2formH").trigger("submit");
+			$("input[name=q2_summerHoliday_aGreatVilla]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=nightlife]").click(function (e) {
-				$("#q2formH").trigger("submit");
+			$("input[name=q2_summerHoliday_nightlife]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=theBeach]").click(function (e) {
-				$("#q2formH").trigger("submit");
+			$("input[name=q2_summerHoliday_theBeach]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=somethingElse]").click(function (e) {
-				$("#q2formH").trigger("submit");
+			$("input[name=q2_summerHoliday_somethingElse]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
-			$("input[name=sportsActivities]").click(function (e) {
-				$("#q2formH").trigger("submit");
+			$("input[name=q2_summerHoliday_sportsActivities]").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 		});
 		//# sourceURL=pen.js
