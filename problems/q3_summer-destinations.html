@@ -295,10 +295,10 @@
 				<div class="mainTitle">
 					<h2>Where do you have in mind?</h2>
 				</div>
-
-				<form id="q3formH" name="q3formH" class="q3cityBreakD q3formNoLink">
+  
+				<form id="q3form" name="q3form" class="q3cityBreakD q3formNoLink">
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3formH__summerDest" id="q3formH__summerDest" value="">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3_summer_summerDest" id="q3_summer_summerDest" value="">
 						<div class="q3aPageForm__submitBtn">
 							<label for="q3aPageFormH__submit">
 								<div class="buttonsContainer q53cPageBtn">
@@ -508,14 +508,14 @@
 			})(document,"99395");
 	</script>
 
-
+   
 	<script>
 		$(document).ready(function() {
 			$(".boxesItem").click(function(){
-				$('#q3formH').submit();
+				$('#q3form').submit();
 			});
 
-			$('#q3formH').submit(function(e) {
+			$('#q3form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
 					type: "POST",
