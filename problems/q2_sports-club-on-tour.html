@@ -446,8 +446,12 @@
 
 	<script>
 		$(document).ready(function() {
-			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+			// $(".boxesItem").click(function(){
+			// 	$('#q2form').submit();
+			// });
+
+			$(".boxesItem__input").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 
 			$('#q2form').submit(function(e) {
@@ -458,60 +462,29 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
 							location.href = '/problems/q3_sports-club.html';
-							// console.log('dddd');
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// 	// console.log('dddd');
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});
 		});
 	</script>  
-
-
+ 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-	<script id="rendered-js">
-		$(function () {
-			$("#q2form").submit(function () {
-				// alert("Form send event");
-				// console.log("Your message was sent");
-				var endOfSeasonTour = document.getElementById("q2_sportsClub_endOfSeasonTour").value;
-				var competitionSpecific = document.getElementById("q2_sportsClub_competitionSpecific").value;
-				var cultureAndHistory = document.getElementById("q2_sportsClub_preseasonTrainingCamp").value;
-				var preseasonTrainingCamp = document.getElementById("q2_sportsClub_somethingElse").value;
-				var midseasonSkiTrip = document.getElementById("q2_sportsClub_midseasonSkiTrip").value;
-			});
-			$("input[name=q2_sportsClub_endOfSeasonTour]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_sportsClub_competitionSpecific]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_sportsClub_preseasonTrainingCamp]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_sportsClub_somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_sportsClub_midseasonSkiTrip]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-		});
-		//# sourceURL=pen.js
-	</script> 
-
+ 
 </body>
 
 </html>

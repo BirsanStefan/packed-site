@@ -446,8 +446,12 @@
 
 	<script>
 		$(document).ready(function() {
-			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+			// $(".boxesItem").click(function(){
+			// 	$('#q2form').submit();
+			// });
+
+			$(".boxesItem__input").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 
 			$('#q2form').submit(function(e) {
@@ -458,21 +462,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
 							location.href = '/problems/q3a_noflag_stag-destinations.html';
-							// console.log('sssss');
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// 	// console.log('sssss');
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				}); 
 			});
@@ -481,35 +485,7 @@
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script id="rendered-js">
-		$(function () {
-			$("#q2form").submit(function () {
-				// alert("Form send event");
-				// console.log("Your message was sent");
-				var outdoorAndActive = document.getElementById("q2_stagDo_outdoorAndActive").value;
-				var somethingUnique = document.getElementById("q2_stagDo_somethingUnique").value;
-				var nightlife = document.getElementById("q2_stagDo_nightlife").value;
-				var somethingElse = document.getElementById("q2_stagDo_somethingElse").value;
-				var boozeBasedFun = document.getElementById("q2_stagDo_boozeBasedFun").value;
-			});
-			$("input[name=q2_stagDo_outdoorAndActive]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_stagDo_somethingUnique]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_stagDo_nightlife]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_stagDo_somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_stagDo_boozeBasedFun]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-		});
-		//# sourceURL=pen.js
-	</script> 
+	
 
 </body>
 

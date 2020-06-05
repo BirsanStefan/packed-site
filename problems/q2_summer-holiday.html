@@ -448,8 +448,12 @@
 
 	<script>
 		$(document).ready(function() {
-			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+			// $(".boxesItem").click(function(){
+			// 	$('#q2form').submit();
+			// });
+
+			$(".boxesItem__input").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 
 			$('#q2form').submit(function(e) {
@@ -460,21 +464,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
-							location.href = '/problems/q3_summer-destinations.html';
-							// console.log('Successssss');
-						}
-						else 
-						{
-							alert('Invalid Credentials!');
-						}
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
+							// location.href = '/problems/q3_summer-destinations.html';
+						// 	// console.log('Successssss');
+						// }
+						// else 
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				}); 
 			});
@@ -485,35 +489,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-	<script id="rendered-js">
-		$(function () {
-			$("#q2form").submit(function () {
-				// alert("Form send event");
-				// console.log("Your message was sent");
-				var aGreatVilla = document.getElementById("q2_summerHoliday_aGreatVilla").value;
-				var nightlife = document.getElementById("q2_summerHoliday_nightlife").value;
-				var theBeach = document.getElementById("q2_summerHoliday_theBeach").value;
-				var somethingElse = document.getElementById("q2_summerHoliday_somethingElse").value;
-				var sportsActivities = document.getElementById("q2_summerHoliday_sportsActivities").value;
-			});
-			$("input[name=q2_summerHoliday_aGreatVilla]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_summerHoliday_nightlife]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_summerHoliday_theBeach]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_summerHoliday_somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_summerHoliday_sportsActivities]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-		});
-		//# sourceURL=pen.js
-	</script>  
+	
 
 </body>
 

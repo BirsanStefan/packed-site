@@ -446,8 +446,12 @@
 	
 	<script>
 		$(document).ready(function() {
-			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+			// $(".boxesItem").click(function(){
+			// 	$('#q2form').submit();
+			// });
+
+			$(".boxesItem__input").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 
 			$('#q2form').submit(function(e) {
@@ -482,36 +486,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-	<script id="rendered-js">
-		$(function () {
-			$("#q2form").submit(function () {
-				// alert("Form send event");
-				// console.log("Your message was sent");
-				var food = document.getElementById("q2_cityBreak_food").value;
-				var nightlife = document.getElementById("q2_cityBreak_nightlife").value;
-				var cultureAndHistory = document.getElementById("q2_cityBreak_cultureAndHistory").value;
-				var somethingElse = document.getElementById("q2_cityBreak_somethingElse").value;
-				var festivalOrEvent = document.getElementById("q2_cityBreak_festivalOrEvent").value;
-			});
-			
-			$("input[name=q2_cityBreak_food]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_cityBreak_nightlife]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_cityBreak_cultureAndHistory]").click(function (e) {
-				$("#q2form").trigger("submit"); 
-			});
-			$("input[name=q2_cityBreak_somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_cityBreak_festivalOrEvent]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-		});
-		//# sourceURL=pen.js
-	</script>
+	
 
 </body>
 

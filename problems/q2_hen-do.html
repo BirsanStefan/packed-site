@@ -449,8 +449,12 @@
 
 	<script>
 		$(document).ready(function() {
-			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+			// $(".boxesItem").click(function(){
+			// 	$('#q2form').submit();
+			// });
+
+			$(".boxesItem__input").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 
 			$('#q2form').submit(function(e) {
@@ -461,21 +465,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
 							location.href = '/problems/q3_hen-do-destinations.html';
-							console.log("Your message was sent");
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						} 
+						// 	console.log("Your message was sent");
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// } 
 					} 
 				});
 			});
@@ -484,35 +488,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-	<script id="rendered-js">
-		$(function () {
-			$("#q2form").submit(function () {
-				// alert("Form send event");
-				// console.log("Your message was sent");
-				var outdoorAndActive = document.getElementById("q2_henDo_outdoorAndActive").value;
-				var somethingUnique = document.getElementById("q2_henDo_somethingUnique").value;
-				var nightlife = document.getElementById("q2_henDo_nightlife").value;
-				var somethingElse = document.getElementById("q2_henDo_somethingElse").value;
-				var pamperingRelax = document.getElementById("q2_henDo_pamperingRelax").value; 
-			}); 
-			$("input[name=q2_henDo_outdoorAndActive]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_henDo_somethingUnique]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_henDo_nightlife]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_henDo_somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_henDo_pamperingRelax]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-		}); 
-		//# sourceURL=pen.js
-	</script>
+	
 </body>
 
 </html>

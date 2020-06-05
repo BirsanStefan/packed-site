@@ -445,8 +445,12 @@
 
 	<script>
 		$(document).ready(function() {
-			$(".boxesItem").click(function(){
-				$('#q2form').submit();
+			// $(".boxesItem").click(function(){
+			// 	$('#q2form').submit();
+			// });
+
+			$(".boxesItem__input").click(function (e) {
+				$("#q2form").trigger("submit");
 			});
 
 			$('#q2form').submit(function(e) {
@@ -457,21 +461,21 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
 							location.href = '/problems/q3_fitness.html';
-							// console.log('succceeees');
-						}
-						else 
-						{
-							alert('Invalid Credentials!');
-						}
+						// 	// console.log('succceeees');
+						// }
+						// else 
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					}
 				});
 			});
@@ -481,35 +485,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-	<script id="rendered-js">
-		$(function () {
-			$("#q2form").submit(function () {
-				// alert("Form send event");
-				// console.log("Your message was sent");
-				var communitySkiTrip = document.getElementById("q2_fitness_communitySkiTrip").value;
-				var cityBreak1 = document.getElementById("q2_fitness_cityBreak1").value;
-				var trainingHoliday = document.getElementById("q2_fitness_trainingHoliday").value;
-				var somethingElse = document.getElementById("q2_fitness_somethingElse").value;
-				var villaHoliday = document.getElementById("q2_fitness_villaHoliday").value;
-			});
-			$("input[name=q2_fitness_communitySkiTrip]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_fitness_cityBreak1]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_fitness_trainingHoliday]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_fitness_somethingElse]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-			$("input[name=q2_fitness_villaHoliday]").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-		});
-		//# sourceURL=pen.js
-	</script>
+	
 
 </body>
 

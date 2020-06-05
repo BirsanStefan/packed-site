@@ -66,8 +66,8 @@
 	@@include('../partials/globals/orgSchema.html')
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-	
-	
+
+
 </head>
 
 
@@ -116,11 +116,11 @@
 					<h2>What’s the reason for your trip?</h2>
 				</div>
 
- 
+
 
 
 				<form name="q1form" class="boxesList boxesListQ1" id="q1form">
- 
+
 					<label onclick="display1()" for="skiTrip" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/ski-trip/icon-q1_1.svg" alt="">
@@ -128,7 +128,7 @@
 						<span class="title">Ski trip</span>
 					</label>
 					<input type="radio" id="skiTrip" class="boxesItem__input" name="skiTrip" value="skiTrip">
- 
+
 
 					<label onclick="display2()" for="henDo" class="boxesItem">
 						<span class="icon">
@@ -194,7 +194,7 @@
 
 				</form>
 
-  
+
 			</div>
 		</div>
 
@@ -212,7 +212,7 @@
 	  }, false);
 	</script>
 
- 
+
 
 	<!-- webP detection
 	<script>
@@ -231,20 +231,28 @@
 		</script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 		<script>
 			$(document).ready(function() {
-				$(".boxesItem").click(function(){
+
+				/*$(".boxesItem").click(function(){
 					$('#q1form').submit();
+				});*/
+
+
+				$(".boxesItem__input").click(function (e) {
+					$("#q1form").trigger("submit");
 				});
-   
+   				 
+
 				$('#q1form').submit(function(e) {
 					e.preventDefault();
 					$.ajax({
 						type: "POST",
 						url: 'https://sagesvision.com/problems/q1.php',
 						data: $(this).serialize(),
-						success: function(response) 
+						success: function(response)
 						{
 							// var jsonData = JSON.parse(response);
 
@@ -261,75 +269,17 @@
 							// else
 							// {
 							// 	alert('Invalid Credentials!');
-							// }  
-						} 
-					}); 
+							// }
+						}
+					});
 				});
-			}); 
-		</script>
-
-
-
-
-		<!-- <script>
-			$('input[type=radio]').on('change', function() {
-				$(this).closest("q1form").submit();
 			});
-		</script> -->
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script id="rendered-js"> 
-			$(function () {
-				$("#q1form").submit(function () {
-					// alert("Form send event");
-					var skiTrip = document.getElementById("skiTrip").value;
-					var henDo = document.getElementById("henDo").value;
-					var cityBreak = document.getElementById("cityBreak").value;
-					var companyTrip = document.getElementById("companyTrip").value;
-					var summerHoliday = document.getElementById("summerHoliday").value;
-					var fitness = document.getElementById("fitness").value;
-					var stagDo = document.getElementById("stagDo").value;
-					var sportsClub = document.getElementById("sportsClub").value;
-				}); 
-		
-				$("input[name=skiTrip]").click(function (e) {
-					$("#q1form").trigger("submit");
-				});
-				$("input[name=henDo]").click(function (e) {
-					$("#q1form").trigger("submit");
-				});
-
-				$("input[name=cityBreak]").click(function (e) {
-					$("#q1form").trigger("submit");
-				});
-
-				$("input[name=companyTrip]").click(function (e) {
-					$("#q1form").trigger("submit");
-				});
-
-				$("input[name=summerHoliday]").click(function (e) {
-					$("#q1form").trigger("submit");
-				});
-
-				$("input[name=fitness]").click(function (e) {
-					$("#q1form").trigger("submit");
-				});
-
-				$("input[name=stagDo]").click(function (e) {
-					$("#q1form").trigger("submit");
-				});
-
-				$("input[name=sportsClub]").click(function (e) {
-					$("#q1form").trigger("submit");
-				}); 
-			});   
 		</script>
 
 
 		<!--Go to next page START-->
 		<script>
 			function display1() {
-			 	// // var skiTrip = document.getElementById("skiTrip").value;
 			 	location.href = 'q2_ski-trip.html';
 				// // alert('success 1 !');
 				console.log('success1');
@@ -340,7 +290,7 @@
 				console.log('success2');
 			}
 			function display3() {
-				// location.href = 'q2_city-break.html';
+				location.href = 'q2_city-break.html';
 				// alert('success!');
 				console.log('success3');
 			}
