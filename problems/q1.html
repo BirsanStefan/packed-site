@@ -516,25 +516,25 @@
 						type: "POST",
 						url: 'https://sagesvision.com/problems/q1.php',
 						data: $(this).serialize(),
-						success: function(response)
+						success: function(response) 
 						{
-							var jsonData = JSON.parse(response);
+							// var jsonData = JSON.parse(response);
 
-							console.log(1);
+							// console.log(1);
 
-							// // user is logged in successfully in the back-end
-							// // let's redirect
-							if (jsonData.success == "1")
-							{
-								// alert('Your message was sent!');
-								console.log('Your message was sent!');
-								// location.href = 'q2_ski-trip.html';
-							}
-							else
-							{
-								alert('Invalid Credentials!');
-							}  
-						}
+							// // // user is logged in successfully in the back-end
+							// // // let's redirect
+							// if (jsonData.success == "1")
+							// {
+							// 	// alert('Your message was sent!');
+							// 	console.log('Your message was sent!');
+							// 	// location.href = 'q2_ski-trip.html';
+							// }
+							// else
+							// {
+							// 	alert('Invalid Credentials!');
+							// }  
+						} 
 					}); 
 				});
 			}); 
@@ -612,7 +612,7 @@
 				console.log('success2');
 			}
 			function display3() {
-				location.href = 'q2_city-break.html';
+				// location.href = 'q2_city-break.html';
 				// alert('success!');
 				console.log('success3');
 			}

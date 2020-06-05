@@ -458,26 +458,26 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						var jsonData = JSON.parse(response);
+						// var jsonData = JSON.parse(response);
 
-						console.log(1);
+						// console.log(1);
 
-						// user is logged in successfully in the back-end
-						// let's redirect
-						if (jsonData.success == "1")
-						{
+						// // user is logged in successfully in the back-end
+						// // let's redirect
+						// if (jsonData.success == "1")
+						// {
 							location.href = '/problems/q3_city-break-destinations.html';
-							// alert('Success!');
-						}
-						else
-						{
-							alert('Invalid Credentials!');
-						}
+						// 	// alert('Success!');
+						// }
+						// else
+						// {
+						// 	alert('Invalid Credentials!');
+						// }
 					} 
 				}); 
 			});
 		});
-	</script>
+	</script> 
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
