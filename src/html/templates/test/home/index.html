@@ -3,39 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Group holidays made simple – your trip experts both at home and abroad | packed</title>
+	<title>Test page</title>
 
 	<!-- Enter a brief description of your page -->
-	<meta name="description"
-		content="Find out exactly how to make your group holiday epic then chat to an expert on WhatsApp or Messenger for personalised recommendations. Group holidays, handled">
-	<meta name="keywords" content="group holidays, travel planner, group travel">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="packed" />
 	<meta name="robots" content="noindex, follow">
-
-	<!--facebook-->
-	<meta property="og:title"
-		content="Group holidays made simple – your trip experts both at home and abroad | packed" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://packed.co/assets/images/jpg/packed-OG-image.jpg" />
-	<meta property="og:image" content="https://packed.co/assets/images/jpg/packed-OG-image2.jpg" />
-	<meta property="og:url" content="https://packed.co" />
-	<meta property="og:description"
-		content="Find out exactly how to make your group holiday epic then chat to an expert on WhatsApp or Messenger for personalised recommendations. Group holidays, handled" />
-	<!--end facebook-->
-
-	<!--twitter-->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:url" content="https://packed.co">
-	<meta name="twitter:title"
-		content="Group holidays made simple – your trip experts both at home and abroad | packed">
-	<meta name="twitter:description"
-		content="Find out exactly how to make your group holiday epic then chat to an expert on WhatsApp or Messenger for personalised recommendations. Group holidays, handled">
-	<meta name="twitter:image" content="https://packed.co/assets/images/jpg/packed-twitter-image.jpg">
-	<!--end twitter-->
 
 
 	<!-- FONTS -->
@@ -50,9 +25,6 @@
 	<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 
-
-	<link rel="canonical" href="" />
-
 	<link rel="prefetch" href="https://q.quora.com">
 	<link rel="prefetch" href="https://www.googleadservices.com">
 	<link rel="prefetch" href="https://www.googletagmanager.com">
@@ -60,19 +32,6 @@
 	<link rel="prefetch" href="https://connect.facebook.net">
 	<link rel="prefetch" href="https://www.facebook.com">
 	<link rel="prefetch" href="https://bat.bing.com">
-
-	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-KVXPGSD');</script>
-	<!-- End Google Tag Manager -->
-
-	@@include('../partials/globals/orgSchema.html')
 
 </head>
 
@@ -86,7 +45,7 @@
 		@@include('../partials/globals/header.html')
 		@@include('../partials/globals/socialBtns.html')
 
-		<div class="topArea topAreaWithImage">
+		<div class="topArea topAreaWithImage" style="margin-bottom: 50px">
 			<div class="topAreaImage topAreaImageHome"></div>
 			<div class="topContent sContainer">
 				<h1 class="topTitle">Banner from funnel page with question 1 of form</h1>
@@ -98,6 +57,18 @@
 							src="/assets/images/png/feefo-logo.png" title="See what our customers say about us" /></a>
 				</div>
 			</div>
+		</div>
+
+
+		<div id="nav-bar" class="nav-bar">
+			<div class="guide-link-bar col-md-24">
+                <ul id="mainNav">
+                      <li><a href="#zone1">Best of Budapest</a></li>
+                      <li><a href="#zone2">Activities</a></li>
+                      <li><a href="#zone3">Neighbourhoods</a></li>
+                      <li><a href="#zone4">Accommodation</a></li>
+                </ul>
+              </div>
 		</div>
 
 
@@ -203,11 +174,8 @@
 		</section>
 	
 
-
+<a name="zone1"></a>
 		<h2 style="text-align: center">Why thousands of customers love packed section from the funnel page goes here</h2>
-
-
-		@@include('../partials/components/pressIcons.html')
 
 		<section class="convinced">
 			<div class="sContainer convincedContent">
@@ -281,7 +249,7 @@
 
 		</section>
 
-
+<a name="zone2"></a>
 		<section class="partying sContainer" style="margin-top: 80px">
 
 			<picture class="morePartyingDesktop">
@@ -330,34 +298,241 @@
 
 		</section>
 
-		<section class="customersOpinion sContainer">
-			<p class="sectionTitle"> What our customers say</p>
+		<section class="customersOpinion sContainer" style="margin-bottom: 20px;">
   
-			@@include('../partials/components/feefoCarousel.html')
+			<div class="feefoCarouselTop">
+				<h5 class="feefoCarouselTitle"> Average Customer Rating: </h5>
+				<div class="ratingStars">
+				  <div class="ratingValue" style="width: 98%;"></div>
+				</div>
+			
+				<div class="ratingScore">
+					4.9/5
+				</div>
+			
+				<div class="ratingFeefoImage">
+					<img class="feefowidget-carousel-summary__logo-large" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MCAxNyI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0OTQ1NDU7fS5jbHMtMntmaWxsOiNmZGRjNDc7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5GZWVmby1sb2dvLWdyZXl5ZWxsb3c8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMS0yIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xOC43NywxMS44di0uMzdjMC00LjQyLTIuNTgtNy4xMy02LjM2LTcuMTNBNi4xOCw2LjE4LDAsMCwwLDgsNi4xNSw2LDYsMCwwLDAsNi4yMywxMC41LDYuMjYsNi4yNiwwLDAsMCw4LDE0LjlhNS44NSw1Ljg1LDAsMCwwLDQuNDgsMS44OSw2LDYsMCwwLDAsNS43OC0zLjczSDE0LjM4YTIuNTcsMi41NywwLDAsMS0xLjgzLjY2QTIuNDgsMi40OCwwLDAsMSw5LjgxLDExLjhaTTE1LjI2LDkuMzRIOS43MmEyLjU2LDIuNTYsMCwwLDEsMi43My0xLjg3LDIuNzUsMi43NSwwLDAsMSwyLjgxLDEuODciLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zMiwxMS44di0uMzdDMzIsNywyOS4zOSw0LjMsMjUuNjEsNC4zYTYuMiw2LjIsMCwwLDAtNC4zNywxLjg1LDYuMTEsNi4xMSwwLDAsMC0xLjgzLDQuMzUsNi4yNyw2LjI3LDAsMCwwLDEuNzUsNC40LDUuODgsNS44OCwwLDAsMCw0LjUsMS45LDYsNiwwLDAsMCw1Ljc4LTMuNzRIMjcuNThhMi41NywyLjU3LDAsMCwxLTEuODMuNjZBMi40OCwyLjQ4LDAsMCwxLDIzLDExLjhaTTI4LjQ2LDkuMzRIMjIuOTJhMi41NiwyLjU2LDAsMCwxLDIuNzQtMS44NywyLjczLDIuNzMsMCwwLDEsMi44LDEuODciLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xLjI4LDcuM3Y5LjIxSDQuNzFWNy4zSDYuMDlWNC42NUg0LjcxVjQuMzZDNC43MSwzLjI4LDUsMi45Myw2LDIuOTNoLjA4Vi41NGwtLjU0LDBDMi42My41MiwxLjI2LDEuNjcsMS4yNiw0LjIxYzAsLjEzLDAsLjI4LDAsLjQ0SDBWNy4zWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMzLjMsNy4zdjkuMjFoMy40MlY3LjNoMS4zOVY0LjY1SDM2LjcyVjQuMzZjMC0xLjA4LjI0LTEuNDMsMS4zLTEuNDNoLjA5Vi41NGwtLjU1LDBjLTIuOTIsMC00LjI5LDEuMTUtNC4yOSwzLjY5LDAsLjEzLDAsLjI4LDAsLjQ0SDMyVjcuM1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01MC42MywxMC41QTYuMjYsNi4yNiwwLDAsMCwzOS45Miw2LjJhNi4wNSw2LjA1LDAsMCwwLTEuODEsNC4zNiw2LjE2LDYuMTYsMCwwLDAsMS43NCw0LjM2LDUuODgsNS44OCwwLDAsMCw0LjQ5LDEuOUE2LjExLDYuMTEsMCwwLDAsNDguODQsMTVhNiw2LDAsMCwwLDEuNzktNC40Nm0tMy40Ny4wOWEyLjgxLDIuODEsMCwwLDEtNS42MS4xOXYtLjE5YTIuODEsMi44MSwwLDAsMSw1LjYxLS4zMnYuMzIiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01Niw4LjU4YTMuMzYsMy4zNiwwLDAsMS0zLjEzLTMuMTRINjAuMlY1LjM2YzAtMi44OC0xLjg0LTQuODEtNC4zOS00LjgxYTQuMzgsNC4zOCwwLDAsMC00LjUyLDQuNTMsNC41MSw0LjUxLDAsMCwwLDQuNDMsNC41N2guMDVhNC4zOCw0LjM4LDAsMCwwLDQuMTYtM2gtLjc0YTMuMzQsMy4zNCwwLDAsMS0zLDEuOTFINTYiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02NS4zMSw4LjU4YTMuMzQsMy4zNCwwLDAsMCwzLjEyLTMuMTRINjEuMDlWNS4zNmMwLTIuODgsMS44NC00LjgxLDQuMzktNC44MUE0LjM4LDQuMzgsMCwwLDEsNzAsNS4wOWE0LjQ5LDQuNDksMCwwLDEtNC40NCw0LjU2aDBhNC4zOSw0LjM5LDAsMCwxLTQuMTctM2guNzRhMy4zMSwzLjMxLDAsMCwwLDMsMS44OWguMiIvPjwvZz48L2c+PC9zdmc+" alt="Feefo logo" title="">
+				</div>
+			</div>
+			
+			<div class="feefoCarouselDesc">
+				<strong>Independent Service Rating</strong> based on verified reviews.
+			
+				<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="seeAllReviews">Read all reviews</a>
+			</div>
+			
+			
+			
+			<div class="feefoCarouselContainer">
+			
+				<div class="feefoCarouselControls">
+				  <div class="carouselControls">
+			
+					<div class="slider-prev controlBtn" id="feefoCarousel-prev">
+			
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M168.837,256L388.418,36.418c8.331-8.331,8.331-21.839,0-30.17c-8.331-8.331-21.839-8.331-30.17,0L123.582,240.915c-8.331,8.331-8.331,21.839,0,30.17l234.667,234.667c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17L168.837,256z"/></svg>
+			
+					</div>
+			
+					<div class="slider-next controlBtn" id="feefoCarousel-next">
+			
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.823 240.823" style="enable-background:new 0 0 240.823 240.823;" xml:space="preserve"><path id="Chevron_Right_1_" d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261C187.881,124.315,187.881,116.495,183.189,111.816z"/></svg>
+			
+					</div>
+					
+				  </div>
+				</div>
+			
+				<div id="feefoCarousel">
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem"> <!-- copy and duplicate this block to add new reviews -->
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 100%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							"Excellent service and effortless for me"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Simon Prince
+						</div>
+					</a>
+			
+					
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem"> <!-- copy and duplicate this block to add new reviews -->
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 100%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							"So helpful! Got back to me in a day with several options"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Trusted Customer
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 100%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							"Excellent"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Oliver Salisbury 
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 100%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							 "TOP customer service!!!"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Trusted Customer
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 98%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							"Responsive and helpful, thank you!"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Bhargav Trivedi
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 98%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							"Great team, great service. Will definitely use again."
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Lewis Jones
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 98%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							 "Simple, fast and super helpful"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Trusted Customer
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 98%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							 "Excellent service - 1st class"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Trusted Customer
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 98%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							 
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Adam Burrage
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 98%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							 "Fantastic Service"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Melissa Harris
+						</div>
+					</a>
+			
+					<a target="_blank" href="https://www.feefo.com/en-GB/reviews/packed?displayFeedbackType=SERVICE&timeFrame=YEAR" class="carouselItem">
+						<div class="carouselItemRating">
+							<div class="ratingStars">
+							  <div class="ratingValue" style="width: 98%;"></div>
+							</div>
+						</div>
+			
+						<h6 class="carouselItemTitle">
+							 "Excellent service and highly recommend!"
+						</h6>
+			
+						<div class="carouselItemAuthor">
+							Joseph Leeming
+						</div>
+					</a>
+			
+				</div>
+			</div>
+			
+			
 			
 		</section>
   
-		<section class="CTAs mt40">
-		  <div class="container_12">
-			<div class="messageTableCTAs">
-			  <div class="messageMiddle">
-				<!--Buttons Messenger&Whatsapp-->
-				<div class="buttonsContainer">
-					<a class="mswButton purpleBg" href="https://m.me/all.packed?ref=Welcome" target="_blank">
-						<span class="buttonIcon	whiteMessengerIcon"></span>
-						Start in Messenger
-					</a>
-  
-					<a class="mswButton cyanBg" href="https://api.whatsapp.com/send?phone=442039000223" target="_blank">
-						<span class="buttonIcon	whiteWhatsappIcon"></span>
-						Start in WhatsApp
-					</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</section>
+		@@include('../partials/components/pressIcons.html')
 
+<a name="zone3"></a>
 
 		<section class="problem-solved sContainer" style="margin-top: 110px;">
 
@@ -569,6 +744,7 @@
 		</div>
 	</section>
 
+<a name="zone4"></a>
 
 	<section class="moreImage sContainer">
 		<!-- <img class="moreSunDesktop" src="/assets/images/more-sunbathing-less-stress.png" />  -->
@@ -610,14 +786,85 @@
 		</div>
 	</section>
 
-	<section class="instagram sContainer">
-		<h3 class="sectionTitle">Follow us <a href=https://www.instagram.com/all.packed />@all.packed</a></h3>
-		<!-- LightWidget WIDGET -->
-		<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-			src="https://cdn.lightwidget.com/widgets/e70b1611353e544c9b23cc759703ebbd.html" scrolling="no"
-			allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+	<section class="imageDescr container_12 instaContent">
+
+		<div class="stepBox container_12 instaContentFlex">
+
+			<div class="stepRight instaContentRight" data-aos="fade-up" data-aos-once="true">
+
+				<!-- LightWidget WIDGET -->
+				<div class="instaFeed">
+					<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/e70b1611353e544c9b23cc759703ebbd.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+				</div>
+				<div class="mainBoxes__dots bgDotsPurple"></div>
+				<img class="app-lines mainBoxes__lines" src="/assets/images/png/app-lines.png">
+			</div>
+
+			<div class="stepLeft instaContentLeft">
+				<h3 class="skiWeekendsRightTitle" data-aos="fade-right" data-aos-once="true">
+					Follow us
+				</h3>
+				<!-- <div class="skiWeekendsRightText instaContentLeft" data-aos="fade-left" data-aos-once="true">
+					<p>If you&rsquo;ve only got a few days to play with, never fear as France is still a great spot for a ski weekend.</p>
+		 		</div> --->
+
+				<div class="instaSocialContainer">
+					<a class="instaIcons instaIcon" href="https://www.instagram.com/all.packed" target="_blank"></a>
+					<a class="instaIcons facebookIcon" href="https://www.facebook.com/all.packed" target="_blank"></a>
+					<a class="instaIcons linkedinIcon" href="https://www.linkedin.com/company/all-packed/" target="_blank"></a>
+				</div>
+			</div>
+
+		</div>
 	</section>
 
+
+	<section class="accordionBanner">
+		<div class="accordionFlex sContainer">
+			<div class="accordionLeft">
+				<h3 class="skiWeekendsRightTitle" data-aos="fade-right" data-aos-once="true">
+					Frequently asked questions
+				</h3>
+				<div class="accordionDots bgDotsBlue"></div>
+			</div>
+			<div class="accordionRight">
+				
+				<div class="accordion">
+					<div class="accordion-item" data-aos="fade-left" data-aos-once="true">
+						<div class="accordion-item-header">How can I help support my favorite studios during COVID-19?</div>
+						<div class="accordion-item-body">
+							<div class="accordion-item-body-content">There are over 4,000 on-demand digital workouts available in everything from bootcamp, boxing, yoga and more when you search in the Videos tab. These classes are available for free with your account. If you’d prefer to join a live class, go to Find a class and search for available options. To reserve your spot in a livestreaming class, you’ll need to purchase credits in order to book it.</div>
+						</div>
+					</div>
+					<div class="accordion-item" data-aos="fade-left" data-aos-once="true">
+						<div class="accordion-item-header">How do I reserve a digital workout?</div>
+						<div class="accordion-item-body">
+							<div class="accordion-item-body-content">There are over 4,000 on-demand digital workouts available in everything from bootcamp, boxing, yoga and more when you search in the Videos tab. These classes are available for free with your account. If you’d prefer to join a live class, go to Find a class and search for available options. To reserve your spot in a livestreaming class, you’ll need to purchase credits in order to book it.</div>
+						</div>
+					</div>
+					<div class="accordion-item" data-aos="fade-left" data-aos-once="true">
+						<div class="accordion-item-header">What if I need to cancel my digital workout?</div>
+						<div class="accordion-item-body">
+							<div class="accordion-item-body-content">There are over 4,000 on-demand digital workouts available in everything from bootcamp, boxing, yoga and more when you search in the Videos tab. These classes are available for free with your account. If you’d prefer to join a live class, go to Find a class and search for available options. To reserve your spot in a livestreaming class, you’ll need to purchase credits in order to book it.</div>
+						</div>
+					</div>
+					<div class="accordion-item" data-aos="fade-left" data-aos-once="true">
+						<div class="accordion-item-header">How do I join a livestreaming class?</div>
+						<div class="accordion-item-body">
+							<div class="accordion-item-body-content">There are over 4,000 on-demand digital workouts available in everything from bootcamp, boxing, yoga and more when you search in the Videos tab. These classes are available for free with your account. If you’d prefer to join a live class, go to Find a class and search for available options. To reserve your spot in a livestreaming class, you’ll need to purchase credits in order to book it.</div>
+						</div>
+					</div>
+					<div class="accordion-item" data-aos="fade-left" data-aos-once="true">
+						<div class="accordion-item-header">Is there a monthly fee to access a digital classes?</div>
+						<div class="accordion-item-body">
+							<div class="accordion-item-body-content">There are over 4,000 on-demand digital workouts available in everything from bootcamp, boxing, yoga and more when you search in the Videos tab. These classes are available for free with your account. If you’d prefer to join a live class, go to Find a class and search for available options. To reserve your spot in a livestreaming class, you’ll need to purchase credits in order to book it.</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
 
 
 	@@include('../partials/globals/footer.html')
@@ -625,6 +872,109 @@
 
 
 	</div>
+
+	<!-- stciky nav bar start -->
+	
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		// Get the navbar
+		var navbar = document.getElementById("nav-bar");
+
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("nav-bar__sticky")
+		} else {
+			navbar.classList.remove("nav-bar__sticky");
+		}
+		}
+		
+	</script>
+
+	<!-- sticky nav bar highlight current section start -->
+
+	<script>
+		var lastId,
+		topMenu = $("#mainNav"),
+		topMenuHeight = topMenu.outerHeight()+1,
+		// All list items
+		menuItems = topMenu.find("a"),
+		// Anchors corresponding to menu items
+		scrollItems = menuItems.map(function(){
+		var item = $($(this).attr("href"));
+			if (item.length) { return item; }
+		});
+
+		// Bind click handler to menu items
+		// so we can get a fancy scroll animation
+		menuItems.click(function(e){
+		var href = $(this).attr("href"),
+			offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+		$('html, body').stop().animate({ 
+			scrollTop: offsetTop
+		}, 850);
+		e.preventDefault();
+		});
+
+		// Bind to scroll
+		$(window).scroll(function(){
+		// Get container scroll position
+		var fromTop = $(this).scrollTop()+topMenuHeight;
+		
+		// Get id of current scroll item
+		var cur = scrollItems.map(function(){
+			if ($(this).offset().top < fromTop)
+			return this;
+		});
+		// Get the id of the current element
+		cur = cur[cur.length-1];
+		var id = cur && cur.length ? cur[0].id : "";
+		
+		if (lastId !== id) {
+			lastId = id;
+			// Set/remove active class
+			menuItems
+				.parent().removeClass("active")
+				.end().filter("[href=#"+id+"]").parent().addClass("active");
+		}                   
+		});
+	</script>
+
+	<!-- stciky nav bar end -->
+
+
+
+	<!-- accordion start --> 
+
+	<script>
+		const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+		accordionItemHeaders.forEach(accordionItemHeader => {
+			accordionItemHeader.addEventListener("click", event => {
+				const currentlyActiveaccordionItem = document.querySelector(".accordion-item-header.active");
+				if (currentlyActiveaccordionItem && currentlyActiveaccordionItem !== accordionItemHeader){
+					currentlyActiveaccordionItem.classList.toggle("active");
+					currentlyActiveaccordionItem.nextElementSibling.style.maxHeight = 0;
+				}
+
+				accordionItemHeader.classList.toggle("active");
+				const accordionItemBody = accordionItemHeader.nextElementSibling;
+				if(accordionItemHeader.classList.contains("active")) {
+					accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+				} 
+				else {
+					accordionItemBody.style.maxHeight = 0;
+				}
+			});
+		});
+	</script>
+
+	<!-- accordion end --> 
+
 
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {

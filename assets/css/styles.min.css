@@ -325,6 +325,18 @@ input[type=submit] {
 .no-webp .bookPhotoContainer39 {
   background-image: url(../images/jpg/les-arcs-mountain-restaurants.jpg); }
 
+.no-webp .bookPhotoContainer40 {
+  background-image: url(../images/jpg/alpe-dhuez-apres-ski.jpg); }
+
+.no-webp .bookPhotoContainer41 {
+  background-image: url(../images/jpg/alpe-dhuez-best-restaurants.jpg); }
+
+.no-webp .bookPhotoContainer42 {
+  background-image: url(../images/jpg/alpe-dhuez-best-bars.jpg); }
+
+.no-webp .bookPhotoContainer43 {
+  background-image: url(../images/jpg/alpe-dhuez-mountain-restaurants.jpg); }
+
 .no-webp .holidayImage1 {
   background-image: url(../images/jpg/group-ski-trips.jpg); }
 
@@ -352,10 +364,20 @@ input[type=submit] {
   background-size: cover; }
 
 .no-webp .androidAppButton {
-  background-image: url(../images/png/packed-andorid-app.png); }
+  background-image: url(../images/png/android.png); }
 
 .no-webp .androidAppButtonNew {
-  background-image: url(../images/png/android.png);
+  background-image: url(../images/png/packed-andorid-app.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.no-webp .androidAppButtonNewWhite {
+  background-image: url(../images/png/packed-andorid-app-white.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.no-webp .iosAppButtonNewWhite {
+  background-image: url(../images/png/packed-ios-app-white.png);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -611,6 +633,18 @@ input[type=submit] {
 .webp .bookPhotoContainer39 {
   background-image: url(../images/webp/les-arcs-mountain-restaurants.webp); }
 
+.webp .bookPhotoContainer40 {
+  background-image: url(../images/webp/alpe-dhuez-apres-ski.webp); }
+
+.webp .bookPhotoContainer41 {
+  background-image: url(../images/webp/alpe-dhuez-best-restaurants.webp); }
+
+.webp .bookPhotoContainer42 {
+  background-image: url(../images/webp/alpe-dhuez-best-bars.webp); }
+
+.webp .bookPhotoContainer43 {
+  background-image: url(../images/webp/alpe-dhuez-mountain-restaurants.webp); }
+
 .webp .holidayImage1 {
   background-image: url(../images/webp/group-ski-trips.webp); }
 
@@ -642,6 +676,16 @@ input[type=submit] {
 
 .webp .androidAppButtonNew {
   background-image: url(../images/webp/packed-andorid-app.webp);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.webp .iosAppButtonNewWhite {
+  background-image: url(../images/webp/packed-ios-app-white.webp);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.webp .androidAppButtonNewWhite {
+  background-image: url(../images/webp/packed-andorid-app-white.webp);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -804,7 +848,9 @@ body {
 .androidAppButtonNew,
 .iosAppButtonNew {
   display: inline-block;
-  height: 40px; }
+  height: 40px;
+  transition: box-shadow .15s linear;
+  cursor: pointer; }
 
 .iosAppButtonNew {
   width: 117px; }
@@ -812,6 +858,43 @@ body {
 .iosAppButtonNew:hover {
   box-shadow: 5px 5px 15px rgba(113, 100, 155, 0.4);
   opacity: 0.9; }
+
+.androidAppButtonNewWhite {
+  width: 160px; }
+
+.androidAppButtonNewWhite:hover {
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.4);
+  opacity: 0.9; }
+
+.androidAppButtonNewWhite,
+.iosAppButtonNewWhite {
+  display: inline-block;
+  height: 50px;
+  transition: box-shadow .15s linear;
+  cursor: pointer; }
+
+.iosAppButtonNewWhite {
+  width: 147px; }
+
+.iosAppButtonNewWhite:hover {
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.4);
+  opacity: 0.9; }
+
+a.iosAppButton60 {
+  height: 60px;
+  width: 176px; }
+
+a.androidAppButton60 {
+  height: 60px;
+  width: 192px; }
+
+a.iosAppButton50 {
+  height: 50px;
+  width: 147px; }
+
+a.androidAppButton50 {
+  height: 50px;
+  width: 160px; }
 
 .socialIcon {
   width: 25px;
@@ -834,7 +917,7 @@ body {
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
-  transition: box-shadow .25s linear;
+  transition: box-shadow .15s linear;
   cursor: pointer; }
 
 .mswButton:hover {
@@ -1232,7 +1315,7 @@ section.convinced .contact .subtitle {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: all .25s linear; }
+  transition: all .15s linear; }
 
 .buttonContainerAbout span .purpleBg {
   background: #4f2d87;
@@ -1374,7 +1457,7 @@ section.convinced .contact .subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: box-shadow .25s linear; }
+  transition: box-shadow .15s linear; }
 
 .benefits {
   margin-top: 100px; }
@@ -4057,6 +4140,41 @@ section.convinced .convincedContent .contact .buttonsContainer {
 .siteFooter .rebranded a {
   color: #464860; }
 
+.footerTop {
+  width: 100%;
+  text-align: center; }
+
+.footerBackToTop {
+  margin: 0 auto 40px auto;
+  padding: 10px 20px 10px 20px;
+  background-color: #F7F2FE;
+  border-radius: 10px;
+  border: 1px solid #4f2d87;
+  display: flex;
+  align-items: center;
+  top: 0;
+  transition: top ease 0.5s; }
+
+.footerBackToTop:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(113, 100, 155, 0.4);
+  opacity: 0.9;
+  position: relative;
+  top: -2px; }
+
+.footerBackToTop-text {
+  margin: 0;
+  font-family: Rubik, sans-serif;
+  color: #4f2d87;
+  font-size: 14px;
+  font-weight: 500; }
+
+.footerBackToTop-text::before {
+  content: url(../images/svg/back-to-top.svg);
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 8px; }
+
 .mainTitle h1 {
   font-family: Rubik, sans-serif;
   font-weight: 700;
@@ -6147,6 +6265,12 @@ img.teamImgItemTablet {
 .featureItem {
   width: 440px;
   max-width: 100%; }
+
+.featureItem .ctaButtonsWrap {
+  text-align: left; }
+
+.featureItem .ctaButtonsWrap a {
+  margin-left: 0; }
 
 .featureItem a {
   margin-right: 25px; }
@@ -9294,7 +9418,7 @@ Se foloseste:
         background-color: #fff;
         border: 1px solid #464860;
         margin-top: 70px;
-        transition: all .25s linear; }
+        transition: all .1s linear; }
         .twoSections-howItWorks__elem__lR .mswButton.checkOutOurApp:hover {
           color: #fff;
           background-color: #464860;
@@ -9441,165 +9565,6 @@ Se foloseste:
   text-align: center; }
 
 /*Pacman section ends*/
-/*On page nav bar section*/
-@media (max-device-width: 376px) {
-  .onPageNav {
-    z-index: 500;
-    margin-top: 20px;
-    margin-bottom: 20px; } }
-
-@media screen and (min-width: 768px) {
-  .onPageNav {
-    z-index: 500;
-    margin-top: 35px;
-    margin-bottom: 30px; } }
-
-@media screen and (min-width: 992px) {
-  .onPageNav {
-    z-index: 500;
-    margin-top: 50px;
-    margin-bottom: 150px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0; } }
-
-.nav-link-holder {
-  position: relative; }
-
-.nav-link-holder a {
-  position: absolute;
-  top: -200px; }
-
-.guide-link-bar ul {
-  list-style-type: none;
-  padding-left: 0;
-  overflow: hidden;
-  margin-left: -10px;
-  margin-right: -10px; }
-
-.guide-link-bar li {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  line-height: 1.25;
-  float: left;
-  margin: 0; }
-
-.guide-link-bar a {
-  background-color: #4f2d87;
-  border: 1px  solid #4f2d87;
-  display: block;
-  color: white;
-  padding: 0.5rem 0.7rem;
-  font-size: 12px; }
-
-@media screen and (max-width: 991px) {
-  .guide-link-bar {
-    width: auto;
-    background: transparent;
-    height: auto;
-    box-shadow: none;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: inherit;
-    display: block; }
-  .guide-link-bar ul {
-    width: auto;
-    flex-wrap: wrap;
-    background: transparent;
-    height: auto;
-    padding: 3px;
-    display: flex;
-    border-radius: 30px;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; }
-  .guide-link-bar li {
-    width: 48%;
-    box-shadow: 0px 3px 8px 0px rgba(77, 77, 77, 0.4);
-    margin: 5px 1%;
-    display: inline-block;
-    border-radius: 50px;
-    text-align: center;
-    padding: 0px; }
-  .guide-link-bar a {
-    background: #40d8c2;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 24px;
-    font-family: Montserrat;
-    text-align: center;
-    border: none;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center; } }
-
-@media screen and (min-width: 992px) {
-  .guide-link-bar {
-    background-color: #4f2d87;
-    padding: 10px 20px;
-    width: 100vw;
-    left: calc(-50vw + 50%);
-    position: relative; }
-  .guide-link-bar a {
-    background: none;
-    display: inline;
-    font-size: 16px; }
-  .guide-link-bar ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 0; }
-  .guide-link-bar li {
-    background-color: initial;
-    border: none;
-    border-left: solid 1px #fff;
-    width: auto;
-    width: initial;
-    line-height: inherit;
-    display: inline-block;
-    padding: 0 20px;
-    float: none;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .guide-link-bar li:first-child {
-    border-left: none; }
-  .guide-link-bar li a {
-    border: none;
-    white-space: nowrap; }
-  .guide-link-bar li.link-separator {
-    display: initial; } }
-
-.guide-link-bar--thin {
-  height: 127px; }
-
-@media screen and (min-width: 992px) {
-  .guide-link-bar--thin {
-    height: 90px; } }
-
-.link-separator:before {
-  content: "|";
-  color: white; }
-
-.col-md-24 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 50px; }
-
-@media (min-width: 992px) {
-  .col-md-24 {
-    float: left; }
-  .col-md-24 {
-    width: 100%; } }
-
-/*On page nav bar section ends*/
 /* Instagram link tree section starts*/
 @media only screen and (max-width: 1023px) {
   .instaLinksBody {
@@ -10218,9 +10183,17 @@ section.instaContent {
     margin: auto;
     padding: 0; }
   .stepBox .instaContentLeft .skiWeekendsRightTitle {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .instaContentFlex .instaContentRight .mainBoxes__lines {
+    display: none; }
+  .stepBox .instaContentRight .mainBoxes__dots {
+    display: none; }
+  .instaSocialContainer {
+    justify-content: center; }
+  .stepBox .instaContentLeft .skiWeekendsRightTitle {
+    text-align: center; } }
 
-.stepBox .instaContentLeft .skiWeekendsRightTitle {
+.instaContentLeft .skiWeekendsRightTitle {
   text-align: left; }
 
 .stepBox .instaContentLeft .skiWeekendsRightText {
@@ -10241,7 +10214,8 @@ section.instaContent {
   height: 50px;
   display: inline-block;
   margin: 0 8px 0 0;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all .15s linear; }
 
 .instaIcons:hover {
   box-shadow: 5px 5px 15px rgba(113, 100, 155, 0.4);
@@ -10267,5 +10241,374 @@ section.instaContent {
   left: -45px; }
 
 /*home page insta feed ends*/
+/*Accordion banner starts*/
+.accordionBanner {
+  height: auto;
+  background-color: #f8f8ff;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.accordionFlex {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.accordionLeft {
+  width: 35%;
+  position: relative;
+  height: 100%; }
+
+.accordionRight {
+  width: 65%; }
+
+.accordionDots {
+  display: block;
+  position: absolute;
+  transform: scale(0.9);
+  bottom: -220px;
+  right: 50px; }
+
+@media only screen and (max-width: 1000px) {
+  .accordionLeft {
+    width: 100%;
+    text-align: center; }
+  .accordionRight {
+    width: 100%; }
+  .accordionDots {
+    display: none; } }
+
+.accordion {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto; }
+
+.accordion-item {
+  background-color: #fff;
+  color: #464860;
+  margin: 1rem 0rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e4e4e4; }
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 600; }
+
+.accordion-item-header:hover {
+  color: grey; }
+
+.accordion-item-header::after {
+  content: url(../images/svg/accordion-down.svg);
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.accordion-item-header.active::after {
+  content: url(../images/svg/accordion-up.svg); }
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out; }
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid #e4e4e4; }
+
+/*Accordion banner ends*/
+/*On page nav bar section*/
+@media (max-device-width: 376px) {
+  .nav-bar {
+    z-index: 1000;
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-bar {
+    z-index: 1000;
+    margin-top: 35px;
+    margin-bottom: 30px; } }
+
+@media screen and (min-width: 1024px) {
+  .nav-bar {
+    overflow: hidden;
+    background-color: #4f2d87;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around; } }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+@media screen and (min-width: 1024px) {
+  .nav-bar__sticky {
+    position: fixed;
+    top: 0;
+    width: 100%; } }
+
+#mainNav li a:active {
+  text-decoration: underline; }
+
+.nav-link-holder {
+  position: relative; }
+
+.nav-link-holder a {
+  position: absolute;
+  top: -200px; }
+
+.guide-link-bar ul {
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.guide-link-bar li {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.25;
+  float: left;
+  margin: 0; }
+
+.guide-link-bar a {
+  background-color: #4f2d87;
+  border: 1px  solid #4f2d87;
+  display: block;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  font-size: 12px; }
+
+@media screen and (max-width: 1024px) {
+  .guide-link-bar {
+    width: auto;
+    background: transparent;
+    height: auto;
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+    display: block; }
+  .guide-link-bar ul {
+    width: auto;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    background: transparent;
+    height: auto;
+    padding: 3px;
+    display: flex;
+    border-radius: 30px;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em; }
+  .guide-link-bar li {
+    width: 23%;
+    box-shadow: 0px 3px 8px 0px rgba(77, 77, 77, 0.4);
+    margin: 5px 1%;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    padding: 0px; }
+  .guide-link-bar a {
+    background: #40d8c2;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: Montserrat;
+    text-align: center;
+    border: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 850px) {
+  .guide-link-bar li {
+    width: 48%; }
+  .guide-link-bar ul {
+    max-width: 90%;
+    margin: auto; } }
+
+@media screen and (min-width: 1024px) {
+  .guide-link-bar {
+    background-color: #4f2d87;
+    padding: 10px 20px;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    position: relative; }
+  .guide-link-bar a {
+    background: none;
+    display: inline;
+    font-size: 16px; }
+  .guide-link-bar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0; }
+  .guide-link-bar li {
+    background-color: initial;
+    border: none;
+    border-left: solid 1px #fff;
+    width: auto;
+    width: initial;
+    line-height: inherit;
+    display: inline-block;
+    padding: 0 20px;
+    float: none;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .guide-link-bar li:first-child {
+    border-left: none; }
+  .guide-link-bar li a {
+    border: none;
+    white-space: nowrap; }
+  .guide-link-bar li.link-separator {
+    display: initial; } }
+
+.guide-link-bar--thin {
+  height: 127px; }
+
+@media screen and (min-width: 1024px) {
+  .guide-link-bar--thin {
+    height: 90px; } }
+
+.link-separator:before {
+  content: "|";
+  color: white; }
+
+.col-md-24 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+@media (min-width: 1024px) {
+  .col-md-24 {
+    float: left; }
+  .col-md-24 {
+    width: 100%; } }
+
+/*On page nav bar section ends*/
+/* blog links starts */
+.blog-links__container {
+  width: 1170px;
+  max-width: 90%;
+  margin: 50px auto 50px auto; }
+
+.blog-links__posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.blog-links__card__container {
+  width: 32%;
+  box-shadow: 0 0 20px 15px #8e8e8e22;
+  border-radius: 7px;
+  position: relative;
+  top: 0;
+  transition: all .25s linear;
+  overflow: hidden;
+  margin-bottom: 25px; }
+
+.blog-links__card__container:hover {
+  top: -10px; }
+
+.blog-links__card {
+  height: 330px; }
+
+.blog-links__card__body {
+  padding: 20px 30px; }
+
+.blog-links__img {
+  object-fit: cover;
+  width: 100%;
+  height: 165px;
+  max-height: 165px;
+  display: block;
+  overflow: hidden; }
+
+.blog-links__tags__container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.blog-links__tags {
+  margin-bottom: 10px;
+  background: #6be2d1;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 700;
+  display: inline-block; }
+
+.blog-links__tags__container .blog-links__tags a {
+  color: #fff; }
+
+.blog-links__title {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #464860;
+  font-family: Montserrat;
+  font-weight: 700;
+  transition: color .15s linear; }
+
+.blog-links__card__bottom {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  width: calc(100% - 60px);
+  margin: auto;
+  border-top: 1px solid #adaeba30; }
+
+.blog-links__card__bottom .blog-links__read__more {
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  color: #502d87;
+  margin-bottom: 0; }
+
+@media only screen and (max-width: 991px) {
+  .blog-links__posts {
+    justify-content: center; }
+  .blog-links__card__container {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%; } }
+
+@media only screen and (max-width: 667px) {
+  .blog-links__card__container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 350px; } }
+
+/* blog links ends */
 
 /*# sourceMappingURL=styles.min.css.map */

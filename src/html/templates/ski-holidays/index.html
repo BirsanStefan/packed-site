@@ -305,6 +305,48 @@
 
             @@include('../partials/components/pressIcons.html')
 
+            <div class="checkOutOurBlog">
+                <section class="checkout container_12">
+
+                	<h3 class="sectionTitle" data-aos="fade-down" data-aos-once="true">
+                		Check out our blog
+                	</h3>
+
+					<div class="blog-links__container" data-aos="flip-right" data-aos-once="true">
+						<div id="blog-posts" class="blog-links__posts">
+							<template>
+								<div class="blog-links__card__container">
+									<div class="blog-links__card">
+										<!--Post Image-->
+									<a href="" class="blog-links__slug" target="_blank">
+										<img src="" class="blog-links__img" alt="">
+									</a>
+									<div class="blog-links__tags__container">
+				
+										<div class="blog-links__tags">
+											<a href="/blog/tag/snow/" target="_blank">#SNOW</a>
+										</div>
+					
+									</div>
+									<div class="blog-links__card__body">
+										<a href="" class="blog-links__slug__title" target="_blank">
+											<h5 class="blog-links__title"><!--Post Title--></h5>
+										</a>
+										<!-- <p class="card-text"></p> Post Description-->
+										<!--Post Link-->
+										<div class="blog-links__card__bottom">
+											<a href="" class="blog-links__slug__read blog-links__read__more" target="_blank">Read more</a>
+										</div>
+										
+									</div>
+									</div>
+								</div>
+							</template>
+						</div>
+					</div>
+					
+                </section>
+            </div>
 
             <section class="recommended"> 
             <h5 class="topRegionsResortsTitle aos-init aos-animate" data-aos="fade-right" data-aos-once="true">Looking for something specific?</h5>
@@ -905,6 +947,45 @@
         <!--resorts-grid END-->
 
         @@include('../partials/scripts/carousel.html')
+
+        	<!-- Ghost Content API start -->
+
+	<script src="https://unpkg.com/@tryghost/content-api@1.2.6/umd/content-api.min.js"></script>
+	
+	<script>
+        const api = new GhostContentAPI({
+        url: 'https://packed.co/blog',
+        key: '70e3571d70a0898b155b51cb73',
+        version: 'v2',
+        });
+        
+        api.posts
+			.browse({limit: 3, include: 'tags', filter: 'tag:Snow'}) //change tag filter as needed
+    		.then((posts) => {
+       			var temp = document.getElementsByTagName("template")[0]; // reference of template tag in DOM;
+       			posts.forEach((post) => {
+					var card = temp.content.cloneNode(true); // copy of template's content  
+					var image = card.querySelector(".blog-links__img");
+					var title = card.querySelector(".blog-links__title");
+					//var subtitle = card.querySelector(".card-text");
+					var slug = card.querySelector(".blog-links__slug");
+					var slugTitle = card.querySelector(".blog-links__slug__title");
+					var slugRead = card.querySelector(".blog-links__slug__read");
+					slug.href=post.url;
+					slugTitle.href=post.url;
+					slugRead.href=post.url;
+					image.alt=post.title;
+					image.src = post.feature_image;
+					//subtitle.textContent = post.custom_excerpt;
+					title.textContent = post.title;
+					var cardContainer = document.getElementById("blog-posts"); // place on the page where we want to append our template
+					cardContainer.appendChild (card); // append the template's copy to the page 
+       			});
+			})
+        
+	</script>
+
+	<!-- Ghost Content API end -->
 
         <script type="text/javascript">
             (function(e,a){
