@@ -123,7 +123,7 @@
 									</div>  
 								</div>
 							</label>
-							<input type="submit" class="q3aPageForm__submit" id="q3_cityBreak_submit" name="q3_cityBreak_submit" value="q3_cityBreak_submit">
+							<input type="submit" class="q3aPageForm__submit boxesItem" id="q3_cityBreak_submit" name="q3_cityBreak_submit" value="q3_cityBreak_submit">
 						</div>
 					</div>   
 
@@ -294,9 +294,9 @@
  
 	<script>
 		$(document).ready(function() {
-			$(".boxesItem").click(function(){
-				$('#q3form').submit();
-			});
+			// $(".boxesItem").click(function(){
+			// 	$('#q3form').submit();
+			// });
 
 			$('#q3form').submit(function(e) {
 				e.preventDefault();
@@ -328,7 +328,23 @@
 	</script> 
 
 
-	
+	<!-- Press enter to go to the next page - START-->
+	<script>
+		$(document).ready(function () {
+
+			$('.q3aPageForm__input').keydown(function (event) {
+				// enter has keyCode = 13, change it if you want to use another button
+				if (event.keyCode == 13) {
+					// this.form.submit();
+					// return false;     
+					console.log('ai apasat enter!!!!!');
+					location.href = '/problems/q4.html';
+				}
+			});
+
+		});
+	</script>
+	<!-- Press enter to go to the next page - END-->
 
 </body>
 

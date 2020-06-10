@@ -279,9 +279,9 @@
 
 	<script>
 		$(document).ready(function() {
-			$(".boxesItem").click(function(){
-				$('#q3formF1').submit();
-			});
+			// $(".boxesItem").click(function(){
+			// 	$('#q3formF1').submit();
+			// });
 
 			$('#q3formF1').submit(function(e) {
 				e.preventDefault();
@@ -310,6 +310,24 @@
 			});
 		});
 	</script>
+
+	<!-- Press enter to go to the next page - START-->
+	<script>
+		$(document).ready(function () {
+
+			$('.q3aPageForm__input').keydown(function (event) {
+				// enter has keyCode = 13, change it if you want to use another button
+				if (event.keyCode == 13) {
+					// this.form.submit();
+					// return false;     
+					console.log('ai apasat enter!!!!!');
+					location.href = '/problems/q4.html';
+				}
+			});
+
+		});
+	</script>
+	<!-- Press enter to go to the next page - END-->
 
 </body>
 
