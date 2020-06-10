@@ -64,8 +64,8 @@
 	<!-- End Google Tag Manager -->
 
 	@@include('../partials/globals/orgSchema.html')
-	
-		
+
+
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
 </head>
@@ -77,7 +77,7 @@
 
 		@@include('../partials/globals/googleTagBelowBody.html')
 		@@include('../partials/globals/loader.html')
-		@@include('../partials/globals/problems/header2.html') 
+		@@include('../partials/globals/problems/header2.html')
 
 		<div class="topArea topAreaWithImage topAreaQ topAreaQ2">
 			<div class="topAreaImage topAreaImageQ1 topAreaImageQ2"></div>
@@ -99,7 +99,7 @@
 					<div class="progressBar__gray">
 						<div class="progressBar__fill"></div>
 					</div>
-					<div class="progressBar__text">2/5</div> 
+					<div class="progressBar__text">2/5</div>
 				</div>
 
 				<div class="mainTitle">
@@ -112,51 +112,51 @@
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/food.svg" alt="">
 						</span>
-						<span class="title">Food</span> 
-					</label> 
+						<span class="title">Food</span>
+					</label>
 					<input type="radio" id="q2_cityBreak_food" class="boxesItem__input" name="q2_cityBreak_food" value="q2_cityBreak_food">
 
 					<label for="q2_cityBreak_nightlife" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/nightlife.svg" alt="">
 						</span>
-						<span class="title">Nightlife</span> 
-					</label> 
+						<span class="title">Nightlife</span>
+					</label>
 					<input type="radio" id="q2_cityBreak_nightlife" class="boxesItem__input" name="q2_cityBreak_nightlife" value="q2_cityBreak_nightlife">
 
 					<label for="q2_cityBreak_cultureAndHistory" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/culture.svg" alt="">
 						</span>
-						<span class="title">Culture and history</span> 
-					</label> 
+						<span class="title">Culture and history</span>
+					</label>
 					<input type="radio" id="q2_cityBreak_cultureAndHistory" class="boxesItem__input" name="q2_cityBreak_cultureAndHistory" value="q2_cityBreak_cultureAndHistory">
 
 					<label for="q2_cityBreak_somethingElse" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/something-else.svg" alt="">
 						</span>
-						<span class="title">Something else</span> 
-					</label> 
+						<span class="title">Something else</span>
+					</label>
 					<input type="radio" id="q2_cityBreak_somethingElse" class="boxesItem__input" name="q2_cityBreak_somethingElse" value="q2_cityBreak_somethingElse">
 
 					<label for="q2_cityBreak_festivalOrEvent" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q2/city-break/festival.svg" alt="">
 						</span>
-						<span class="title">Festival or event</span>  
-					</label> 
+						<span class="title">Festival or event</span>
+					</label>
 					<input type="radio" id="q2_cityBreak_festivalOrEvent" class="boxesItem__input" name="q2_cityBreak_festivalOrEvent" value="q2_cityBreak_festivalOrEvent">
-					
+
 				</form>
 			</div>
-		</div> 
- 
+		</div>
+
 
 		<div class="sContainer q1PageFooter">
 			@@include('../partials/globals/problems/footer2.html')
 		</div>
-    
+
 
     </div>
 
@@ -180,18 +180,18 @@
 			})(document,"99395");
 	</script>
 
-  
-	
+
+
 	<script>
 		$(document).ready(function() {
-			// $(".boxesItem").click(function(){
-			// 	$('#q2form').submit();
+			$(".boxesItem__input").click(function(){
+				$('#q2form').submit();
+			});    
+      
+			// $(".boxesItem__input").click(function (e) {
+			// 	$("#q2form").trigger("submit");
 			// });
-
-			$(".boxesItem__input").click(function (e) {
-				$("#q2form").trigger("submit");
-			});
-
+   
 			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
@@ -200,6 +200,7 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
+
 						// var jsonData = JSON.parse(response);
 
 						// console.log(1);
@@ -209,22 +210,22 @@
 						// if (jsonData.success == "1")
 						// {
 							location.href = '/problems/q3_city-break-destinations.html';
-						// 	// alert('Success!');
+							// alert('Success!');
 						// }
 						// else
 						// {
 						// 	alert('Invalid Credentials!');
 						// }
-					} 
-				}); 
+					}
+				});
 			});
 		});
-	</script> 
+	</script>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-	
+
 
 </body>
 

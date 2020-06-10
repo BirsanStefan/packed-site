@@ -186,13 +186,13 @@
 
 	<script>
 		$(document).ready(function() {
-			// $(".boxesItem").click(function(){
-			// 	$('#q2form').submit();
-			// });
-
-			$(".boxesItem__input").click(function (e) {
-				$("#q2form").trigger("submit");
+			$(".boxesItem__input").click(function(){
+				$('#q2form').submit();
 			});
+
+			// $(".boxesItem__input").click(function (e) {
+			// 	$("#q2form").trigger("submit");
+			// });
 
 			$('#q2form').submit(function(e) {
 				e.preventDefault();
@@ -210,7 +210,7 @@
 						// // let's redirect
 						// if (jsonData.success == "1")
 						// {
-							// location.href = '/problems/q3_summer-destinations.html';
+							location.href = '/problems/q3_summer-destinations.html';
 						// 	// console.log('Successssss');
 						// }
 						// else 

@@ -183,14 +183,14 @@
 
 	<script>
 		$(document).ready(function() {
-			// $(".boxesItem").click(function(){
-			// 	$('#q2form').submit();
-			// });
-
-			$(".boxesItem__input").click(function (e) {
-				$("#q2form").trigger("submit");
+			$(".boxesItem__input").click(function(){
+				$('#q2form').submit();
 			});
 
+			// $(".boxesItem__input").click(function (e) {
+			// 	$("#q2form").trigger("submit");
+			// });
+ 
 			$('#q2form').submit(function(e) {
 				e.preventDefault();
 					$.ajax({
