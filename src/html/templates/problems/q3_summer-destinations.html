@@ -132,19 +132,19 @@
 
 							
 							<label for="croatia" class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Croatia</a>
+								<a href="#" class="stagDestination__link" id="location1" value="Croatia">Croatia</a>
 							</label>
 							<input type="radio" id="croatia" class="boxesItem__input" name="croatia" value="croatia">
 
 
 							<label for="greece" class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Greece</a>
+								<a href="#" class="stagDestination__link" id="location2" value="Greece">Greece</a>
 							</label>
 							<input type="radio" id="greece" class="boxesItem__input" name="greece" value="greece">
 
 
 							<label for="marocco" class="stagDestination__item right">
-								<a href="#" class="stagDestination__link">Marocco</a>
+								<a href="#" class="stagDestination__link" id="location3" value="Marocco">Marocco</a>
 							</label> 
 							<input type="radio" id="marocco" class="boxesItem__input" name="marocco" value="marocco">
 
@@ -154,19 +154,19 @@
 						<div class="stagDestination__box">
 							
 							<label for="cyprus" class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Cyprus</a>
+								<a href="#" class="stagDestination__link" id="location4" value="Cyprus">Cyprus</a>
 							</label>
 							<input type="radio" id="cyprus" class="boxesItem__input" name="cyprus" value="cyprus">
 
 
 							<label for="italy" class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Italy</a>
+								<a href="#" class="stagDestination__link" id="location5" value="Italy">Italy</a>
 							</label>
 							<input type="radio" id="italy" class="boxesItem__input" name="italy" value="italy">
 
 
 							<label for="portugal" class="stagDestination__item right">
-								<a href="#" class="stagDestination__link">Portugal</a>
+								<a href="#" class="stagDestination__link" id="location6" value="Portugal">Portugal</a>
 							</label>
 							<input type="radio" id="portugal" class="boxesItem__input" name="portugal" value="portugal">
 
@@ -176,19 +176,19 @@
 						<div class="stagDestination__box">
 
 							<label for="france" class="stagDestination__item">
-								<a href="#" class="stagDestination__link">France</a>
+								<a href="#" class="stagDestination__link" id="location7" value="France">France</a>
 							</label>
 							<input type="radio" id="france" class="boxesItem__input" name="france" value="france">
 
 
 							<label for="malta" class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Malta</a>
+								<a href="#" class="stagDestination__link" id="location8" value="Malta">Malta</a>
 							</label>
 							<input type="radio" id="malta" class="boxesItem__input" name="malta" value="malta">
 
 
 							<label for="spain" class="stagDestination__item right">
-								<a href="#" class="stagDestination__link">Spain</a>
+								<a href="#" class="stagDestination__link" id="location9" value="Spain">Spain</a>
 							</label>
 							<input type="radio" id="spain" class="boxesItem__input" name="spain" value="spain">
 
@@ -198,7 +198,7 @@
 						<div class="stagDestination__box">
 
 							<label for="turkey" class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Turkey</a>
+								<a href="#" class="stagDestination__link" id="location10" value="Turkey">Turkey</a>
 							</label>
 							<input type="radio" id="turkey" class="boxesItem__input" name="turkey" value="turkey">
 
@@ -300,6 +300,41 @@
 	</script>
 	<!-- Press enter to go to the next page - END-->
 
+
+	<!--Add string from button value into an input field - START-->
+	<script>
+		$('#location1').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location1').attr('value'));
+		});
+		$('#location2').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location2').attr('value'));
+		});
+		$('#location3').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location3').attr('value'));
+		});
+		$('#location4').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location4').attr('value'));
+		});
+		$('#location5').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location5').attr('value'));
+		});
+		$('#location6').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location6').attr('value'));
+		});
+		$('#location7').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location7').attr('value'));
+		});
+		$('#location8').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location8').attr('value'));
+		});
+		$('#location9').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location9').attr('value'));
+		});
+		$('#location10').on('click', function () {
+			$('#q3_summer_summerDest').val($('#q3_summer_summerDest').val() + $('#location10').attr('value'));
+		});
+	</script>
+	<!-- Add string from button value into an input field - END -->
 </body>
 
 </html>

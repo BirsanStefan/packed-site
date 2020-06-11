@@ -329,14 +329,14 @@
 
 								<div class="q3cPage__secondBox">
 									<label for="lakeDistrict" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location1" value="Lake District">
 											Lake District
 										</a>
 									</label>
 									<input type="checkbox" id="lakeDistrict" class="boxesItem__input" name="lakeDistrict" value="lakeDistrict">
 
 									<label for="cotswolds" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location2" value="Cotswolds">
 											Cotswolds
 										</a>
 									</label>
@@ -346,14 +346,14 @@
 
 								<div class="q3cPage__secondBox">
 									<label for="scotland" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location3" value="Scotland">
 											Scotland
 										</a>
 									</label>
 									<input type="checkbox" id="scotland" class="boxesItem__input" name="scotland" value="scotland">
 
 									<label for="southWest" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location4" value="South West">
 											South West
 										</a>
 									</label>
@@ -363,7 +363,7 @@
 
 								<div class="q3cPage__secondBox">
 									<label for="closeToLondon" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location5" value="Close to London">
 											Close to London
 										</a>
 									</label>
@@ -383,14 +383,14 @@
 								
 								<div class="q3cPage__secondBox">
 									<label for="spain" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location6" value="Spain">
 											Spain
 										</a>
 									</label>
 									<input type="checkbox" id="spain" class="boxesItem__input" name="spain" value="spain">
 
 									<label for="croatia" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location7" value="Croatia">
 											Croatia
 										</a>
 									</label>
@@ -400,14 +400,14 @@
 
 								<div class="q3cPage__secondBox">
 									<label for="france" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location8" value="France">
 											France
 										</a>
 									</label>
 									<input type="checkbox" id="france" class="boxesItem__input" name="france" value="france">
 
 									<label for="italy" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location9" value="Italy">
 											Italy
 										</a>
 									</label>
@@ -417,7 +417,7 @@
 
 								<div class="q3cPage__secondBox">
 									<label for="portugal" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location10" value="Portugal">
 											Portugal
 										</a>
 									</label>
@@ -438,14 +438,14 @@
 
 								<div class="q3cPage__secondBox">
 									<label for="westCoast" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location11" value="US - West Coast">
 											US - West Coast
 										</a>
 									</label>
 									<input type="checkbox" id="westCoast" class="boxesItem__input" name="westCoast" value="westCoast">
 
 									<label for="eastCoast" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location12" value="US - East Coast">
 											US - East Coast
 										</a>
 									</label>
@@ -455,14 +455,14 @@
 
 								<div class="q3cPage__secondBox">
 									<label for="mexico" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location13" value="Mexico">
 											Mexico
 										</a>
 									</label>
 									<input type="checkbox" id="mexico" class="boxesItem__input" name="mexico" value="mexico">
 
 									<label for="thailand" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location14" value="Thailand">
 											Thailand
 										</a>
 									</label>
@@ -472,7 +472,7 @@
 
 								<div class="q3cPage__secondBox">
 									<label for="indonesia" class="q3cPage__elemS">
-										<a href="javascript:void(0);" class="q3cPage__itemS">
+										<a href="javascript:void(0);" class="q3cPage__itemS" id="location15" value="Indonesia">
 											Indonesia
 										</a>
 									</label>
@@ -613,13 +613,13 @@
 					{
 						// var jsonData = JSON.parse(response);
 
-						// console.log(1);
+						// console.log(1); 
 
 						// // user is logged in successfully in the back-end
 						// // let's redirect
 						// if (jsonData.success == "1")
 						// {
-						// 	location.href = '/problems/q4.html';
+							location.href = '/problems/q4.html';
 						// }
 						// else
 						// {
@@ -649,6 +649,56 @@
 	</script>
 	<!-- Press enter to go to the next page - END-->
 
+
+	<!--Add string from button value into an input field - START-->
+	<script>
+		$('#location1').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location1').attr('value'));
+		});
+		$('#location2').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location2').attr('value'));
+		});
+		$('#location3').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location3').attr('value'));
+		});
+		$('#location4').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location4').attr('value'));
+		});
+		$('#location5').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location5').attr('value'));
+		});
+		$('#location6').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location6').attr('value'));
+		});
+		$('#location7').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location7').attr('value'));
+		});
+		$('#location8').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location8').attr('value'));
+		});
+		$('#location9').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location9').attr('value'));
+		});
+		$('#location10').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location10').attr('value'));
+		});
+		$('#location11').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location11').attr('value'));
+		});
+		$('#location12').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location12').attr('value'));
+		});
+		$('#location13').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location10').attr('value'));
+		});
+		$('#location14').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location11').attr('value'));
+		});
+		$('#location15').on('click', function () {
+			$('#q3_compTrip_teamBuilding').val($('#q3_compTrip_teamBuilding').val() + $('#location12').attr('value'));
+		});
+	</script>
+	<!-- Add string from button value into an input field - END -->
 </body>
 
 </html>

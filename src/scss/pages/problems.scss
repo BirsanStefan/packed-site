@@ -939,9 +939,12 @@ span.stagDestination__flag img {
 
 .q3aPage .stagDestination__box {
     @media only screen and (max-width: 540px) {
-        padding-left: 15px;
+        padding-left: 50px;
     }
-    @media only screen and (max-width: 340px) {
+    @media only screen and (max-width: 500px) {
+        padding-left: 35px;
+    }
+    @media only screen and (max-width: 430px) {
         padding-left: 0;
     }
 }
@@ -1395,7 +1398,7 @@ span.mainBoxes__bottomBtn__icon{
 
 .q3formNoLink{
     .q3cPage__link, .q3cPage__itemS, .stagDestination__link{
-        cursor: auto;
+        cursor: pointer;
     }
 }
 .q3aPageForm__btn{
@@ -1405,3 +1408,20 @@ span.mainBoxes__bottomBtn__icon{
 .progressBar__backBtn{
     cursor: pointer;
 }
+
+.destination__link{
+    color: #6B6D80;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    transition: all .25s linear;
+    width: 31%;
+    padding: 5px 0 5px 20px;
+    cursor: pointer;
+    &:hover {
+        color: #4f2d87;
+    }
+    @media only screen and (max-width: 540px) {
+        
+    }
+} 

@@ -321,19 +321,19 @@
 
 							
 							<label for="albufeira" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Albufeira</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location1" value="Albufeira">Albufeira</a>
 							</label>
 							<input type="radio" id="albufeira" class="boxesItem__input" name="albufeira" value="albufeira">
 
 
 							<label for="berlin" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Berlin</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location2" value="Berlin">Berlin</a>
 							</label>
 							<input type="radio" id="berlin" class="boxesItem__input" name="berlin" value="berlin">
 
 
 							<label for="krakow" class="stagDestination__item right">
-								<a href="javascript:void(0);" class="stagDestination__link">Krakow</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location3" value="Krakow">Krakow</a>
 							</label> 
 							<input type="radio" id="krakow" class="boxesItem__input" name="krakow" value="krakow">
 
@@ -343,19 +343,19 @@
 						<div class="stagDestination__box">
 							
 							<label for="amsterdam" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Amsterdam</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location4" value="Amsterdam">Amsterdam</a>
 							</label>
 							<input for="" type="radio" id="amsterdam" class="boxesItem__input" name="amsterdam" value="amsterdam">
 
 
 							<label for="budapest" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Budapest</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location5" value="Budapest">Budapest</a>
 							</label>
 							<input type="radio" id="budapest" class="boxesItem__input" name="budapest" value="budapest">
 
 
 							<label for="madrid" class="stagDestination__item right">
-								<a href="javascript:void(0);" class="stagDestination__link">Madrid</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location6" value="Madrid">Madrid</a>
 							</label>
 							<input type="radio" id="madrid" class="boxesItem__input" name="madrid" value="madrid">
 
@@ -365,19 +365,19 @@
 						<div class="stagDestination__box">
 
 							<label for="barcelona" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Barcelona</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location7" value="Barcelona">Barcelona</a>
 							</label>
 							<input type="radio" id="barcelona" class="boxesItem__input" name="barcelona" value="barcelona">
 
 
 							<label for="edinburgh" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Edinburgh</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location8" value="Edinburgh">Edinburgh</a>
 							</label>
 							<input type="radio" id="edinburgh" class="boxesItem__input" name="edinburgh" value="edinburgh">
 
 
 							<label for="marbella" class="stagDestination__item right">
-								<a href="javascript:void(0);" class="stagDestination__link">Marbella</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location9" value="Marbella">Marbella</a>
 							</label>
 							<input type="radio" id="marbella" class="boxesItem__input" name="marbella" value="marbella">
 
@@ -387,17 +387,17 @@
 						<div class="stagDestination__box">
 
 							<label for="benidorm" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Benidorm</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location10" value="Benidorm">Benidorm</a>
 							</label>
 							<input type="radio" id="benidorm" class="boxesItem__input" name="benidorm" value="benidorm">
 
 							<label for="hamburg" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Hamburg</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location11" value="Hamburg">Hamburg</a>
 							</label>
 							<input type="radio" id="hamburg" class="boxesItem__input" name="hamburg" value="hamburg">
 
 							<label for="mykonos" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Mykonos</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location12" value="Mykonos">Mykonos</a>
 							</label>
 							<input type="radio" id="mykonos" class="boxesItem__input" name="mykonos" value="mykonos">
 
@@ -572,6 +572,48 @@
 		});
 	</script>
 	<!-- Press enter to go to the next page - END-->
+
+
+	<!--Add string from button value into an input field - START-->
+	<script>
+		$('#location1').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location1').attr('value'));
+		});
+		$('#location2').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location2').attr('value'));  
+		});  
+		$('#location3').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location3').attr('value'));
+		});
+		$('#location4').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location4').attr('value'));
+		});
+		$('#location5').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location5').attr('value'));
+		});
+		$('#location6').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location6').attr('value'));
+		});
+		$('#location7').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location7').attr('value'));
+		});
+		$('#location8').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location8').attr('value'));
+		});
+		$('#location9').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location9').attr('value'));
+		});
+		$('#location10').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location10').attr('value'));
+		});
+		$('#location11').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location11').attr('value'));
+		});
+		$('#location12').on('click', function () {
+			$('#q3_henDo_henDo').val($('#q3_henDo_henDo').val() + $('#location12').attr('value'));
+		});
+	</script>
+	<!-- Add string from button value into an input field - END -->
 
 </body>
 

@@ -132,19 +132,19 @@
 
 							
 							<label for="uk" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">UK</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location1" value="UK">UK</a>
 							</label>
 							<input type="radio" id="uk" class="boxesItem__input" name="uk" value="uk">
 
 
 							<label for="berlin" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Berlin</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location2" value="Berlin">Berlin</a>
 							</label>
 							<input type="radio" id="berlin" class="boxesItem__input" name="berlin" value="berlin">
 
 
 							<label for="hamburg" class="stagDestination__item right">
-								<a href="javascript:void(0);" class="stagDestination__link">Hamburg</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location3" value="Hamburg">Hamburg</a>
 							</label> 
 							<input type="radio" id="hamburg" class="boxesItem__input" name="hamburg" value="hamburg">
 
@@ -154,19 +154,19 @@
 						<div class="stagDestination__box">
 							
 							<label for="amsterdam" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Amsterdam</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location4" value="Amsterdam">Amsterdam</a>
 							</label>
 							<input for="" type="radio" id="amsterdam" class="boxesItem__input" name="amsterdam" value="amsterdam">
 
 
 							<label for="budapest" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Budapest</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location5" value="Budapest">Budapest</a>
 							</label>
 							<input type="radio" id="budapest" class="boxesItem__input" name="budapest" value="budapest">
 
 
 							<label for="krakow" class="stagDestination__item right">
-								<a href="javascript:void(0);" class="stagDestination__link">Krakow</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location6" value="Krakow">Krakow</a>
 							</label>
 							<input type="radio" id="krakow" class="boxesItem__input" name="krakow" value="krakow">
 
@@ -176,19 +176,19 @@
 						<div class="stagDestination__box">
 
 							<label for="barcelona" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Barcelona</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location7" value="Barcelona">Barcelona</a>
 							</label>
 							<input type="radio" id="barcelona" class="boxesItem__input" name="barcelona" value="barcelona">
 
 
 							<label for="dublin" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Dublin</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location8" value="Dublin">Dublin</a>
 							</label>
 							<input type="radio" id="dublin" class="boxesItem__input" name="dublin" value="dublin">
 
 
 							<label for="lisbon" class="stagDestination__item right">
-								<a href="javascript:void(0);" class="stagDestination__link">Lisbon</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location9" value="Lisbon">Lisbon</a>
 							</label>
 							<input type="radio" id="lisbon" class="boxesItem__input" name="lisbon" value="lisbon">
 
@@ -198,19 +198,19 @@
 						<div class="stagDestination__box">
 
 							<label for="benidorm" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Benidorm</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location10" value="Benidorm">Benidorm</a>
 							</label>
 							<input type="radio" id="benidorm" class="boxesItem__input" name="benidorm" value="benidorm">
 
 
 							<label for="edinburgh" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Edinburgh</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location11" value="Edinburgh">Edinburgh</a>
 							</label>
 							<input type="radio" id="edinburgh" class="boxesItem__input" name="edinburgh" value="edinburgh">
 
 
 							<label for="prague" class="stagDestination__item right">
-								<a href="javascript:void(0);" class="stagDestination__link">Prague</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location12" value="Prague">Prague</a>
 							</label>
 							<input type="radio" id="prague" class="boxesItem__input" name="prague" value="prague">
 
@@ -221,9 +221,9 @@
 						<div class="stagDestination__box">
 
 							<label for="riga" class="stagDestination__item">
-								<a href="javascript:void(0);" class="stagDestination__link">Riga</a>
+								<a href="javascript:void(0);" class="stagDestination__link" id="location13" value="Riga">Riga</a>
 							</label>
-							<input type="radio" id="riga" class="boxesItem__input" name="riga" value="riga">
+							<input type="radio" id="riga" class="boxesItem__input" name="riga" value="riga"> 
 
 
 						</div>
@@ -323,6 +323,51 @@
 		});
 	</script>
 	<!-- Press enter to go to the next page - END-->
+
+
+	<!--Add string from button value into an input field - START-->
+	<script>
+		$('#location1').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location1').attr('value'));
+		});
+		$('#location2').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location2').attr('value'));
+		});
+		$('#location3').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location3').attr('value'));
+		});
+		$('#location4').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location4').attr('value'));
+		});
+		$('#location5').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location5').attr('value'));
+		});
+		$('#location6').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location6').attr('value'));
+		});
+		$('#location7').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location7').attr('value'));
+		});
+		$('#location8').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location8').attr('value'));
+		});
+		$('#location9').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location9').attr('value'));
+		});
+		$('#location10').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location10').attr('value'));
+		});
+		$('#location11').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location11').attr('value')); 
+		});
+		$('#location12').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location12').attr('value'));
+		});
+		$('#location13').on('click', function () {
+			$('#q3_sportsClub_sportsClub').val($('#q3_sportsClub_sportsClub').val() + $('#location12').attr('value'));
+		});
+	</script>
+	<!-- Add string from button value into an input field - END -->
 
 </body>
 

@@ -321,49 +321,49 @@
 			
 						<div class="stagDestination__box">
 							<div class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Amsterdam</a>
+								<a href="#" class="stagDestination__link" id="location1" value="Amsterdam">Amsterdam</a>
 							</div>
 							<div class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Budapest</a>
+								<a href="#" class="stagDestination__link" id="location2" value="Budapest">Budapest</a>
 							</div>
 							<div class="stagDestination__item right">
-								<a href="#" class="stagDestination__link">Krakow</a>
+								<a href="#" class="stagDestination__link" id="location3" value="Krakow">Krakow</a>
 							</div>
 						</div>
 			
 						<div class="stagDestination__box">
 							<div class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Barcelona</a>
+								<a href="#" class="stagDestination__link" id="location4" value="Barcelona">Barcelona</a>
 							</div>
 							<div class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Dublin</a>
+								<a href="#" class="stagDestination__link" id="location5" value="Dublin">Dublin</a>
 							</div>
 							<div class="stagDestination__item right">
-								<a href="#" class="stagDestination__link">Lisbon</a>
+								<a href="#" class="stagDestination__link" id="location6" value="Lisbon">Lisbon</a>
 							</div>
 						</div>
 			
 						<div class="stagDestination__box">
 							<div class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Benidorm</a>
+								<a href="#" class="stagDestination__link" id="location7" value="Benidorm">Benidorm</a>
 							</div>
 							<div class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Edinburgh</a>
+								<a href="#" class="stagDestination__link" id="location8" value="Edinburgh">Edinburgh</a>
 							</div>
 							<div class="stagDestination__item right">
-								<a href="#" class="stagDestination__link">Prague</a>
+								<a href="#" class="stagDestination__link" id="location9" value="Prague">Prague</a>
 							</div>
 						</div>
 			
 						<div class="stagDestination__box">
 							<div class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Berlin</a>
+								<a href="#" class="stagDestination__link" id="location10" value="Berlin">Berlin</a>
 							</div>
 							<div class="stagDestination__item">
-								<a href="#" class="stagDestination__link">Hamburg</a>
+								<a href="#" class="stagDestination__link" id="location11" value="Hamburg">Hamburg</a>
 							</div>
 							<div class="stagDestination__item right">
-								<a href="#" class="stagDestination__link">Riga</a> 
+								<a href="#" class="stagDestination__link" id="location12" value="Riga">Riga</a> 
 							</div>
 						</div>
 					</div>
@@ -530,6 +530,48 @@
 		});
 	</script>
 	<!-- Press enter to go to the next page - END-->
+
+
+	<!--Add string from button value into an input field - START-->
+	<script>
+		$('#location1').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location1').attr('value'));
+		});
+		$('#location2').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location2').attr('value'));
+		});
+		$('#location3').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location3').attr('value'));
+		});
+		$('#location4').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location4').attr('value'));
+		});
+		$('#location5').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location5').attr('value'));
+		});
+		$('#location6').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location6').attr('value'));
+		});
+		$('#location7').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location7').attr('value'));
+		});
+		$('#location8').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location8').attr('value'));
+		});
+		$('#location9').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location9').attr('value'));
+		});
+		$('#location10').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location10').attr('value'));
+		});
+		$('#location11').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location11').attr('value'));
+		});
+		$('#location12').on('click', function () {
+			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location12').attr('value'));
+		});
+	</script>
+	<!-- Add string from button value into an input field - END -->
 
 </body>
 
