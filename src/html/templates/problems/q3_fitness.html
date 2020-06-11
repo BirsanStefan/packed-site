@@ -303,7 +303,7 @@
 	</script> -->
 
 
-<script>
+<!-- <script>
 	$('#location1').on('click', function () {
 		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location1').attr('value'));
 	});
@@ -331,8 +331,93 @@
 	$('#location9').on('click', function () {
 		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location9').attr('value'));
 	});
-</script>   
+</script>    -->
 
+
+	<script>
+		$("#location1").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location2").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location3").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location4").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location5").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location6").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location7").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location8").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location9").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_fitness_fitness').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		
+	</script>
 </body>
 
 </html>

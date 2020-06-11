@@ -597,7 +597,7 @@
 						// // let's redirect
 						// if (jsonData.success == "1")
 						// {
-							location.href = '/problems/q4.html';
+							// location.href = '/problems/q4.html';
 						// 	console.log('successkkkkk');  
 						// }
 						// else
@@ -637,7 +637,7 @@
 
 	</script> -->
 
-	<script>
+	<!-- <script>
 		$('#location1').on('click', function () {
 			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location1').attr('value'));
 		});
@@ -686,6 +686,153 @@
 		$('#location16').on('click', function () {
 			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location16').attr('value'));
 		}); 
+	</script> -->
+
+	<script>
+		$("#location1").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location2").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location3").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location4").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location5").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location6").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location7").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location8").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location9").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location10").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location11").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location12").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location13").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location14").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location15").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
+		$("#location16").on('click', function () {
+			var text = $(this).text() + ', ';
+			$('#q3_break_cityBreakDest').val(function (_, val) {
+				if (val.match(text)) {
+					return val.replace(text, '');
+				}
+				return val + text;
+			});
+		});
 	</script>
 </body>
 
