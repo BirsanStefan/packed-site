@@ -1,0 +1,231 @@
+/*On page nav bar section*/
+
+@media (max-device-width: 376px) {
+	.nav-bar {
+	  z-index: 1000;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+	.nav-bar {
+	  z-index: 1000;
+	  margin-top: 35px;
+	  margin-bottom: 30px;
+  }
+  }
+  
+
+  @media screen and (min-width: 1024px) {
+	.nav-bar {
+		overflow: hidden;
+		background-color: #4f2d87;
+		z-index: 1000;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+	@media screen and (min-width: 1024px) { 
+		.nav-bar__sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+	}
+
+	#mainNav li a:active {
+		text-decoration: underline;
+	}
+
+  .nav-link-holder {
+	  position:relative;
+  }
+  
+  .nav-link-holder a {
+	  position: absolute; 
+	  top: -200px;
+  }
+  
+  .guide-link-bar ul {
+	list-style-type: none;
+	padding-left: 0;
+	overflow: hidden;
+	margin-left: -10px;
+	margin-right: -10px
+  }
+  
+  .guide-link-bar li {
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	line-height: 1.25;
+	float: left;
+	margin: 0
+  }
+  
+  .guide-link-bar a {
+	background-color: #4f2d87;
+	border: 1px 
+	solid #4f2d87;
+	display: block;
+	color: white;
+	padding: 0.5rem 0.7rem;
+	font-size: 12px
+  }
+  
+  
+  @media screen and (max-width: 1024px) {
+  
+  .guide-link-bar {
+	  width: auto;
+	  background: transparent;
+	  height: auto;
+	  box-shadow: none;
+	  margin-left: auto;
+	  margin-right: auto;
+	  box-sizing: inherit;
+	  display: block;
+	  }
+  
+  .guide-link-bar ul {
+	  width: auto;
+	  max-width: 900px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  flex-wrap: wrap;
+	  background: transparent;
+	  height: auto;
+	  padding: 3px;
+	  display: flex;
+	  border-radius: 30px;
+	  list-style-type: disc;
+	  margin-block-start: 1em;
+	  margin-block-end: 1em;
+	  }
+  
+  .guide-link-bar li {
+	  width: 23%;
+	  box-shadow: 0px 3px 8px 0px rgba(77, 77, 77, 0.4);
+	  margin: 5px 1%;
+	  display: inline-block;
+	  border-radius: 50px;
+	  text-align: center;
+	  padding: 0px;
+	  }
+  
+  .guide-link-bar a {
+	  background: #40d8c2;
+	  border-radius: 50px;
+	  color: #fff;
+	  font-size: 12px;
+	  font-weight: 500;
+	  line-height: 24px;
+	  font-family: Montserrat;
+	  text-align: center;
+	  border: none;
+	  height: 44px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  }
+  
+  }
+
+  @media screen and (max-width: 850px) {
+		.guide-link-bar li {
+			width: 48%;
+		}
+		.guide-link-bar ul {
+			max-width: 90%;
+			margin: auto;
+		}
+	}
+  
+  
+  @media screen and (min-width: 1024px) {
+  
+  .guide-link-bar {
+	background-color: #4f2d87;
+	padding: 10px 20px;
+	width:100vw;
+	left: calc(-50vw + 50%);
+	position: relative
+  }
+  
+  .guide-link-bar a {
+	background: none;
+	display: inline;
+	font-size: 16px
+  }
+  
+  .guide-link-bar ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 0
+  }
+  
+  .guide-link-bar li {
+	background-color: initial;
+	border: none;
+	border-left: solid 1px #fff;
+	width: auto;
+	width: initial;
+	line-height: inherit;
+	display: inline-block;
+	padding: 0 20px;
+	float: none; 
+	margin-top: 10px;
+	margin-bottom: 10px
+  }
+  
+  .guide-link-bar li:first-child {
+	border-left: none
+  }
+  
+  .guide-link-bar li a {
+	border: none;
+	white-space: nowrap
+	}
+  
+  .guide-link-bar li.link-separator {
+	display: initial
+  }
+  }
+  
+  .guide-link-bar--thin {
+	height: 127px
+  }
+  
+  
+  @media screen and (min-width: 1024px) {
+  .guide-link-bar--thin {
+	height: 90px
+  }
+  }
+  
+  .link-separator:before {
+	content: "|";
+	color: white
+  }
+  
+  .col-md-24 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+  
+  @media (min-width: 1024px) {
+	.col-md-24 {
+	  float: left
+	}
+	.col-md-24 {
+	  width: 100%
+	}
+  }
+  
+  /*On page nav bar section ends*/

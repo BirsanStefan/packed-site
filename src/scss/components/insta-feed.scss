@@ -1,0 +1,116 @@
+/*home page insta feed starts*/
+section.instaContent {
+	margin-bottom: 80px;
+}
+
+.stepBox div.instaContentRight {
+	width: 75%;
+	padding: 0 20px 0 20px;
+}
+
+.stepBox div.instaContentLeft {
+	width: 25%;
+	padding: 0 20px 0 20px;
+	left: 0px;
+}
+
+@media only screen and (max-width:870px) {
+
+	.instaContent .instaContentFlex{
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 0;
+	}
+
+	.stepBox div.instaContentRight {
+		width: 100%;
+		margin-top: 30px;
+	}
+	
+	.stepBox div.instaContentLeft {
+		width: 90%;
+		margin: auto;
+		padding: 0
+	}
+
+	.stepBox .instaContentLeft .skiWeekendsRightTitle {
+		margin-bottom: 20px;
+	}	
+
+	.instaContentFlex .instaContentRight .mainBoxes__lines {
+		display: none;
+	}
+
+	.stepBox .instaContentRight .mainBoxes__dots {
+		display: none;
+	}
+
+	.instaSocialContainer {
+		justify-content: center;
+	}
+	
+	.stepBox .instaContentLeft .skiWeekendsRightTitle {
+		text-align: center;
+	}
+
+}
+
+.instaContentLeft .skiWeekendsRightTitle {
+	text-align: left;
+}
+
+.stepBox .instaContentLeft .skiWeekendsRightText {
+	text-align: left;
+	width: 100%;
+	padding: 0;
+	margin: 10px 0 30px 0;
+}
+
+
+.instaContentFlex .instaContentRight .mainBoxes__lines {
+	right: -10px;
+}
+
+.instaSocialContainer {
+	display: flex;
+	align-items: center;
+}
+
+.instaIcons {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin: 0 8px 0 0;
+	border-radius: 50%;
+	transition: all .15s linear;
+}
+
+.instaIcons:hover {
+	box-shadow: 5px 5px 15px rgba(113, 100, 155, 0.4);
+	opacity: 0.8;
+}
+
+.instaIcon {
+	background-image: url(../images/png/instagram_icon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.facebookIcon {
+	background-image: url(../images/png/facebook_icon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.linkedinIcon {
+	background-image: url(../images/png/linkedin_icon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.stepBox .instaContentRight .mainBoxes__dots {
+	top: -25px;
+    left: -45px;
+}
+/*home page insta feed ends*/

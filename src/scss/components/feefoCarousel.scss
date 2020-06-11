@@ -52,6 +52,25 @@
 	}
 }
 
+section.feefoSmallContainer {
+	margin-bottom: 0;
+}
+
+
+.feefoCarouselDescSmall{
+	text-align: center;
+	margin-top: 5px;
+	font-size: 13px;
+	color: #9b9898;
+	strong{
+		font-weight: 500;
+	}
+	@media only screen and (max-width: 667px){
+		margin-top: 10px;
+		font-size: 12px;
+	}
+}
+
 .seeAllReviews{
 	color: #4f2d87;
 	font-weight: 500;
