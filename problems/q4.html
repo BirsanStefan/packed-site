@@ -294,33 +294,33 @@
 					<h2>How ready is your group?</h2>
 				</div>
 
-				<div class="boxesList boxesListFullWidth boxesListMbottom q4boxesList">
+				<form name="q4form" id="q4form" class="boxesList boxesListFullWidth boxesListMbottom q4boxesList">
 
-					<label for="groupTogether" class="boxesItem">
+					<label onclick="display1()" for="groupTogether" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/icon-q4_1.svg" alt="">
 						</span>
 						<span class="title">I'm still getting my group together</span> 
 					</label> 
-					<input type="checkbox" id="groupTogether" class="boxesItem__input">
+					<input type="radio" id="groupTogether" class="boxesItem__input">
 
-					<label for="datesOrDestinations" class="boxesItem">
+					<label onclick="display2()" for="datesOrDestinations" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/icon-q4_2.svg" alt="">
 						</span>
 						<span class="title">We’re still working on dates or destinations</span> 
 					</label> 
-					<input type="checkbox" id="datesOrDestinations" class="boxesItem__input">
+					<input type="radio" id="datesOrDestinations" class="boxesItem__input">
 
-					<label for="seeOptions" class="boxesItem">
+					<label onclick="display3()" for="seeOptions" class="boxesItem">
 						<span class="icon">
 							<img src="/assets/images/svg/icon-q4_3.svg" alt="">
 						</span>
 						<span class="title">We know when & where and need to see options</span> 
 					</label> 
-					<input type="checkbox" id="seeOptions" class="boxesItem__input">
+					<input type="radio" id="seeOptions" class="boxesItem__input">
 
-				</div>
+				</form>
 			</div>
 		</div> 
  
@@ -427,6 +427,7 @@
 			})(document,"99395");
 	</script>
 	
+
 	<!--GO BACK form button - start-->
 	<script>
 		function goBack() {
@@ -435,7 +436,26 @@
 	</script> 
 	<!--GO BACK form button - end--> 
 
-	
+
+	<!--Go to next page START-->
+	<script>
+		function display1() {
+			location.href = 'q51.html';
+			// // alert('success 1 !');
+			console.log('success1');
+		}
+		function display2() {
+			location.href = 'q52.html';
+			// alert('success 2 !');
+			console.log('success2');
+		}
+		function display3() {
+			location.href = 'q53ab.html';
+			// alert('success!');
+			console.log('success3');
+		}
+	</script>
+	<!--Go to next page END-->
 
 </body>
 

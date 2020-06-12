@@ -554,6 +554,7 @@ section.enterYourMobile {
             font-size: 20px;
             line-height: 24px;
             color: #464860;
+            margin-bottom: 35px;
         }
     }
     .mswButton.purpleBg {
@@ -619,6 +620,8 @@ section.enterYourMobile {
     margin-bottom: 45px;
     width: 380px;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     @media only screen and (max-width: 400px) {
         max-width: 90%;
     }
