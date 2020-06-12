@@ -67,6 +67,7 @@
 	
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -297,9 +298,9 @@
 				</div>
 
 				<form id="q3form" class="q3cityBreakD" name="q3form">
-
+					<ul class="errorMessages"></ul> 
 					<div class="q3aPageForm">
-						<input type="text" name="q3_cityBreak_cityBreakDest" id="q3_break_cityBreakDest" value="" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200">  
+						<input type="text" name="q3_cityBreak_cityBreakDest" id="q3_cityBreak_cityBreakDest" value="" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" required>  
 
 						<div class="q3aPageForm__submitBtn">
 							<label for="q3_cityBreak_submit" >
@@ -597,13 +598,13 @@
 						// // let's redirect
 						// if (jsonData.success == "1")
 						// {
-							// location.href = '/problems/q4.html';
+							location.href = '/problems/q4.html';
 						// 	console.log('successkkkkk');  
 						// }
 						// else
 						// {
 						// 	alert('Invalid Credentials!');
-						// }
+						// } 
 					}    
 				});  
 			});
@@ -628,70 +629,13 @@
 		});
 	</script>
 	<!-- Press enter to go to the next page - END-->
-	<!-- <script>
+	
 
-		$(".destination__link").click(function () {
-			var textval = $(this).val() //sau vezi sintaxa exact
-			$("#q3_break_cityBreakDest").val(textval) // adaugă valoarea preluată la click în input
-		})
-
-	</script> -->
-
-	<!-- <script>
-		$('#location1').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location1').attr('value'));
-		});
-		$('#location2').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location2').attr('value'));
-		});
-		$('#location3').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location3').attr('value'));
-		});
-		$('#location4').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location4').attr('value'));
-		}); 
-		$('#location5').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location5').attr('value'));
-		});
-		$('#location6').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location6').attr('value'));
-		});
-		$('#location7').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location7').attr('value'));
-		}); 
-		$('#location8').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location8').attr('value'));
-		});
-		$('#location9').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location9').attr('value'));
-		});
-		$('#location10').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location10').attr('value'));
-		});
-		$('#location11').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location11').attr('value'));
-		});
-		$('#location12').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location12').attr('value'));
-		});
-		$('#location13').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location13').attr('value'));
-		});
-		$('#location14').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location14').attr('value'));
-		}); 
-		$('#location15').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location15').attr('value'));
-		});
-		$('#location16').on('click', function () {
-			$('#q3_break_cityBreakDest').val($('#q3_break_cityBreakDest').val() + $('#location16').attr('value'));
-		}); 
-	</script> -->
-
+	<!-- Adding multiple strings into an input field via multiple buttons - START -->
 	<script>
 		$("#location1").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -700,7 +644,7 @@
 		});
 		$("#location2").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -709,7 +653,7 @@
 		});
 		$("#location3").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -718,7 +662,7 @@
 		});
 		$("#location4").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -727,7 +671,7 @@
 		});
 		$("#location5").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -736,7 +680,7 @@
 		});
 		$("#location6").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -745,7 +689,7 @@
 		});
 		$("#location7").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -754,7 +698,7 @@
 		});
 		$("#location8").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -763,7 +707,7 @@
 		});
 		$("#location9").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -772,7 +716,7 @@
 		});
 		$("#location10").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -781,7 +725,7 @@
 		});
 		$("#location11").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -790,7 +734,7 @@
 		});
 		$("#location12").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -799,7 +743,7 @@
 		});
 		$("#location13").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -808,7 +752,7 @@
 		});
 		$("#location14").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -817,7 +761,7 @@
 		});
 		$("#location15").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -826,7 +770,7 @@
 		});
 		$("#location16").on('click', function () {
 			var text = $(this).text() + ', ';
-			$('#q3_break_cityBreakDest').val(function (_, val) {
+			$('#q3_cityBreak_cityBreakDest').val(function (_, val) {
 				if (val.match(text)) {
 					return val.replace(text, '');
 				}
@@ -834,6 +778,55 @@
 			});
 		});
 	</script>
-</body>
+	<!-- Adding multiple strings into an input field via multiple buttons - END -->
 
+
+	<!-- alert message/Form Validation - START -->
+	<script>
+		var createAllErrors = function () {
+			var form = $(this),
+				errorList = $("ul.errorMessages", form);
+
+			var showAllErrorMessages = function () {
+				errorList.empty();
+
+				// Find all invalid fields within the form.
+				var invalidFields = form.find(":invalid").each(function (index, node) {
+
+					// Find the field's corresponding label
+					var label = $("label[for=" + node.id + "] "),
+						// Opera incorrectly does not fill the validationMessage property.
+						message = node.validationMessage || 'Invalid value.';
+
+					errorList
+						.show()
+						.append("<li><span>" + label.html() + "</span> " + message + "</li>");
+				});
+			};
+
+			// Support Safari
+			form.on(".q3aPageForm__submit", function (event) {
+				if (this.checkValidity && !this.checkValidity()) {
+					$(this).find(":invalid").first().focus();
+					event.preventDefault();
+				}
+			});
+
+			$("input[type=submit], button:not([type=button])", form)
+				.on("click", showAllErrorMessages);
+
+			$("input", form).on("keypress", function (event) {
+				var type = $(this).attr("type");
+				if (/date|email|month|number|search|tel|text|time|url|week/.test(type)
+					&& event.keyCode == 13) {
+					showAllErrorMessages();
+				}
+			});
+		}; 
+
+		$("form").each(createAllErrors);
+	</script>
+	<!-- alert message/Form Validation - END -->
+</body>
+ 
 </html>

@@ -297,8 +297,9 @@
 				</div>
 
 				<form id="q3form" class="q3cityBreakD fitness q3formNoLink">
+					<ul class="errorMessages"></ul>
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3_fitness_fitness" id="q3_fitness_fitness">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" maxlength="200" name="q3_fitness_fitness" id="q3_fitness_fitness" required> 
 						<div class="q3aPageForm__submitBtn">
 							<label for="q3aPageForm__submit"> 
 								<div class="buttonsContainer q53cPageBtn">
@@ -516,20 +517,20 @@
 					data: $(this).serialize(),
 					success: function(response)
 					{
-						// var jsonData = JSON.parse(response);
+						var jsonData = JSON.parse(response);
 
-						// console.log(1);
+						console.log(1);
 
-						// // user is logged in successfully in the back-end
-						// // let's redirect
-						// if (jsonData.success == "1")
-						// {
-						// 	location.href = '/problems/q4.html';
-						// }
-						// else
-						// {
-						// 	alert('Invalid Credentials!');
-						// }
+						// user is logged in successfully in the back-end
+						// let's redirect
+						if (jsonData.success == "1")
+						{
+							location.href = '/problems/q4.html';
+						}
+						else
+						{
+							alert('Invalid Credentials!');
+						}
 					}
 				});
 			});
@@ -554,48 +555,8 @@
 		});
 	</script>
 	<!-- Press enter to go to the next page - END-->
-<!-- 
-	<script>
 
-		$(".q3aPageForm__input").click(function () {
-			var textval = $(this).val() //sau vezi sintaxa exact
-			$("#uk").val(textval) // adaugă valoarea preluată la click în input
-		})
-
-	</script> -->
-
-
-<!-- <script>
-	$('#location1').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location1').attr('value'));
-	});
-	$('#location2').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location2').attr('value'));
-	});
-	$('#location3').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location3').attr('value'));
-	});
-	$('#location4').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location4').attr('value'));
-	});
-	$('#location5').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location5').attr('value'));
-	});
-	$('#location6').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location6').attr('value'));
-	});
-	$('#location7').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location7').attr('value'));
-	});
-	$('#location8').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location8').attr('value'));
-	});
-	$('#location9').on('click', function () {
-		$('#q3_fitness_fitness').val($('#q3_fitness_fitness').val() + $('#location9').attr('value'));
-	});
-</script>    -->
-
-
+	<!-- Adding multiple strings into an input field via multiple buttons - START -->
 	<script>
 		$("#location1").on('click', function () {
 			var text = $(this).text() + ', ';
@@ -680,6 +641,56 @@
 		});
 		
 	</script>
+	<!-- Adding multiple strings into an input field via multiple buttons - END -->
+
+
+	<!-- alert message/Form Validation - START -->
+	<script>
+		var createAllErrors = function () {
+			var form = $(this),
+				errorList = $("ul.errorMessages", form);
+
+			var showAllErrorMessages = function () {
+				errorList.empty();
+
+				// Find all invalid fields within the form.
+				var invalidFields = form.find(":invalid").each(function (index, node) {
+
+					// Find the field's corresponding label
+					var label = $("label[for=" + node.id + "] "),
+						// Opera incorrectly does not fill the validationMessage property.
+						message = node.validationMessage || 'Invalid value.';
+
+					errorList
+						.show()
+						.append("<li><span>" + label.html() + "</span> " + message + "</li>");
+				});
+			};
+
+			// Support Safari
+			form.on(".q3aPageForm__submit", function (event) {
+				if (this.checkValidity && !this.checkValidity()) {
+					$(this).find(":invalid").first().focus();
+					event.preventDefault();
+				}
+			});
+
+			$("input[type=submit], button:not([type=button])", form)
+				.on("click", showAllErrorMessages);
+
+			$("input", form).on("keypress", function (event) {
+				var type = $(this).attr("type");
+				if (/date|email|month|number|search|tel|text|time|url|week/.test(type)
+					&& event.keyCode == 13) {
+					showAllErrorMessages();
+				}
+			});
+		};
+
+		$("form").each(createAllErrors);
+	</script>
+	<!-- alert message/Form Validation - END -->
+
 </body>
 
 </html>

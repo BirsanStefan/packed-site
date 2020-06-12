@@ -109,9 +109,9 @@
 				</div>
 
 				<form id="q3form" class="q3formNoLink">
-
+					<ul class="errorMessages"></ul>
 					<div class="q3aPageForm">
-						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" name="q3_stagDo_StagDest__noflag" id="q3_stagDo_StagDest__noflag" value="">
+						<input type="text" class="q3aPageForm__input" placeholder="e.g. Chamonix, Morzine, not sure" name="q3_stagDo_StagDest__noflag" id="q3_stagDo_StagDest__noflag" value="" required> 
 						<div class="q3aPageForm__submitBtn">
 							<label for="q3aPageFormG__submit">
 								<div class="buttonsContainer q53cPageBtn">
@@ -269,48 +269,7 @@
 	</script>
 	<!-- Press enter to go to the next page - END-->
 
-
-	<!--Add string from button value into an input field - START-->
-	<!-- <script>
-		$('#location1').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location1').attr('value'));
-		});
-		$('#location2').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location2').attr('value'));
-		});
-		$('#location3').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location3').attr('value'));
-		});
-		$('#location4').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location4').attr('value'));
-		});
-		$('#location5').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location5').attr('value'));
-		});
-		$('#location6').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location6').attr('value'));
-		});
-		$('#location7').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location7').attr('value'));
-		});
-		$('#location8').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location8').attr('value'));
-		});
-		$('#location9').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location9').attr('value'));
-		});
-		$('#location10').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location10').attr('value'));
-		});
-		$('#location11').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location11').attr('value'));
-		});
-		$('#location12').on('click', function () {
-			$('#q3_stagDo_StagDest__noflag').val($('#q3_stagDo_StagDest__noflag').val() + $('#location12').attr('value'));
-		});
-	</script> -->
-	<!-- Add string from button value into an input field - END -->
-
+	<!-- Adding multiple strings into an input field via multiple buttons - START -->
 	<script>
 		$("#location1").on('click', function () {
 			var text = $(this).text() + ', ';
@@ -422,6 +381,55 @@
 		});
 
 	</script>
+	<!-- Adding multiple strings into an input field via multiple buttons - END -->
+
+
+	<!-- alert message/Form Validation - START -->
+	<script>
+		var createAllErrors = function () {
+			var form = $(this),
+				errorList = $("ul.errorMessages", form);
+
+			var showAllErrorMessages = function () {
+				errorList.empty();
+
+				// Find all invalid fields within the form.
+				var invalidFields = form.find(":invalid").each(function (index, node) {
+
+					// Find the field's corresponding label
+					var label = $("label[for=" + node.id + "] "),
+						// Opera incorrectly does not fill the validationMessage property.
+						message = node.validationMessage || 'Invalid value.';
+
+					errorList
+						.show()
+						.append("<li><span>" + label.html() + "</span> " + message + "</li>");
+				});
+			};
+
+			// Support Safari
+			form.on(".q3aPageForm__submit", function (event) {
+				if (this.checkValidity && !this.checkValidity()) {
+					$(this).find(":invalid").first().focus();
+					event.preventDefault();
+				}
+			});
+
+			$("input[type=submit], button:not([type=button])", form)
+				.on("click", showAllErrorMessages);
+
+			$("input", form).on("keypress", function (event) {
+				var type = $(this).attr("type");
+				if (/date|email|month|number|search|tel|text|time|url|week/.test(type)
+					&& event.keyCode == 13) {
+					showAllErrorMessages();
+				}
+			});
+		};
+
+		$("form").each(createAllErrors);
+	</script>
+	<!-- alert message/Form Validation - END -->
 
 </body>
 
