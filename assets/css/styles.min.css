@@ -7951,7 +7951,8 @@ Start How it works Page .topArea {
   .ourStoryFloat .ourStoryDescr {
     text-align: center; }
   .sectionTitle {
-    font-size: 24px; }
+    font-size: 24px;
+    margin-bottom: 30px; }
   .founderStory .founderStoryBox .founderStoryDescrBottom {
     flex-wrap: wrap; }
   .founderStory .founderStoryBox .founderStoryDescrBottom .founderStoryDescrBLeft {
@@ -9115,7 +9116,8 @@ section.feefoSmallContainer {
   @media only screen and (max-width: 667px) {
     .feefoCarouselDescSmall {
       margin-top: 10px;
-      font-size: 12px; } }
+      font-size: 12px;
+      margin-bottom: 30px; } }
 
 .seeAllReviews {
   color: #4f2d87;
@@ -10660,7 +10662,9 @@ section.instaContent {
     width: 100%;
     margin-bottom: 32px; }
   .two-column__img {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .two-column__column__inner .two-column__title {
+    font-size: 24px; } }
 
 .two-column__subtitle {
   font-size: 0.875rem;
@@ -10992,7 +10996,7 @@ section.instaContent {
     padding-right: .9375rem;
     float: left; } }
 
-@media only screen and (max-width: 64.0625em) {
+@media only screen and (max-width: 64.0625em) and (min-width: 45em) {
   .trip-accordion__medium {
     position: relative;
     width: 41.66667%;
@@ -11001,11 +11005,20 @@ section.instaContent {
     float: left; } }
 
 @media only screen and (max-width: 45em) {
+  .trip-accordion.mobile-only {
+    padding-inline-start: 10px; }
   .trip-accordion__small {
     width: 100%;
     padding-left: .9375rem;
     padding-right: .9375rem;
-    float: left; } }
+    float: left; }
+  .how-it-works__booking_item_text .how-it-works__tour-item-header {
+    padding-left: 2rem; }
+  .how-it-works__booking_item_text .app-accordion__item-body-content {
+    padding-left: 2rem; }
+  .how-it-works__booking_item_img {
+    min-width: 45px;
+    max-width: 45px; } }
 
 .trip-accordion__column__wrapper {
   padding-left: 0 !important;

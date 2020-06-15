@@ -308,7 +308,7 @@
     }
 }    
 
-@media only screen and (max-width: 64.0625em) {
+@media only screen and (max-width: 64.0625em) and (min-width: 45em) {
     .trip-accordion__medium {
         position: relative;
         width: 41.66667%;
@@ -319,11 +319,28 @@
 }
 
 @media only screen and (max-width: 45em) {
+    .trip-accordion.mobile-only {
+        padding-inline-start: 10px;
+    }
+    
     .trip-accordion__small {
         width: 100%;
         padding-left: .9375rem;
         padding-right: .9375rem;
         float: left;
+    }
+
+    .how-it-works__booking_item_text .how-it-works__tour-item-header {
+        padding-left: 2rem;
+    }
+
+    .how-it-works__booking_item_text .app-accordion__item-body-content {
+        padding-left: 2rem;
+    }
+
+    .how-it-works__booking_item_img {
+        min-width: 45px;
+        max-width: 45px;
     }
 
 }
