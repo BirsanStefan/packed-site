@@ -67,6 +67,7 @@
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
+	
 </head>
 
 
@@ -99,14 +100,14 @@
 					<h2>Group trips personalised to you</h2>
 					<h6>Who should we send these to?</h6>
 				</div>
-
-				<form class="topQContainer53__form" id="q53abform" name="q53abform">
+    
+				<form class="topQContainer53__form" id="q53abform" name="q53abform"> 
 					<ul class="errorMessages"></ul>
 					<div class="topQContainer53__inputWrapper">
 
-						<input type="text" class="topQContainer53__input" placeholder="First name" name="fname" id="fname" required>
+						<input type="text" class="topQContainer53__input" placeholder="First name" name="fname" id="fname" required>    
 
-						<input type="text" class="topQContainer53__input" placeholder="Last name" name="lname" id="lname" required>
+						<input type="text" class="topQContainer53__input" placeholder="Last name" name="lname" id="lname" required> 
 
 						<input type="text" class="topQContainer53__input" placeholder="Email address" name="email" id="email" required>
 
@@ -124,7 +125,8 @@
 						</label>
 						<input type="submit" class="topQContainer53__submit" id="topQContainer53__submit" name="topQContainer53__submit" value="topQContainer53__submit">
 					</div>
-				</form>
+				</form>  
+				
 				<!-- <h2 id='result'></h2> -->
 
 			</div>
@@ -168,7 +170,7 @@
 			$(".topQContainer53__label").click(function(){
 				$('#q53abform').submit(); 
 			});
-
+ 
 			$('#q53abform').submit(function (e) {
 				e.preventDefault();
 				$.ajax({
@@ -184,116 +186,95 @@
 						// // let's redirect
 						// if (jsonData.success == "1")
 						// {
-						// location.href = '/problems/q53c.html'; 
+						location.href = '/problems/q53c.html'; 
 						// }
 						// else
 						// {
 						// 	alert('Invalid Credentials!');
 						// }
 					}
-				});
+				}); 
 			});
 		});   
 	</script>
 
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script id="rendered-js">
+		var emailInput;
+
+		$("#email").on("change", function () {
+			emailInput = $("#email").val();
+
+			if (validateEmail(emailInput)) {
+				$("#email").css({
+					border: "1px solid green"
+				});
+
+			} else {
+				$("#email").css({
+					color: "red",
+					border: "1px solid red"
+				});
+
+				// alert("not a valid email address");
+			}
+		});
+
+		$("#topQContainer53__submit").on("click", function (e) {
+			// e.preventDefault();
+			if (validateEmail(emailInput)) {
+				// location.href = '/problems/q53c.html'; 
+				console.log('email valid');
+			} else {
+				// alert('nope'); 
+				return false;
+				console.log('email invalid');   
+				
+			}    
+		});
+
+		function validateEmail(email) {
+			var pattern = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+			return $.trim(email).match(pattern) ? true : false;
+		} 
+	</script> 
+
 
 	<!-- Press enter to go to the next page - START-->
-	<!-- <script>
+	<script>
 		$(document).ready(function () {
 
-			$('.topQContainer53__input').keydown(function (event) {
+			$('#email').keydown(function (event) {
 				// enter has keyCode = 13, change it if you want to use another button
 				if (event.keyCode == 13) {
 					// this.form.submit();
 					// return false;     
 					console.log('ai apasat enter!!!!!');
-					// location.href = '/problems/q53c.html';
+					// location.href = '/problems/q5.html';
+					return true; 
 				}
-			});
+			}); 
 
-		});
-	</script> -->
+			
+			$('#fname').keydown(function (event) {
+				// enter has keyCode = 13, change it if you want to use another button
+				if (event.keyCode == 13) {
+					// this.form.submit();
+					// return false;     
+					console.log('ai apasat enter!!!!!');
+					// location.href = '/problems/q5.html';
+					
+					// $("#email").css({
+					// 	border: "1px solid green"
+					// });
+				}     
+			});  
+
+		}); 
+	</script>
 	<!-- Press enter to go to the next page - END-->
-
-	<!-- alert message/Form Validation - START -->
-	<script>
-		var createAllErrors = function () {
-			var form = $(this),
-				errorList = $("ul.errorMessages", form);
-
-			var showAllErrorMessages = function () {
-				errorList.empty();
- 
-				// Find all invalid fields within the form.
-				var invalidFields = form.find(":invalid").each(function (index, node) {
- 
-					// Find the field's corresponding label
-					var label = $("label[for=" + node.id + "] "),
-						// Opera incorrectly does not fill the validationMessage property.
-						message = node.validationMessage || 'Invalid value.';
-
-					errorList
-						.show()
-						.append("<li><span>" + label.html() + "</span> " + message + "</li>");
-				});
-			};
-
-			// Support Safari
-			form.on(".topQContainer53__submit", function (event) {
-				if (this.checkValidity && !this.checkValidity()) {
-					$(this).find(":invalid").first().focus();
-					event.preventDefault();
-				}
-			});
- 
-			$("input[type=submit], button:not([type=button])", form)
-				.on("click", showAllErrorMessages);
-
-			$("input", form).on("keypress", function (event) {
-				var type = $(this).attr("type");
-				if (/date|email|month|number|search|tel|text|time|url|week/.test(type)
-					&& event.keyCode == 13) {
-					showAllErrorMessages();
-				}
-			});
-		};
-
-		$("form").each(createAllErrors);
-	</script>
-	<!-- alert message/Form Validation - END -->
-
-
-	<!-- How to validate an email address in JavaScript - START -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	
-	<script>
-		function validateEmail(email) {
-			var re = /\S+@\S+\.\S+/;
-			return re.test(email);
-		}
-
-		function validate() {
-			const email = $("#email").val();
-
-			if (validateEmail(email)) {
-				console.log(email.'is valid');
-			} else {
-				alert(email.'is not valid!');
-			}
-			return false;
-		}
-
-		$("#topQContainer53__submit").on("click", validate);
-
- 
-		// function validateEmail(email) {
-		// 	var re = /\S+@\S+\.\S+/;
-		// 	return re.test(email);
-		// } 
-	</script>
-	<!-- How to validate an email address in JavaScript - START -->
-
-
+       
 </body>
 
 </html>
