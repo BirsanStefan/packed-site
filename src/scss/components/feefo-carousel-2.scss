@@ -1,0 +1,104 @@
+.tns-controls {
+    display: none;
+}
+#customize-controls{
+    
+    .prev{
+
+    }
+}
+.controls {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;    
+    width: 100%;    
+    top: 50%;
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    &:focus {
+        outline: none;
+    }
+
+    li:hover {
+        cursor: pointer;        
+    }
+} 
+.feefoCarousel2{
+    position: relative;
+    .tns-nav {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .tns-outer [aria-controls], .tns-outer [data-action] {
+        cursor: pointer;
+        background: #46486045;
+        border: 1px solid #00000082;
+        margin: 5px;
+        height: 13px;
+        border-radius: 50%;
+    }
+    div#tns1-mw {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    li.prev{
+        &::after {
+            content: "\003C";
+            display: block;
+            position: absolute;
+            width: auto;
+            height: 50px;
+            font-size: 50px;
+            color: #00000082;
+            left: 0;
+        }   
+    }
+    li.next{
+        &::after {
+            content: "\003E";
+            display: block;
+            position: absolute;
+            width: auto;
+            height: 50px;
+            font-size: 50px;
+            color: #00000082;
+            right: 0;
+        }   
+    }
+    .tns-outer {
+        margin: 0 10%;
+    }
+    div#tns1-iw {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.tns-outer {
+    margin: 0 10%;
+}
+div#tns1-iw {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/*.feefoCarousel__item1:checked ~ .feefoCarousel2 .tns-nav:nth-child(1), 
+.feefoCarousel__item2:checked ~ .feefoCarousel2 .tns-nav:nth-child(2), 
+.feefoCarousel__item3:checked ~ .feefoCarousel2 .tns-nav:nth-child(3), 
+.feefoCarousel__item4:checked ~ .feefoCarousel2 .tns-nav:nth-child(4), 
+.feefoCarousel__item5:checked ~ .feefoCarousel2 .tns-nav:nth-child(5), 
+.feefoCarousel__item6:checked ~ .feefoCarousel2 .tns-nav:nth-child(6), 
+.feefoCarousel__item7:checked ~ .feefoCarousel2 .tns-nav:nth-child(7), 
+.feefoCarousel__item8:checked ~ .feefoCarousel2 .tns-nav:nth-child(8), 
+.feefoCarousel__item9:checked ~ .feefoCarousel2 .tns-nav:nth-child(9), 
+.feefoCarousel__item10:checked ~ .feefoCarousel2 .tns-nav:nth-child(10), 
+.feefoCarousel__item11:checked ~ .feefoCarousel2 .tns-nav:nth-child(11) {
+    background: red;
+    border: 1px solid #00000082;
+}*/

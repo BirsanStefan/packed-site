@@ -1,0 +1,313 @@
+.how-it-works__section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    background-color: #f8f8ff;
+}
+
+.how-it-works__container {
+    position: relative;
+    padding-top: 80px;
+}
+
+.how-it-works__nav {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.how-it-works__container .how-it-works__content__container {
+    height: 692px;
+    padding-bottom: 0;
+}
+
+.how-it-works__content {
+    position: absolute;
+    bottom: 0;
+    padding-left: 0px;
+}
+
+.how-it-works__app_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.how-it-works__app_left {
+    width: 100%;
+    max-width: 540px;
+    padding: 0 15px 0 15px;
+    display: flex;
+}
+
+.how-it-works__app_right {
+    width: 100%;
+    max-width: 540px;
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.how-it-works__app_img {
+    position: relative;
+    max-width: 469px;
+    max-height: 605px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    object-fit: cover;
+    text-align: center;
+    overflow: hidden;
+}
+
+.how-it-works__tour_img {
+    max-width: 75%;
+}
+
+.how-it-works__mobile__title {
+    display: none;
+}
+
+.how-it-works__app_right .how-it-works__title {
+    text-align: left;
+    font-size: 32px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0px;
+}
+
+.how-it-works__app__accordion {
+    width: 100%;
+	max-width: 540px;
+	margin: 2rem auto;	
+}
+
+.how-it-works__app__accordion__item {
+
+}
+
+.app-accordion__item-header {
+    line-height: 24px;
+    color: #464860;
+    font-family: Rubik, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-left: 3.5rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.app-accordion__item-header::before {
+    position: absolute;
+	left: 0;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+.app-accordion__1.app-accordion__item-header::before {
+    content: url(../images/svg/app-accordion-1.svg);
+}
+
+.app-accordion__2.app-accordion__item-header::before {
+    content: url(../images/svg/app-accordion-2.svg);
+}
+
+.app-accordion__3.app-accordion__item-header::before {
+    content: url(../images/svg/app-accordion-3.svg);
+}
+
+.app-accordion__4.app-accordion__item-header::before {
+    content: url(../images/svg/app-accordion-4.svg);
+}
+
+
+@media only screen and (min-width: 1023px) {
+    .app-accordion__1.app-accordion__item-header.active::before {
+        content: url(../images/svg/app-accordion-active-1.svg);
+    }
+
+    .app-accordion__2.app-accordion__item-header.active::before {
+        content: url(../images/svg/app-accordion-active-2.svg);
+    }
+
+
+    .app-accordion__3.app-accordion__item-header.active::before {
+        content: url(../images/svg/app-accordion-active-3.svg);
+    }
+
+
+    .app-accordion__4.app-accordion__item-header.active::before {
+        content: url(../images/svg/app-accordion-active-4.svg);
+    }
+
+}
+
+.app-accordion__item-body-content {
+    line-height: 24px;
+    color: #464860;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 3.5rem;
+}
+
+@media only screen and (min-width: 1023px) {
+    .app-accordion__item-body.open {
+        max-height: 48px;
+    }  
+    .app-accordion__item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }   
+}
+
+.app-accordion__btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.app-accordion__btn-subtext {
+    font-size: 0.75rem;
+    font-family: Montserrat, sans-serif;
+    color: #464860;
+    margin: 10px 0 0 0;
+}
+
+.how-it-works__booking_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.how-it-works__booking_item_block {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.how-it-works__booking_item_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55px;
+}
+
+.how-it-works__booking_item_text .how-it-works__tour-item-header {
+    min-height: 0;
+    margin-bottom: 10px;
+}
+
+.app-accordion__download-btns {
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .how-it-works__content__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .how-it-works__content {
+        position: static;
+    }
+
+    .how-it-works__app_img {
+        margin-bottom: auto;
+    }
+
+    .how-it-works__container .how-it-works__content__container {
+        height: auto;
+    }
+
+    .how-it-works__app_container {
+        margin-bottom: 50px;
+    }
+
+    .how-it-works__app_right .how-it-works__title {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+    .how-it-works__app_container {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+    }
+
+    .how-it-works__app_left {
+        width: 100%
+    }
+
+    .how-it-works__app_right {
+        width: 100%
+    }
+
+    .how-it-works__mobile__title {
+        display: block;
+    }
+
+    .how-it-works__mobile__title .sectionTitle {
+        text-align: left;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .how-it-works__app_right .how-it-works__title {
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .app-accordion__btn-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .app-accordion__btn-subtext {
+        display: none;
+    }
+
+    .how-it-works__app_img {
+        max-width: 70%;
+    }
+
+    .how-it-works__content .how-it-works__app_container.flex-column {
+        flex-direction: column;
+    }
+
+    .how-it-works__booking_container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .pp-accordion__download-btns {
+        display: block;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+        /* CSS specific to iOS devices */ 
+         .app-accordion__ios-btn {
+             display: block
+         }
+      }
+      
+    @supports not (-webkit-touch-callout: none) {
+        /* CSS for other than iOS devices */ 
+        .app-accordion__play-btn {
+            display: block
+        }
+      }
+
+}

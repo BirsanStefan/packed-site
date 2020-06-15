@@ -14,6 +14,25 @@
     padding-right: 5px;
 }
 
+@media screen and (max-width: 720px) {
+    .two-column {
+        flex-direction: column;
+    }
+
+    .container_12 .flex-column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .two-column__column {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .two-column__img {
+        margin-bottom: 50px;
+    }
+}
+
 .two-column__subtitle {
     font-size: 0.875rem;
     line-height: 1;

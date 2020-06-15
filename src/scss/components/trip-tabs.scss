@@ -17,6 +17,7 @@
     }
     .trip-accordion.mobile-only {
         display: block;
+        margin-bottom: 100px;
     }
 }
 
@@ -196,13 +197,19 @@
     margin-left: 0;
 }
 
-.trip-accordion__navigation {
+.trip-accordion__navigation.active {
     position: relative;
     padding: 24px 40px;
     box-shadow: 0 2px 10px 0 rgba(33,33,33,.1);
     background-color: #F8F8FF;
     overflow: hidden;
     padding-bottom: 45px;
+}
+
+.trip-accordion__navigation {
+    padding: 16px 45px;
+    border-bottom: 1px solid #eee;
+    list-style: none;
 }
 
 .trip-accordion__navigation.active:before {
@@ -215,6 +222,10 @@
     border-radius: 5px 0 0 5px;
     background-color: #502d87;
     height: 100%;
+}
+
+.trip-accordion__navigation.active .arrow-up-down {
+    display: none;
 }
 
 .trip-accordion__navigation>a {
@@ -232,10 +243,6 @@
     transform: scale(0.9);
 }
 
-.trip-accordion__content {
-    margin: 0 -.9375rem; 
-}
-
 .trip-accordion__content p {
     font-family: Montserrat,sans-serif;
     font-size: 1rem;
@@ -249,8 +256,9 @@
     display: table;
 }
 
-.accordion-navigation>.trip-accordion__content {
-    display: inherit;
+.trip-accordion__content {
+    display: none;
+    margin: 0 -.9375rem; 
     padding: 0;
     height: 0;
     opacity: 0;
@@ -260,8 +268,8 @@
     -webkit-transition: all .5s ease-in-out;
 }
 
-.accordion-navigation>.trip-accordion__content.active {
-    display: inherit;
+.trip-accordion__content.active {
+    display: block;
     height: 100%;
     opacity: 1;
     overflow: visible;
@@ -269,6 +277,25 @@
     -moz-transition: all .25s ease-in-out;
     -webkit-transition: all .25s ease-in-out;
     background: #F8F8FF;
+}
+
+
+.trip-accordion__img__container {
+    position: relative;
+}
+
+.trip-accordion__img {
+    border-radius: 7px;
+}
+
+.trip-accordion__img__lines {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 70px;
+    height: 70px;
+    z-index: 99;
 }
 
 @media only screen and (min-width: 64.0625em) {
@@ -323,6 +350,13 @@
         width: 100%;
         padding-left: .9375rem;
         padding-right: .9375rem;
+    }
+
+    .trip-accordion__img__lines {
+        bottom: -10px;
+        right: -10px;
+        width: 60px;
+        height: 60px;
     }
 
 }

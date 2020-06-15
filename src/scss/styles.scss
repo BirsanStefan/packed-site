@@ -2148,7 +2148,8 @@ section.convinced .contact .subtitle {
 
 .partners .press img {
 	filter: grayscale(1) opacity(.5);
-	max-height: 60px
+	max-height: 60px;
+	margin-bottom: 20px;
 }
 
 .partners .press img:hover {
@@ -12378,3 +12379,5 @@ section.fatmap {
 	@import 'components/blog-links.scss';
 	@import 'components/two-column-row.scss';
 	@import 'components/trip-tabs.scss';
+	@import 'components/how-it-works.scss';
+	@import 'components/why-thousands-love-packed.scss';

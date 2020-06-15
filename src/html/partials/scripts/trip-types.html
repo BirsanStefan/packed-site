@@ -1,0 +1,58 @@
+<!-- trip type tabs start -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        TabsClicks();
+        MobileTabs();
+    });
+
+    function MobileTabs () {
+        var links = document.querySelectorAll('.trip-accordion__navigation a');
+        links.forEach(function(item, index){
+            item.addEventListener('click', function(evt) {
+                evt.preventDefault();
+                CleanTabsAndImagesMobile()
+                var activeImage = document.querySelector(this.hash);
+                activeImage.classList.add('active');
+                item.parentElement.classList.add('active');
+            })
+        })
+    }
+
+    function TabsClicks () {
+        var links = document.querySelectorAll('.trip-tabs__title a');
+        links.forEach(function(item, index){
+            item.addEventListener('click', function(evt) {
+                evt.preventDefault();
+                CleanTabsAndImages()
+                var activeImage = document.querySelector(this.hash);
+                activeImage.classList.add('active');
+                item.parentElement.classList.add('active');
+            })
+        })
+    }
+
+    function CleanTabsAndImagesMobile() {
+        var lis = document.querySelectorAll('.trip-accordion__navigation');
+        lis.forEach(function(li, index) {
+            li.classList.remove('active');
+        });
+        var divs = document.querySelectorAll('.trip-accordion__content');
+        divs.forEach(function(div, index) {
+            div.classList.remove('active')
+        });
+    }
+
+    function CleanTabsAndImages () {
+        var tabs = document.querySelectorAll('.trip-tabs__title');
+        tabs.forEach(function(tab, index) {
+            tab.classList.remove('active');
+        });
+        var images = document.querySelectorAll('.trip-tabs__group__type');
+        images.forEach(function(image, index) {
+            image.classList.remove('active')
+        });
+    }
+</script>
+
+<!-- trip type tabs end -->

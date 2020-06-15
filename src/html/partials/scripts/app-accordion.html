@@ -1,0 +1,22 @@
+<script>
+    const appAccordionItemHeaders = document.querySelectorAll(".app-accordion__item-header");
+
+    appAccordionItemHeaders.forEach(appAccordionItemHeader => {
+        appAccordionItemHeader.addEventListener("click", event => {
+            const currentlyActiveAppAccordionItem = document.querySelector(".app-accordion__item-header.active");
+            if (currentlyActiveAppAccordionItem && currentlyActiveAppAccordionItem !== appAccordionItemHeader){
+                currentlyActiveAppAccordionItem.classList.toggle("active");
+                currentlyActiveAppAccordionItem.nextElementSibling.style.maxHeight = 0;
+            }
+
+            appAccordionItemHeader.classList.toggle("active");
+            const appAccordionItemBody = appAccordionItemHeader.nextElementSibling;
+            if(appAccordionItemHeader.classList.contains("active")) {
+                appAccordionItemBody.style.maxHeight = appAccordionItemBody.scrollHeight + "px";
+            } 
+            else {
+                appAccordionItemBody.style.maxHeight = 0;
+            }
+        });
+    });
+</script>
