@@ -1470,7 +1470,7 @@ ul.errorMessages {
     }
 }
 
-
+ 
 
 
 .topAppCountDownForm.whatsAppPlugin.aos-init.aos-animate {
@@ -1575,5 +1575,9 @@ img.sb-wa-img {
         @media only screen and (max-width: 430px){
             padding-top: 0;
         }
+    }
+
+    .appPage .topArea{
+        overflow: inherit; 
     }
 }
