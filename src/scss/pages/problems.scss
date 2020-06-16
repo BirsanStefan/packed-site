@@ -1450,3 +1450,130 @@ ul.errorMessages {
         background-image: url(../images/webp/android.webp);
     }
 }
+
+.topArea.q51form{
+    height: auto;
+}
+.appPage .topArea.q51form{
+    padding-bottom: 295px;
+    .topContent{
+        padding-top: 50px;
+        .enterYourMobileNr{
+            padding-bottom: 20px;
+        }
+    }
+    @media only screen and (max-width: 430px){
+        padding-bottom: 130px;
+    }
+    @media only screen and (max-width: 342px){
+        padding-bottom: 190px;
+    }
+}
+
+
+
+
+.topAppCountDownForm.whatsAppPlugin.aos-init.aos-animate {
+    // background: darkblue;
+}
+img.sb-wa-img {
+    width: 15px;
+}
+
+.enterYourMobile.q51form{
+    .appPage #sendbee-checkbox .sb-checkbox-container{
+        color: #464860!important;  
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        @media only screen and (max-width: 430px){
+            display: none!important;
+        }
+    }
+    .appPage .whatsAppPlugin .sb-checkbox-container .sb-checkmark{
+        border: 1px solid gray;
+    }
+    .sb-checkbox-container .sb-checkmark{
+        width: 20px;
+        height: 20px;
+    }
+    .appPage .whatsAppPlugin .sb-checkbox-container .sb-checkmark:after{
+        left: 7px;
+        top: 3px;
+    }
+    .enterYourMobile #sendbee-checkbox {
+        @media only screen and (max-width: 430px){
+            display: none!important;
+        }
+    } 
+    .phoneSendBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        @media only screen and (max-width: 430px){
+            display: none;
+        }
+        .iti.iti--allow-dropdown.iti--separate-dial-code{
+            margin-right: 15px;
+            height: 100%;
+            width: 60%;
+            @media only screen and (max-width: 541px){
+                width: 75%;
+            }
+        }
+        #phone{
+            height: 100%;
+            width: 365px;
+            border: 1px solid #E4E4E4;
+            border-radius: 8px;
+            font-size: 16px;
+            padding-left: 108px !important;
+        }
+    }
+    .topQContainer53__rightArrow{
+        margin-left: -20px;
+    }
+    .ctaButtonsWrap a.iosAppButton{
+        background-image: url(../images/webp/ios.webp);
+        width: 118px;
+    }
+    .ctaButtonsWrap a.androidAppButton{
+        background-image: url(../images/webp/android.webp);
+    }
+    .appPage .whatsAppPlugin .iti__flag-container{
+        width: 95px;
+    }
+    .iti__selected-flag{
+        justify-content: center;
+    }
+    .topAppCountDownForm{
+        max-width: 80%;
+        width: 610px;
+    }
+    .sb-checkbox-container{
+        padding-left: 26px;
+    }
+
+    .q3aPageForm__btn{
+        @media only screen and (max-width: 541px) {
+            border-radius: 10px;
+            height: 58px;
+            min-width: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: inherit;
+            max-width: inherit;
+            width: inherit;
+            margin-left: inherit;
+            margin-right: inherit;
+        }
+    }
+
+    .appPage .topArea.q51form .topContent {
+        @media only screen and (max-width: 430px){
+            padding-top: 0;
+        }
+    }
+}
