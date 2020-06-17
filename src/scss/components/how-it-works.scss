@@ -81,7 +81,62 @@
 	margin: 2rem auto;	
 }
 
-.how-it-works__app__accordion__item {
+.how-it-works__app__accordion_mobile_tablet {
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .how-it-works__app__accordion {
+        display: none;
+    }
+    
+    .how-it-works__app__accordion_mobile_tablet {
+        display: block;
+        width: 100%;
+        max-width: 540px;
+        margin: 2rem auto;	
+    }
+
+    .app-accordion__item-header-mobile {
+        line-height: 24px;
+        color: #464860;
+        font-family: Rubik, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 700;
+        padding-left: 3.5rem;
+        min-height: 3.5rem;
+        line-height: 1.25rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-weight: 600;
+    }
+
+    .app-accordion__item-header-mobile::before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .app-accordion__1.app-accordion__item-header-mobile::before {
+        content: url(../images/svg/app-accordion-1.svg);
+    }
+    
+    .app-accordion__2.app-accordion__item-header-mobile::before {
+        content: url(../images/svg/app-accordion-2.svg);
+    }
+    
+    .app-accordion__3.app-accordion__item-header-mobile::before {
+        content: url(../images/svg/app-accordion-3.svg);
+    }
+    
+    .app-accordion__4.app-accordion__item-header-mobile::before {
+        content: url(../images/svg/app-accordion-4.svg);
+    }
+
+
 
 }
 
@@ -147,6 +202,7 @@
 
 }
 
+
 .app-accordion__item-body-content {
     line-height: 24px;
     color: #464860;
@@ -165,6 +221,12 @@
         overflow: hidden;
         transition: max-height 0.2s ease-out;
     }   
+}
+
+@media only screen and (max-width: 1023px) {
+    .how-it-works__script {
+        display: none;
+    }
 }
 
 .app-accordion__btn-container {

@@ -3,7 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://packed.co</loc>
-<lastmod>2020-04-21</lastmod>
+<lastmod>2020-06-17</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://packed.co/group-holidays/</loc>
+<lastmod>2020-06-17</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1.0</priority>
 </url>
