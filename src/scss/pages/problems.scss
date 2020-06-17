@@ -776,6 +776,9 @@ section.enterYourMobile {
     margin-top: 90px;
     margin-bottom: 50px;
     color: #464860;
+    @media only screen and (max-width: 768px){
+        margin-top: 70px;
+    }
     h4{
         font-weight: 500;
         font-size: 20px;
@@ -809,7 +812,6 @@ section.enterYourMobile {
         transition: all .25s linear;
         display: flex;
         align-items: center;
-        cursor: auto;
         &:hover{
             color: #4f2d87;
         }
@@ -923,6 +925,12 @@ span.stagDestination__flag img {
         font-size: 14px;
         line-height: 17px;
         transition: all .25s linear;
+        @media only screen and (max-width: 925px) {
+            font-size: 13px;
+        }
+        @media only screen and (max-width: 901px) {
+            font-size: 14px;
+        }
         &:hover{
             color: #4f2d87;
         }
@@ -1341,7 +1349,10 @@ span.mainBoxes__bottomBtn__icon{
 }
 .fitness{
     .stagDestination__box{
-        padding-left: 35px;
+        padding-left: 35px; 
+        @media only screen and (max-width: 420px) {
+            padding-left: 0;  
+        }
     }
     .stagDestination__item{
         width: 30%;
@@ -1376,7 +1387,7 @@ span.mainBoxes__bottomBtn__icon{
     .q3cPage__elem:nth-child(3){
         width: 40%;
         @media only screen and (max-width: 901px) {
-            width: 50%;
+            width: 70%;
             margin-top: 50px;
         }
         @media only screen and (max-width: 540px) {
@@ -1455,7 +1466,7 @@ ul.errorMessages {
     height: auto;
 }
 .appPage .topArea.q51form{
-    padding-bottom: 295px;
+    padding-bottom: 340px;
     .topContent{
         padding-top: 50px;
         .enterYourMobileNr{
@@ -1579,5 +1590,15 @@ img.sb-wa-img {
 
     .appPage .topArea{
         overflow: inherit; 
+    }
+}
+
+.stagDestination__box.sportsClubForm{
+    padding-left: 50px;
+    @media only screen and (max-width: 450px){
+        padding-left: 35px;
+    }
+    @media only screen and (max-width: 380px){
+        padding-left: 20px;
     }
 }
