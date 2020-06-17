@@ -1,0 +1,56 @@
+<!-- desktop and tablet above 550px below -->
+
+<script>
+
+	window.addEventListener("load", function () {
+		// store tabs variable
+		var myTabs2 = document.querySelectorAll(".navBooking2 .group-top-tabs__navBookingItem2");
+		function myTabClicks2(tabClickEvent) {
+			for (var i = 0; i < myTabs2.length; i++) {
+				myTabs2[i].classList.remove("active");
+			}
+			var clickedTab2 = tabClickEvent.currentTarget;
+			clickedTab2.classList.add("active");
+			tabClickEvent.preventDefault();
+			var myContentPanes2 = document.querySelectorAll(".contentBooking2");
+			for (i = 0; i < myContentPanes2.length; i++) {
+				myContentPanes2[i].classList.remove("active");
+			}
+			var anchorReference2 = tabClickEvent.target;
+			var activePaneId2 = anchorReference2.getAttribute("href");
+			var activePane2 = document.querySelector(activePaneId2);
+
+			activePane2.classList.add("active");
+		}
+		for (i = 0; i < myTabs2.length; i++) {
+			myTabs2[i].addEventListener("click", myTabClicks2)
+		
+        }
+	});
+
+</script>
+
+<!-- mobile accordion version below sub 550px. Will work on the same page as the FAQ accordion -->
+
+<script>
+    const accordionItemHeaders2 = document.querySelectorAll(".group-top-tabs-accordion__header");
+
+    accordionItemHeaders2.forEach(accordionItemHeader2 => {
+        accordionItemHeader2.addEventListener("click", event => {
+            const currentlyActiveaccordionItem2 = document.querySelector(".group-top-tabs-accordion__header.active");
+            if (currentlyActiveaccordionItem2 && currentlyActiveaccordionItem2 !== accordionItemHeader2){
+                currentlyActiveaccordionItem2.classList.toggle("active");
+                currentlyActiveaccordionItem2.nextElementSibling.style.maxHeight = 0;
+            }
+
+            accordionItemHeader2.classList.toggle("active");
+            const accordionItemBody2 = accordionItemHeader2.nextElementSibling;
+            if(accordionItemHeader2.classList.contains("active")) {
+                accordionItemBody2.style.maxHeight = accordionItemBody2.scrollHeight + "px";
+            } 
+            else {
+                accordionItemBody2.style.maxHeight = 0;
+            }
+        });
+    });
+</script>

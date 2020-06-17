@@ -2708,7 +2708,7 @@ div.whypackedBox {
   position: fixed;
   top: calc(50vh - 125px);
   margin-left: 4vw;
-  z-index: 99; }
+  z-index: 999; }
 
 .socialIconsContainer .socialIcons {
   background-image: linear-gradient(131deg, #4f2d87, #7542c9);
@@ -4159,7 +4159,8 @@ section.convinced .convincedContent .contact .buttonsContainer {
   display: flex;
   align-items: center;
   top: 0;
-  transition: top ease 0.5s; }
+  transition: top ease 0.5s;
+  outline: 0; }
 
 .footerBackToTop:hover {
   cursor: pointer;
@@ -10191,6 +10192,9 @@ section.instaContent {
   padding: 0 20px 0 20px;
   left: 0px; }
 
+.instaContentRight .instaFeed {
+  position: relative; }
+
 @media only screen and (max-width: 870px) {
   .instaContent .instaContentFlex {
     display: flex;
@@ -10289,7 +10293,7 @@ section.instaContent {
   display: block;
   position: absolute;
   transform: scale(0.9);
-  bottom: -220px;
+  bottom: -300px;
   right: 50px; }
 
 @media only screen and (max-width: 1000px) {
@@ -11352,5 +11356,489 @@ section.instaContent {
 
 .carouselControls svg {
   fill: #606060; }
+
+.expandable-content__container {
+  display: flex;
+  border-radius: 6px;
+  height: auto;
+  min-height: 370px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 4px 4px 15px 3px rgba(79, 45, 135, 0.2);
+  margin-top: 120px;
+  margin-bottom: 120px;
+  position: relative; }
+
+.expandable-content .flex-row-reverse {
+  flex-direction: row-reverse; }
+
+.expandable-content__text-container {
+  width: 65%;
+  padding: 40px 40px 40px 40px; }
+
+.expandable-content__img-container {
+  width: 35%;
+  overflow: hidden;
+  border-radius: 0 6px 6px 0;
+  background-image: url(/assets/images/jpg/great-group-holidays.jpg);
+  background-size: cover; }
+
+.expandable-content__img-container2 {
+  width: 35%;
+  overflow: hidden;
+  border-radius: 6px 0 0 6px;
+  background-image: url(/assets/images/jpg/just-book-with-packed.jpg);
+  background-size: cover; }
+
+.expandable-content__img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover; }
+
+.expandable-content__text-container .expandable-content__title {
+  text-align: left;
+  padding: 0;
+  margin-bottom: 15px; }
+
+.expandable-content__text {
+  line-height: 24px;
+  color: #464860;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 400; }
+
+.expandable-content__btn {
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 15px;
+  font-family: Rubik,sans-serif;
+  color: #502d87;
+  text-decoration: none;
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  outline: 0; }
+
+#expandableReadMore {
+  display: none; }
+
+#expandableReadMore2 {
+  display: none; }
+
+#expandableReadMore3 {
+  display: none; }
+
+.expandable-content__container .expandable-content__lines {
+  top: 0px;
+  right: -30px;
+  bottom: unset; }
+
+.expandable-content__container .expandable-content__dots {
+  bottom: -30px;
+  right: -30px;
+  left: unset; }
+
+.expandable-content__container .expandable-content__lines2 {
+  top: 0px;
+  left: -30px;
+  bottom: unset; }
+
+.expandable-content__container .expandable-content__dots2 {
+  bottom: -30px;
+  left: -30px; }
+
+.expandable-content__img_mobile_container {
+  display: none;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 6px 6px 0 0; }
+
+.expandable-content__img_mobile {
+  background-image: url(/assets/images/jpg/great-group-holidays.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%; }
+
+.expandable-content__img_mobile_container .expandable-content__img_mobile2 {
+  background-image: url(/assets/images/jpg/just-book-with-packed.jpg); }
+
+@media only screen and (max-width: 800px) {
+  .expandable-content__container {
+    flex-direction: column; }
+  .expandable-content .flex-row-reverse {
+    flex-direction: column; }
+  .expandable-content__text-container {
+    width: 100%;
+    padding: 30px; }
+  .expandable-content__img_mobile_container {
+    display: block; }
+  .expandable-content__img-container {
+    display: none; }
+  .expandable-content__img-container2 {
+    display: none; }
+  .expandable-content__dots, .expandable-content__dots2, .expandable-content__lines, .expandable-content__lines2 {
+    display: none; } }
+
+@media only screen and (max-width: 500px) {
+  .sContainer.expandable-content {
+    width: 100%;
+    max-width: unset; }
+  .expandable-content__container {
+    border-radius: 0;
+    box-shadow: unset; }
+  .expandable-content__img_mobile_container {
+    border-radius: unset; }
+  .expandable-content__text-container {
+    padding: 20px; } }
+
+.light-purple-banner {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: #f8f8ff; }
+
+.light-purple-banner__container {
+  display: flex;
+  align-items: center; }
+
+.light-purple-banner__column_left_40 {
+  width: 40%; }
+
+.light-purple-banner__column_right_60 {
+  width: 60%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.light-purple-banner__column_left_50 {
+  width: 50%; }
+
+.light-purple-banner__column_right_50 {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.light-purple-banner__img_container {
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px; }
+
+.light-purple-banner__img {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 425px; }
+
+.light-purple-banner__text_container {
+  padding: 45px 15px 45px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.light-purple-banner__text_container .light-purple-banner__title {
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 20px; }
+
+.light-purple-banner__text {
+  line-height: 24px;
+  color: #464860;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 400; }
+
+.light-purple-banner__app_btns {
+  margin-top: 10px; }
+
+@media screen and (max-width: 800px) {
+  .light-purple-banner__container {
+    flex-direction: column-reverse; }
+  .light-purple-banner .flex-column {
+    flex-direction: column; }
+  .light-purple-banner__column_left_40, .light-purple-banner__column_right_60, .light-purple-banner__column_left_50, .light-purple-banner__column_right_50 {
+    width: 100%;
+    padding: 0; }
+  .light-purple-banner__img_container {
+    max-width: 400px;
+    margin: auto; }
+  .light-purple-banner__app_btns {
+    text-align: center; }
+  .light-purple-banner__get_started {
+    display: flex;
+    justify-content: center; } }
+
+.what-holiday__container {
+  display: flex; }
+
+.what-holiday__text_mobile {
+  display: none; }
+
+.what-holiday__img_container {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+  display: flex;
+  position: relative; }
+
+.what-holiday__img {
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.what-holiday__img_container .what-holiday__lines {
+  bottom: unset;
+  top: 0px; }
+
+.what-holiday__img_container .what-holiday__dots {
+  bottom: -20px;
+  left: -10px; }
+
+@media screen and (max-width: 800px) {
+  .what-holiday__container {
+    flex-direction: column; }
+  .what-holiday__img_container {
+    max-width: 400px;
+    margin: auto; } }
+
+@media screen and (max-width: 500px) {
+  .what-holiday__text_desktop_tablet {
+    display: none; }
+  .what-holiday__text_mobile {
+    display: block; }
+  .what-holiday__text_mobile .expandable-content__container {
+    margin-top: 50px; } }
+
+.group-top-tabs {
+  margin-top: 120px;
+  margin-bottom: 120px; }
+
+.group-top-tabs .group-top-tabs__container_mobile {
+  display: none; }
+
+.group-top-tabs__nav {
+  margin: auto;
+  display: flex;
+  height: 56px;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.group-top-tabs__nav_item {
+  border: 1px solid #E4E4E4;
+  color: #464860;
+  border-radius: 6px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: calc(12.5% - 10px);
+  min-width: 125px; }
+
+.group-top-tabs__nav_item.active {
+  background-color: #4f2d87;
+  color: #ffffff; }
+
+.group-top-tabs__nav_title {
+  text-align: center;
+  margin: auto;
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Rubik, sans-serif; }
+
+.group-top-tabs__contents {
+  padding-top: 55px;
+  display: none;
+  flex-direction: row; }
+
+.group-top-tabs__contents.active {
+  display: flex; }
+
+.group-top-tabs__img_container {
+  width: 33.3%;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 6px;
+  position: relative; }
+
+.group-top-tabs__img {
+  margin: auto;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover; }
+
+.group-top-tabs__img2 {
+  border-radius: 6px; }
+
+.group-top-tabs__text_container {
+  width: 66.7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 35px;
+  padding-right: 25px; }
+
+.group-top-tabs__contents .group-top-tabs__text_container .group-top-tabs__title {
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: unset;
+  margin-right: unset; }
+
+.group-top-tabs__text {
+  line-height: 24px;
+  color: #464860;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 400; }
+
+.group-top-tabs__img_container .group-top-tabs__lines {
+  bottom: unset;
+  right: unset;
+  width: 70px;
+  height: 70px;
+  left: -10px;
+  top: 10px; }
+
+.group-top-tabs__img_container .group-top-tabs__dots {
+  left: unset;
+  right: -10px;
+  bottom: -10px;
+  width: 100px;
+  height: 100px; }
+
+.group-top-tabs__navBookingItem2 {
+  border: 1px solid #E4E4E4;
+  color: #464860;
+  border-radius: 6px;
+  height: 100%;
+  width: calc(12.5% - 10px);
+  min-width: 125px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Rubik, sans-serif;
+  padding-top: 7px;
+  padding-bottom: 7px; }
+
+.group-top-tabs__navBookingItem2:hover {
+  border: 1px solid #4f2d87;
+  color: #4f2d87; }
+
+.group-top-tabs__navBookingItem2.active {
+  background-color: #4f2d87;
+  color: #ffffff; }
+
+.contentBooking2.active {
+  -ms-align-items: center; }
+
+.contentBooking2 {
+  display: none; }
+
+.contentBooking2.active {
+  display: flex; }
+
+@media screen and (max-width: 1035px) {
+  .group-top-tabs__nav {
+    margin-bottom: 66px; }
+  .group-top-tabs__navBookingItem2 {
+    width: calc(25% - 10px);
+    margin-bottom: 10px; }
+  .group-top-tabs__dots {
+    display: none; }
+  .group-top-tabs__img_container .group-top-tabs__lines {
+    width: 50px;
+    height: 50px; } }
+
+@media screen and (max-width: 800px) {
+  .contentBooking2 {
+    flex-direction: column-reverse; }
+  .group-top-tabs__img_container {
+    width: 100%; }
+  .group-top-tabs__text_container {
+    width: 100%; }
+  .group-top-tabs__img {
+    max-width: 400px;
+    margin-top: 30px; }
+  .group-top-tabs__img_container .group-top-tabs__lines {
+    display: none; } }
+
+@media screen and (max-width: 560px) {
+  .group-top-tabs .group-top-tabs__container_desktop_tablet {
+    display: none; }
+  .group-top-tabs .group-top-tabs__container_mobile {
+    display: block; } }
+
+/* All mobile sub 560px below */
+.group-top-tabs-accordion {
+  width: 100%;
+  margin: 2rem auto; }
+
+.group-top-tabs-accordion__item {
+  background-color: #fff;
+  color: #464860;
+  border-bottom: 1px solid #e4e4e4; }
+
+.group-top-tabs-accordion__item:nth-of-type(1) {
+  border-top: 1px solid #e4e4e4; }
+
+.group-top-tabs-accordion__header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 600; }
+
+.group-top-tabs-accordion__header:hover {
+  color: grey; }
+
+.group-top-tabs-accordion__header::after {
+  content: url(../images/svg/accordion-down.svg);
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.group-top-tabs-accordion__header.active::after {
+  content: url(../images/svg/accordion-up-white.svg); }
+
+.group-top-tabs-accordion__header.active {
+  background-color: #4f2d87;
+  color: #fff; }
+
+.group-top-tabs-accordion__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f8f8ff; }
+
+.group-top-tabs-accordion__body_img_container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover; }
+
+.group-top-tabs-accordion__body_content {
+  padding: 1rem;
+  line-height: 1.5rem; }
 
 /*# sourceMappingURL=styles.min.css.map */

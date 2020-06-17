@@ -1,3 +1,42 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("pageLoader").classList.add("loaded");
+    }, false);
+</script>
+
+<!-- <script src="assets/js/vendor.min.js" defer></script> -->
+<!-- <script src="assets/js/app.js" defer></script> -->
+
+<script>
+    function mobileMenu() {
+        var element = document.body;
+
+        if (element.classList) {
+            element.classList.toggle("mobileMenuActive");
+        } else {
+            var classes = element.className.split(" ");
+            var i = classes.indexOf("mobileMenuActive");
+
+            if (i >= 0)
+                classes.splice(i, 1);
+            else
+                classes.push("mobileMenuActive");
+            element.className = classes.join(" ");
+        }
+    }
+</script>
+
+<script>
+    var hasSubmenu = document.querySelectorAll(".hasSubmenu");
+
+    for (i = 0; i < hasSubmenu.length; i++) {
+        hasSubmenu[i].addEventListener("click", function () {
+            this.classList.toggle("subMenuActive");
+        })
+    }
+</script>
+
+
 <!-- webP detection start -->
 
 <script>

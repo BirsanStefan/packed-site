@@ -14,6 +14,10 @@ section.instaContent {
 	left: 0px;
 }
 
+.instaContentRight .instaFeed {
+	position: relative;
+}
+
 @media only screen and (max-width:870px) {
 
 	.instaContent .instaContentFlex{

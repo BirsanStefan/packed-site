@@ -1,0 +1,37 @@
+<script>
+    function readMoreLess() {
+        var dots = document.getElementById("expandabledots");
+        var moreText = document.getElementById("expandableReadMore");
+        var btnText = document.getElementById("expandableContentBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Learn more...";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Less...";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+<!-- for the second on the page -->
+
+<script>
+    function readMoreLess2() {
+        var dots = document.getElementById("expandabledots2");
+        var moreText = document.getElementById("expandableReadMore2");
+        var btnText = document.getElementById("expandableContentBtn2");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Learn more...";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Less...";
+            moreText.style.display = "inline";
+        }
+    }
+</script>

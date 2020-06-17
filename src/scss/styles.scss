@@ -3330,7 +3330,7 @@ div.whypackedBox {
 	position: fixed;
 	top: calc(50vh - 125px);
 	margin-left: 4vw;
-	z-index: 99
+	z-index: 999
 }
 
 .socialIconsContainer .socialIcons {
@@ -5122,7 +5122,9 @@ section.convinced .convincedContent .contact .buttonsContainer {
 	align-items: center;
 	top: 0;
 	transition: top ease 0.5s;
+	outline:0;
 }
+
 
 .footerBackToTop:hover {
 	cursor: pointer;
@@ -12382,3 +12384,8 @@ section.fatmap {
 	@import 'components/trip-tabs.scss';
 	@import 'components/how-it-works.scss';
 	@import 'components/why-thousands-love-packed.scss';
+	@import 'components/expandable-content.scss';
+	@import 'components/light-purple-banner.scss';
+	@import 'pages/group-holidays.scss';
+	@import 'components/group-top-tabs.scss';
+	
