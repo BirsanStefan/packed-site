@@ -119,27 +119,27 @@
         &:hover{
             border: 1px solid #512D87;
         }
-        &:active{
-            background: #F2EAFE;
-            @media only screen and (max-width: 540px) {
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            }
-            &::after{
-                content: "\2713";
-                position: absolute;
-                display: block;
-                width: 25px;
-                height: 25px;
-                font-size: 25px;
-                top: 21px;
-                right: 21px;
-                color: black;
-                @media only screen and (max-width: 540px) {
-                    display: none;
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                }
-            }
-        }
+        // &:active{
+        //     background: #F2EAFE;
+        //     @media only screen and (max-width: 540px) {
+        //         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        //     }
+        //     &::after{
+        //         content: "\2713";
+        //         position: absolute;
+        //         display: block;
+        //         width: 25px;
+        //         height: 25px;
+        //         font-size: 25px;
+        //         top: 21px;
+        //         right: 21px;
+        //         color: black;
+        //         @media only screen and (max-width: 540px) {
+        //             display: none;
+        //             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        //         }
+        //     }
+        // }  
         @media only screen and (max-width: 540px) {
             background-color: #fff;
             width: 100%;
@@ -163,6 +163,36 @@
         &__input{
             display: none;
         }
+    }
+    
+    input[type="radio"]#skiTrip:checked~#skiTrip_label,
+    input[type="radio"]:checked+#henDo_label,
+    input[type="radio"]:checked+#cityBreak_label,
+    input[type="radio"]:checked+#companyTrip_label,
+    input[type="radio"]:checked+#summerHoliday_label,
+    input[type="radio"]:checked+#fitness_label,
+    input[type="radio"]:checked+#stagDo_label,
+    input[type="radio"]:checked+#sportsClub_label {  
+        background: #F2EAFE;
+        border: 1px solid #512D87;
+        @media only screen and (max-width: 540px) { 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        &::after{ 
+            content: "\2713";
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            font-size: 25px;
+            top: 21px;
+            right: 21px;
+            color: black;
+            @media only screen and (max-width: 540px) {
+                display: none;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        } 
     }
 }
 

@@ -320,7 +320,7 @@
 
 				<form name="q1form" class="boxesList boxesListQ1" id="q1form">
 
-					<label onclick="display1()" for="skiTrip" class="boxesItem">
+					<label onclick="display1()" for="skiTrip" class="boxesItem skiTrip_label" id="skiTrip_label">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/ski-trip/icon-q1_1.svg" alt="">
 						</span>
@@ -329,7 +329,7 @@
 					<input type="radio" id="skiTrip" class="boxesItem__input" name="skiTrip" value="skiTrip">
 
 
-					<label onclick="display2()" for="henDo" class="boxesItem">
+					<label onclick="display2()" for="henDo" class="boxesItem henDo_label" id="henDo_label">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_2.svg" alt="">
 						</span>
@@ -338,7 +338,7 @@
 					<input type="radio" id="henDo" class="boxesItem__input" name="henDo" value="henDo">
 
 
-					<label onclick="display3()" for="cityBreak" class="boxesItem">
+					<label onclick="display3()" for="cityBreak" class="boxesItem cityBreak_label" id="cityBreak_label">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_3.svg" alt="">
 						</span>
@@ -347,7 +347,7 @@
 					<input type="radio" id="cityBreak" class="boxesItem__input" name="cityBreak" value="cityBreak">
 
 
-					<label onclick="display4()" for="companyTrip" class="boxesItem">
+					<label onclick="display4()" for="companyTrip" class="boxesItem companyTrip_label" id="companyTrip_label">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_4.svg" alt="">
 						</span>
@@ -356,7 +356,7 @@
 					<input type="radio" id="companyTrip" class="boxesItem__input" name="companyTrip" value="companyTrip">
 
 
-					<label onclick="display5()" for="summerHoliday" class="boxesItem">
+					<label onclick="display5()" for="summerHoliday" class="boxesItem summerHoliday_label" id="summerHoliday_label">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_5.svg" alt="">
 						</span>
@@ -365,7 +365,7 @@
 					<input type="radio" id="summerHoliday" class="boxesItem__input" name="summerHoliday" value="summerHoliday">
 
 
-					<label onclick="display6()" for="fitness" class="boxesItem">
+					<label onclick="display6()" for="fitness" class="boxesItem fitness_label" id="fitness_label">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_6.svg" alt="">
 						</span>
@@ -374,7 +374,7 @@
 					<input type="radio" id="fitness" class="boxesItem__input" name="fitness" value="fitness">
 
 
-					<label onclick="display7()" for="stagDo" class="boxesItem">
+					<label onclick="display7()" for="stagDo" class="boxesItem stagDo_label" id="stagDo_label">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_7.svg" alt="">
 						</span>
@@ -383,7 +383,7 @@
 					<input type="radio" id="stagDo" class="boxesItem__input" name="stagDo" value="stagDo">
 
 
-					<label onclick="display8()" for="sportsClub" class="boxesItem">
+					<label onclick="display8()" for="sportsClub" class="boxesItem sportsClub_label" id="sportsClub_label">
 						<span class="icon">
 							<img src="/assets/images/svg/problems/q1/icon-q1_8.svg" alt="">
 						</span>
@@ -552,17 +552,17 @@
 		<!--Go to next page START-->
 		<script>
 			function display1() {
-			 	location.href = 'q2_ski-trip.html';
+			 	// location.href = 'q2_ski-trip.html';
 				// // alert('success 1 !');
 				console.log('success1');
 			}
 			function display2() {
-				location.href = 'q2_hen-do.html';
+				// location.href = 'q2_hen-do.html'; 
 				// alert('success 2 !');
 				console.log('success2');
 			}
 			function display3() {
-				location.href = 'q2_city-break.html';
+				// location.href = 'q2_city-break.html'; 
 				// alert('success!');
 				console.log('success3');
 			}
