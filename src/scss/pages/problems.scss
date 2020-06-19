@@ -84,7 +84,7 @@
         line-height: 43px;
         margin-bottom: 35px;
 	}
-}
+} 
 .boxesList{
     display: flex;
     flex-wrap: wrap;
@@ -165,14 +165,7 @@
         }
     }
     
-    input[type="radio"]#skiTrip:checked~#skiTrip_label,
-    input[type="radio"]:checked+#henDo_label,
-    input[type="radio"]:checked+#cityBreak_label,
-    input[type="radio"]:checked+#companyTrip_label,
-    input[type="radio"]:checked+#summerHoliday_label,
-    input[type="radio"]:checked+#fitness_label,
-    input[type="radio"]:checked+#stagDo_label,
-    input[type="radio"]:checked+#sportsClub_label {  
+    input[type=radio]:checked + label {  
         background: #F2EAFE;
         border: 1px solid #512D87;
         @media only screen and (max-width: 540px) { 
