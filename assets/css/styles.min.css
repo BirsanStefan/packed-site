@@ -4436,6 +4436,11 @@ div.stepRight a {
   color: #4f2d87;
   text-decoration: underline; }
 
+.stepRight .stepRight__title {
+  text-align: left;
+  padding-left: unset;
+  margin-bottom: 20px; }
+
 .regionsGridList {
   min-height: 200px; }
 
@@ -4648,7 +4653,8 @@ div.notConvincedBox {
   height: 240px; }
 
 .checkout {
-  margin-top: 60px; }
+  margin-top: 100px;
+  margin-bottom: 100px; }
 
 body div .checkout {
   max-width: 90%; }
@@ -6248,9 +6254,9 @@ img.teamImgItemTablet {
   color: #464860; }
 
 .moreImage {
-  width: 1350px;
-  margin-top: 75px;
-  margin-bottom: 110px;
+  width: 1052px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   max-width: 100%; }
 
 .features {
@@ -7123,7 +7129,7 @@ Start How it works Page .topArea {
   .app-iphone {
     left: 200px; }
   .moreImage {
-    max-width: 991px; }
+    max-width: 100%; }
   .moreImage img {
     max-width: 100%; }
   .advantagesWrap {
@@ -8665,7 +8671,8 @@ Start How it works Page .topArea {
     display: inline; }
   .moreImage {
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    max-width: 100%; }
   .features {
     padding-bottom: 40px; }
   .bottomArticles {
@@ -10385,8 +10392,16 @@ section.instaContent {
     top: 0;
     width: 100%; } }
 
+/* scrollSpy class to highlight proper nav item */
+.scrollSpy {
+  text-decoration: underline;
+  font-weight: bold; }
+
 #mainNav li a:active {
   text-decoration: underline; }
+
+#mainNav li a:hover {
+  cursor: pointer; }
 
 .nav-link-holder {
   position: relative; }
@@ -11545,8 +11560,8 @@ section.instaContent {
     padding: 20px; } }
 
 .light-purple-banner {
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-bottom: 110px;
   background-color: #f8f8ff; }
 
 .light-purple-banner__container {
@@ -11592,7 +11607,9 @@ section.instaContent {
   text-align: left;
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-left: unset;
+  margin-right: unset; }
 
 .light-purple-banner__text {
   line-height: 24px;
@@ -11698,6 +11715,9 @@ section.instaContent {
   font-size: 14px;
   line-height: 20px;
   font-family: Rubik, sans-serif; }
+
+a.grey-text-link {
+  color: #464860; }
 
 .group-top-tabs__contents {
   padding-top: 55px;
@@ -11886,5 +11906,71 @@ section.instaContent {
 .group-top-tabs-accordion__body_content {
   padding: 1rem;
   line-height: 1.5rem; }
+
+.ski-trip-types__title_container {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  align-items: center; }
+
+.ski-trip-types__title {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: auto;
+  margin-top: auto;
+  color: #464860;
+  text-align: left;
+  font-family: Rubik,sans-serif;
+  padding-left: 10px; }
+
+.ski-trip-types__title_link {
+  color: #464860; }
+
+.regionsGridDescription .ski-page__resort_text p {
+  font-size: 1rem; }
+
+.tab-content .regionsGridList .ski-page__resort-item {
+  min-height: 700px; }
+
+.three-buttons-content {
+  border-radius: 50px;
+  box-shadow: 0px 5px 50px 14px #b2b2b222;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  height: 50px; }
+
+.three-buttons-wrap {
+  background: #fff;
+  border-radius: 50px;
+  height: 50px;
+  padding-inline-start: 0;
+  width: 700px;
+  padding: 3px;
+  display: flex; }
+
+@media only screen and (max-width: 800px) {
+  .three-buttons-content {
+    width: 500px; }
+  .three-buttons-wrap {
+    width: 500px; } }
+
+@media only screen and (max-width: 650px) {
+  .three-buttons-content {
+    max-width: 600px;
+    width: 90%;
+    height: auto; }
+  .three-buttons-wrap {
+    max-width: 600px;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    height: auto; }
+  .three-buttons-wrap .three-buttons-item {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=styles.min.css.map */

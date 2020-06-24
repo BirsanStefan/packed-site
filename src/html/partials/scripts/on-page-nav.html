@@ -1,0 +1,48 @@
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function(event) {
+    var navbar = document.getElementById("nav-bar");
+    var sections = document.querySelectorAll('section[class^="section"]');
+    var links = document.querySelectorAll('a[data-zone*="zone"]');
+
+    window.onscroll = function() {
+        ManageStickyClass(navbar);
+        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        sections.forEach(function(item, index) {
+        if(item.offsetTop <= scrollPosition + 100) {
+            var className = item.getAttribute('class')
+            var id = className[className.length - 1];
+            links.forEach(function(item) {
+            item.classList.remove('scrollSpy');
+            });
+            document.querySelector(`a[data-zone*="zone${id}"]`).setAttribute('class', 'scrollSpy');
+        }
+        });
+    };
+
+    links.forEach(function(item) {
+        item.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        ScrollToView(evt.target.dataset.zone);
+        });
+    });
+    });
+
+    function ManageStickyClass(navbar) {
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    if (window.pageYOffset > sticky) {
+        navbar.classList.add("nav-bar__sticky")
+    } else {
+        navbar.classList.remove("nav-bar__sticky");
+    }
+    }
+
+    function ScrollToView(zone) {
+    var offsetY = document.querySelector(`a[name="${zone}"]`);
+    console.log(offsetY.offsetTop);
+    window.scrollTo(0, offsetY.offsetTop - 100);
+    }
+
+</script>

@@ -1,0 +1,83 @@
+.ski-trip-types__title_container {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+}
+
+.ski-trip-types__title {
+	font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: auto;
+    margin-top: auto;   
+	color: #464860;
+    text-align: left;
+    font-family: Rubik,sans-serif;
+    padding-left: 10px;
+}
+
+.ski-trip-types__title_link {
+    color: #464860;
+}
+
+.regionsGridDescription .ski-page__resort_text p {
+    font-size: 1rem;
+}
+
+.tab-content .regionsGridList .ski-page__resort-item {
+    min-height: 700px;
+}
+
+.three-buttons-content {
+    border-radius: 50px;
+    box-shadow: 0px 5px 50px 14px #b2b2b222;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    height: 50px; 
+}
+
+.three-buttons-wrap {
+    background: #fff;
+    border-radius: 50px;
+    height: 50px; 
+    padding-inline-start: 0;
+    width: 700px;
+    padding: 3px;
+    display: flex;
+}
+
+@media only screen and (max-width:800px) {
+    .three-buttons-content {
+        width: 500px;
+    }
+
+    .three-buttons-wrap {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .three-buttons-content {
+        max-width: 600px;
+        width: 90%;
+        height: auto;
+    }
+
+    .three-buttons-wrap {
+        max-width: 600px;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .three-buttons-wrap .three-buttons-item {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}

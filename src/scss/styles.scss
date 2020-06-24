@@ -5447,6 +5447,12 @@ div.stepRight a {
 	text-decoration: underline
 }
 
+.stepRight .stepRight__title {
+	text-align: left;
+	padding-left: unset;
+	margin-bottom: 20px;
+
+}
 
 .regionsGridList {
 	min-height: 200px
@@ -5706,7 +5712,8 @@ div.notConvincedBox {
 }
 
 .checkout {
-	margin-top: 60px
+	margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 body div .checkout {
@@ -7599,9 +7606,9 @@ img.teamImgItemTablet {
 }
 
 .moreImage {
-	width: 1350px;
-	margin-top: 75px;
-	margin-bottom: 110px;
+	width: 1052px;;
+	margin-top: 80px;
+	margin-bottom: 80px;
 	max-width: 100%
 }
 
@@ -8680,7 +8687,7 @@ Start How it works Page .topArea {
 		left: 200px
 	}
 	.moreImage {
-		max-width: 991px
+		max-width: 100%
 	}
 	.moreImage img {
 		max-width: 100%
@@ -10714,6 +10721,7 @@ Start How it works Page .topArea {
 	.moreSunDesktop {
 		display: none
 	}
+
 	.morePartyingMobile,
 	.moreSunMobile {
 		display: inline
@@ -10721,6 +10729,7 @@ Start How it works Page .topArea {
 	.moreImage {
 		text-align: center;
 		margin-bottom: 50px;
+		max-width: 	100%;
 	}
 	.features {
 		padding-bottom: 40px
@@ -12388,4 +12397,5 @@ section.fatmap {
 	@import 'components/light-purple-banner.scss';
 	@import 'pages/group-holidays.scss';
 	@import 'components/group-top-tabs.scss';
+	@import 'pages/ski-home-page.scss';
 	

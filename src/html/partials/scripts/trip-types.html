@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     TabsClicks();
     MobileTabs();
     window.addEventListener("hashchange", function () {
-        window.scrollTo(window.scrollX, window.scrollY - 100);
+        if(window.innerWidth <= 992) {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+        }
     });
 });
 
